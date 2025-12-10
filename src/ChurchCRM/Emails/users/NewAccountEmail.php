@@ -21,7 +21,7 @@ class NewAccountEmail extends BaseUserEmail
 
     protected function buildMessageBody(): string
     {
-        return gettext('A ChurchCRM account was created for you') . ':';
+        return gettext('A UnityConnectCRM account was created for you') . ':';
     }
 
     public function getTokens(): array

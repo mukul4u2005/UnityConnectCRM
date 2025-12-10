@@ -4,7 +4,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
-"Project-Id-Version: UnityConnect CRM\n"
+"Project-Id-Version: ChurchCRM\n"
 "Language: te\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
@@ -32,10 +32,12 @@ msgstr "కేటాయించబడలేదు"
 msgid "None"
 msgstr "ఏదీ లేదు"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "City"
 msgstr "నగరం"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "State"
 msgstr "రాష్ట్రం"
@@ -48,6 +50,7 @@ msgstr "దేశం"
 msgid "Phone"
 msgstr "ఫోన్"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Email"
 msgstr "ఈమెయిల్"
@@ -59,38 +62,6 @@ msgstr "క్రెడిట్ కార్డ్"
 #: 
 msgid "Backup Database"
 msgstr "బ్యాకప్ డేటాబేస్"
-
-#: 
-msgid "This tool will assist you in manually backing up the UnityConnect CRM database."
-msgstr "UnityConnect CRM డేటాబేస్‌ను మాన్యువల్‌గా బ్యాకప్ చేయడంలో ఈ సాధనం మీకు సహాయం చేస్తుంది."
-
-#: 
-msgid "You should make a manual backup at least once a week unless you already have a regular backup procedure for your systems."
-msgstr "మీరు ఇప్పటికే మీ సిస్టమ్‌ల కోసం సాధారణ బ్యాకప్ విధానాన్ని కలిగి ఉండకపోతే మీరు కనీసం వారానికి ఒకసారి మాన్యువల్ బ్యాకప్ చేయాలి"
-
-#: 
-msgid "After you download the backup file, you should make two copies. Put one of them in a fire-proof safe on-site and the other in a safe location off-site."
-msgstr "మీరు బ్యాకప్ ఫైల్‌ను డౌన్‌లోడ్ చేసిన తర్వాత, మీరు రెండు కాపీలు చేయాలి వాటిలో ఒకదాన్ని ఫైర్ ప్రూఫ్ సేఫ్ ఆన్-సైట్‌లో మరియు మరొకటి ఆఫ్-సైట్‌లో సురక్షితమైన ప్రదేశంలో ఉంచండి"
-
-#: 
-msgid "If you are concerned about confidentiality of data stored in the UnityConnect CRM database, you should encrypt the backup data if it will be stored somewhere potentially accessible to others"
-msgstr "UnityConnect CRM డేటాబేస్‌లో నిల్వ చేయబడిన డేటా యొక్క గోప్యత గురించి మీరు ఆందోళన చెందుతుంటే, బ్యాకప్ డేటాను ఇతరులకు అందుబాటులో ఉండే చోట నిల్వ చేయబడితే మీరు దానిని ఎన్‌క్రిప్ట్ చేయాలి"
-
-#: 
-msgid "Select archive type"
-msgstr "ఆర్కైవ్ రకాన్ని ఎంచుకోండి"
-
-#: 
-msgid "Encrypt backup file with a password?"
-msgstr "పాస్‌వర్డ్‌తో బ్యాకప్ ఫైల్‌ను గుప్తీకరించాలా"
-
-#: 
-msgid "Re-type Password"
-msgstr "పాస్వర్డ్ తిరిగి టైప్ చెయ్యండి"
-
-#: 
-msgid "Generate and Ship Backup to External Storage"
-msgstr "బాహ్య నిల్వకు బ్యాకప్‌ని రూపొందించండి మరియు రవాణా చేయండి"
 
 #: 
 msgid "Batch Winner Entry"
@@ -156,6 +127,7 @@ msgstr "పుట్టిన / వార్షికోత్సవ తేద�
 msgid "Age / Years Married"
 msgstr "వయస్సు / వివాహిత సంవత్సరాలు"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Family Role"
 msgstr "కుటుంబ పాత్ర"
@@ -200,10 +172,12 @@ msgstr "బహుళ ఎంచుకోవడానికి Ctrl కీని �
 msgid "Don't Filter"
 msgstr "ఫిల్టర్ చేయవద్దు"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Male"
 msgstr "పురుషుడు"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Female"
 msgstr "స్త్రీ"
@@ -272,6 +246,7 @@ msgstr "శీర్షిక"
 msgid "Suffix"
 msgstr "ప్రత్యయం"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Gender"
 msgstr "లింగం"
@@ -280,6 +255,7 @@ msgstr "లింగం"
 msgid "Donation Envelope"
 msgstr "విరాళం ఎన్వలప్"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Home Phone"
 msgstr "ఇంటి ఫోన్"
@@ -332,6 +308,7 @@ msgstr "గమనిక: సెపరేటర్లు (డాష్‌లు �
 msgid "Default country if none specified otherwise"
 msgstr "ఏదీ పేర్కొనకపోతే డిఫాల్ట్ దేశం"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Classification"
 msgstr "వర్గీకరణ"
@@ -361,10 +338,6 @@ msgid "Add Cart to Event"
 msgstr "ఈవెంట్‌కి కార్ట్‌ని జోడించండి"
 
 #: 
-msgid "Select the event to which you would like to add your cart"
-msgstr "మీరు మీ కార్ట్‌ను జోడించాలనుకుంటున్న ఈవెంట్‌ను ఎంచుకోండి"
-
-#: 
 msgid "OR"
 msgstr "లేదా"
 
@@ -384,6 +357,7 @@ msgstr "ఇంటి పేరు నమోదు చేయలేదు!"
 msgid "Add Cart to Family"
 msgstr "కుటుంబానికి కార్ట్‌ని జోడించండి"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Name"
 msgstr "పేరు"
@@ -469,10 +443,6 @@ msgid "Empty Cart to Family"
 msgstr "కుటుంబానికి ఖాళీ కార్ట్"
 
 #: 
-msgid "Empty Cart to Event"
-msgstr "ఈవెంట్‌కు ఖాళీ కార్ట్"
-
-#: 
 msgid "Map Cart"
 msgstr "మ్యాప్ కార్ట్"
 
@@ -529,20 +499,8 @@ msgid "Event Checkin"
 msgstr "ఈవెంట్ తనిఖీ"
 
 #: 
-msgid "Select the event to which you would like to check people in for"
-msgstr "మీరు వ్యక్తులను తనిఖీ చేయాలనుకుంటున్న ఈవెంట్‌ను ఎంచుకోండి"
-
-#: 
 msgid "Select Event"
 msgstr "ఈవెంట్‌ని ఎంచుకోండి"
-
-#: 
-msgid "Add Visitor"
-msgstr "సందర్శకుడిని జోడించండి"
-
-#: 
-msgid "CheckIn"
-msgstr "చెక్ ఇన్"
 
 #: 
 msgid "CheckOut"
@@ -568,10 +526,7 @@ msgstr "ద్వారా తనిఖీ చేయబడింది"
 msgid "Action"
 msgstr "చర్య"
 
-#: 
-msgid "No Attendees Assigned to Event"
-msgstr "ఈవెంట్‌కు హాజరైనవారు ఎవరూ కేటాయించబడలేదు"
-
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Member"
 msgstr "సభ్యుడు"
@@ -601,28 +556,14 @@ msgid "Deposit Slip Number: "
 msgstr "డిపాజిట్ స్లిప్ నంబర్: "
 
 #: 
-msgid "Deposit Details: "
+#, fuzzy
+msgid "Deposit Details"
 msgstr "డిపాజిట్ వివరాలు: "
 
 #: 
-msgid "Close deposit slip (remember to press Save)"
-msgstr "డిపాజిట్ స్లిప్‌ను మూసివేయండి (సేవ్ చేయి నొక్కడం గుర్తుంచుకోండి)"
-
-#: 
-msgid "Deposit Slip Report"
-msgstr "డిపాజిట్ స్లిప్ నివేదిక"
-
-#: 
-msgid "Important note: failed transactions will be deleted permanently when the deposit slip is closed."
+#, fuzzy
+msgid "Important: Failed transactions will be deleted permanently when the deposit slip is closed."
 msgstr "ముఖ్యమైన గమనిక: డిపాజిట్ స్లిప్ మూసివేయబడినప్పుడు విఫలమైన లావాదేవీలు శాశ్వతంగా తొలగించబడతాయి."
-
-#: 
-msgid "Deposit Summary: "
-msgstr "డిపాజిట్ సారాంశం: "
-
-#: 
-msgid "Payments on this deposit slip:"
-msgstr "ఈ డిపాజిట్ స్లిప్‌పై చెల్లింపులు:"
 
 #: 
 msgid "Import eGive"
@@ -633,7 +574,8 @@ msgid "Add Payment"
 msgstr "చెల్లింపును జోడించండి"
 
 #: 
-msgid "Load Authorized Transactions"
+#, fuzzy
+msgid "Load Authorized"
 msgstr "అధీకృత లావాదేవీలను లోడ్ చేయండి"
 
 #: 
@@ -733,7 +675,7 @@ msgid "Use Title Page"
 msgstr "శీర్షిక పేజీని ఉపయోగించండి"
 
 #: 
-msgid "Temple/TrustName"
+msgid "Temple Name"
 msgstr "చర్చి పేరు"
 
 #: 
@@ -825,7 +767,7 @@ msgid "Add New Fund"
 msgstr "కొత్త ఫండ్ జోడించండి"
 
 #: 
-msgid " Temple Event Editor"
+msgid "Temple Event Editor"
 msgstr "చర్చి ఈవెంట్ ఎడిటర్"
 
 #: 
@@ -868,6 +810,7 @@ msgstr "కుటుంబం"
 msgid "Type"
 msgstr "టైప్ చేయండి"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Fiscal Year"
 msgstr "ఆర్థిక సంవత్సరం"
@@ -884,6 +827,7 @@ msgstr "నిధి"
 msgid "Bank"
 msgstr "బ్యాంక్"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Month"
 msgstr "నెల"
@@ -897,44 +841,8 @@ msgid "Edit"
 msgstr "సవరించు"
 
 #: 
-msgid "Event Attendees"
-msgstr "ఈవెంట్ హాజరైనవారు"
-
-#: 
-msgid "Event Nonattendees"
-msgstr "ఈవెంట్ నాన్‌టెండిస్"
-
-#: 
-msgid "Event Guests"
-msgstr "ఈవెంట్ అతిథులు"
-
-#: 
-msgid "There "
-msgstr "అక్కడ "
-
-#: 
 msgid "Event Title"
 msgstr "ఈవెంట్ శీర్షిక"
-
-#: 
-msgid "Event Date"
-msgstr "ఈవెంట్ తేదీ"
-
-#: 
-msgid "Attending Members"
-msgstr "హాజరవుతున్న సభ్యులు"
-
-#: 
-msgid "Non-Attending Members"
-msgstr "హాజరు కాని సభ్యులు"
-
-#: 
-msgid "Guests"
-msgstr "అతిథులు"
-
-#: 
-msgid "There are no events in this category"
-msgstr "ఈ వర్గంలో ఈవెంట్‌లు ఏవీ లేవు"
 
 #: 
 msgid "Create Event"
@@ -945,20 +853,8 @@ msgid "Create a new Event"
 msgstr "కొత్త ఈవెంట్‌ని సృష్టించండి"
 
 #: 
-msgid "Editing Event ID: "
-msgstr "ఈవెంట్ IDని సవరించడం: "
-
-#: 
 msgid " errors. Please see below"
 msgstr " లోపాలు. దయచేసి క్రింద చూడండి"
-
-#: 
-msgid "Items with a "
-msgstr "a తో అంశాలు "
-
-#: 
-msgid " are required"
-msgstr " అవసరం"
 
 #: 
 msgid "Select your event type"
@@ -969,20 +865,8 @@ msgid "You must pick an event type."
 msgstr "మీరు తప్పనిసరిగా ఈవెంట్ రకాన్ని ఎంచుకోవాలి."
 
 #: 
-msgid "Event Desc"
-msgstr "ఈవెంట్ డెస్క్"
-
-#: 
 msgid "No Attendance counts recorded"
 msgstr "హాజరు గణనలు నమోదు కాలేదు"
-
-#: 
-msgid "Attendance Notes: "
-msgstr "హాజరు గమనికలు: "
-
-#: 
-msgid "Event Sermon"
-msgstr "ఈవెంట్ ప్రసంగం"
 
 #: 
 msgid "Event Status"
@@ -991,10 +875,6 @@ msgstr "ఈవెంట్ స్థితి"
 #: 
 msgid "Return to Events"
 msgstr "ఈవెంట్‌లకు తిరిగి వెళ్ళు"
-
-#: 
-msgid "EVENT TYPE NAME"
-msgstr "ఈవెంట్ రకం పేరు"
 
 #: 
 msgid "Sundays"
@@ -1023,30 +903,6 @@ msgstr "శుక్రవారాలు"
 #: 
 msgid "Saturdays"
 msgstr "శనివారాలు"
-
-#: 
-msgid "DEFAULT START TIME"
-msgstr "డిఫాల్ట్ ప్రారంభ సమయం"
-
-#: 
-msgid "ATTENDANCE COUNTS"
-msgstr "హాజరు గణనలు"
-
-#: 
-msgid "Optional"
-msgstr "ఐచ్ఛికం"
-
-#: 
-msgid "Enter a list of the attendance counts you want to include with this event."
-msgstr "ఈ ఈవెంట్‌తో మీరు చేర్చాలనుకుంటున్న హాజరు గణనల జాబితాను నమోదు చేయండి."
-
-#: 
-msgid "Separate each count_name with a comma. e.g. Members, Visitors, Campus, Children"
-msgstr "ప్రతి కౌంట్_పేరును కామాతో వేరు చేయండి. ఉ.దా. సభ్యులు, సందర్శకులు, క్యాంపస్, పిల్లలు"
-
-#: 
-msgid "Every event type includes a Total count, you do not need to include it."
-msgstr "ప్రతి ఈవెంట్ రకం మొత్తం గణనను కలిగి ఉంటుంది, మీరు దానిని చేర్చవలసిన అవసరం లేదు."
 
 #: 
 msgid "Add Event Type"
@@ -1237,10 +1093,6 @@ msgid "Family List"
 msgstr "కుటుంబ జాబితా"
 
 #: 
-msgid "Add Family"
-msgstr "కుటుంబాన్ని జోడించండి"
-
-#: 
 msgid "Created"
 msgstr "సృష్టించబడింది"
 
@@ -1265,10 +1117,6 @@ msgid "Next Family"
 msgstr "తదుపరి కుటుంబం"
 
 #: 
-msgid "Delete this Family"
-msgstr "ఈ కుటుంబాన్ని తొలగించండి"
-
-#: 
 msgid "Upload Photo"
 msgstr "ఫోటోను అప్‌లోడ్ చేయండి"
 
@@ -1279,10 +1127,6 @@ msgstr "ఫోటోను తొలగించండి"
 #: 
 msgid "Add a Note"
 msgstr "గమనికను జోడించండి"
-
-#: 
-msgid "Add All Family Members to Cart"
-msgstr "కార్ట్‌కి కుటుంబ సభ్యులందరినీ జోడించండి"
 
 #: 
 msgid "Timeline"
@@ -1391,10 +1235,6 @@ msgstr "మీరు కుటుంబ సమాచారం యొక్క �
 #: 
 msgid "Financial Reports"
 msgstr "ఆర్థిక నివేదికలు"
-
-#: 
-msgid "No records were returned from the previous report."
-msgstr "మునుపటి నివేదిక నుండి ఎటువంటి రికార్డులు తిరిగి ఇవ్వబడలేదు."
 
 #: 
 msgid "Report Type:"
@@ -1545,7 +1385,7 @@ msgid "Graphic"
 msgstr "గ్రాఫిక్"
 
 #: 
-msgid "Temple/TrustAddress"
+msgid "Temple Address"
 msgstr "చర్చి చిరునామా"
 
 #: 

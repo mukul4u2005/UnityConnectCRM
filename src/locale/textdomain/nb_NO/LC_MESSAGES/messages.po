@@ -4,7 +4,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
-"Project-Id-Version: UnityConnect CRM\n"
+"Project-Id-Version: ChurchCRM\n"
 "Language: nb\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
@@ -32,10 +32,12 @@ msgstr "Unassigned"
 msgid "None"
 msgstr "Ingen"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "City"
 msgstr "By"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "State"
 msgstr "Stat"
@@ -48,6 +50,7 @@ msgstr "Land"
 msgid "Phone"
 msgstr "Telefon"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Email"
 msgstr "E-post"
@@ -59,40 +62,6 @@ msgstr "Kredittkort"
 #: 
 msgid "Backup Database"
 msgstr "Backup Database"
-
-#: 
-msgid "This tool will assist you in manually backing up the UnityConnect CRM database."
-msgstr "Dette verktøyet vil hjelpe deg med å manuelt ta backup av UnityConnect CRM"
-
-#: 
-#, fuzzy
-msgid "You should make a manual backup at least once a week unless you already have a regular backup procedure for your systems."
-msgstr "Du bør foreta en manuell backup minst en gang i uken, med mindre du allerede har en vanlig backup procedule for dine systemer."
-
-#: 
-msgid "After you download the backup file, you should make two copies. Put one of them in a fire-proof safe on-site and the other in a safe location off-site."
-msgstr "Når du har lastet sikkerhetskopifilen, bør du lage to kopier. Sette en av dem i en brannsikker safe på stedet, og den andre på et trygt sted utenfor området."
-
-#: 
-msgid "If you are concerned about confidentiality of data stored in the UnityConnect CRM database, you should encrypt the backup data if it will be stored somewhere potentially accessible to others"
-msgstr "Hvis backup av UnityConnect CRM skal lages hvor andre kan komme til den, bør denne krypteres av sikkerhensmessige årsaker."
-
-#: 
-#, fuzzy
-msgid "Select archive type"
-msgstr "Velg arkiv type"
-
-#: 
-msgid "Encrypt backup file with a password?"
-msgstr "Krypter backup-fil med et passord?"
-
-#: 
-msgid "Re-type Password"
-msgstr "Gjenta passord"
-
-#: 
-msgid "Generate and Ship Backup to External Storage"
-msgstr "Sikkerhetskopier og eksporter til ekstern lagring"
 
 #: 
 msgid "Batch Winner Entry"
@@ -168,6 +137,7 @@ msgstr "Fødsel / Anniversary Dato"
 msgid "Age / Years Married"
 msgstr "Alder / år Gift"
 
+#. Context: queryparameters_qrp
 #: 
 #, fuzzy
 msgid "Family Role"
@@ -211,10 +181,12 @@ msgstr "Bruk Ctrl-tasten for å velge flere"
 msgid "Don't Filter"
 msgstr "Ikke filtrer"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Male"
 msgstr "Mann"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Female"
 msgstr "Kvinne"
@@ -286,6 +258,7 @@ msgstr "Tittel"
 msgid "Suffix"
 msgstr "Suffiks"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Gender"
 msgstr "Kjønn"
@@ -294,6 +267,7 @@ msgstr "Kjønn"
 msgid "Donation Envelope"
 msgstr "Donasjon konvolutt"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Home Phone"
 msgstr "Home Phone"
@@ -346,6 +320,7 @@ msgstr "MERK: Separatorer (streker, etc.) eller mangel derav ikke saken"
 msgid "Default country if none specified otherwise"
 msgstr "Standardland hvis ingen spesifisert"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Classification"
 msgstr "Klassifisering"
@@ -375,11 +350,6 @@ msgid "Add Cart to Event"
 msgstr "Legg Cart til Event"
 
 #: 
-#, fuzzy
-msgid "Select the event to which you would like to add your cart"
-msgstr "Velg hendelsen som du ønsker å legge til i handlekurven"
-
-#: 
 msgid "OR"
 msgstr "ELLER"
 
@@ -399,6 +369,7 @@ msgstr "Ingen etternavn angitt!"
 msgid "Add Cart to Family"
 msgstr "Legg Cart til Family"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Name"
 msgstr "Navn"
@@ -487,10 +458,6 @@ msgid "Empty Cart to Family"
 msgstr "Tom Handlekurven til familien"
 
 #: 
-msgid "Empty Cart to Event"
-msgstr "Tom Handlekurven til Event"
-
-#: 
 msgid "Map Cart"
 msgstr "Kart Cart"
 
@@ -548,21 +515,8 @@ msgid "Event Checkin"
 msgstr "Hendelse Checkin"
 
 #: 
-#, fuzzy
-msgid "Select the event to which you would like to check people in for"
-msgstr "Velg hendelsen som du ønsker å kontrollere folk i for"
-
-#: 
 msgid "Select Event"
 msgstr "Velg hendelse"
-
-#: 
-msgid "Add Visitor"
-msgstr "Legg besøkende"
-
-#: 
-msgid "CheckIn"
-msgstr "CheckIn"
 
 #: 
 msgid "CheckOut"
@@ -588,10 +542,7 @@ msgstr "Sjekket ut av"
 msgid "Action"
 msgstr "Handling"
 
-#: 
-msgid "No Attendees Assigned to Event"
-msgstr "Ingen deltakere Assigned til Event"
-
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Member"
 msgstr "Medlem"
@@ -621,21 +572,9 @@ msgid "Deposit Slip Number: "
 msgstr "Innskudd Slip Antall:"
 
 #: 
-msgid "Close deposit slip (remember to press Save)"
-msgstr "Lukk innskudd slip (husk å trykke Save)"
-
-#: 
-msgid "Deposit Slip Report"
-msgstr "Innskudd Slip Rapporter"
-
-#: 
 #, fuzzy
-msgid "Important note: failed transactions will be deleted permanently when the deposit slip is closed."
+msgid "Important: Failed transactions will be deleted permanently when the deposit slip is closed."
 msgstr "Viktig merknad: mislykkede transaksjoner vil bli slettet permanent når innskuddet slip er lukket."
-
-#: 
-msgid "Payments on this deposit slip:"
-msgstr "Betalinger på dette innskuddet slip:"
 
 #: 
 msgid "Import eGive"
@@ -646,7 +585,8 @@ msgid "Add Payment"
 msgstr "Legg Betaling"
 
 #: 
-msgid "Load Authorized Transactions"
+#, fuzzy
+msgid "Load Authorized"
 msgstr "Last Autoriserte Transaksjoner"
 
 #: 
@@ -751,7 +691,7 @@ msgid "Use Title Page"
 msgstr "Bruk Tittelside"
 
 #: 
-msgid "Temple/TrustName"
+msgid "Temple Name"
 msgstr "Kirke Navn"
 
 #: 
@@ -848,7 +788,7 @@ msgid "Add New Fund"
 msgstr "Legg til ny Fund"
 
 #: 
-msgid " Temple Event Editor"
+msgid "Temple Event Editor"
 msgstr "Kirke begivenhet Editor"
 
 #: 
@@ -892,6 +832,7 @@ msgstr "Familie"
 msgid "Type"
 msgstr "Type"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Fiscal Year"
 msgstr "Regnskapsåret"
@@ -908,6 +849,7 @@ msgstr "Fond"
 msgid "Bank"
 msgstr "Bank"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Month"
 msgstr "Måned"
@@ -921,44 +863,8 @@ msgid "Edit"
 msgstr "Redigere"
 
 #: 
-msgid "Event Attendees"
-msgstr "Event deltakere"
-
-#: 
-msgid "Event Nonattendees"
-msgstr "Event Nonattendees"
-
-#: 
-msgid "Event Guests"
-msgstr "Hendelsesgjester"
-
-#: 
-msgid "There "
-msgstr "Det"
-
-#: 
 msgid "Event Title"
 msgstr "Hendelse Tittel"
-
-#: 
-msgid "Event Date"
-msgstr "Hendelse Dato"
-
-#: 
-msgid "Attending Members"
-msgstr "Møtende medlemmer"
-
-#: 
-msgid "Non-Attending Members"
-msgstr "Non-møtende medlemmer"
-
-#: 
-msgid "Guests"
-msgstr "Gjester"
-
-#: 
-msgid "There are no events in this category"
-msgstr "Det er ingen aktiviteter i denne kategorien"
 
 #: 
 msgid "Create Event"
@@ -969,22 +875,8 @@ msgid "Create a new Event"
 msgstr "Oprett nytt arrangement"
 
 #: 
-msgid "Editing Event ID: "
-msgstr "Redigerer Event ID:"
-
-#: 
 msgid " errors. Please see below"
 msgstr "feil. Vennligst se nedenfor"
-
-#: 
-#, fuzzy
-msgid "Items with a "
-msgstr "Produkter i handlekurven"
-
-#: 
-#, fuzzy
-msgid " are required"
-msgstr "Denne verdien er nødvendig."
 
 #: 
 msgid "Select your event type"
@@ -995,22 +887,8 @@ msgid "You must pick an event type."
 msgstr "Du må velge en arrangements type"
 
 #: 
-#, fuzzy
-msgid "Event Desc"
-msgstr "Hendelse Desc"
-
-#: 
 msgid "No Attendance counts recorded"
 msgstr "Ingen Tilskuere teller opp"
-
-#: 
-msgid "Attendance Notes: "
-msgstr "Oppmøte Merknader:"
-
-#: 
-#, fuzzy
-msgid "Event Sermon"
-msgstr "Hendelse Sermon"
 
 #: 
 #, fuzzy
@@ -1020,10 +898,6 @@ msgstr "Hendelse Status"
 #: 
 msgid "Return to Events"
 msgstr "Tilbake til Arrangement"
-
-#: 
-msgid "EVENT TYPE NAME"
-msgstr "EVENT TYPE NAME"
 
 #: 
 msgid "Sundays"
@@ -1052,18 +926,6 @@ msgstr "Fredager"
 #: 
 msgid "Saturdays"
 msgstr "Lørdager"
-
-#: 
-msgid "DEFAULT START TIME"
-msgstr "STANDARD START TID"
-
-#: 
-msgid "ATTENDANCE COUNTS"
-msgstr "DELTAKELSE TELLER"
-
-#: 
-msgid "Optional"
-msgstr "Valgfritt"
 
 #: 
 msgid "Add Event Type"
@@ -1254,10 +1116,6 @@ msgid "Family List"
 msgstr "Familie Liste"
 
 #: 
-msgid "Add Family"
-msgstr "Legg til Familie"
-
-#: 
 msgid "Created"
 msgstr "Opprettet"
 
@@ -1282,10 +1140,6 @@ msgid "Next Family"
 msgstr "Neste Family"
 
 #: 
-msgid "Delete this Family"
-msgstr "Slett denne Familien"
-
-#: 
 msgid "Upload Photo"
 msgstr "Last bilde"
 
@@ -1296,10 +1150,6 @@ msgstr "Slett bilde"
 #: 
 msgid "Add a Note"
 msgstr "Legg til Notat"
-
-#: 
-msgid "Add All Family Members to Cart"
-msgstr "Legg Alle Familiemedlemmer i Kurven"
 
 #: 
 msgid "Timeline"
@@ -1409,10 +1259,6 @@ msgstr "Du er i ferd med å sende en kopi av familieinformasjonen til følgende 
 #: 
 msgid "Financial Reports"
 msgstr "Finansielle rapporter"
-
-#: 
-msgid "No records were returned from the previous report."
-msgstr "Ingen poster ble returnert fra forrige rapport."
 
 #: 
 msgid "Report Type:"
@@ -1566,8 +1412,8 @@ msgid "Graphic"
 msgstr "Grafisk"
 
 #: 
-msgid "Temple/TrustAddress"
-msgstr "Temple/TrustAdresse"
+msgid "Temple Address"
+msgstr "Temple Adresse"
 
 #: 
 msgid "Blank"
@@ -1653,20 +1499,9 @@ msgid "Date End"
 msgstr "Dato Slutt"
 
 #: 
-msgid "Clear Filters"
+#, fuzzy
+msgid "Clear Filter"
 msgstr "Tøm filter"
-
-#: 
-msgid "Previous Page"
-msgstr "Forrige Side"
-
-#: 
-msgid "Next Page"
-msgstr "Neste side"
-
-#: 
-msgid "Display:"
-msgstr "Skjerm:"
 
 #: 
 msgid "Number"
@@ -1793,10 +1628,6 @@ msgstr "Snitt med Cart"
 #: 
 msgid "Remove from Cart"
 msgstr "Fjern fra handlekurven"
-
-#: 
-msgid "Text for Event ID: "
-msgstr "Tekst for hendelses-ID:"
 
 #: 
 msgid "Group Editor"
@@ -1978,10 +1809,6 @@ msgid "Group View"
 msgstr "Group Vis"
 
 #: 
-msgid "Group Functions"
-msgstr "Gruppe Funksjoner"
-
-#: 
 msgid "Edit this Group"
 msgstr "Rediger denne gruppen"
 
@@ -2043,8 +1870,9 @@ msgid "Assigned Properties"
 msgstr "Tilordnede Egenskaper"
 
 #: 
-msgid "Group Members:"
-msgstr "Gruppemedlemmer:"
+#, fuzzy
+msgid "Group Members"
+msgstr "Gruppemedlemmer"
 
 #: 
 msgid "Remove Selected Members from group"
@@ -2083,20 +1911,8 @@ msgid "Listing All Temple Events"
 msgstr "Notering Alle kirkelige handlinger"
 
 #: 
-msgid "Select Event Types To Display"
-msgstr "Velg hendelse typer Å Vise"
-
-#: 
-msgid "Display Events in Year"
-msgstr "Vise hendelser i år"
-
-#: 
 msgid "Start Date/Time"
 msgstr "Startdato / tid"
-
-#: 
-msgid "No Attendance Recorded"
-msgstr "Ingen Oppmøte Innspilt"
 
 #: 
 #, fuzzy
@@ -2739,6 +2555,7 @@ msgstr "Eiendom Liste"
 msgid "Add a New"
 msgstr "Legg til en ny"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Property"
 msgstr "Eiendom"
@@ -2784,6 +2601,7 @@ msgstr "Eiendomstype List"
 msgid "Add a New Property Type"
 msgstr "Legg til en ny Eiendomstype"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Class"
 msgstr "Klasse"
@@ -2816,10 +2634,6 @@ msgstr "Nei, beholde dette oppdraget"
 #: 
 msgid "Query Listing"
 msgstr "Query Oppføring"
-
-#: 
-msgid "Run a Free-Text Query"
-msgstr "Kjør en fritekst-Query"
 
 #: 
 msgid "Free-Text Query"
@@ -3305,8 +3119,8 @@ msgid "Custom Drop-Down List"
 msgstr "Custom Rullegardinliste"
 
 #: 
-msgid "Thank you for registering your UnityConnect CRM installation."
-msgstr "Takk for at du registrerte UnityConnect CRM "
+msgid "Thank you for registering your UnityConnectCRM installation."
+msgstr "Takk for at du registrerte UnityConnectCRM "
 
 #: 
 msgid "PDFs successfully emailed "
@@ -3356,14 +3170,6 @@ msgstr "element (er) lagt i handlevognen."
 #: 
 msgid "Select Fiscal Year"
 msgstr "Velg Regnskapsår"
-
-#: 
-msgid "pm"
-msgstr "pm"
-
-#: 
-msgid "am"
-msgstr "am"
 
 #: 
 msgid "Invalid Editor ID!"
@@ -3522,8 +3328,8 @@ msgid "Member/Friend"
 msgstr "Medlem / Friend"
 
 #: 
-msgid "This option requires at least version 3.22 of MySQL!  Hit browser back button to return to UnityConnect CRM."
-msgstr "Dette alternativet krever minst versjon 3.22 av MySQL! Hit leseren tilbake-knappen for å gå tilbake til UnityConnect CRM."
+msgid "This option requires at least version 3.22 of MySQL!  Hit browser back button to return to ChurchCRM."
+msgstr "Dette alternativet krever minst versjon 3.22 av MySQL! Hit leseren tilbake-knappen for å gå tilbake til ChurchCRM."
 
 #: 
 msgid "Work"
@@ -3658,10 +3464,6 @@ msgstr "Lærere"
 #: 
 msgid "Send Message"
 msgstr "Send melding"
-
-#: 
-msgid "View Profile"
-msgstr "Vis profil"
 
 #: 
 msgid "Quick Status"

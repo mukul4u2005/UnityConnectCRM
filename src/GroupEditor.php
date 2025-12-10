@@ -12,7 +12,7 @@ use ChurchCRM\Utils\InputUtils;
 use ChurchCRM\Utils\RedirectUtils;
 
 // Security: User must have Manage Groups permission
-AuthenticationManager::redirectHomeIfFalse(AuthenticationManager::getCurrentUser()->isManageGroupsEnabled());
+AuthenticationManager::redirectHomeIfFalse(AuthenticationManager::getCurrentUser()->isManageGroupsEnabled(), 'ManageGroups');
 
 $sPageTitle = gettext('Group Editor');
 $groupService = new GroupService();
@@ -38,10 +38,10 @@ require_once 'Include/Header.php';
         <h4 class="modal-title" id="gsproperties-label"></h4>
       </div>
       <div class="modal-body">
-        <span style="color: red"></span>
+        <span class="text-danger"></span>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal"><?= gettext('Close')?></button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"><?= gettext('Close')?></button>
         <button name="setgroupSpecificProperties" id="setgroupSpecificProperties" type="button" class="btn btn-danger"></button>
       </div>
     </div>
@@ -59,13 +59,13 @@ require_once 'Include/Header.php';
         <div class="row">
           <div class="col-sm-4">
             <label for="Name"><?= gettext('Name') ?>:</label>
-            <input class="form-control" type="text" Name="Name" value="<?= htmlentities(stripslashes($thisGroup->getName()), ENT_NOQUOTES, 'UTF-8') ?>">
+            <input class="form-control" type="text" Name="Name" value="<?= InputUtils::escapeAttribute($thisGroup->getName()) ?>">
           </div>
         </div>
         <div class="row">
           <div class="col-sm-4">
             <label for="Description"><?= gettext('Description') ?>:</label>
-            <textarea  class="form-control" name="Description" cols="40" rows="5"><?= htmlentities(stripslashes($thisGroup->getDescription()), ENT_NOQUOTES, 'UTF-8') ?></textarea></td>
+            <textarea  class="form-control" name="Description" cols="40" rows="5"><?= InputUtils::escapeAttribute($thisGroup->getDescription()) ?></textarea></td>
           </div>
         </div>
         <div class="row">
@@ -73,7 +73,7 @@ require_once 'Include/Header.php';
             <label for="GroupType"><?= gettext('Type of Group') ?>:</label>
             <?php
             if ($thisGroup->isSundaySchool()) {
-                $hide = "style=\"display:none;\"";
+                $hide = "class=\"d-none\"";
             } else {
                 $hide = "";
             }
@@ -151,8 +151,11 @@ require_once 'Include/Header.php';
         </div>
         <br>
         <div class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-6">
             <input type="submit" id="saveGroup" class="btn btn-primary" <?= 'value="' . gettext('Save') . '"' ?> Name="GroupSubmit">
+            <a href="GroupList.php" class="btn btn-secondary">
+              <i class="fa fa-arrow-left"></i> <?= gettext('Back to Group List') ?>
+            </a>
           </div>
         </div>
       </div>
@@ -165,7 +168,7 @@ require_once 'Include/Header.php';
   </div>
   <div class="card-body">
     <div class="alert alert-info alert-dismissable">
-      <i class="fa fa-info"></i>
+      <i class="fa-solid fa-info"></i>
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
       <strong></strong><?= gettext('Group role name changes are saved as soon as the box loses focus')?>
     </div>

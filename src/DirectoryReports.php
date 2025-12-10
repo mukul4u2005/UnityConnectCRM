@@ -8,7 +8,7 @@ use ChurchCRM\dto\SystemConfig;
 use ChurchCRM\Utils\RedirectUtils;
 
 // Check for Create Directory user permission.
-AuthenticationManager::redirectHomeIfFalse(AuthenticationManager::getCurrentUser()->isCreateDirectoryEnabled());
+AuthenticationManager::redirectHomeIfFalse(AuthenticationManager::getCurrentUser()->isCreateDirectoryEnabled(), 'CreateDirectory');
 
 $sPageTitle = gettext('Directory reports');
 require_once 'Include/Header.php';
@@ -51,7 +51,7 @@ while ($aRow = mysqli_fetch_array($rsSecurityGrp)) {
 
 ?>
 <div class="table-responsive">
-<table class="table" align="center" class="table">
+<table class="table mx-auto">
 <?php if (!array_key_exists('cartdir', $_GET)) {
     ?>
     <tr>
@@ -223,7 +223,7 @@ while ($aRow = mysqli_fetch_array($rsSecurityGrp)) {
                     <td><input type="checkbox" Name="bDirUseTitlePage" value="1"></td>
                 </tr>
                 <tr>
-                    <td><?= gettext('Temple/TrustName') ?></td>
+                    <td><?= gettext('Temple Name') ?></td>
                     <td><input type="text" Name="sTempleName" value="<?= SystemConfig::getValue('sTempleName') ?>"></td>
                 </tr>
                 <tr>
@@ -262,10 +262,10 @@ while ($aRow = mysqli_fetch_array($rsSecurityGrp)) {
              echo '<input type="hidden" name="cartdir" value="M">';
 } ?>
 
-<p align="center">
+<p class="text-center">
 <BR>
 <input type="submit" class="btn btn-primary" name="Submit" value="<?= gettext('Create Directory') ?>">
-<input type="button" class="btn btn-default" name="Cancel" <?= 'value="' . gettext('Cancel') . '"' ?> onclick="javascript:document.location='v2/dashboard';">
+<input type="button" class="btn btn-secondary" name="Cancel" <?= 'value="' . gettext('Cancel') . '"' ?> onclick="javascript:document.location='v2/dashboard';">
 </p>
 </form>
 </div>

@@ -4,6 +4,7 @@ use ChurchCRM\model\ChurchCRM\FamilyQuery;
 use ChurchCRM\model\ChurchCRM\Note;
 use ChurchCRM\model\ChurchCRM\Person;
 use ChurchCRM\model\ChurchCRM\TokenQuery;
+use ChurchCRM\Utils\InputUtils;
 use Slim\Routing\RouteCollectorProxy;
 use Slim\Views\PhpRenderer;
 use Psr\Http\Message\ResponseInterface as Response;
@@ -17,10 +18,7 @@ $app->group('/verify', function (RouteCollectorProxy $group): void {
         if ($token != null && $token->isVerifyFamilyToken() && $token->isValid()) {
             $family = FamilyQuery::create()->findPk($token->getReferenceId());
             $haveFamily = ($family != null);
-            if ($token->getRemainingUses() > 0) {
-                $token->setRemainingUses($token->getRemainingUses() - 1);
-                $token->save();
-            }
+            $token->consume();
         }
 
         if ($haveFamily) {
@@ -42,9 +40,12 @@ $app->group('/verify', function (RouteCollectorProxy $group): void {
                 $note->setEntered(Person::SELF_VERIFY);
                 $note->setText(gettext('No Changes'));
                 if (!empty($body['message'])) {
-                    $note->setText($body['message']);
+                    $note->setText(InputUtils::escapeHTML($body['message']));
                 }
                 $note->save();
+                
+                // Consume the token after successful verification
+                $token->consume();
             }
         }
 

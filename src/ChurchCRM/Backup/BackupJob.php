@@ -6,7 +6,6 @@ use ChurchCRM\Bootstrapper;
 use ChurchCRM\dto\SystemURLs;
 use ChurchCRM\Utils\ExecutionTime;
 use ChurchCRM\Utils\LoggerUtils;
-use Defuse\Crypto\File;
 use Exception;
 use Ifsnop\Mysqldump\Mysqldump;
 use PharData;
@@ -18,26 +17,16 @@ class BackupJob extends JobBase
 {
     private string $BackupFileBaseName;
     private ?\SplFileInfo $BackupFile = null;
-    private bool $IncludeExtraneousFiles;
     public string $BackupDownloadFileName;
-    public bool $shouldEncrypt;
-    public string $BackupPassword;
 
-    public function __construct(string $BaseName, string $BackupType, bool $IncludeExtraneousFiles, bool $EncryptBackup, string $BackupPassword)
+    public function __construct(string $BaseName, string $BackupType)
     {
         $this->BackupType = $BackupType;
-        $this->TempFolder = $this->createEmptyTempFolder();
-        $this->BackupFileBaseName = $this->TempFolder . '/' . $BaseName;
-        $this->IncludeExtraneousFiles = $IncludeExtraneousFiles;
-        $this->shouldEncrypt = $EncryptBackup;
-        $this->BackupPassword = $BackupPassword;
+        $this->BackupFileBaseName = sys_get_temp_dir() . '/' . $BaseName;
         LoggerUtils::getAppLogger()->debug(
             "Backup job created; ready to execute: Type: '" .
                 $this->BackupType .
-                "' Temp Folder: '" .
-                $this->TempFolder .
-                "' BaseName: '" . $this->BackupFileBaseName .
-                "' Include extra files: '" . ($this->IncludeExtraneousFiles ? 'true' : 'false') . "'"
+                "' BaseName: '" . $this->BackupFileBaseName . "'"
         );
     }
 
@@ -97,33 +86,42 @@ class BackupJob extends JobBase
 
     private function shouldBackupImageFile(SplFileInfo $ImageFile): bool
     {
-        $isExtraneousFile = strpos($ImageFile->getFileName(), '-initials') != false ||
-        strpos($ImageFile->getFileName(), '-remote') != false ||
-        strpos($ImageFile->getPathName(), 'thumbnails') != false;
+        // Always exclude extraneous files (can be regenerated): initials or remote images
+        $isExtraneousFile = strpos($ImageFile->getFileName(), '-initials') !== false ||
+            strpos($ImageFile->getFileName(), '-remote') !== false;
 
-        return $ImageFile->isFile() && !(!$this->IncludeExtraneousFiles && $isExtraneousFile); //todo: figure out this logic
+        return $ImageFile->isFile() && !$isExtraneousFile;
     }
 
     private function createFullArchive(): void
     {
         $imagesAddedToArchive = [];
+        $directoriesAddedToArchive = [];
         $this->BackupFile = new \SplFileInfo($this->BackupFileBaseName . '.tar');
         $phar = new PharData($this->BackupFile->getPathname());
         LoggerUtils::getAppLogger()->debug('Archive opened at: ' . $this->BackupFile->getPathname());
         $phar->startBuffering();
 
-        $SqlFile = new \SplFileInfo($this->TempFolder . '/' . 'ChurchCRM-Database.sql');
+        $SqlFile = new \SplFileInfo(sys_get_temp_dir() . '/ChurchCRM-Database.sql');
         $this->captureSQLFile($SqlFile);
         $phar->addFile($SqlFile, 'ChurchCRM-Database.sql');
         LoggerUtils::getAppLogger()->debug('Database added to archive');
-        $imageFiles = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(SystemURLs::getImagesRoot()));
+        $imageFiles = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(SystemURLs::getImagesRoot()), RecursiveIteratorIterator::SELF_FIRST);
         foreach ($imageFiles as $imageFile) {
-            if ($this->shouldBackupImageFile($imageFile)) {
+            if ($imageFile->isDir()) {
+                // Add directories to preserve structure, even if empty
+                $localName = substr(str_replace(SystemURLs::getDocumentRoot(), '', $imageFile->getRealPath()), 1);
+                if ($localName != 'Images' && $imageFile->getFilename() != '.' && $imageFile->getFilename() != '..') {
+                    $phar->addEmptyDir($localName);
+                    $directoriesAddedToArchive[] = $localName;
+                }
+            } elseif ($this->shouldBackupImageFile($imageFile)) {
                 $localName = substr(str_replace(SystemURLs::getDocumentRoot(), '', $imageFile->getRealPath()), 1);
                 $phar->addFile($imageFile->getRealPath(), $localName);
                 $imagesAddedToArchive[] = $imageFile->getRealPath();
             }
         }
+        LoggerUtils::getAppLogger()->debug('Directories added to archive: ' . join(';', $directoriesAddedToArchive));
         LoggerUtils::getAppLogger()->debug('Images files added to archive: ' . join(';', $imagesAddedToArchive));
         $phar->stopBuffering();
         LoggerUtils::getAppLogger()->debug('Finished creating archive.  Beginning to compress');
@@ -140,22 +138,13 @@ class BackupJob extends JobBase
 
     private function createGZSql(): void
     {
-        $SqlFile = new \SplFileInfo($this->TempFolder . '/' . 'ChurchCRM-Database.sql');
+        $SqlFile = new \SplFileInfo(sys_get_temp_dir() . '/ChurchCRM-Database.sql');
         $this->captureSQLFile($SqlFile);
         $this->BackupFile = new \SplFileInfo($this->BackupFileBaseName . '.sql.gz');
         $gzf = gzopen($this->BackupFile->getPathname(), 'w6');
         gzwrite($gzf, file_get_contents($SqlFile->getPathname()));
         gzclose($gzf);
         unlink($SqlFile->getPathname());
-    }
-
-    private function encryptBackupFile(): void
-    {
-        LoggerUtils::getAppLogger()->info('Encrypting backup file: ' . $this->BackupFile);
-        $tempFile = new \SplFileInfo($this->BackupFile->getPathname() . 'temp');
-        rename($this->BackupFile, $tempFile);
-        File::encryptFileWithPassword($tempFile, $this->BackupFile, $this->BackupPassword);
-        LoggerUtils::getAppLogger()->info('Finished encrypting backup file');
     }
 
     public function execute(): bool
@@ -169,9 +158,6 @@ class BackupJob extends JobBase
             $this->captureSQLFile($this->BackupFile);
         } elseif ($this->BackupType == BackupType::GZSQL) {
             $this->createGZSql();
-        }
-        if ($this->shouldEncrypt) {
-            $this->encryptBackupFile();
         }
         $time->end();
         $percentExecutionTime = (($time->getMilliseconds() / 1000) / ini_get('max_execution_time')) * 100;

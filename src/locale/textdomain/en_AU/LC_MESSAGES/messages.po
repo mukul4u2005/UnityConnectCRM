@@ -4,7 +4,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
-"Project-Id-Version: UnityConnect CRM\n"
+"Project-Id-Version: ChurchCRM\n"
 "Language: en-au\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
@@ -32,10 +32,12 @@ msgstr "Unassigned"
 msgid "None"
 msgstr "None"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "City"
 msgstr "Suburb"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "State"
 msgstr "State"
@@ -48,6 +50,7 @@ msgstr "Country"
 msgid "Phone"
 msgstr "Phone"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Email"
 msgstr "Email"
@@ -61,34 +64,6 @@ msgid "Backup Database"
 msgstr "Backup Database"
 
 #: 
-msgid "This tool will assist you in manually backing up the UnityConnect CRM database."
-msgstr "This tool will assist you in manually backing up the UnityConnect CRM database."
-
-#: 
-msgid "You should make a manual backup at least once a week unless you already have a regular backup procedure for your systems."
-msgstr "You should make a manual backup at least once a week unless you already have a regular backup procedure for your systems."
-
-#: 
-msgid "After you download the backup file, you should make two copies. Put one of them in a fire-proof safe on-site and the other in a safe location off-site."
-msgstr "After you download the backup file, you should make two copies. Put one of them in a fire-proof safe on-site and the other in a safe location off-site."
-
-#: 
-msgid "If you are concerned about confidentiality of data stored in the UnityConnect CRM database, you should encrypt the backup data if it will be stored somewhere potentially accessible to others"
-msgstr "If you are concerned about confidentiality of data stored in the UnityConnect CRM database, you should encrypt the backup data if it will be stored somewhere potentially accessible to others."
-
-#: 
-msgid "Select archive type"
-msgstr "Select archive type"
-
-#: 
-msgid "Encrypt backup file with a password?"
-msgstr "Encrypt backup file with a password?"
-
-#: 
-msgid "Re-type Password"
-msgstr "Re-type password"
-
-#: 
 #, fuzzy
 msgid "Zip"
 msgstr "Postcode"
@@ -98,15 +73,12 @@ msgid "Use Ctrl Key to select multiple"
 msgstr "Use Ctrl Key (Mac: ⌘ ) to select multiple"
 
 #: 
-msgid "CheckIn"
-msgstr "Check In"
-
-#: 
 msgid "CheckOut"
 msgstr "Check Out"
 
 #: 
-msgid "Load Authorized Transactions"
+#, fuzzy
+msgid "Load Authorized"
 msgstr "Load Authorised Transactions"
 
 #: 
@@ -150,17 +122,20 @@ msgid "Internationalization (I18n) support"
 msgstr "Internationalisation (I18n) support"
 
 #: 
-msgid "Temple/TrustZip"
-msgstr "Temple/TrustPostcode"
+msgid "Temple Zip"
+msgstr "Temple Postcode"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Zip Code"
 msgstr "Postcode"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Enter any part of the following: Name, City, State, Zip, Home Phone, Email, or Work Email."
 msgstr "Enter any part of the following: Name, City, State, Postcode, Home Phone, Email, or Work Email."
 
+#. Context: query_qry
 #: 
 msgid "Search by any part of Name, City, State, Zip, Home Phone, Email, or Work Email."
 msgstr "Search by any part of Name, City, State, Postcode, Home Phone, Email, or Work Email."

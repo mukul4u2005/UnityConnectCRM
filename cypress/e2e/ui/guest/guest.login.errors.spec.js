@@ -1,13 +1,19 @@
 /// <reference types="cypress" />
 
-context("Login", () => {
+describe("Login", () => {
     it("Bad password", () => {
-        cy.login("admin", "badpassword");
-        cy.location("pathname").should("include", "session/begin");
+        cy.visit('/login');
+        cy.get('input[name=User]').type("admin");
+        cy.get('input[name=Password]').type("badpassword" + '{enter}');
+        // Wait for redirect to happen after failed login
+        cy.url().should("include", "session/begin");
     });
 
     it("Bad username", () => {
-        cy.login("idonknowyou", "badpassword");
-        cy.location("pathname").should("include", "session/begin");
+        cy.visit('/login');
+        cy.get('input[name=User]').type("idonknowyou");
+        cy.get('input[name=Password]').type("badpassword" + '{enter}');
+        // Wait for redirect to happen after failed login
+        cy.url().should("include", "session/begin");
     });
 });

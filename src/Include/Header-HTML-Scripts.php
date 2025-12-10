@@ -3,15 +3,14 @@
 use ChurchCRM\dto\SystemURLs;
 
 ?>
-<title>UnityConnectCRM: <?= $sPageTitle ?></title>
+<title>ChurchCRM: <?= $sPageTitle ?></title>
 
-<!-- Custom ChurchCRM styles -->
-<link rel="stylesheet" href="<?= SystemURLs::getRootPath() ?>/skin/churchcrm.min.css">
+<link rel="icon" href="<?= SystemURLs::getRootPath() ?>/favicon.ico" type="image/x-icon">
 
-<script src="<?= SystemURLs::getRootPath() ?>/skin/external/jquery/jquery.min.js"></script>
-<!-- jQuery UI -->
-<script src="<?= SystemURLs::getRootPath() ?>/skin/external/jquery-ui/jquery-ui.min.js"></script>
+<!-- Custom UnityConnectCRM styles -->
+<link rel="stylesheet" href="<?= SystemURLs::getRootPath() ?>/skin/v2/churchcrm.min.css">
 
-<script src="<?= SystemURLs::getRootPath() ?>/skin/external/fontawesome/js/all.js"></script>
+<!-- Core UnityConnectCRM bundle (includes jQuery) -->
+<script src="<?= SystemURLs::getRootPath() ?>/skin/v2/churchcrm.min.js"></script>
 
-<script src="<?= SystemURLs::getRootPath() ?>/skin/external/moment/moment-with-locales.min.js"></script>
+<script src="<?= SystemURLs::getRootPath() ?>/skin/external/moment/moment.min.js"></script>

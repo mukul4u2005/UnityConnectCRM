@@ -39,7 +39,7 @@ if (isset($_POST['FundRaiserSubmit'])) {
     if (strlen($dDate) > 0) {
         list($iYear, $iMonth, $iDay) = sscanf($dDate, '%04d-%02d-%02d');
         if (!checkdate($iMonth, $iDay, $iYear)) {
-            $sDateError = '<span style="color: red; ">' . gettext('Not a valid date') . '</span>';
+            $sDateError = '<span class="text-error">' . gettext('Not a valid date') . '</span>';
             $bErrorFlag = true;
         }
     }
@@ -124,7 +124,7 @@ require_once 'Include/Header.php';
                     <table cellpadding="3">
                         <tr>
                             <td class="LabelColumn"><?= gettext('Date') ?>:</td>
-                            <td class="TextColumn"><input type="text" name="Date" value="<?= $dDate->format("Y-m-d") ?>" maxlength="10" id="Date" size="11" class="date-picker"><span style="color: red;"><?= $sDateError ?></span></td>
+                            <td class="TextColumn"><input type="text" name="Date" value="<?= $dDate->format("Y-m-d") ?>" maxlength="10" id="Date" size="11" class="date-picker"><span class="text-error"><?= $sDateError ?></span></td>
                         </tr>
 
                         <tr>
@@ -156,11 +156,11 @@ require_once 'Include/Header.php';
         <td>
         <?php
             if ($iFundRaiserID > 0) {
-                echo '<input id=addItem type=button class="btn btn-default" value="' . gettext('Add Donated Item') . "\" name=AddDonatedItem onclick=\"javascript:document.location='DonatedItemEditor.php?CurrentFundraiser=$iFundRaiserID&linkBack=FundRaiserEditor.php?FundRaiserID=$iFundRaiserID&CurrentFundraiser=$iFundRaiserID';\">\n";
-                echo '<input type=button class="btn btn-default" value="' . gettext('Generate Catalog') . "\" name=GenerateCatalog onclick=\"javascript:document.location='Reports/FRCatalog.php?CurrentFundraiser=$iFundRaiserID';\">\n";
-                echo '<input type=button class="btn btn-default" value="' . gettext('Generate Bid Sheets') . "\" name=GenerateBidSheets onclick=\"javascript:document.location='Reports/FRBidSheets.php?CurrentFundraiser=$iFundRaiserID';\">\n";
-                echo '<input type=button class="btn btn-default" value="' . gettext('Generate Certificates') . "\" name=GenerateCertificates onclick=\"javascript:document.location='Reports/FRCertificates.php?CurrentFundraiser=$iFundRaiserID';\">\n";
-                echo '<input type=button class="btn btn-default" value="' . gettext('Batch Winner Entry') . "\" name=BatchWinnerEntry onclick=\"javascript:document.location='BatchWinnerEntry.php?CurrentFundraiser=$iFundRaiserID&linkBack=FundRaiserEditor.php?FundRaiserID=$iFundRaiserID&CurrentFundraiser=$iFundRaiserID';\">\n";
+                echo '<input id=addItem type=button class="btn btn-secondary" value="' . gettext('Add Donated Item') . "\" name=AddDonatedItem onclick=\"javascript:document.location='DonatedItemEditor.php?CurrentFundraiser=$iFundRaiserID&linkBack=FundRaiserEditor.php?FundRaiserID=$iFundRaiserID&CurrentFundraiser=$iFundRaiserID';\">\n";
+                echo '<input type=button class="btn btn-secondary" value="' . gettext('Generate Catalog') . "\" name=GenerateCatalog onclick=\"javascript:document.location='Reports/FRCatalog.php?CurrentFundraiser=$iFundRaiserID';\">\n";
+                echo '<input type=button class="btn btn-secondary" value="' . gettext('Generate Bid Sheets') . "\" name=GenerateBidSheets onclick=\"javascript:document.location='Reports/FRBidSheets.php?CurrentFundraiser=$iFundRaiserID';\">\n";
+                echo '<input type=button class="btn btn-secondary" value="' . gettext('Generate Certificates') . "\" name=GenerateCertificates onclick=\"javascript:document.location='Reports/FRCertificates.php?CurrentFundraiser=$iFundRaiserID';\">\n";
+                echo '<input type=button class="btn btn-secondary" value="' . gettext('Batch Winner Entry') . "\" name=BatchWinnerEntry onclick=\"javascript:document.location='BatchWinnerEntry.php?CurrentFundraiser=$iFundRaiserID&linkBack=FundRaiserEditor.php?FundRaiserID=$iFundRaiserID&CurrentFundraiser=$iFundRaiserID';\">\n";
             }
         ?></td>
     </tr>
@@ -170,21 +170,22 @@ require_once 'Include/Header.php';
     <b><?= gettext('Donated items for this fundraiser') ?>:</b>
     <br>
     <div class="table-responsive">
-        <table class="table" cellpadding="5" cellspacing="0" width="100%">
-
-            <tr class="TableHeader">
-                <td><?= gettext('Item') ?></td>
-                <td><?= gettext('Multiple') ?></td>
-                <td><?= gettext('Donor') ?></td>
-                <td><?= gettext('Buyer') ?></td>
-                <td><?= gettext('Title') ?></td>
-                <td><?= gettext('Sale Price') ?></td>
-                <td><?= gettext('Estimated value') ?></td>
-                <td><?= gettext('Material Value') ?></td>
-                <td><?= gettext('Minimum Price') ?></td>
-                <td><?= gettext('Delete') ?></td>
+        <table class="table w-100">
+            <thead>
+            <tr>
+                <th><?= gettext('Item') ?></th>
+                <th><?= gettext('Multiple') ?></th>
+                <th><?= gettext('Donor') ?></th>
+                <th><?= gettext('Buyer') ?></th>
+                <th><?= gettext('Title') ?></th>
+                <th><?= gettext('Sale Price') ?></th>
+                <th><?= gettext('Estimated value') ?></th>
+                <th><?= gettext('Material Value') ?></th>
+                <th><?= gettext('Minimum Price') ?></th>
+                <th><?= gettext('Delete') ?></th>
             </tr>
-
+            </thead>
+            <tbody>
             <?php
             $tog = 0;
 
@@ -240,7 +241,7 @@ require_once 'Include/Header.php';
                 } // while
             } // if
             ?>
-
+            </tbody>
         </table>
     </div>
 </div>

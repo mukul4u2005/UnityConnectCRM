@@ -1,4 +1,4 @@
-context(
+describe(
     "CSVImport",
     {
         retries: {
@@ -7,8 +7,12 @@ context(
         },
     },
     () => {
+        beforeEach(() => {
+            cy.setupAdminSession();
+        });
+
         it("Verify CSV Import", () => {
-            cy.loginAdmin("CSVImport.php");
+            cy.visit("CSVImport.php");
             cy.get("#CSVFileChooser").selectFile(
                 "cypress/data/test_import.csv",
             );

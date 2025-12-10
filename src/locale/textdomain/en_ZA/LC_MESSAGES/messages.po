@@ -4,10 +4,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
-"Project-Id-Version: UnityConnect CRM\n"
+"Project-Id-Version: ChurchCRM\n"
 "Language: en-za\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "State"
 msgstr "Province"
@@ -29,10 +30,6 @@ msgid "Mobile Phone"
 msgstr "Cellphone"
 
 #: 
-msgid "Select the event to which you would like to add your cart"
-msgstr "Select the event which you would like to add to your cart"
-
-#: 
 msgid "(Use the textbox for countries other than US and Canada)"
 msgstr "(Use the textbox for countries other than South Africa)"
 
@@ -41,7 +38,8 @@ msgid "Select the group to which you would like to add your cart"
 msgstr "Select the group which you would like to add to your cart"
 
 #: 
-msgid "Load Authorized Transactions"
+#, fuzzy
+msgid "Load Authorized"
 msgstr "Load Authorised Transactions"
 
 #: 
@@ -55,10 +53,6 @@ msgstr "Personal Cellphone"
 #: 
 msgid "Personal Work/Other Email"
 msgstr "Personal Work / Other Email"
-
-#: 
-msgid "Event Nonattendees"
-msgstr "Event Non-attendees"
 
 #: 
 msgid "Warning:  By deleting this field, you will irrevokably lose all family data assigned for this field!"
@@ -149,8 +143,8 @@ msgid "Cell Phone"
 msgstr "Cellphone"
 
 #: 
-msgid "This option requires at least version 3.22 of MySQL!  Hit browser back button to return to UnityConnect CRM."
-msgstr "This option requires at least MySQL version 3.22!  Hit browser back button to return to UnityConnect CRM."
+msgid "This option requires at least version 3.22 of MySQL!  Hit browser back button to return to ChurchCRM."
+msgstr "This option requires at least MySQL version 3.22!  Hit browser back button to return to ChurchCRM."
 
 #: 
 msgid "Total of all purchases: $"
@@ -209,29 +203,34 @@ msgid "Set true to enable use of scanned checks"
 msgstr "Set true to enable use of scanned cheques"
 
 #: 
-msgid "Temple/TrustState"
-msgstr "Temple/TrustProvince"
+msgid "Temple State"
+msgstr "Temple Province"
 
 #: 
-msgid "Temple/TrustZip"
-msgstr "Temple/TrustPostcode"
+msgid "Temple Zip"
+msgstr "Temple Postcode"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Zip Code"
 msgstr "Postcode"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "WorkEmail"
 msgstr "Work Email"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Enter any part of the following: Name, City, State, Zip, Home Phone, Email, or Work Email."
 msgstr "Enter any part of the following: Name, City, Province, Postcode, Home Phone, Email, or Work Email."
 
+#. Context: query_qry
 #: 
 msgid "CustomSearch"
 msgstr "Custom Search"
 
+#. Context: query_qry
 #: 
 msgid "Search by any part of Name, City, State, Zip, Home Phone, Email, or Work Email."
 msgstr "Search by any part of Name, City, Province, Postcode, Home Phone, Email, or Work Email."
@@ -253,8 +252,8 @@ msgid "Make user-entered zip/postcodes UPPERCASE when saving to the database."
 msgstr "Make user-entered zip/postcodes in UPPER-CASE when saving to the database."
 
 #: 
-msgid "Temple/TrustChecking Account Number"
-msgstr "Temple/TrustChequeing Account Number"
+msgid "Temple Checking Account Number"
+msgstr "Temple Chequeing Account Number"
 
 #: 
 msgid "Increase the php upload limits to allow for mobile photo upload, and backup restore."
@@ -288,18 +287,17 @@ msgstr "Set the encryption system to use - SSL (deprecated) or TLS"
 msgid "User must have MenuOptions permission"
 msgstr "User must have Menu Options permission"
 
-#. Shouldn't that be: ID
 #: 
 msgid "Invalid request: Missing calendar id"
 msgstr "Invalid request: Missing calendar ID"
 
-#. Shouldn't that be: ID
 #: 
 msgid "Not Found: Unknown calendar id"
 msgstr "Not Found: Unknown calendar ID"
 
 #: 
-msgid "no found or user without an email"
+#, fuzzy
+msgid "not found or user without an email"
 msgstr "not found or user without an email"
 
 #: 
@@ -326,7 +324,6 @@ msgstr "Remote Backup Endpoint.  If WebDAV, this must be URL encoded. "
 msgid "Missing event id"
 msgstr "Missing event ID"
 
-#. Shouldn't that be: ID
 #: 
 msgid "Unexpected Person Id"
 msgstr "Unexpected Person ID"

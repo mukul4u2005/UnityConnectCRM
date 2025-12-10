@@ -61,7 +61,7 @@ $rsConfigs = RunQuery($sSQL);
     <div class="card-header with-border">
 
         <form method=post action=SettingsUser.php'>
-            <div class="callout callout-info"> <?= gettext('Set Permission True to give new users the ability to change their current value.<BR>'); ?></div>
+            <div class="alert alert-info"> <?= gettext('Set Permission True to give new users the ability to change their current value.<BR>'); ?></div>
             <div class="table-responsive">
                 <table class='table table-responsive'>
                     <tr>
@@ -105,11 +105,11 @@ $rsConfigs = RunQuery($sSQL);
                         if ($ucfg_type == 'text') {
                             echo "<td class=\"TextColumnWithBottomBorder\">
             <input type=text size=\"30\" maxlength=\"255\" name=\"new_value[$ucfg_id]\"
-            value=\"" . htmlspecialchars($ucfg_value, ENT_QUOTES) . '"></td>';
+            value=\"" . InputUtils::escapeHTML($ucfg_value) . "\"></td>";
                         } elseif ($ucfg_type == 'textarea') {
                             echo "<td class=\"TextColumnWithBottomBorder\">
             <textarea rows=\"4\" cols=\"30\" name=\"new_value[$ucfg_id]\">"
-                                . htmlspecialchars($ucfg_value, ENT_QUOTES) . '</textarea></td>';
+                                . InputUtils::escapeHTML($ucfg_value) . '</textarea></td>';
                         } elseif ($ucfg_type == 'number' || $ucfg_type == 'date') {
                             echo "<td class=\"TextColumnWithBottomBorder\">
             <input type=text size=\"15\" maxlength=\"15\" name=\"new_value[$ucfg_id]\"

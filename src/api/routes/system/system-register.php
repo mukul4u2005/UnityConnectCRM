@@ -3,7 +3,8 @@
 use ChurchCRM\dto\SystemConfig;
 use ChurchCRM\Service\SystemService;
 use ChurchCRM\Slim\Middleware\Request\Auth\AdminRoleAuthMiddleware;
-use ChurchCRM\Slim\Request\SlimUtils;
+use ChurchCRM\Slim\SlimUtils;
+use ChurchCRM\Utils\VersionUtils;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Routing\RouteCollectorProxy;
@@ -21,10 +22,10 @@ $app->group('/register', function (RouteCollectorProxy $group): void {
         $registrationData->sCountry = SystemConfig::getValue('sTempleCountry');
         $registrationData->sEmail = SystemConfig::getValue('sTempleEmail');
         $registrationData->ChurchCRMURL = $input['ChurchCRMURL'];
-        $registrationData->Version = SystemService::getInstalledVersion();
+        $registrationData->Version = VersionUtils::getInstalledVersion();
 
         $registrationData->sComments = $input['emailmessage'];
-        $curlService = curl_init('https://demo.unityconnect.us/register.php');
+        $curlService = curl_init('https://demo.churchcrm.io/register.php');
 
         curl_setopt($curlService, CURLOPT_POST, true);
         curl_setopt($curlService, CURLOPT_POSTFIELDS, json_encode($registrationData, JSON_THROW_ON_ERROR));

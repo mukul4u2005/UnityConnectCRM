@@ -4,7 +4,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
-"Project-Id-Version: UnityConnect CRM\n"
+"Project-Id-Version: ChurchCRM\n"
 "Language: pl\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
@@ -32,10 +32,12 @@ msgstr "Nie przypisany"
 msgid "None"
 msgstr "Żaden"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "City"
 msgstr "Miasto"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "State"
 msgstr "Województwo"
@@ -48,6 +50,7 @@ msgstr "Kraj"
 msgid "Phone"
 msgstr "Tel."
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Email"
 msgstr "Email"
@@ -59,42 +62,6 @@ msgstr "Numer Karty Płatniczej"
 #: 
 msgid "Backup Database"
 msgstr "Archiwizuj Bazę Danych"
-
-#: 
-msgid "This tool will assist you in manually backing up the UnityConnect CRM database."
-msgstr "To narzędzie pomoże wykonać ręczną kopię bazy danych UnityConnect CRM."
-
-#. "regular backup procedule" - I guess that this should be 'procedure'
-#: 
-#, fuzzy
-msgid "You should make a manual backup at least once a week unless you already have a regular backup procedure for your systems."
-msgstr "Kopia zapasowa powinna być robiona przynajmniej raz w tygodniu, chyba że system robi to za Ciebie."
-
-#: 
-msgid "After you download the backup file, you should make two copies. Put one of them in a fire-proof safe on-site and the other in a safe location off-site."
-msgstr "Po zapisaniu kopii zapasowej, powinny zostać zrobione dwa duplikaty. Jeden zachowany lokalnie oraz jeden przechowywany w bezpiecznej lokalizacji."
-
-#: 
-msgid "If you are concerned about confidentiality of data stored in the UnityConnect CRM database, you should encrypt the backup data if it will be stored somewhere potentially accessible to others"
-msgstr "W trosce o poufność danych zawartych w UnityConnect CRM, kopia bezpieczeństwa powinna być zabezpieczona hasłem (zwłaszcza jeżeli ma być przechowywana w miejscu dostępnym dla osób postronnych)."
-
-#: 
-#, fuzzy
-msgid "Select archive type"
-msgstr "Wybierz rodzaj archiwum"
-
-#: 
-msgid "Encrypt backup file with a password?"
-msgstr "Zabezpieczyć kopię zapasową hasłem?"
-
-#: 
-#, fuzzy
-msgid "Re-type Password"
-msgstr "Ponów hasło"
-
-#: 
-msgid "Generate and Ship Backup to External Storage"
-msgstr "Wygeneruj i prześlij kopię bezpieczeństwa na zewnętrzny nośnik."
 
 #: 
 msgid "Batch Winner Entry"
@@ -169,6 +136,7 @@ msgstr "Data urodzenia / Data ślubu"
 msgid "Age / Years Married"
 msgstr "Wiek / Lat małżeństwa"
 
+#. Context: queryparameters_qrp
 #: 
 #, fuzzy
 msgid "Family Role"
@@ -216,10 +184,12 @@ msgstr "Użyj klawisza Ctrl aby zaznaczyć kilka"
 msgid "Don't Filter"
 msgstr "Nie filtruj"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Male"
 msgstr "Mężczyzna"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Female"
 msgstr "Kobieta"
@@ -291,6 +261,7 @@ msgstr "Tytuł"
 msgid "Suffix"
 msgstr "Suffix"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Gender"
 msgstr "Płeć"
@@ -299,6 +270,7 @@ msgstr "Płeć"
 msgid "Donation Envelope"
 msgstr "Numer Koperty"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Home Phone"
 msgstr "Tel. Domowy"
@@ -351,6 +323,7 @@ msgstr "Podpowiedź: spacje, myślniki, etc. albo ich brak nie ma znaczenia"
 msgid "Default country if none specified otherwise"
 msgstr "Domyślny kraj jeżeli nie wybrano innego"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Classification"
 msgstr "Kategoria"
@@ -380,11 +353,6 @@ msgid "Add Cart to Event"
 msgstr "Dodaj Koszyk do Wydarzenia"
 
 #: 
-#, fuzzy
-msgid "Select the event to which you would like to add your cart"
-msgstr "Wybierz Wydarzenie do którego chciałbyś dodać Koszyk"
-
-#: 
 msgid "OR"
 msgstr "LUB"
 
@@ -404,6 +372,7 @@ msgstr "Nie podano nazwy Rodziny!"
 msgid "Add Cart to Family"
 msgstr "Dodaj Koszyk do Rodziny"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Name"
 msgstr "Nazwa"
@@ -492,10 +461,6 @@ msgid "Empty Cart to Family"
 msgstr "Opróżnij Koszyk do Rodziny"
 
 #: 
-msgid "Empty Cart to Event"
-msgstr "Opróżnij Koszyk do Wydarzenia"
-
-#: 
 msgid "Map Cart"
 msgstr "Pokaż Koszyk na mapie"
 
@@ -548,21 +513,8 @@ msgid "Event Checkin"
 msgstr "Zapis do wydarzenia"
 
 #: 
-#, fuzzy
-msgid "Select the event to which you would like to check people in for"
-msgstr "Wybierz Wydarzenie do którego chciałbyś dodać Osoby"
-
-#: 
 msgid "Select Event"
 msgstr "Wybierz Wydarzenie"
-
-#: 
-msgid "Add Visitor"
-msgstr "Dodaj Gościa"
-
-#: 
-msgid "CheckIn"
-msgstr "Wpisz"
 
 #: 
 msgid "CheckOut"
@@ -588,10 +540,7 @@ msgstr "Wypisany przez"
 msgid "Action"
 msgstr "Akcja"
 
-#: 
-msgid "No Attendees Assigned to Event"
-msgstr "Nie przypisano żadnych uczestników dla tego Wydarzenia"
-
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Member"
 msgstr "Członek"
@@ -621,21 +570,9 @@ msgid "Deposit Slip Number: "
 msgstr "Deposit Slip Number: "
 
 #: 
-msgid "Close deposit slip (remember to press Save)"
-msgstr "Zamknij Odcinek Wpłaty (pamiętaj aby nacisnąć &quot;Zapisz&quot;)"
-
-#: 
-msgid "Deposit Slip Report"
-msgstr "Raport Odcinków Wpłaty"
-
-#: 
 #, fuzzy
-msgid "Important note: failed transactions will be deleted permanently when the deposit slip is closed."
+msgid "Important: Failed transactions will be deleted permanently when the deposit slip is closed."
 msgstr "Ważna uwaga: nie udane transakcje będą całkowicie usuniętę gdy Odcinek Wpłaty zostanie zamknięty."
-
-#: 
-msgid "Payments on this deposit slip:"
-msgstr "Płatności na tym Odcinku Wpłaty:"
 
 #: 
 msgid "Import eGive"
@@ -646,7 +583,8 @@ msgid "Add Payment"
 msgstr "Dodaj Płatność"
 
 #: 
-msgid "Load Authorized Transactions"
+#, fuzzy
+msgid "Load Authorized"
 msgstr "Załaduj Zaakceptowaną Transakcję"
 
 #: 
@@ -751,7 +689,7 @@ msgid "Use Title Page"
 msgstr "Użyj Tytuł"
 
 #: 
-msgid "Temple/TrustName"
+msgid "Temple Name"
 msgstr "Nazwa Kościoła"
 
 #: 
@@ -843,7 +781,7 @@ msgid "Add New Fund"
 msgstr "Dodaj Nowy Cel (Fund)"
 
 #: 
-msgid " Temple Event Editor"
+msgid "Temple Event Editor"
 msgstr "Edytuj Wydarzenia"
 
 #: 
@@ -883,6 +821,7 @@ msgstr "Rodzina"
 msgid "Type"
 msgstr "Typ"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Fiscal Year"
 msgstr "Rok Podatkowy"
@@ -899,6 +838,7 @@ msgstr "Cel"
 msgid "Bank"
 msgstr "Bank"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Month"
 msgstr "Miesiąc"
@@ -912,44 +852,8 @@ msgid "Edit"
 msgstr "Edytuj"
 
 #: 
-msgid "Event Attendees"
-msgstr "Uczestnicy"
-
-#: 
-msgid "Event Nonattendees"
-msgstr "Nieobecni-Nie biorący udziału"
-
-#: 
-msgid "Event Guests"
-msgstr "Goście"
-
-#: 
-msgid "There "
-msgstr "Tam"
-
-#: 
 msgid "Event Title"
 msgstr "Tytuł Wydarzenia"
-
-#: 
-msgid "Event Date"
-msgstr "Data Wydarzenia"
-
-#: 
-msgid "Attending Members"
-msgstr "Członkowie biorący udział"
-
-#: 
-msgid "Non-Attending Members"
-msgstr "Członkowie nie biorący udziału"
-
-#: 
-msgid "Guests"
-msgstr "Goście"
-
-#: 
-msgid "There are no events in this category"
-msgstr "Nie ma Wydarzeń w tej Kategorii"
 
 #: 
 msgid "Create Event"
@@ -960,20 +864,8 @@ msgid "Create a new Event"
 msgstr "Utwórz nowe wydarzenie"
 
 #: 
-msgid "Editing Event ID: "
-msgstr "Edytuj ID Wydarzenia:"
-
-#: 
 msgid " errors. Please see below"
 msgstr "Błędy. Popatrz poniżej"
-
-#: 
-msgid "Items with a "
-msgstr "Pola z "
-
-#: 
-msgid " are required"
-msgstr "są wymagane"
 
 #: 
 msgid "Select your event type"
@@ -984,21 +876,8 @@ msgid "You must pick an event type."
 msgstr "Musisz wybrać typ wydarzenia"
 
 #: 
-msgid "Event Desc"
-msgstr "Opis Wydarzenia"
-
-#: 
 msgid "No Attendance counts recorded"
 msgstr "Nie odnotowano Uczestników"
-
-#: 
-msgid "Attendance Notes: "
-msgstr "Notatki od Uczestników:"
-
-#: 
-#, fuzzy
-msgid "Event Sermon"
-msgstr "Kazanie Okolicznościowe"
 
 #: 
 #, fuzzy
@@ -1008,10 +887,6 @@ msgstr "Status Wydarzenia"
 #: 
 msgid "Return to Events"
 msgstr "Wróć do Wydarzeń"
-
-#: 
-msgid "EVENT TYPE NAME"
-msgstr "RODZAJ WYDARZENIA"
 
 #: 
 msgid "Sundays"
@@ -1040,14 +915,6 @@ msgstr "Piątki"
 #: 
 msgid "Saturdays"
 msgstr "Soboty"
-
-#: 
-msgid "ATTENDANCE COUNTS"
-msgstr "LICZBA UCZESTNIKÓW"
-
-#: 
-msgid "Optional"
-msgstr "Opcjonalne"
 
 #: 
 msgid "Add Event Type"
@@ -1323,10 +1190,6 @@ msgid "Financial Reports"
 msgstr "Raporty Finansowe"
 
 #: 
-msgid "No records were returned from the previous report."
-msgstr "Pojawiły się nowe wpisy od czasu ostatniego Raportu."
-
-#: 
 msgid "Report Type:"
 msgstr "Typ Raportu:"
 
@@ -1478,7 +1341,7 @@ msgid "Graphic"
 msgstr "Grafika"
 
 #: 
-msgid "Temple/TrustAddress"
+msgid "Temple Address"
 msgstr "Adres Kościoła"
 
 #: 
@@ -1568,20 +1431,9 @@ msgid "Date End"
 msgstr "Data Końcowa"
 
 #: 
-msgid "Clear Filters"
+#, fuzzy
+msgid "Clear Filter"
 msgstr "Usuń Sortowanie"
-
-#: 
-msgid "Previous Page"
-msgstr "Poprzednia Strona"
-
-#: 
-msgid "Next Page"
-msgstr "Następna Strona"
-
-#: 
-msgid "Display:"
-msgstr "Wyświetl:"
 
 #: 
 msgid "Number"
@@ -1703,10 +1555,6 @@ msgstr "Porównaj z Koszykiem"
 #: 
 msgid "Remove from Cart"
 msgstr "Usuń z Koszyka"
-
-#: 
-msgid "Text for Event ID: "
-msgstr "Tekst dla Wydarzenia (ID):"
 
 #: 
 msgid "Group Editor"
@@ -1888,10 +1736,6 @@ msgid "Group View"
 msgstr "Widok Grupy"
 
 #: 
-msgid "Group Functions"
-msgstr "Funkcje Grup"
-
-#: 
 msgid "Edit this Group"
 msgstr "Edytuj tę Grupę"
 
@@ -1957,8 +1801,9 @@ msgid "Assigned Properties"
 msgstr "Przypisane właściwości"
 
 #: 
-msgid "Group Members:"
-msgstr "Członkowie Grupy:"
+#, fuzzy
+msgid "Group Members"
+msgstr "Członkowie Grupy"
 
 #: 
 msgid "Remove Selected Members from group"
@@ -1993,28 +1838,12 @@ msgid "Confirm data labels"
 msgstr "Potwierdź data labels"
 
 #: 
-msgid "Listing Events of Type = "
-msgstr "Lista Wydarzeń w Kategorii = "
-
-#: 
 msgid "Listing All Temple Events"
 msgstr "Lista Wszystkich Wydarzeń Kościelnych"
 
 #: 
-msgid "Select Event Types To Display"
-msgstr "Zaznacz Typy Wydarzeń do Pokazania"
-
-#: 
-msgid "Display Events in Year"
-msgstr "Pokaż Wydarzenia w Roku"
-
-#: 
 msgid "Start Date/Time"
 msgstr "Data/Czas Rozpoczęcia"
-
-#: 
-msgid "No Attendance Recorded"
-msgstr "Nie odnotowane obecnych"
 
 #: 
 #, fuzzy
@@ -2078,7 +1907,7 @@ msgid "Assign starting at #"
 msgstr "Przypisz Numer zaczynając od #"
 
 #: 
-msgid "Unable to display map due to missing Temple/TrustLatitude or Longitude. Please update the temple Address in the settings menu."
+msgid "Unable to display map due to missing Temple Latitude or Longitude. Please update the temple Address in the settings menu."
 msgstr "Nie można pokazać mapy, bo brakuje informacji o lokalizacji Kościoła. Proszę wypełnić pole adresu i położenia w zakładce Ustawienia w Menu."
 
 #: 
@@ -2667,6 +2496,7 @@ msgstr "Lista Właściwości"
 msgid "Add a New"
 msgstr "Dodaj Nową"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Property"
 msgstr "Ustawienia"
@@ -2712,6 +2542,7 @@ msgstr "Lista Typów Właściwości"
 msgid "Add a New Property Type"
 msgstr "Dodaj Nowy Typ Właściwości"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Class"
 msgstr "Klasa"
@@ -2744,10 +2575,6 @@ msgstr "Nie, zachowaj Przypisanie tej Właściwości"
 #: 
 msgid "Query Listing"
 msgstr "Lista Wyszukiwania"
-
-#: 
-msgid "Run a Free-Text Query"
-msgstr "Uruchom Wyszukiwaine Dowolnym Tekstem"
 
 #: 
 msgid "Free-Text Query"
@@ -2890,10 +2717,6 @@ msgstr "Usuń TYLKO Wpis Rodziny"
 #: 
 msgid "Delete Family Record AND Family Members"
 msgstr "Usuń Wpis Rodziny ORAZ Członków Rodziny"
-
-#: 
-msgid "Filter and Cart"
-msgstr "Dodaj Filtr i przenieś do Koszyka"
 
 #: 
 msgid "Listing"
@@ -3251,8 +3074,8 @@ msgid "Custom Drop-Down List"
 msgstr "Dodatkowa Lista Wyboru"
 
 #: 
-msgid "Thank you for registering your UnityConnect CRM installation."
-msgstr "Dziękujemy za zarejestrowanie tej instalacji UnityConnect CRM."
+msgid "Thank you for registering your UnityConnectCRM installation."
+msgstr "Dziękujemy za zarejestrowanie tej instalacji ChurchCRM."
 
 #: 
 msgid "PDFs successfully emailed "
@@ -3302,14 +3125,6 @@ msgstr "wpis/ów dodanych do Koszyka"
 #: 
 msgid "Select Fiscal Year"
 msgstr "Wybierz Rok Podatkowy"
-
-#: 
-msgid "pm"
-msgstr "pm"
-
-#: 
-msgid "am"
-msgstr "am"
 
 #: 
 msgid "Invalid Editor ID!"
@@ -3460,8 +3275,8 @@ msgid "Member/Friend"
 msgstr "Członek/Przyjaciel"
 
 #: 
-msgid "This option requires at least version 3.22 of MySQL!  Hit browser back button to return to UnityConnect CRM."
-msgstr "Ta opcja wymaga MySQL przynajmniej w wersji 3.22! Kliknij 'Wstecz' w przeglądarce aby wrócić do UnityConnect CRM"
+msgid "This option requires at least version 3.22 of MySQL!  Hit browser back button to return to ChurchCRM."
+msgstr "Ta opcja wymaga MySQL przynajmniej w wersji 3.22! Kliknij 'Wstecz' w przeglądarce aby wrócić do UnityConnectCRM"
 
 #: 
 msgid "Work"
@@ -3690,10 +3505,6 @@ msgid "Registration Complete"
 msgstr "Rejestracja Zakończona"
 
 #: 
-msgid "How many people are in your family"
-msgstr "Ile osób jest w twojej rodzinie?"
-
-#: 
 msgid "Add All Classes"
 msgstr "Dodaj wszystkie klasy"
 
@@ -3751,8 +3562,8 @@ msgid "Set true to enable family self registration."
 msgstr "Ustaw True aby włączyć samodzielną rejestrację rodzin."
 
 #: 
-msgid "UnityConnect CRM has been registered.  The UnityConnect CRM team uses registration information to track usage.  This information is kept confidential and never released or sold.  If this field is true the registration option in the admin menu changes to update registration."
-msgstr "Zarejestrowano UnityConnect CRM. Team UnityConnect CRM używa tych danych, aby śledzić użycie. Dane te są bezpiecznie przechowywane, nie są udostępniane lub sprzedawane. Jeśli to pole jest ustawione True, opcja rejestracji w menu ustawień zmieni się na Uaktualnij Rejestrację."
+msgid "ChurchCRM has been registered.  The UnityConnectCRM team uses registration information to track usage.  This information is kept confidential and never released or sold.  If this field is true the registration option in the admin menu changes to update registration."
+msgstr "Zarejestrowano ChurchCRM. Team UnityConnectCRM używa tych danych, aby śledzić użycie. Dane te są bezpiecznie przechowywane, nie są udostępniane lub sprzedawane. Jeśli to pole jest ustawione True, opcja rejestracji w menu ustawień zmieni się na Uaktualnij Rejestrację."
 
 #: 
 msgid "List Groups"
@@ -3763,7 +3574,7 @@ msgid "List Temple Events"
 msgstr "Lista wydarzeń w kościele"
 
 #: 
-msgid "Add  Temple Event"
+msgid "Add Temple Event"
 msgstr "Dodaj wydarzenie kościoła"
 
 #: 
@@ -3774,22 +3585,27 @@ msgstr "Typy wydarzeń"
 msgid "People Properties"
 msgstr "Osoby - właściwości"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Regular Attender"
 msgstr "Sympatycy"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Member, Regular Attender, etc."
 msgstr "Członkowie, sympatycy itp."
 
+#. Context: query_qry
 #: 
 msgid "People with birthdays in a particular month"
 msgstr "Osoby urodzone w danym miesiącu"
 
+#. Context: query_qry
 #: 
 msgid "People who are members"
 msgstr "Osoby będące członkami"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "Allow user to add new event"
 msgstr "Zezwól użytkownikom na tworzenie wydarzeń"
@@ -4052,8 +3868,8 @@ msgid "User must have Delete Records permission"
 msgstr "Użytkownik musi mieć dostęp do Usuwania Wpisów"
 
 #: 
-msgid "UnityConnect CRM Central Notifications URL"
-msgstr "Adres URL Powiadomień UnityConnect CRM"
+msgid "ChurchCRM Central Notifications URL"
+msgstr "Adres URL Powiadomień UnityConnectCRM"
 
 #: 
 msgid "invalid event type id"
@@ -4120,10 +3936,6 @@ msgid "Menu Name"
 msgstr "Nazwa menu"
 
 #: 
-msgid "Max 20 char"
-msgstr "Maks 20 znaków"
-
-#: 
 msgid "Link Address"
 msgstr "Adres skórtu"
 
@@ -4140,20 +3952,8 @@ msgid "is disabled"
 msgstr "wyłączone"
 
 #: 
-msgid "System Information"
-msgstr "Informacje o Systemie"
-
-#: 
 msgid "Software Version"
 msgstr "Wersja Oprogramowania"
-
-#: 
-msgid "Valid Mail Server Settings"
-msgstr "Poprawne Ustawienia Serwera Poczty"
-
-#: 
-msgid "Database"
-msgstr "Baza Danych"
 
 #: 
 msgid "Database Version"
@@ -4195,6 +3995,7 @@ msgstr "Uwzględnij kontakt i wiek w powiadomieniu email dla nowego użytkownika
 msgid "Include family custom properties in global search."
 msgstr "Uwzględnij dodatkowe własności rodziny w wyszukiwaniu."
 
+#. Context: countries
 #: 
 msgid "Latvia (Latvija)"
 msgstr "Łotwa"
@@ -4219,10 +4020,6 @@ msgstr "Wpisy"
 #, fuzzy
 msgid "Emptied into Event"
 msgstr "Przekształcono na Wydarzenia"
-
-#: 
-msgid "integrityCheck.json file missing"
-msgstr "brak pliku integrityCheck.json"
 
 #: 
 msgid "Passed"
@@ -4253,8 +4050,8 @@ msgid "Warning: Signature mismatch"
 msgstr "Uwaga: Błąd podpisu"
 
 #: 
-msgid "Some UnityConnect CRM system files may have been modified since the last installation."
-msgstr "Niektóre pliki UnityConnect CRM mogły ulec zmianie od ostatniej instalacji."
+msgid "Some UnityConnectCRM system files may have been modified since the last installation."
+msgstr "Niektóre pliki UnityConnectCRM mogły ulec zmianie od ostatniej instalacji."
 
 #: 
 msgid "This upgrade will completely destroy any customizations made to the following files by reverting the files to the official version."
@@ -4269,10 +4066,6 @@ msgid "Integrity Check Details:"
 msgstr "Informacje Spójności Systemu:"
 
 #: 
-msgid "I Understand"
-msgstr "Zgadzam się"
-
-#: 
 msgid "Unsupported Deposit Types Detected"
 msgstr "Wykryto Nieobsługiwany Typ Wpłaty"
 
@@ -4280,13 +4073,10 @@ msgstr "Wykryto Nieobsługiwany Typ Wpłaty"
 msgid "Support for eGive, Credit Card, and Bank Draft payments has been deprecated.  Existing non-bank reports may no longer be accessible in future versions."
 msgstr "Wsparcie dla eGive, kart płatniczych i wpłat bankowych zostało zakończone. Stare raporty mogą przestać działać w kolejnych wersjach."
 
+#. Context: locales
 #: 
 msgid "Estonian"
 msgstr "Estoński"
-
-#: 
-msgid "Error decoding integrity check result file"
-msgstr "Błąd podczas odczytu pliku spójności systemu"
 
 #: 
 msgid "Error decoding signature definition file"
@@ -4299,10 +4089,6 @@ msgstr "Wykonaj Kopię Bezpieczeństwa"
 #: 
 msgid "Remote Backup Endpoint.  If WebDAV, this must be url encoded. "
 msgstr "Zdalny Punkt Kopii Bezpieczeństwa. Jeżeli jest to WebDAV, URL musi zaeiwrać wszystkie informacje. "
-
-#: 
-msgid "Include initials image files, remote image files (gravatar), and thumbnails in backup.  These files are generally able to be reproduced after a restore and add very little value to the backup archive at a large expense of execution time and storage"
-msgstr "Załącz oryginalne oraz zewnętrzne obrazki i miniaturki do archiwum. Pliki te można łatwo odtworzyć, mają niewielką wartość dla kopii bezpieczeństwa lecz angażują sporo środków podczas tworzenia archiwum."
 
 #: 
 msgid "Password (if any)"
@@ -4367,7 +4153,8 @@ msgstr "Uzupełnij brakujące dane osób informacjami z powiązanej rodziny?\n"
 "Ta opcja używa niektórych informacji zapisanych dla rodziny gdy osoba nie ma wpisanych wszystkich danych. "
 
 #: 
-msgid "Press CTRL + C to copy all group members\\' phone numbers"
+#, fuzzy
+msgid "Press CTRL + C to copy all group members' phone numbers"
 msgstr "CTRL + C kopuje numery numery telefonów wszystkich członków grupy"
 
 #: 
@@ -4413,10 +4200,6 @@ msgstr "Sprawdź dziennik zdarzeń aby zobaczyć więcej"
 #: 
 msgid "Verification URL"
 msgstr "Adres URL potwierdzenia"
-
-#: 
-msgid "Reset System"
-msgstr "Zresetuj System"
 
 #: 
 msgid "Unexpected Person Id"
@@ -4467,10 +4250,6 @@ msgid "Remove Results from Cart"
 msgstr "Usuń Wyniki z Koszyka"
 
 #: 
-msgid "Warning: Pre-Upgrade Tasks Detected"
-msgstr "Uwaga: Wykryto Problemy Przed Aktualizacą"
-
-#: 
 #, fuzzy
 msgid "Some conditions have been identified which may prevent a successful upgrade"
 msgstr "Znaleziono problemy mogące przeszkodzić w aktualizacji"
@@ -4484,18 +4263,6 @@ msgid "Database Reset Functions"
 msgstr "Funkcje Resetowania Bazy Danych"
 
 #: 
-msgid "Reset Members"
-msgstr "Zresetuj Członków"
-
-#: 
-msgid "This will remove all the member data, people, and families and can't be undone."
-msgstr "Spowoduje usunięcie danych członków, osób i rodzin; Zmiany są nieodwracalne."
-
-#: 
-msgid "Reset Families/People"
-msgstr "Zresetuj Rodziny/Osoby"
-
-#: 
 msgid "Reset Database"
 msgstr "Zresetuj Bazę Danych"
 
@@ -4503,14 +4270,7 @@ msgstr "Zresetuj Bazę Danych"
 msgid "This will reset the system data and will restart the system as a new install."
 msgstr "Zresetujesz dane systemu i uruchomisz system jako nową instalację."
 
-#: 
-msgid "Clear Filter"
-msgstr "Wyczyść Filtr"
-
-#: 
-msgid "Add Person"
-msgstr "Dodaj Osobę"
-
+#. Context: locales
 #: 
 msgid "Portuguese - Portugal"
 msgstr "Portugalski"
@@ -4528,8 +4288,8 @@ msgid "Requires users to self-enroll in 2 factor authentication"
 msgstr "Wymaga od użytkowników zapisanie do 2FA"
 
 #: 
-msgid "UnityConnect CRM"
-msgstr "UnityConnect CRM"
+msgid "ChurchCRM"
+msgstr "ChurchCRM"
 
 #: 
 msgid "Specify the application name to be displayed in authenticator app"
@@ -4604,8 +4364,8 @@ msgid "Unable To Begin Two Factor Authentication Enrollment"
 msgstr "Nie Mogę Rozpocząć Dodania Logowania 2FA"
 
 #: 
-msgid "Two factor authentication requires UnityConnect CRM administrators to configure a few parameters"
-msgstr "Logowanie dwuskładnikowe wymaga od administratorów UnityConnect CRM ustawienia kilku parametrów"
+msgid "Two factor authentication requires UnityConnectCRM administrators to configure a few parameters"
+msgstr "Logowanie dwuskładnikowe wymaga od administratorów UnityConnectCRM ustawienia kilku parametrów"
 
 #: 
 msgid "System configuration "
@@ -4649,10 +4409,6 @@ msgid "Password reset not available.  Please contact your system administrator"
 msgstr "Odzyskiwanie hasło nie dostepne. Skontaktuj się z administratorem"
 
 #: 
-msgid "Authentication Issue"
-msgstr "Błąd Uwierzytelniania"
-
-#: 
 msgid "Enter new user password. Administratively set passwords are not subject to length or complexity requirements"
 msgstr "Wprowadź hasło nowego użytkownika. Hasła ustawione odgórnie nie podlegają restrykcjom długości czy komplikacji"
 
@@ -4680,6 +4436,7 @@ msgstr "ładowanie"
 msgid "List not found"
 msgstr "Lista nie znaleziona"
 
+#. typo
 #: 
 #, fuzzy
 msgid "List not in the list"
@@ -4694,24 +4451,12 @@ msgid "Invalid List id"
 msgstr "Nie prawidłowy 'id' Listy"
 
 #: 
-msgid "Audience not in the UnityConnect CRM"
-msgstr "Uczestnicy z poza UnityConnect CRM"
-
-#: 
-msgid "UnityConnect CRM Installation Information"
-msgstr "Informacje Instalacji UnityConnect CRM"
-
-#: 
-msgid "Database Server Version"
-msgstr "Wersja Servera Bazy Danych"
+msgid "Audience not in the UnityConnectCRM"
+msgstr "Uczestnicy z poza UnityConnectCRM"
 
 #: 
 msgid "Web Server"
 msgstr "Serwer WWW"
-
-#: 
-msgid "Email Information"
-msgstr "Informacje o Email"
 
 #: 
 msgid "List maintenance"
@@ -4725,6 +4470,7 @@ msgstr "Osoby nie na liście"
 msgid "Audience not in the CRM"
 msgstr "Uczestnicy z poza CRM"
 
+#. Context: locales
 #: 
 msgid "Hebrew"
 msgstr "Hebrajski"

@@ -7,7 +7,7 @@ use ChurchCRM\model\ChurchCRM\Event;
 use ChurchCRM\model\ChurchCRM\EventCounts;
 use ChurchCRM\Slim\Middleware\EventsMiddleware;
 use ChurchCRM\Slim\Middleware\Request\Auth\AddEventsRoleAuthMiddleware;
-use ChurchCRM\Slim\Request\SlimUtils;
+use ChurchCRM\Slim\SlimUtils;
 use ChurchCRM\Utils\InputUtils;
 use Propel\Runtime\ActiveQuery\Criteria;
 use Psr\Http\Message\ResponseInterface as Response;
@@ -141,7 +141,7 @@ function newEvent(Request $request, Response $response, array $args): Response
     $event->setDesc($input['Desc']);
     $event->setStart(str_replace('T', ' ', $input['Start']));
     $event->setEnd(str_replace('T', ' ', $input['End']));
-    $event->setText(InputUtils::filterHTML($input['Text']));
+    $event->setText(InputUtils::sanitizeHTML($input['Text']));
     $event->setCalendars($calendars);
     $event->save();
 

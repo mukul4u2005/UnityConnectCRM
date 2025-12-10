@@ -2,7 +2,7 @@ ALTER TABLE `config_cfg`
 MODIFY `cfg_type` ENUM('text','number','date','boolean','textarea','json','choice', 'country') NOT NULL default 'text';
 
 INSERT IGNORE INTO `config_cfg` (`cfg_id`, `cfg_name`, `cfg_value`, `cfg_type`, `cfg_default`, `cfg_tooltip`, `cfg_section`) VALUES
-(1047, 'sTempleCountry', 'United States', 'country', '', 'Temple/TrustCountry', 'ChurchInfoReport');
+(1047, 'sTempleCountry', 'United States', 'country', '', 'Temple Country', 'ChurchInfoReport');
 
 alter table user_usr drop column `usr_BaseFontSize`;
 alter table user_usr drop column `usr_Communication`;

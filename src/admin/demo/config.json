@@ -1,0 +1,21 @@
+{
+    "sDefaultCity": "Kansas City",
+    "sDefaultState": "MO",
+    "sDefaultCountry": "United States",
+    "iTempleLatitude": "39.1111974",
+    "iTempleLongitude": "-94.5838009",
+    "sTimeZone": "America/Chicago",
+    "bEnableSelfRegistration": "1",
+    "sTempleName": "Main St. Cathedral",
+    "sTempleAddress": "123 Main St",
+    "sTempleCity": "Kansas City",
+    "sTempleState": "MO",
+    "sTempleZip": "64106",
+    "sTempleCountry": "United States",
+    "sTemplePhone": "555 123 4234",
+    "sTempleEmail": "demo@churchcrm.io",
+    "sHomeAreaCode": "555",
+    "sTaxSigner": "Elder Joe Smith",
+    "sReminderSigner": "Elder Joe Smith",
+    "sConfirmSigner": "Elder Joe Smith"
+}

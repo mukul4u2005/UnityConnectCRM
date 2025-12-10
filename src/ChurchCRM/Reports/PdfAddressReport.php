@@ -85,7 +85,7 @@ class PdfAddressReport extends ChurchInfoReport
         $this->SetAutoPageBreak(false);
 
         $this->setCharSize(20);
-        $this->Write(10, 'ChurchCRM USPS Address Verification Report');
+        $this->Write(10, 'UnityConnectCRM USPS Address Verification Report');
         $this->setCharSize(12);
     }
 

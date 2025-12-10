@@ -29,9 +29,9 @@ if (isset($_POST['save'])) {
         $id = key($type);
         // Filter Input
         if ($id == $iHTMLHeaderRow) { // Special handling of header value so HTML doesn't get removed
-            $value = InputUtils::filterHTML($new_value[$id]);
+            $value = InputUtils::sanitizeHTML($new_value[$id]);
         } elseif ($current_type == 'text' || $current_type == 'textarea' || $current_type == 'password') {
-            $value = InputUtils::filterString($new_value[$id]);
+            $value = InputUtils::sanitizeText($new_value[$id]);
         } elseif ($current_type == 'number') {
             $value = InputUtils::filterFloat($new_value[$id]);
         } elseif ($current_type == 'date') {
@@ -39,9 +39,9 @@ if (isset($_POST['save'])) {
         } elseif ($current_type == 'json') {
             $value = $new_value[$id];
         } elseif ($current_type == 'choice') {
-            $value = InputUtils::filterString($new_value[$id]);
+            $value = InputUtils::sanitizeText($new_value[$id]);
         } elseif ($current_type == 'ajax') {
-            $value = InputUtils::filterString($new_value[$id]);
+            $value = InputUtils::sanitizeText($new_value[$id]);
         } elseif ($current_type == 'boolean') {
             if ($new_value[$id] != '1') {
                 $value = '';
@@ -59,6 +59,13 @@ if (isset($_POST['save'])) {
 
         if ($id == 65 && !(in_array($value, timezone_identifiers_list()))) {
             $value = date_default_timezone_get();
+        }
+
+        // For password fields, only update if a new value is provided (non-empty)
+        if ($current_type == 'password' && empty($value)) {
+            // Skip update - preserve existing password
+            next($type);
+            continue;
         }
 
         SystemConfig::setValueById($id, $value);
@@ -101,7 +108,7 @@ require_once 'Include/Header.php';
       <?php foreach (SystemConfig::getCategories() as $category => $settings) {
             $navItemId = str_replace(" ", '', $category);
             $shouldBeSelected = false;
-            if ($category == 'Temple') {
+            if ($category == 'Temple Information') {
                 $shouldBeSelected = true;
             } ?>
         <a class="nav-link <?= $shouldBeSelected ? "active" : "" ?>" id="<?= $navItemId ?>-tab" data-toggle="pill" href="#<?= $navItemId ?>" role="tab" aria-controls="vert-tabs-profile" aria-selected="<?= $shouldBeSelected ?>"><?= gettext($category) ?></a>
@@ -117,7 +124,7 @@ require_once 'Include/Header.php';
       <?php foreach (SystemConfig::getCategories() as $category => $settings) {
             $navItemId = str_replace(" ", '', $category);
             $shouldBeSelected = false;
-            if ($category == 'Temple') {
+            if ($category == 'Temple Information') {
                 $shouldBeSelected = true;
             } ?>
         <div class="tab-pane fade <?= $shouldBeSelected ? "show active" : "" ?>" id="<?= $navItemId ?>" role="tabpanel" aria-labelledby="<?= $navItemId ?>-tab">
@@ -140,7 +147,7 @@ require_once 'Include/Header.php';
                     <?php
                     if ($setting->getType() == 'choice') {
                         ?>
-                      <select name='new_value[<?= $setting->getId() ?>]' class="choiceSelectBox" style="width: 100%">
+                      <select name='new_value[<?= $setting->getId() ?>]' class="choiceSelectBox w-100">
                         <?php
                         foreach (json_decode($setting->getData())->Choices as $choice) {
                             if (strpos($choice, ":") === false) {
@@ -157,15 +164,15 @@ require_once 'Include/Header.php';
                         <?php
                     } elseif ($setting->getType() == 'text') {
                         ?>
-                      <input type=text size=40 maxlength=255 name='new_value[<?= $setting->getId() ?>]' value='<?= htmlspecialchars($setting->getValue(), ENT_QUOTES) ?>' class="form-control">
+                      <input type=text size=40 maxlength=255 name='new_value[<?= $setting->getId() ?>]' value='<?= InputUtils::escapeHTML($setting->getValue()) ?>' class="form-control">
                         <?php
                     } elseif ($setting->getType() == 'password') {
                         ?>
-                      <input type=password size=40 maxlength=255 name='new_value[<?= $setting->getId() ?>]' value='<?= htmlspecialchars($setting->getValue(), ENT_QUOTES) ?>' class="form-control">
+                      <input type=password size=40 maxlength=255 name='new_value[<?= $setting->getId() ?>]' class="form-control" placeholder="<?= gettext('Leave blank to keep existing password') ?>">
                         <?php
                     } elseif ($setting->getType() == 'textarea') {
                         ?>
-                      <textarea rows=4 cols=40 name='new_value[<?= $setting->getId() ?>]' class="form-control"><?= htmlspecialchars($setting->getValue(), ENT_QUOTES) ?></textarea>
+                      <textarea rows=4 cols=40 name='new_value[<?= $setting->getId() ?>]' class="form-control"><?= InputUtils::escapeHTML($setting->getValue()) ?></textarea>
                         <?php
                     } elseif ($setting->getType() == 'number' || $setting->getType() == 'date') {
                         ?>
@@ -179,7 +186,7 @@ require_once 'Include/Header.php';
                             $sel1 = 'SELECTED';
                             $sel2 = '';
                         } ?>
-                      <select name='new_value[<?= $setting->getId() ?>]' class="choiceSelectBox" style="width: 100%">
+                      <select name='new_value[<?= $setting->getId() ?>]' class="choiceSelectBox w-100">
                         <option value='' <?= $sel1 ?>><?= gettext('False') ?>
                         <option value='1' <?= $sel2 ?>><?= gettext('True') ?>
                       </select>
@@ -192,7 +199,7 @@ require_once 'Include/Header.php';
                         <?php
                     } elseif ($setting->getType() == 'ajax') {
                         ?>
-                      <select id='ajax-<?= $setting->getId() ?>' name='new_value[<?= $setting->getId() ?>]' data-url="<?= $setting->getData() ?>" data-value="<?= $setting->getValue() ?>" class="choiceSelectBox" style="width: 100%">
+                      <select id='ajax-<?= $setting->getId() ?>' name='new_value[<?= $setting->getId() ?>]' data-url="<?= $setting->getData() ?>" data-value="<?= $setting->getValue() ?>" class="choiceSelectBox w-100">
                         <option value=''><?= gettext('Unassigned') ?>
                       </select>
                         <?php
@@ -213,12 +220,12 @@ require_once 'Include/Header.php';
                   <td>
                     <?php if (!empty($setting->getTooltip())) {
                         ?>
-                      <a class="setting-tip" data-tip="<?= $setting->getTooltip() ?>"><i class="fa fa-fw fa-question-circle"></i></a>
+                      <a class="setting-tip" data-tip="<?= $setting->getTooltip() ?>"><i class="fa-solid fa-fw fa-question-circle"></i></a>
                         <?php
                     }
                     if (!empty($setting->getUrl())) {
                         ?>
-                      <a href="<?= $setting->getUrl() ?>" target="_blank"><i class="fa fa-fw fa-link"></i></a>
+                      <a href="<?= $setting->getUrl() ?>" target="_blank"><i class="fa-solid fa-fw fa-link"></i></a>
                         <?php
                     } ?>
                     <?= $display_default ?>

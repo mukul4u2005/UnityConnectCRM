@@ -1,34 +1,61 @@
 /// <reference types="cypress" />
 
-context("API Public User", () => {
+describe("API Public User", () => {
     it("Login", () => {
-        let user = {
+        const user = {
             userName: "admin",
             password: "changeme",
         };
 
-        cy.request({
+        cy.apiRequest({
             method: "POST",
             url: "/api/public/user/login",
             headers: { "content-type": "application/json" },
             body: user,
         }).then((resp) => {
-            const result = JSON.parse(JSON.stringify(resp.body));
             expect(resp.status).to.eq(200);
-            expect(result.apiKey).to.eq(Cypress.env("admin.api.key"));
+            expect(resp.body).to.have.property('apiKey');
+            expect(resp.body.apiKey).to.eq(Cypress.env("admin.api.key"));
         });
     });
 
-    it("Reset Password", () => {
-        cy.request({
-            method: "POST",
-            url: "/session/forgot-password/reset-request",
-            headers: { "content-type": "application/json" },
-            body: {
-                userName: "tony.wade@example.com",
-            },
-        }).then((resp) => {
-            expect(resp.status).to.eq(200);
+    describe("Password Reset", () => {
+        it("Successful password reset request with valid user", () => {
+            cy.apiRequest({
+                method: "POST",
+                url: "/api/public/user/password-reset",
+                headers: { "content-type": "application/json" },
+                body: { userName: "admin" },
+            }).then((resp) => {
+                expect(resp.status).to.eq(200);
+                expect(resp.body).to.have.property('success');
+                expect(resp.body.success).to.eq(true);
+            });
+        });
+
+        it("Password reset request with non-existent user returns success (security)", () => {
+            cy.apiRequest({
+                method: "POST",
+                url: "/api/public/user/password-reset",
+                headers: { "content-type": "application/json" },
+                body: { userName: "nonexistentuser123" },
+            }).then((resp) => {
+                expect(resp.status).to.eq(200);
+                expect(resp.body).to.have.property('success');
+                expect(resp.body.success).to.eq(true);
+            });
+        });
+
+        it("Password reset request is case-insensitive", () => {
+            cy.apiRequest({
+                method: "POST",
+                url: "/api/public/user/password-reset",
+                headers: { "content-type": "application/json" },
+                body: { userName: "ADMIN" },
+            }).then((resp) => {
+                expect(resp.status).to.eq(200);
+                expect(resp.body.success).to.eq(true);
+            });
         });
     });
 });

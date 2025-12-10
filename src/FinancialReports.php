@@ -9,7 +9,7 @@ use ChurchCRM\Utils\InputUtils;
 use ChurchCRM\Utils\RedirectUtils;
 
 // Security
-AuthenticationManager::redirectHomeIfFalse(AuthenticationManager::getCurrentUser()->isFinanceEnabled());
+AuthenticationManager::redirectHomeIfFalse(AuthenticationManager::getCurrentUser()->isFinanceEnabled(), 'Finance');
 
 $sReportType = '';
 
@@ -26,14 +26,37 @@ if ($sReportType) {
     $sPageTitle .= ': ' . gettext($sReportType);
 }
 require_once 'Include/Header.php';
+// Preserve submitted dates/datetype for both selection and filters views
+$sDateStart = '';
+$sDateEnd = '';
+$datetype = '';
+if (array_key_exists('DateStart', $_POST)) {
+    $sDateStart = InputUtils::legacyFilterInput($_POST['DateStart'], 'date');
+} elseif (array_key_exists('DateStart', $_GET)) {
+    $sDateStart = InputUtils::legacyFilterInput($_GET['DateStart'], 'date');
+}
+if (array_key_exists('DateEnd', $_POST)) {
+    $sDateEnd = InputUtils::legacyFilterInput($_POST['DateEnd'], 'date');
+} elseif (array_key_exists('DateEnd', $_GET)) {
+    $sDateEnd = InputUtils::legacyFilterInput($_GET['DateEnd'], 'date');
+}
+if (array_key_exists('datetype', $_POST)) {
+    $datetype = InputUtils::legacyFilterInput($_POST['datetype']);
+} elseif (array_key_exists('datetype', $_GET)) {
+    $datetype = InputUtils::legacyFilterInput($_GET['datetype']);
+}
 ?>
 <div class="card card-body">
-
+<!-- Styles for this page moved into the project's SCSS: `src/skin/scss/_financial-reports.scss` -->
 <?php
 
 // No Records Message if previous report returned no records.
 if (array_key_exists('ReturnMessage', $_GET) && $_GET['ReturnMessage'] === 'NoRows') {
-    echo '<h3><span style="color: red;">' . gettext('No records were returned from the previous report.') . '</span></h3>';
+    echo '<div class="alert alert-warning" role="alert">';
+    echo '<i class="fas fa-exclamation-triangle"></i> ';
+    echo '<strong>' . gettext('No Data Found') . '</strong><br>';
+    echo gettext('No records were returned from the previous report. Please adjust your filters or date range and try again.');
+    echo '</div>';
 }
 
 if ($sReportType == '') {
@@ -55,7 +78,7 @@ if ($sReportType == '') {
     echo '</td></tr>';
     // First Pass Cancel, Next Buttons
     echo "<tr><td>&nbsp;</td>
-        <td><input type=button class='btn btn-default' name=Cancel value='" . gettext('Cancel') . "'
+        <td><input type=button class='btn btn-secondary' name=Cancel value='" . gettext('Cancel') . "'
         onclick=\"javascript:document.location='v2/dashboard';\">
         <input type=submit class='btn btn-primary' name=Submit1 value='" . gettext('Next') . "'>
         </td></tr>
@@ -104,7 +127,7 @@ if ($sReportType == '') {
         <tr>
                 <td class="LabelColumn"><?= gettext('Classification') ?>:<br></td>
                 <td class=TextColumnWithBottomBorder><div class=SmallText>
-                    </div><select name="classList[]" style="width:100%" multiple id="classList">
+                    </div><select name="classList[]" class="width-100pct" multiple id="classList">
                     <?php
                     while ($aRow = mysqli_fetch_array($rsClassifications)) {
                         extract($aRow);
@@ -118,8 +141,8 @@ if ($sReportType == '') {
         <td></td>
         <td>
         <br/>
-        <button type="button" id="addAllClasses" class="btn btn-default"><?= gettext('Add All Classes') ?></button>
-        <button type="button" id="clearAllClasses" class="btn btn-default"><?= gettext('Clear All Classes') ?></button><br/><br/>
+        <button type="button" id="addAllClasses" class="btn btn-secondary"><?= gettext('Add All Classes') ?></button>
+        <button type="button" id="clearAllClasses" class="btn btn-secondary"><?= gettext('Clear All Classes') ?></button><br/><br/>
         </td></tr>
         <?php
 
@@ -127,7 +150,7 @@ if ($sReportType == '') {
         $rsFamilies = RunQuery($sSQL); ?>
         <tr><td class=LabelColumn><?= gettext('Filter by Family') ?>:<br></td>
         <td class=TextColumnWithBottomBorder>
-            <select name="family[]" id="family" multiple style="width:100%">
+            <select name="family[]" id="family" multiple class="width-100pct">
         <?php
         // Build Criteria for Head of Household
         if (!$sDirRoleHead) {
@@ -165,8 +188,8 @@ if ($sReportType == '') {
         <td></td>
         <td>
         <br/>
-        <button type="button" id="addAllFamilies" class="btn btn-default"><?= gettext('Add All Families') ?></button>
-        <button type="button" id="clearAllFamilies" class="btn btn-default"><?= gettext('Clear All Families') ?></button><br/><br/>
+        <button type="button" id="addAllFamilies" class="btn btn-secondary"><?= gettext('Add All Families') ?></button>
+        <button type="button" id="clearAllFamilies" class="btn btn-secondary"><?= gettext('Clear All Families') ?></button><br/><br/>
         </td></tr>
         <?php
     }
@@ -174,14 +197,18 @@ if ($sReportType == '') {
     // Starting and Ending Dates for Report
     if (in_array($sReportType, ['Giving Report', 'Advanced Deposit Report', 'Zero Givers'])) {
         $today = date('Y-m-d');
+        $startVal = $sDateStart ? $sDateStart : $today;
+        $endVal = $sDateEnd ? $sDateEnd : $today;
         echo '<tr><td class=LabelColumn>' . gettext('Report Start Date:') . "</td>
-            <td class=TextColumn><input type=text name=DateStart class='date-picker' maxlength=10 id=DateStart size=11 value='$today'></td></tr>";
+            <td class=TextColumn><input type=text name=DateStart class='date-picker' maxlength=10 id=DateStart size=11 value='" . InputUtils::escapeHTML($startVal) . "'></td></tr>";
         echo '<tr><td class=LabelColumn>' . gettext('Report End Date:') . "</td>
-            <td class=TextColumn><input type=text name=DateEnd class='date-picker' maxlength=10 id=DateEnd size=11 value='$today'></td></tr>";
+            <td class=TextColumn><input type=text name=DateEnd class='date-picker' maxlength=10 id=DateEnd size=11 value='" . InputUtils::escapeHTML($endVal) . "'></td></tr>";
         if (in_array($sReportType, ['Giving Report', 'Advanced Deposit Report'])) {
+            $depChecked = ($datetype !== 'Payment') ? " checked" : "";
+            $payChecked = ($datetype === 'Payment') ? " checked" : "";
             echo '<tr><td class=LabelColumn>' . gettext('Apply Report Dates To:') . '</td>';
-            echo "<td class=TextColumnWithBottomBorder><input name=datetype type=radio checked value='Deposit'>" . gettext('Deposit Date (Default)');
-            echo " &nbsp; <input name=datetype type=radio value='Payment'>" . gettext('Payment Date') . '</tr>';
+            echo "<td class=TextColumnWithBottomBorder><input name=datetype type=radio value='Deposit' $depChecked>" . gettext('Deposit Date (Default)');
+            echo " &nbsp; <input name=datetype type=radio value='Payment' $payChecked>" . gettext('Payment Date') . '</tr>';
         }
     }
 
@@ -219,7 +246,7 @@ if ($sReportType == '') {
         $rsFunds = RunQuery($sSQL); ?>
 
         <tr><td class="LabelColumn"><?= gettext('Filter by Fund') ?>:<br></td>
-        <td><select name="funds[]" multiple id="fundsList" style="width:100%">
+        <td><select name="funds[]" multiple id="fundsList" class="width-100pct">
         <?php
         while ($aRow = mysqli_fetch_array($rsFunds)) {
             extract($aRow);
@@ -233,8 +260,8 @@ if ($sReportType == '') {
         <td></td>
         <td>
         <br/>
-        <button type="button" id="addAllFunds" class="btn btn-default"><?= gettext('Add All Funds') ?></button>
-        <button type="button" id="clearAllFunds" class="btn btn-default"><?= gettext('Clear All Funds') ?></button><br/><br/>
+        <button type="button" id="addAllFunds" class="btn btn-secondary"><?= gettext('Add All Funds') ?></button>
+        <button type="button" id="clearAllFunds" class="btn btn-secondary"><?= gettext('Clear All Funds') ?></button><br/><br/>
         </td></tr>
 
         <?php
@@ -277,7 +304,7 @@ if ($sReportType == '') {
     if (in_array($sReportType, ['Giving Report', 'Zero Givers'])) {
         echo '<tr><td class=LabelColumn>' . gettext('Report Heading:') . '</td>'
             . "<td class=TextColumnWithBottomBorder><input name=letterhead type=radio value='graphic'>" . gettext('Graphic')
-            . " <input name=letterhead type=radio value='address' checked>" . gettext('Temple/TrustAddress')
+            . " <input name=letterhead type=radio value='address' checked>" . gettext('Temple Address')
             . " <input name=letterhead type=radio value='none'>" . gettext('Blank') . '</td></tr>';
         echo '<tr><td class=LabelColumn>' . gettext('Remittance Slip:') . '</td>'
             . "<td class=TextColumnWithBottomBorder><input name=remittance type=radio value='yes'>" . gettext('Yes')
@@ -318,7 +345,7 @@ if ($sReportType == '') {
 <tr>
     <td>&nbsp;</td>
     <td>
-        <input type="button" class="btn btn-default" name="Cancel" value="$backText" onclick="javascript:document.location='FinancialReports.php';" />
+        <input type="button" class="btn btn-secondary" name="Cancel" value="$backText" onclick="javascript:document.location='FinancialReports.php';" />
         <input download type="submit" class="btn btn-primary" id="createReport" name="Submit2" value="$createReportText" />
     </td>
 </tr>
@@ -362,6 +389,12 @@ $(document).ready(function() {
   });
   $("#clearAllFunds").click(function () {
         $("#fundsList").val(null).trigger("change");
+  });
+
+  // Handle report download - clear "No Data Found" banner when exporting
+  $(document).on("click", "button[type='submit'], input[type='submit']", function() {
+    // Simply hide the No Data Found alert banner when any submit button is clicked
+    $(".alert-warning").hide();
   });
   }
 );

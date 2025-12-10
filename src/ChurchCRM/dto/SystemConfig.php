@@ -8,7 +8,7 @@ use ChurchCRM\model\ChurchCRM\ListOptionQuery;
 use Exception;
 use Monolog\Logger;
 
-class SystemConfig
+class   SystemConfig
 {
     /**
      * @var Config[]|null
@@ -188,16 +188,16 @@ class SystemConfig
             'sDatePickerPlaceHolder'               => new ConfigItem(109, 'sDatePickerPlaceHolder', 'text', 'yyyy-mm-dd', gettext('For defining the date in Date-Picker, per default : yyyy-mm-dd, In French : dd/mm/yyyy for example.')),
             'sDatePickerFormat'                    => new ConfigItem(110, 'sDatePickerFormat', 'text', 'Y-m-d', gettext('For defining the date in Date-Picker, per default : Y-m-d, In French : d/m/Y for example.')),
             'sFont'                                => new ConfigItem(112, 'sFont', 'text', 'Roboto-Regular.ttf', gettext('Set font to render initials. Upload custom font to fonts directory')),
-            'bRegistered'                          => new ConfigItem(999, 'bRegistered', 'boolean', '0', gettext('ChurchCRM has been registered.  The ChurchCRM team uses registration information to track usage.  This information is kept confidential and never released or sold.  If this field is true the registration option in the admin menu changes to update registration.')),
+            'bRegistered'                          => new ConfigItem(999, 'bRegistered', 'boolean', '0', gettext('UnityConnectCRM has been registered.  The UnityConnectCRM team uses registration information to track usage.  This information is kept confidential and never released or sold.  If this field is true the registration option in the admin menu changes to update registration.')),
             'leftX'                                => new ConfigItem(1001, 'leftX', 'number', '20', gettext('Left Margin (1 = 1/100th inch)')),
             'incrementY'                           => new ConfigItem(1002, 'incrementY', 'number', '4', gettext('Line Thickness (1 = 1/100th inch')),
-            'sTempleName'                          => new ConfigItem(1003, 'sTempleName', 'text', '', gettext('Temple/TrustName')),
-            'sTempleAddress'                       => new ConfigItem(1004, 'sTempleAddress', 'text', '', gettext('Temple/TrustAddress')),
-            'sTempleCity'                          => new ConfigItem(1005, 'sTempleCity', 'text', '', gettext('Temple/TrustCity')),
-            'sTempleState'                         => new ConfigItem(1006, 'sTempleState', 'text', '', gettext('Temple/TrustState')),
-            'sTempleZip'                           => new ConfigItem(1007, 'sTempleZip', 'text', '', gettext('Temple/TrustZip')),
-            'sTemplePhone'                         => new ConfigItem(1008, 'sTemplePhone', 'text', '', gettext('Temple/TrustPhone')),
-            'sTempleEmail'                         => new ConfigItem(1009, 'sTempleEmail', 'text', '', gettext('Temple/TrustEmail')),
+            'sTempleName'                          => new ConfigItem(1003, 'sTempleName', 'text', '', gettext('Temple Name')),
+            'sTempleAddress'                       => new ConfigItem(1004, 'sTempleAddress', 'text', '', gettext('Temple Address')),
+            'sTempleCity'                          => new ConfigItem(1005, 'sTempleCity', 'text', '', gettext('Temple City')),
+            'sTempleState'                         => new ConfigItem(1006, 'sTempleState', 'text', '', gettext('Temple State')),
+            'sTempleZip'                           => new ConfigItem(1007, 'sTempleZip', 'text', '', gettext('Temple Zip')),
+            'sTemplePhone'                         => new ConfigItem(1008, 'sTemplePhone', 'text', '', gettext('Temple Phone')),
+            'sTempleEmail'                         => new ConfigItem(1009, 'sTempleEmail', 'text', '', gettext('Temple Email')),
             'sHomeAreaCode'                        => new ConfigItem(1010, 'sHomeAreaCode', 'text', '', gettext('Home area code of the church')),
             'sTaxReport1'                          => new ConfigItem(1011, 'sTaxReport1', 'text', 'This letter shows our record of your payments for', gettext('Verbage for top line of tax report. Dates will be appended to the end of this line.')),
             'sTaxReport2'                          => new ConfigItem(1012, 'sTaxReport2', 'text', 'Thank you for your help in making a difference. We greatly appreciate your gift!', gettext('Verbage for bottom line of tax report.')),
@@ -218,11 +218,11 @@ class SystemConfig
             'sPledgeSummary2'                      => new ConfigItem(1027, 'sPledgeSummary2', 'text', ' as of', gettext('Verbage for the pledge summary report')),
             'sDirectoryDisclaimer1'                => new ConfigItem(1028, 'sDirectoryDisclaimer1', 'text', "Every effort was made to ensure the accuracy of this directory.  If there are any errors or omissions, please contact the temple office.\n\nThis directory is for the use of the people of", gettext('Verbage for the directory report')),
             'sDirectoryDisclaimer2'                => new ConfigItem(1029, 'sDirectoryDisclaimer2', 'text', ', and the information contained in it may not be used for business or commercial purposes.', gettext('Verbage for the directory report')),
-            'bDirLetterHead'                       => new ConfigItem(1030, 'bDirLetterHead', 'text', '../Images/church_letterhead.jpg', gettext('Temple/TrustLetterhead path and file')),
+            'bDirLetterHead'                       => new ConfigItem(1030, 'bDirLetterHead', 'text', '../Images/church_letterhead.jpg', gettext('Temple Letterhead path and file')),
             'sZeroGivers'                          => new ConfigItem(1031, 'sZeroGivers', 'text', 'This letter shows our record of your payments for', gettext('Verbage for top line of tax report. Dates will be appended to the end of this line.')),
             'sZeroGivers2'                         => new ConfigItem(1032, 'sZeroGivers2', 'text', 'Thank you for your help in making a difference. We greatly appreciate your gift!', gettext('Verbage for bottom line of tax report.')),
             'sZeroGivers3'                         => new ConfigItem(1033, 'sZeroGivers3', 'text', 'If you have any questions or corrections to make to this report, please contact the temple at the above number during business hours, 9am to 4pm, M-F.', gettext('Verbage for bottom line of tax report.')),
-            'sTempleChkAcctNum'                    => new ConfigItem(1034, 'sTempleChkAcctNum', 'text', '', gettext('Temple/TrustChecking Account Number')),
+            'sTempleChkAcctNum'                    => new ConfigItem(1034, 'sTempleChkAcctNum', 'text', '', gettext('Temple Checking Account Number')),
             'bEnableGravatarPhotos'                => new ConfigItem(1035, 'bEnableGravatarPhotos', 'boolean', '0', gettext('lookup user images on Gravatar when no local image is present')),
             'bEnableExternalBackupTarget'          => new ConfigItem(1036, 'bEnableExternalBackupTarget', 'boolean', '0', gettext('Enable Remote Backups to Cloud Services')),
             'sExternalBackupType'                  => new ConfigItem(1037, 'sExternalBackupType', 'choice', '', gettext('Cloud Service Type (Supported values: WebDAV, Local)'), '', '{"Choices":["' . gettext('WebDAV') . '","' . gettext('Local') . '"]}'),
@@ -256,7 +256,7 @@ class SystemConfig
             'sTempleWebSite'                       => new ConfigItem(2013, 'sTempleWebSite', 'text', '', gettext("Your Church's Website")),
             'sTempleFB'                            => new ConfigItem(2014, 'sTempleFB', 'text', '', gettext("Your Church's Facebook Page")),
             'sTempleTwitter'                       => new ConfigItem(2015, 'sTempleTwitter', 'text', '', gettext("Your Church's X Page")),
-            'bEnableGooglePhotos'                  => new ConfigItem(2016, 'bEnableGooglePhotos', 'boolean', '1', gettext('lookup user images on Google when no local image is present')),
+            
             'sNewPersonNotificationRecipientIDs'   => new ConfigItem(2018, 'sNewPersonNotificationRecipientIDs', 'text', '', gettext('Comma Separated list of PersonIDs of people to notify when a new family or person is added')),
             'bEnableExternalCalendarAPI'           => new ConfigItem(2017, 'bEnableExternalCalendarAPI', 'boolean', '0', gettext('Allow unauthenticated reads of events from the external calendar API')),
             'bSearchIncludePersons'                => new ConfigItem(2019, 'bSearchIncludePersons', 'boolean', '1', gettext('Search People')),
@@ -273,15 +273,11 @@ class SystemConfig
             'bSearchIncludeDepositsMax'            => new ConfigItem(2031, 'bSearchIncludeDepositsMax', 'text', '5', gettext('Maximum number of Deposits')),
             'bSearchIncludePaymentsMax'            => new ConfigItem(2032, 'bSearchIncludePaymentsMax', 'text', '5', gettext('Maximum number of Payments')),
             'bSearchIncludeAddressesMax'           => new ConfigItem(20233, 'bSearchIncludeAddressesMax', 'text', '15', gettext('Maximum number of Addresses')),
-            'iPhotoHeight'                         => new ConfigItem(2034, 'iPhotoHeight', 'number', '400', gettext('Height to use for images')),
-            'iPhotoWidth'                          => new ConfigItem(2035, 'iPhotoWidth', 'number', '400', gettext('Width to use for images')),
-            'iThumbnailWidth'                      => new ConfigItem(2036, 'iPhotoWidth', 'number', '100', gettext('Width to use for thumbnails')),
-            'iInitialsPointSize'                   => new ConfigItem(2037, 'iInitialsPointSize', 'number', '150', gettext('Point size to use for initials thumbnails')),
-            'iPhotoClientCacheDuration'            => new ConfigItem(2038, 'iPhotoClientCacheDuration', 'number', '3600', gettext('Client cache seconds for images')),
             'iRemotePhotoCacheDuration'            => new ConfigItem(2039, 'iRemotePhotoCacheDuration', 'text', '72 hours', gettext('Server cache time for remote images')),
             'iPersonConfessionFatherCustomField'   => new ConfigItem(2040, 'iPersonConfessionFatherCustomField', 'ajax', '', gettext('Field where Father Of Confession is listed, must be a people of group type'), '', '/api/system/custom-fields/person/?typeId=9'),
             'iPersonConfessionDateCustomField'     => new ConfigItem(2041, 'iPersonConfessionDateCustomField', 'ajax', '', gettext('Field where last Confession is stored, must be a date type'), '', '/api/system/custom-fields/person/?typeId=2'),
-            'bHSTSEnable'                          => new ConfigItem(20142, 'bHSTSEnable', 'boolean', '0', gettext('Require that this ChurchCRM Database is accessed over HTTPS')),
+            'bHSTSEnable'                          => new ConfigItem(20142, 'bHSTSEnable', 'boolean', '0', gettext('Require that this UnityConnectCRM Database is accessed over HTTPS')),
+            'bEnforceCSP'                          => new ConfigItem(20234, 'bEnforceCSP', 'boolean', '0', gettext('Enforce Content Security Policy (CSP) to help protect against cross-site scripting. When disabled, CSP violations are only reported.')),
             'bEventsOnDashboardPresence'           => new ConfigItem(2042, 'bEventsOnDashboardPresence', 'boolean', '1', gettext('Show Birthdates Anniversaries on start up of the CRM')),
             'iEventsOnDashboardPresenceTimeOut'    => new ConfigItem(2043, 'iEventsOnDashboardPresenceTimeOut', 'number', '10', gettext('Number of seconds after page load until the banner disappears, default 10 seconds')),
             'bPHPMailerAutoTLS'                    => new ConfigItem(2045, 'bPHPMailerAutoTLS', 'boolean', '0', gettext('Automatically enable SMTP encryption if offered by the relaying server.')),
@@ -292,15 +288,13 @@ class SystemConfig
             'bEnabledSundaySchool'                 => new ConfigItem(2051, 'bEnabledSundaySchool', 'boolean', '1', gettext('Enable Sunday School left menu.')),
             'bEnabledFinance'                      => new ConfigItem(2052, 'bEnabledFinance', 'boolean', '1', gettext('Enable Finance menu')),
             'bEnabledEvents'                       => new ConfigItem(2053, 'bEnabledEvents', 'boolean', '1', gettext('Enable Events menu.')),
-            'bEnabledCalendar'                     => new ConfigItem(2054, 'bEnabledCalendar', 'boolean', '1', gettext('Enable Calendar menu.')),
             'bEnabledFundraiser'                   => new ConfigItem(2055, 'bEnabledFundraiser', 'boolean', '1', gettext('Enable Fundraiser menu.')),
             'bEnabledEmail'                        => new ConfigItem(2056, 'bEnabledEmail', 'boolean', '1', gettext('Enable Email menu.')),
-            'sNotificationsURL'                    => new ConfigItem(2057, 'sNotificationsURL', 'text', 'https://raw.githubusercontent.com/ChurchCRM/CRM/Notifications/notifications.json', gettext('ChurchCRM Central Notifications URL')),
+            'sNotificationsURL'                    => new ConfigItem(2057, 'sNotificationsURL', 'text', 'https://raw.githubusercontent.com/ChurchCRM/CRM/Notifications/notifications.json', gettext('UnityConnectCRM Central Notifications URL')),
             'sGreeterCustomMsg1'                   => new ConfigItem(2058, 'sGreeterCustomMsg1', 'text', '', gettext('Custom message for temple greeter email 1, max 255 characters')),
             'sGreeterCustomMsg2'                   => new ConfigItem(2059, 'sGreeterCustomMsg2', 'text', '', gettext('Custom message for temple greeter email 2, max 255 characters')),
             'IncludeDataInNewPersonNotifications'  => new ConfigItem(2060, 'IncludeDataInNewPersonNotifications', 'boolean', '0', gettext('Include contact and demographic data in new member email notification body')),
             'bSearchIncludeFamilyCustomProperties' => new ConfigItem(2061, 'bSearchIncludeFamilyCustomProperties', 'boolean', '0', gettext('Include family custom properties in global search.')),
-            'bBackupExtraneousImages'              => new ConfigItem(2062, 'bBackupExtraneousImages', 'boolean', '0', gettext('Include initials image files, remote image files (gravatar), and thumbnails in backup.  These files are generally able to be reproduced after a restore and add very little value to the backup archive at a large expense of execution time and storage')),
             'iSoftwareUpdateCheckInterval'         => new ConfigItem(2063, 'iSoftwareUpdateCheckInterval', 'number', '24', gettext('Interval in Hours for software update check')),
             'sLastSoftwareUpdateCheckTimeStamp'    => new ConfigItem(2064, 'sLastSoftwareUpdateCheckTimeStamp', 'text', '', gettext('Last Software Update Check Timestamp')),
             'bAllowPrereleaseUpgrade'              => new ConfigItem(2065, 'bAllowPrereleaseUpgrade', 'boolean', '0', gettext("Allow system upgrades to release marked as 'pre release' on GitHub")),
@@ -315,27 +309,28 @@ class SystemConfig
             'sDefaultZip'                          => new ConfigItem(2074, 'sDefaultZip', 'text', '', gettext('Default Zip')),
             'sPersonListColumns'                   => new ConfigItem(2075, 'sPersonListColumns', 'json', json_encode(SystemConfig::getPersonListColumns()), gettext('Person List Columns')),
             'sFamilyListColumns'                   => new ConfigItem(2076, 'sFamilyListColumns', 'json', json_encode(SystemConfig::getFamilyListColumns()), gettext('Family List Columns')),
+            'iLogFileThreshold'                    => new ConfigItem(2077, 'iLogFileThreshold', 'number', '100', gettext('Maximum number of log files to keep')),
         ];
     }
 
     private static function buildCategories(): array
     {
         return [
-            gettext('Temple') => ['sTempleName', 'sTempleAddress', 'sTempleCity', 'sTempleState', 'sTempleZip', 'sTempleCountry', 'sTemplePhone', 'sTempleEmail', 'sHomeAreaCode', 'sTimeZone', 'iTempleLatitude', 'iTempleLongitude', 'sTempleWebSite', 'sTempleFB', 'sTempleTwitter'],
+            gettext('Temple Information') => ['sTempleName', 'sTempleAddress', 'sTempleCity', 'sTempleState', 'sTempleZip', 'sTempleCountry', 'sTemplePhone', 'sTempleEmail', 'sHomeAreaCode', 'sTimeZone', 'iTempleLatitude', 'iTempleLongitude', 'sTempleWebSite', 'sTempleFB', 'sTempleTwitter'],
             gettext('User Setup')         => ['iMinPasswordLength', 'iMinPasswordChange', 'iMaxFailedLogins', 'iSessionTimeout', 'aDisallowedPasswords', 'bEnableLostPassword', 'bEnable2FA', 'bRequire2FA', 's2FAApplicationName', 'bSendUserDeletedEmail'],
             gettext('Email Setup')        => ['sSMTPHost', 'bSMTPAuth', 'sSMTPUser', 'sSMTPPass', 'iSMTPTimeout', 'sToEmailAddress', 'bPHPMailerAutoTLS', 'sPHPMailerSMTPSecure'],
             gettext('People Setup')       => ['sDirClassifications', 'sDirRoleHead', 'sDirRoleSpouse', 'sDirRoleChild', 'sDefaultCity', 'sDefaultState', 'sDefaultZip', 'sDefaultCountry', 'bShowFamilyData', 'bHidePersonAddress', 'bHideFriendDate', 'bHideFamilyNewsletter', 'bHideWeddingDate', 'bHideLatLon', 'bForceUppercaseZip', 'bEnableSelfRegistration', 'bAllowEmptyLastName', 'iPersonNameStyle', 'iPersonInitialStyle', 'iProfilePictureListSize', 'sNewPersonNotificationRecipientIDs', 'IncludeDataInNewPersonNotifications', 'sGreeterCustomMsg1', 'sGreeterCustomMsg2', 'sInactiveClassification', 'sPersonListColumns', 'sFamilyListColumns'],
-            gettext('Enabled Features')   => ['bEnabledFinance', 'bEnabledSundaySchool', 'bEnabledEvents', 'bEnabledCalendar', 'bEnabledFundraiser', 'bEnabledEmail', 'bEnabledMenuLinks'],
+            gettext('Enabled Features')   => ['bEnabledFinance', 'bEnabledSundaySchool', 'bEnabledEvents', 'bEnabledFundraiser', 'bEnabledEmail', 'bEnabledMenuLinks'],
             gettext('Map Settings')       => ['sGeoCoderProvider', 'sGoogleMapsGeocodeKey', 'sGoogleMapsRenderKey', 'sBingMapKey', 'sGMapIcons', 'iMapZoom'],
             gettext('Report Settings')    => ['sQBDTSettings', 'leftX', 'incrementY', 'sTaxReport1', 'sTaxReport2', 'sTaxReport3', 'sTaxSigner', 'sReminder1', 'sReminderSigner', 'sReminderNoPledge', 'sReminderNoPayments', 'sConfirm1', 'sConfirm2', 'sConfirm3', 'sConfirm4', 'sConfirm5', 'sConfirm6', 'sDear', 'sConfirmSincerely', 'sConfirmSigner', 'sPledgeSummary1', 'sPledgeSummary2', 'sDirectoryDisclaimer1', 'sDirectoryDisclaimer2', 'bDirLetterHead', 'sZeroGivers', 'sZeroGivers2', 'sZeroGivers3', 'iPDFOutputType'],
             gettext('Financial Settings') => ['sDepositSlipType', 'iChecksPerDepositForm', 'bDisplayBillCounts', 'bUseScannedChecks', 'bEnableNonDeductible', 'iFYMonth', 'bUseDonationEnvelopes', 'aFinanceQueries'],
             gettext('Quick Search')       => ['bSearchIncludePersons', 'bSearchIncludePersonsMax', 'bSearchIncludeAddresses', 'bSearchIncludeAddressesMax', 'bSearchIncludeFamilies', 'bSearchIncludeFamiliesMax', 'bSearchIncludeFamilyHOH', 'bSearchIncludeFamilyHOHMax', 'bSearchIncludeGroups', 'bSearchIncludeGroupsMax', 'bSearchIncludeDeposits', 'bSearchIncludeDepositsMax', 'bSearchIncludePayments', 'bSearchIncludePaymentsMax', 'bSearchIncludeFamilyCustomProperties', 'bSearchIncludeCalendarEvents', 'bSearchIncludeCalendarEventsMax'],
             gettext('Localization')       => ['sLanguage', 'sDistanceUnit', 'sPhoneFormat', 'sPhoneFormatWithExt', 'sPhoneFormatCell', 'sDateFormatLong', 'sDateFormatNoYear', 'sDateFormatShort', 'sDateTimeFormat', 'sDateFilenameFormat', 'sCSVExportDelimiter', 'sCSVExportCharset', 'sDatePickerFormat', 'sDatePickerPlaceHolder', 'sFont'],
-            gettext('Integration')        => ['sMailChimpApiKey', 'sGoogleTrackingID', 'bEnableGravatarPhotos', 'bEnableGooglePhotos', 'iRemotePhotoCacheDuration', 'sNexmoAPIKey', 'sNexmoAPISecret', 'sNexmoFromNumber', 'sOLPURL', 'sOLPUserName', 'sOLPPassword'],
+            gettext('Integration')        => ['sMailChimpApiKey', 'sGoogleTrackingID', 'bEnableGravatarPhotos', 'iRemotePhotoCacheDuration', 'sNexmoAPIKey', 'sNexmoAPISecret', 'sNexmoFromNumber', 'sOLPURL', 'sOLPUserName', 'sOLPPassword'],
             gettext('Temple Services')    => ['iPersonConfessionFatherCustomField', 'iPersonConfessionDateCustomField'],
             gettext('Events')             => ['bEnableExternalCalendarAPI', 'bEventsOnDashboardPresence', 'iEventsOnDashboardPresenceTimeOut'],
-            gettext('Backup')             => ['sLastBackupTimeStamp', 'bEnableExternalBackupTarget', 'sExternalBackupType', 'sExternalBackupAutoInterval', 'sExternalBackupEndpoint', 'sExternalBackupUsername', 'sExternalBackupPassword', 'bBackupExtraneousImages'],
-            gettext('System Settings')    => ['sLogLevel', 'bRegistered', 'bCSVAdminOnly', 'sHeader', 'bEnableIntegrityCheck', 'iIntegrityCheckInterval', 'sLastIntegrityCheckTimeStamp', 'iPhotoClientCacheDuration', 'bHSTSEnable', 'iDashboardServiceIntervalTime', 'iSoftwareUpdateCheckInterval', 'sLastSoftwareUpdateCheckTimeStamp', 'bAllowPrereleaseUpgrade'],
+            gettext('Backup')             => ['sLastBackupTimeStamp', 'bEnableExternalBackupTarget', 'sExternalBackupType', 'sExternalBackupAutoInterval', 'sExternalBackupEndpoint', 'sExternalBackupUsername', 'sExternalBackupPassword'],
+            gettext('System Settings')    => ['sLogLevel', 'bRegistered', 'bCSVAdminOnly', 'sHeader', 'bEnableIntegrityCheck', 'iIntegrityCheckInterval', 'sLastIntegrityCheckTimeStamp', 'bEnforceCSP', 'bHSTSEnable', 'iDashboardServiceIntervalTime', 'iSoftwareUpdateCheckInterval', 'sLastSoftwareUpdateCheckTimeStamp', 'bAllowPrereleaseUpgrade', 'iLogFileThreshold'],
         ];
     }
 

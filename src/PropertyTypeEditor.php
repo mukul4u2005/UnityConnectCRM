@@ -8,7 +8,7 @@ use ChurchCRM\Utils\InputUtils;
 use ChurchCRM\Utils\RedirectUtils;
 
 // Security: User must have property and classification editing permission
-AuthenticationManager::redirectHomeIfFalse(AuthenticationManager::getCurrentUser()->isMenuOptionsEnabled());
+AuthenticationManager::redirectHomeIfFalse(AuthenticationManager::getCurrentUser()->isMenuOptionsEnabled(), 'MenuOptions');
 
 $sPageTitle = gettext('Property Type Editor');
 
@@ -29,7 +29,7 @@ if (isset($_POST['Submit'])) {
 
     // Did they enter a name?
     if (strlen($sName) < 1) {
-        $sNameError = '<span style="color: red;">' . gettext('You must enter a name') . '</span>';
+        $sNameError = '<span class="text-danger">' . gettext('You must enter a name') . '</span>';
         $bError = true;
     }
 
@@ -83,7 +83,7 @@ require_once 'Include/Header.php';
         <label class="control-label col-sm-2" for="name"><?= gettext('Name') ?>:</label>
         <div class="col-sm-4">
             <input type="text" class="form-control" id="name" name="Name"
-                   value="<?= htmlentities(stripslashes($sName), ENT_NOQUOTES, 'UTF-8') ?>" size="40"><?= $sNameError ?>
+                   value="<?= InputUtils::escapeAttribute($sName) ?>" size="40"><?= $sNameError ?>
         </div>
     </div>
     <br>
@@ -91,13 +91,13 @@ require_once 'Include/Header.php';
         <label class="control-label col-sm-2" for="description"><?= gettext('Description') ?>:</label>
         <div class="col-sm-4">
             <textarea class="form-control" id="description" name="Description"
-                      rows="10"><?= htmlentities(stripslashes($sDescription), ENT_NOQUOTES, 'UTF-8') ?></textarea>
+                      rows="10"><?= InputUtils::escapeAttribute(stripslashes($sDescription)) ?></textarea>
         </div>
     </div>
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-8">
             <button type="submit" class="btn btn-primary" name="Submit"><?= gettext('Save') ?></button>
-            <button type="button" class="btn btn-default" name="Cancel"
+            <button type="button" class="btn btn-secondary" name="Cancel"
                     onclick="document.location='PropertyTypeList.php';"><?= gettext('Cancel') ?></button>
         </div>
 

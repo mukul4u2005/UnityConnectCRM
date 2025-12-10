@@ -4,7 +4,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
-"Project-Id-Version: UnityConnect CRM\n"
+"Project-Id-Version: ChurchCRM\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
@@ -32,10 +32,12 @@ msgstr "Chưa được gán"
 msgid "None"
 msgstr "Không có"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "City"
 msgstr "Thành phố"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "State"
 msgstr "Bang (thuộc Mỹ)"
@@ -48,6 +50,7 @@ msgstr "Quốc gia "
 msgid "Phone"
 msgstr "Điện thoại"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Email"
 msgstr "Email"
@@ -59,41 +62,6 @@ msgstr "Thẻ tín dụng"
 #: 
 msgid "Backup Database"
 msgstr "Sao lưu dữ liệu"
-
-#: 
-msgid "This tool will assist you in manually backing up the UnityConnect CRM database."
-msgstr "Công cụ này sẽ giúp bạn tự sao lưu cơ sở dữ liệu của Hệ Thống Quản Lý Hội Thánh"
-
-#: 
-#, fuzzy
-msgid "You should make a manual backup at least once a week unless you already have a regular backup procedure for your systems."
-msgstr "Bạn nên thực hiện một sao lưu thủ công ít nhất một lần một tuần, trừ khi bạn đã có một lịch sao lưu thường xuyên cho hệ thống của bạn."
-
-#: 
-msgid "After you download the backup file, you should make two copies. Put one of them in a fire-proof safe on-site and the other in a safe location off-site."
-msgstr "Sau khi bạn tải về các tập tin sao lưu, bạn nên làm cho hai bản sao. Đặt một trong số tập tin này vào nơi an toàn trong máy chủ và ngoài máy chủ."
-
-#: 
-msgid "If you are concerned about confidentiality of data stored in the UnityConnect CRM database, you should encrypt the backup data if it will be stored somewhere potentially accessible to others"
-msgstr "Nếu bạn lo lắng về tính bảo mật của dữ liệu được lưu trữ trong cơ sở dữ liệu của Hệ Thống Quản Lý Hội Thánh, bạn nên mã hóa dữ liệu sao lưu nếu nó sẽ được lưu trữ ở đâu đó có khả năng tiếp cận với những người khác"
-
-#: 
-#, fuzzy
-msgid "Select archive type"
-msgstr "Chọn loại lưu trữ"
-
-#: 
-msgid "Encrypt backup file with a password?"
-msgstr "Mã hóa tập tin sao lưu với một mật khẩu?"
-
-#: 
-#, fuzzy
-msgid "Re-type Password"
-msgstr "Gõ lại mật khẩu:"
-
-#: 
-msgid "Generate and Ship Backup to External Storage"
-msgstr "Tạo và gửi tập tin lưu trữ đến kho lưu trữ bên ngoài"
 
 #: 
 msgid "Batch Winner Entry"
@@ -167,6 +135,7 @@ msgstr "Ngày sinh / Kỷ niệm ngày cưới"
 msgid "Age / Years Married"
 msgstr "Tuổi / năm kết hôn"
 
+#. Context: queryparameters_qrp
 #: 
 #, fuzzy
 msgid "Family Role"
@@ -213,10 +182,12 @@ msgstr "Sử dụng Ctrl Key để chọn nhiều"
 msgid "Don't Filter"
 msgstr "Không lọc"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Male"
 msgstr "Nam"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Female"
 msgstr "Nữ"
@@ -288,6 +259,7 @@ msgstr "Chức danh"
 msgid "Suffix"
 msgstr "Hậu tố"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Gender"
 msgstr "Giới tính"
@@ -296,6 +268,7 @@ msgstr "Giới tính"
 msgid "Donation Envelope"
 msgstr "Phong bì đóng góp"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Home Phone"
 msgstr "Số điện thoại nhà"
@@ -348,6 +321,7 @@ msgstr "LƯU Ý: Phân tách bằng (dấu gạch ngang, vv) hoặc thiếu dấ
 msgid "Default country if none specified otherwise"
 msgstr "Quốc gia mặc định nếu không có quy định khác"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Classification"
 msgstr "Phân loại"
@@ -377,11 +351,6 @@ msgid "Add Cart to Event"
 msgstr "Thêm vào giỏ rồi gửi đến Sự kiện"
 
 #: 
-#, fuzzy
-msgid "Select the event to which you would like to add your cart"
-msgstr "Chọn sự kiện mà bạn muốn thêm vào giỏ của bạn"
-
-#: 
 msgid "OR"
 msgstr "HOẶC"
 
@@ -401,6 +370,7 @@ msgstr "Không có tên gia đình được nhập vào!"
 msgid "Add Cart to Family"
 msgstr "Thêm vào giỏ rồi gửi đến Gia đình"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Name"
 msgstr "Tên"
@@ -487,10 +457,6 @@ msgid "Empty Cart to Family"
 msgstr "Xóa bỏ giỏ trong Gia đình"
 
 #: 
-msgid "Empty Cart to Event"
-msgstr "Xóa bỏ giỏ trong Sự kiện"
-
-#: 
 msgid "Map Cart"
 msgstr "Giỏ Bản đồ"
 
@@ -547,20 +513,8 @@ msgid "Event Checkin"
 msgstr "Đăng ký sự kiện"
 
 #: 
-msgid "Select the event to which you would like to check people in for"
-msgstr "Chọn sự kiện mà bạn muốn kiểm tra mọi người"
-
-#: 
 msgid "Select Event"
 msgstr "Lựa chọn sự kiện"
-
-#: 
-msgid "Add Visitor"
-msgstr "Thêm người truy cập"
-
-#: 
-msgid "CheckIn"
-msgstr "Kiểm tra vào"
 
 #: 
 msgid "CheckOut"
@@ -586,10 +540,7 @@ msgstr "Kiểm tra bởi"
 msgid "Action"
 msgstr "Hành động"
 
-#: 
-msgid "No Attendees Assigned to Event"
-msgstr "Không có người tham dự nào được chỉ định cho sự kiện"
-
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Member"
 msgstr "Thành viên"
@@ -619,29 +570,14 @@ msgid "Deposit Slip Number: "
 msgstr "Số phiếu gửi tiền:"
 
 #: 
-msgid "Deposit Details: "
+#, fuzzy
+msgid "Deposit Details"
 msgstr "Chi tiết tiền gửi:"
 
 #: 
-msgid "Close deposit slip (remember to press Save)"
-msgstr "Đóng phiếu gửi (nhớ bấm Lưu)"
-
-#: 
-msgid "Deposit Slip Report"
-msgstr "Báo cáo tiền gửi"
-
-#: 
 #, fuzzy
-msgid "Important note: failed transactions will be deleted permanently when the deposit slip is closed."
+msgid "Important: Failed transactions will be deleted permanently when the deposit slip is closed."
 msgstr "Lưu ý quan trọng: các giao dịch không thành công sẽ bị xóa vĩnh viễn khi đóng phiếu gửi tiền."
-
-#: 
-msgid "Deposit Summary: "
-msgstr "Tóm tắt tiền gửi:"
-
-#: 
-msgid "Payments on this deposit slip:"
-msgstr "Các khoản thanh toán trên phiếu gửi tiền này:"
 
 #: 
 msgid "Import eGive"
@@ -652,7 +588,8 @@ msgid "Add Payment"
 msgstr "Thêm thanh toán"
 
 #: 
-msgid "Load Authorized Transactions"
+#, fuzzy
+msgid "Load Authorized"
 msgstr "Tải các giao dịch được ủy quyền"
 
 #: 
@@ -752,7 +689,7 @@ msgid "Use Title Page"
 msgstr "Sử dụng tiêu đề trang"
 
 #: 
-msgid "Temple/TrustName"
+msgid "Temple Name"
 msgstr "Tên Hội Thánh"
 
 #: 
@@ -844,7 +781,7 @@ msgid "Add New Fund"
 msgstr "Thêm quỹ mới"
 
 #: 
-msgid " Temple Event Editor"
+msgid "Temple Event Editor"
 msgstr "Chỉnh sửa sự kiện Hội Thánh"
 
 #: 
@@ -887,6 +824,7 @@ msgstr "Gia đình"
 msgid "Type"
 msgstr "Thể loại"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Fiscal Year"
 msgstr "Năm tài chính"
@@ -903,6 +841,7 @@ msgstr "Quỹ"
 msgid "Bank"
 msgstr "ngân hàng"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Month"
 msgstr "Tháng"
@@ -916,44 +855,8 @@ msgid "Edit"
 msgstr "Chỉnh sửa"
 
 #: 
-msgid "Event Attendees"
-msgstr "Người tham dự sự kiện"
-
-#: 
-msgid "Event Nonattendees"
-msgstr "Người không tham dự sự kiện"
-
-#: 
-msgid "Event Guests"
-msgstr "Khách sự kiện"
-
-#: 
-msgid "There "
-msgstr "tại đây␣"
-
-#: 
 msgid "Event Title"
 msgstr "Tiêu đề sự kiện"
-
-#: 
-msgid "Event Date"
-msgstr "Ngày sự kiện"
-
-#: 
-msgid "Attending Members"
-msgstr "Thành viên tham dự"
-
-#: 
-msgid "Non-Attending Members"
-msgstr "Thành viên không tham dự"
-
-#: 
-msgid "Guests"
-msgstr "Khách"
-
-#: 
-msgid "There are no events in this category"
-msgstr "Không có sự kiện nào trong chuyên mục này"
 
 #: 
 msgid "Create Event"
@@ -964,20 +867,8 @@ msgid "Create a new Event"
 msgstr "Tạo sự kiện mới"
 
 #: 
-msgid "Editing Event ID: "
-msgstr "Chỉnh ID sự kiện: "
-
-#: 
 msgid " errors. Please see below"
 msgstr " bị lỗi. Vui lòng xem bên dưới"
-
-#: 
-msgid "Items with a "
-msgstr "Các mặt hàng có"
-
-#: 
-msgid " are required"
-msgstr "được yêu cầu"
 
 #: 
 msgid "Select your event type"
@@ -988,20 +879,8 @@ msgid "You must pick an event type."
 msgstr "Bạn cần chọn loại sự kiện"
 
 #: 
-msgid "Event Desc"
-msgstr "Mô tả sự kiện"
-
-#: 
 msgid "No Attendance counts recorded"
 msgstr "Không có số điểm chuyên cần nào được ghi lại"
-
-#: 
-msgid "Attendance Notes: "
-msgstr "Ghi chú tham dự: "
-
-#: 
-msgid "Event Sermon"
-msgstr "Bài giảng của sự kiện"
 
 #: 
 msgid "Event Status"
@@ -1010,10 +889,6 @@ msgstr "Trạng thái sự kiện"
 #: 
 msgid "Return to Events"
 msgstr "Quay về sự kiện"
-
-#: 
-msgid "EVENT TYPE NAME"
-msgstr "TÊN LOẠI SỰ KIỆN"
 
 #: 
 msgid "Sundays"
@@ -1042,30 +917,6 @@ msgstr "Thứ Sáu"
 #: 
 msgid "Saturdays"
 msgstr "Thứ Bảy"
-
-#: 
-msgid "DEFAULT START TIME"
-msgstr "THỜI GIAN BẮT ĐẦU"
-
-#: 
-msgid "ATTENDANCE COUNTS"
-msgstr "SỐ LƯỢNG THAM DỰ"
-
-#: 
-msgid "Optional"
-msgstr "Không bắt buộc"
-
-#: 
-msgid "Enter a list of the attendance counts you want to include with this event."
-msgstr "Nhập danh sách số lượng người tham dự bạn muốn đưa vào sự kiện này."
-
-#: 
-msgid "Separate each count_name with a comma. e.g. Members, Visitors, Campus, Children"
-msgstr "Phân tách từng tên_đếm bằng dấu phẩy. ví dụ: Thành viên, Khách truy cập, Cơ sở, Trẻ em"
-
-#: 
-msgid "Every event type includes a Total count, you do not need to include it."
-msgstr "Mọi loại sự kiện đều bao gồm Tổng số, bạn không cần phải bao gồm nó."
 
 #: 
 msgid "Add Event Type"
@@ -1256,10 +1107,6 @@ msgid "Family List"
 msgstr "Danh sách gia đình"
 
 #: 
-msgid "Add Family"
-msgstr "Thêm gia đình"
-
-#: 
 msgid "Created"
 msgstr "Đã tạo"
 
@@ -1284,10 +1131,6 @@ msgid "Next Family"
 msgstr "Gia đình kế tiếp"
 
 #: 
-msgid "Delete this Family"
-msgstr "Xóa gia đình này"
-
-#: 
 msgid "Upload Photo"
 msgstr "Tải lên hình ảnh"
 
@@ -1298,10 +1141,6 @@ msgstr "Xóa hình ảnh"
 #: 
 msgid "Add a Note"
 msgstr "Thêm ghi chú"
-
-#: 
-msgid "Add All Family Members to Cart"
-msgstr "Thêm tất cả thành viên trong gia đình vào giỏ"
 
 #: 
 msgid "Timeline"
@@ -1410,10 +1249,6 @@ msgstr "Bạn sắp gửi bản sao thông tin gia đình qua email tới các e
 #: 
 msgid "Financial Reports"
 msgstr "Báo cáo tài chính"
-
-#: 
-msgid "No records were returned from the previous report."
-msgstr "Không có hồ sơ nào được trả lại từ báo cáo trước."
 
 #: 
 msgid "Report Type:"
@@ -1565,7 +1400,7 @@ msgid "Graphic"
 msgstr "Đồ họa"
 
 #: 
-msgid "Temple/TrustAddress"
+msgid "Temple Address"
 msgstr "Địa chỉ Hội Thánh"
 
 #: 
@@ -1653,20 +1488,9 @@ msgid "Date End"
 msgstr "Ngày kết thúc"
 
 #: 
-msgid "Clear Filters"
+#, fuzzy
+msgid "Clear Filter"
 msgstr "Xóa bỏ lọc"
-
-#: 
-msgid "Previous Page"
-msgstr "Trang trước"
-
-#: 
-msgid "Next Page"
-msgstr "Trang tiếp theo"
-
-#: 
-msgid "Display:"
-msgstr "Hiển thị:"
 
 #: 
 msgid "Number"
@@ -1787,10 +1611,6 @@ msgstr "Giao với giỏ"
 #: 
 msgid "Remove from Cart"
 msgstr "Xóa khỏi giỏ"
-
-#: 
-msgid "Text for Event ID: "
-msgstr "Văn bản cho ID sự kiện:"
 
 #: 
 msgid "Group Editor"
@@ -1961,10 +1781,6 @@ msgid "Group View"
 msgstr "Xem Ban/Mục vụ"
 
 #: 
-msgid "Group Functions"
-msgstr "Tính năng Ban/Mục vụ"
-
-#: 
 msgid "Edit this Group"
 msgstr "Chỉnh sửa"
 
@@ -2025,8 +1841,9 @@ msgid "Assigned Properties"
 msgstr "Nhóm Tế Bào"
 
 #: 
-msgid "Group Members:"
-msgstr "Thành viên Ban/Mục vụ:"
+#, fuzzy
+msgid "Group Members"
+msgstr "Thành viên Ban/Mục vụ"
 
 #: 
 msgid "Remove Selected Members from group"
@@ -2061,28 +1878,12 @@ msgid "Confirm data labels"
 msgstr "Xác nhận nhãn dữ liệu"
 
 #: 
-msgid "Listing Events of Type = "
-msgstr "Sự kiện danh sách thuộc loại ="
-
-#: 
 msgid "Listing All Temple Events"
 msgstr "Danh sách tất cả các sự kiện Hội Thánh"
 
 #: 
-msgid "Select Event Types To Display"
-msgstr "Chọn loại sự kiện để hiển thị"
-
-#: 
-msgid "Display Events in Year"
-msgstr "Hiển thị sự kiện trong năm"
-
-#: 
 msgid "Start Date/Time"
 msgstr "Thời gian/ngày bắt đầu"
-
-#: 
-msgid "No Attendance Recorded"
-msgstr "Không có điểm danh nào được ghi lại"
 
 #: 
 msgid "Attendees"
@@ -2145,7 +1946,7 @@ msgid "Assign starting at #"
 msgstr "Chỉ định bắt đầu từ #"
 
 #: 
-msgid "Unable to display map due to missing Temple/TrustLatitude or Longitude. Please update the temple Address in the settings menu."
+msgid "Unable to display map due to missing Temple Latitude or Longitude. Please update the temple Address in the settings menu."
 msgstr "Không thể hiển thị bản đồ do thiếu Kinh độ hoặc Vĩ độ của Nhà thờ. Vui lòng cập nhật Địa chỉ nhà thờ trong menu cài đặt."
 
 #: 
@@ -2728,6 +2529,7 @@ msgstr "(Danh sách thuộc tính)"
 msgid "Add a New"
 msgstr "Thêm mới"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Property"
 msgstr "Thuộc tính"
@@ -2772,6 +2574,7 @@ msgstr "Danh sách thuộc tính"
 msgid "Add a New Property Type"
 msgstr "Thêm loại thuộc tính mới"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Class"
 msgstr "Lớp học"
@@ -2803,10 +2606,6 @@ msgstr "Không, giữ lại bài tập này"
 #: 
 msgid "Query Listing"
 msgstr "Danh sách truy vấn"
-
-#: 
-msgid "Run a Free-Text Query"
-msgstr "Chạy truy vấn văn bản tự do"
 
 #: 
 msgid "Free-Text Query"
@@ -2948,10 +2747,6 @@ msgstr "CHỈ xóa bỏ bản ghi gia đình"
 #: 
 msgid "Delete Family Record AND Family Members"
 msgstr "Xóa bỏ bản ghi gia đình VÀ thành viên gia đình"
-
-#: 
-msgid "Filter and Cart"
-msgstr "Bộ lọc và giỏ"
 
 #: 
 msgid "Listing"
@@ -3291,8 +3086,8 @@ msgid "Custom Drop-Down List"
 msgstr "Danh sách thả xuống tùy chỉnh"
 
 #: 
-msgid "Thank you for registering your UnityConnect CRM installation."
-msgstr "Cảm ơn bạn đã đăng ký cài đặt UnityConnect CRM của mình."
+msgid "Thank you for registering your UnityConnectCRM installation."
+msgstr "Cảm ơn bạn đã đăng ký cài đặt UnityConnectCRM của mình."
 
 #: 
 msgid "PDFs successfully emailed "
@@ -3341,14 +3136,6 @@ msgstr "(các) mặt hàng được thêm vào Giỏ hàng."
 #: 
 msgid "Select Fiscal Year"
 msgstr "Chọn năm tài chính"
-
-#: 
-msgid "pm"
-msgstr "buổi chiều"
-
-#: 
-msgid "am"
-msgstr "là"
 
 #: 
 msgid "Invalid Editor ID!"
@@ -3523,8 +3310,8 @@ msgid "Member/Friend"
 msgstr "Thành viên / Bạn bè"
 
 #: 
-msgid "This option requires at least version 3.22 of MySQL!  Hit browser back button to return to UnityConnect CRM."
-msgstr "Tùy chọn này yêu cầu ít nhất phiên bản 3.22 của MySQL! Nhấn nút quay lại của trình duyệt để quay lại UnityConnect CRM."
+msgid "This option requires at least version 3.22 of MySQL!  Hit browser back button to return to ChurchCRM."
+msgstr "Tùy chọn này yêu cầu ít nhất phiên bản 3.22 của MySQL! Nhấn nút quay lại của trình duyệt để quay lại ChurchCRM."
 
 #: 
 msgid "Work"
@@ -3651,20 +3438,12 @@ msgid "Sunday School Class Functions"
 msgstr "Tính năng lớp học Trường Chúa Nhật"
 
 #: 
-msgid "Toggle Dropdown"
-msgstr "Chuyển đổi menu thả xuống"
-
-#: 
 msgid "Teachers"
 msgstr "Giáo viên"
 
 #: 
 msgid "Send Message"
 msgstr "Gửi đi"
-
-#: 
-msgid "View Profile"
-msgstr "Xem hồ sơ"
 
 #: 
 msgid "Quick Status"
@@ -3900,10 +3679,6 @@ msgid "Details:"
 msgstr "Chi tiết:"
 
 #: 
-msgid "File Missing"
-msgstr "Tệp bị thiếu"
-
-#: 
 msgid "This will overwrite the family envelope numbers in the database with those selected on this page.  Continue?"
 msgstr "Thao tác này sẽ ghi đè số phong bì gia đình trong cơ sở dữ liệu với những số được chọn trên trang này. Tiếp tục?"
 
@@ -3932,8 +3707,8 @@ msgid "CAUTION: This will completely erase the existing database, and replace it
 msgstr "THẬN TRỌNG: Thao tác này sẽ xóa hoàn toàn cơ sở dữ liệu hiện có và thay thế bằng bản sao lưu"
 
 #: 
-msgid "If you upload a backup from ChurchInfo, or a previous version of UnityConnect CRM, it will be automatically upgraded to the current database schema"
-msgstr "Nếu bạn tải lên bản sao lưu từ ChurchInfo hoặc phiên bản trước của UnityConnect CRM, nó sẽ được tự động nâng cấp lên cơ sở dữ liệu hiện tại"
+msgid "If you upload a backup from ChurchInfo, or a previous version of ChurchCRM, it will be automatically upgraded to the current database schema"
+msgstr "Nếu bạn tải lên bản sao lưu từ ChurchInfo hoặc phiên bản trước của ChurchCRM, nó sẽ được tự động nâng cấp lên cơ sở dữ liệu hiện tại"
 
 #: 
 msgid "Upload Files"
@@ -3956,7 +3731,7 @@ msgid "Restore Error."
 msgstr "Khôi phục bị lỗi"
 
 #: 
-msgid "Temple"
+msgid "Temple Information"
 msgstr "Hội Thánh"
 
 #: 
@@ -4005,68 +3780,12 @@ msgid "Edit Settings"
 msgstr "Chỉnh sửa cài đặt"
 
 #: 
-msgid "Upgrade UnityConnect CRM"
-msgstr "Nâng cấp UnityConnect CRM"
-
-#: 
-msgid "Step 1: Backup Database"
-msgstr "Bước 1: Sao lưu dữ liệu"
-
-#: 
-msgid "Please create a database backup before beginning the upgrade process."
-msgstr "Vui lòng tạo bản sao lưu dữ liệu trước khi tiến hành quá trình cập nhật"
-
-#: 
-msgid "Generate Database Backup"
-msgstr "Tạo bản sao lưu"
-
-#: 
-msgid "Step 2: Fetch Update Package on Server"
-msgstr "Bước 2: Tìm nạp gói cập nhật trên máy chủ"
-
-#: 
-msgid "Fetch the latest files from the UnityConnect CRM GitHub release page"
-msgstr "Tìm nạp các tệp mới nhất từ ​​trang phát hành UnityConnect CRM GitHub"
-
-#: 
-msgid "Fetch Update Files"
-msgstr "Tìm nạp tệp cập nhật"
-
-#: 
-msgid "Step 3: Apply Update Package on Server"
-msgstr "Bước 3: Áp dụng gói cập nhật trên máy chủ"
-
-#: 
-msgid "Extract the upgrade archive, and apply the new files"
-msgstr "Giải nén kho lưu trữ nâng cấp và áp dụng các tệp mới"
-
-#: 
 msgid "Full Path:"
 msgstr "Đường dẫn đầy đủ:"
 
 #: 
-msgid "SHA1:"
-msgstr "SHA1:"
-
-#: 
-msgid "Upgrade System"
-msgstr "Nâng cấp hệ thống"
-
-#: 
-msgid "Step 4: Login"
-msgstr "Bước 4: Đăng nhập"
-
-#: 
-msgid "Login to Upgraded System"
-msgstr "Đăng nhập để nâng cấp hệ thống"
-
-#: 
 msgid "Backup Complete, Ready for Download."
 msgstr "Tập tin sao lưu đã thành công, nhấn vào để tải ngay."
-
-#: 
-msgid "Backup Error."
-msgstr "Lỗi sao lưu."
 
 #: 
 msgid "Backup Downloaded, Copy on server removed"
@@ -4113,11 +3832,11 @@ msgid "Enter Name"
 msgstr "Nhập tên"
 
 #: 
-msgid "Update Temple/TrustInfo"
+msgid "Update Temple Info"
 msgstr "Cập nhật thông tin Hội Thánh"
 
 #: 
-msgid "Set Temple/TrustAddress"
+msgid "Set Temple Address"
 msgstr "Thiết lập địa chỉ"
 
 #: 
@@ -4170,18 +3889,6 @@ msgid "Registration Complete"
 msgstr "Đăng ký hoàn tất"
 
 #: 
-msgid "Register"
-msgstr "Đăng ký"
-
-#: 
-msgid "Register your family"
-msgstr "Đăng ký gia đình của bạn"
-
-#: 
-msgid "How many people are in your family"
-msgstr "Có bao nhiêu người trong gia đình bạn"
-
-#: 
 msgid "Add All Classes"
 msgstr "Thêm tất cả các lớp"
 
@@ -4222,20 +3929,12 @@ msgid "Signature definition file signature failed validation"
 msgstr "Xác thực tệp định nghĩa chữ ký chữ ký không hợp lệ"
 
 #: 
-msgid "Signature definition File Missing"
-msgstr "Thiếu tệp định nghĩa chữ ký"
-
-#: 
 msgid "One or more files failed signature validation"
 msgstr "Một hoặc nhiều tệp không xác thực được chữ ký"
 
 #: 
 msgid "Configure HTTPS"
 msgstr "Cấu hình HTTPS"
-
-#: 
-msgid "Files failing integrity check"
-msgstr "Các tệp không kiểm tra được tính toàn vẹn"
 
 #: 
 msgid "Family:"
@@ -4324,14 +4023,6 @@ msgstr "Ngày nhập vào:"
 #: 
 msgid "CSV Import"
 msgstr "Nhập vào CSV"
-
-#: 
-msgid "Comment:"
-msgstr "Bình luận:"
-
-#: 
-msgid "Closed:"
-msgstr "Đã đóng cửa:"
 
 #: 
 msgid "Start Date: "
@@ -4426,7 +4117,7 @@ msgid "with this Property..."
 msgstr "với thuộc tính này..."
 
 #: 
-msgid "Temple/TrustEmail"
+msgid "Temple Email"
 msgstr "Email Nhà thờ"
 
 #: 
@@ -4560,8 +4251,8 @@ msgid "Set true to enable family self registration."
 msgstr "Đặt true để cho phép tự đăng ký gia đình."
 
 #: 
-msgid "UnityConnect CRM has been registered.  The UnityConnect CRM team uses registration information to track usage.  This information is kept confidential and never released or sold.  If this field is true the registration option in the admin menu changes to update registration."
-msgstr "UnityConnect CRM đã được đăng ký. Nhóm UnityConnect CRM sử dụng thông tin đăng ký để theo dõi việc sử dụng. Thông tin này được giữ bí mật và không bao giờ tiết lộ hoặc bán. Nếu trường này đúng, tùy chọn đăng ký trong menu quản trị sẽ thay đổi để cập nhật đăng ký."
+msgid "ChurchCRM has been registered.  The UnityConnectCRM team uses registration information to track usage.  This information is kept confidential and never released or sold.  If this field is true the registration option in the admin menu changes to update registration."
+msgstr "ChurchCRM đã được đăng ký. Nhóm UnityConnectCRM sử dụng thông tin đăng ký để theo dõi việc sử dụng. Thông tin này được giữ bí mật và không bao giờ tiết lộ hoặc bán. Nếu trường này đúng, tùy chọn đăng ký trong menu quản trị sẽ thay đổi để cập nhật đăng ký."
 
 #: 
 msgid "Left Margin (1 = 1/100th inch)"
@@ -4572,23 +4263,23 @@ msgid "Line Thickness (1 = 1/100th inch"
 msgstr "Độ dày dòng (1 = 1/100 inch"
 
 #: 
-msgid "Temple/TrustCity"
+msgid "Temple City"
 msgstr "Thành phố nhà thờ"
 
 #: 
-msgid "Temple/TrustState"
+msgid "Temple State"
 msgstr "Nhà nước Giáo hội"
 
 #: 
-msgid "Temple/TrustZip"
+msgid "Temple Zip"
 msgstr "Nhà thờ Zip"
 
 #: 
-msgid "Temple/TrustPhone"
+msgid "Temple Phone"
 msgstr "Điện thoại nhà thờ"
 
 #: 
-msgid "Home area code of the church"
+msgid "Home area code of the temple"
 msgstr "Mã vùng nhà của nhà thờ"
 
 #: 
@@ -4636,7 +4327,7 @@ msgid "Verbage for the directory report"
 msgstr "Rác cho báo cáo thư mục"
 
 #: 
-msgid "Temple/TrustLetterhead path and file"
+msgid "Temple Letterhead path and file"
 msgstr "Đường dẫn và tệp của Giấy tiêu đề Nhà thờ"
 
 #: 
@@ -4692,7 +4383,7 @@ msgid "List Temple Events"
 msgstr "Danh sách sự kiện"
 
 #: 
-msgid "Add  Temple Event"
+msgid "Add Temple Event"
 msgstr "Thêm sự kiện mới"
 
 #: 
@@ -4759,335 +4450,419 @@ msgstr "Thuộc tính Gia đình"
 msgid "Property Types"
 msgstr "Các loại thuộc tính"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Zip Code"
 msgstr "Mã bưu chính"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "2012/2013"
 msgstr "2012/2013"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "2013/2014"
 msgstr "2013/2014"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "2014/2015"
 msgstr "2014/2015"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "2015/2016"
 msgstr "2015/2016"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "WorkEmail"
 msgstr "Làm việc bằng email"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Regular Attender"
 msgstr "Người tham dự thường xuyên"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Guest"
 msgstr "Khách mời"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Non-Attender"
 msgstr "Người không tham dự"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Non-Attender (staff)"
 msgstr "Người không tham dự (nhân viên)"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Minimum Age"
 msgstr "Tuổi tối thiểu"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Maximum Age"
 msgstr "Tuổi tối đa"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Beginning Date"
 msgstr "Ngày bắt đầu"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Ending Date"
 msgstr "Ngày kết thúc"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Search"
 msgstr "Tìm kiếm"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Field"
 msgstr "Cánh đồng"
 
+#. Context: query_qry
+#. Context: queryparameters_qrp
 #: 
 msgid "Registered students"
 msgstr "Sinh viên đã đăng ký"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Volunteer opportunities"
 msgstr "Mục vụ đã tham gia"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Months"
 msgstr "Tháng"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "First Fiscal Year"
 msgstr "Năm tài chính đầu tiên"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Second Fiscal Year"
 msgstr "Năm tài chính thứ hai"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Custom field"
 msgstr "Trường tùy chỉnh"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Field value"
 msgstr "Giá trị trường"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The minimum age for which you want records returned."
 msgstr "Độ tuổi tối thiểu mà bạn muốn trả lại hồ sơ."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The maximum age for which you want records returned."
 msgstr "Tuổi tối đa mà bạn muốn trả lại hồ sơ."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The desired gender to search the database for."
 msgstr "Giới tính mong muốn để tìm kiếm cơ sở dữ liệu."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Select the desired family role."
 msgstr "Chọn vai trò gia đình mong muốn."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The gender for which you would like records returned."
 msgstr "Giới tính mà bạn muốn hồ sơ được trả lại."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The property for which you would like person records returned."
 msgstr "Thuộc tính mà bạn muốn trả lại hồ sơ cá nhân."
 
+#. Context: queryparameters_qrp
 #: 
 #, fuzzy
 msgid "Please select the beginning date to calculate total contributions for each member (i.e. YYYY-MM-DD). NOTE: You can only choose dates that contain donations."
 msgstr "Vui lòng chọn ngày bắt đầu để tính tổng đóng góp cho mỗi thành viên (tức là YYYY-MM-DD). LƯU Ý: Bạn chỉ có thể chọn ngày đi kèm với số tiền quyên góp."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Please enter the last date to calculate total contributions for each member (i.e. YYYY-MM-DD)."
 msgstr "Vui lòng nhập ngày cuối cùng để tính tổng đóng góp cho mỗi thành viên (tức là YYYY-MM-DD)."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Enter any part of the following: Name, City, State, Zip, Home Phone, Email, or Work Email."
 msgstr "Nhập bất kỳ phần nào sau đây: Tên, Thành phố, Tiểu bang, Mã zip, Điện thoại nhà, Email hoặc Email cơ quan."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Select field to search for."
 msgstr "Chọn trường để tìm kiếm."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The birthday month for which you would like records returned."
 msgstr "Tháng sinh nhật mà bạn muốn trả lại hồ sơ."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The sunday school class for which you would like records returned."
 msgstr "Lớp học chủ nhật mà bạn muốn trả lại hồ sơ."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Group of registered students"
 msgstr "Nhóm sinh viên đã đăng ký"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The membership anniversary month for which you would like records returned."
 msgstr "Tháng kỷ niệm thành viên mà bạn muốn trả lại hồ sơ."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Choose a volunteer opportunity"
 msgstr "Chọn mục vụ"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Number of months since becoming a friend"
 msgstr "Số tháng kể từ khi trở thành bạn bè"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "First fiscal year for comparison"
 msgstr "Năm tài chính đầu tiên để so sánh"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Second fiscal year for comparison"
 msgstr "Năm tài chính thứ hai để so sánh"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Pledged this year"
 msgstr "Cam kết trong năm nay"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "but not this year"
 msgstr "nhưng không phải năm nay"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Fiscal Year."
 msgstr "Năm tài chính."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Member, Regular Attender, etc."
 msgstr "Thành viên, Người tham dự thường xuyên, v.v."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "First volunteer opportunity choice"
 msgstr "Lựa chọn mục vụ đầu tiên"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Second volunteer opportunity choice"
 msgstr "Lựa chọn mục vụ thứ hai"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Choose customer person field"
 msgstr "Chọn trường cá nhân của khách hàng"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Match custom field to this value"
 msgstr "Khớp trường tùy chỉnh với giá trị này"
 
+#. Context: query_qry
 #: 
 msgid "Family Member Count"
 msgstr "Số lượng thành viên gia đình"
 
+#. Context: query_qry
 #: 
 msgid "Person by Age"
 msgstr "Người theo độ tuổi"
 
+#. Context: query_qry
 #: 
 msgid "Total By Gender"
 msgstr "Tổng theo giới tính"
 
+#. Context: query_qry
 #: 
 msgid "Person by Role and Gender"
 msgstr "Người theo vai trò và giới tính"
 
+#. Context: query_qry
 #: 
 msgid "Person by Property"
 msgstr "Người theo tài sản"
 
+#. Context: query_qry
 #: 
 msgid "Advanced Search"
 msgstr "tìm kiếm nâng cao"
 
+#. Context: query_qry
 #: 
 msgid "Birthdays"
 msgstr "Ngày sinh nhật"
 
+#. Context: query_qry
 #: 
 msgid "Membership anniversaries"
 msgstr "Ngày kỷ niệm thành viên"
 
+#. Context: query_qry
 #: 
 msgid "Select database users"
 msgstr "Chọn người dùng cơ sở dữ liệu"
 
+#. Context: query_qry
 #: 
 msgid "Select all members"
 msgstr "Lựa chọn tất cả thành viên"
 
+#. Context: query_qry
 #: 
 msgid "Volunteers"
 msgstr "Nhân sự"
 
+#. Context: query_qry
 #: 
 msgid "Recent friends"
 msgstr "Bạn bè gần đây"
 
+#. Context: query_qry
 #: 
 msgid "Pledge comparison"
 msgstr "So sánh cam kết"
 
+#. Context: query_qry
 #: 
 msgid "Missing pledges"
 msgstr "Thiếu cam kết"
 
+#. Context: query_qry
 #: 
 msgid "Family Pledge by Fiscal Year"
 msgstr "Cam kết gia đình theo năm tài chính"
 
+#. Context: query_qry
 #: 
 msgid "CustomSearch"
 msgstr "Tìm kiếm tuỳ chỉnh"
 
+#. Context: query_qry
 #: 
 msgid "Returns each family and the total number of people assigned to them."
 msgstr "Trả về từng gia đình và tổng số người được chỉ định cho họ."
 
+#. Context: query_qry
 #: 
 msgid "Returns any person records with ages between two given ages."
 msgstr "Trả về bất kỳ bản ghi người nào có độ tuổi giữa hai độ tuổi nhất định."
 
+#. Context: query_qry
 #: 
 msgid "Total of records matching a given gender."
 msgstr "Tổng số bản ghi phù hợp với một giới tính nhất định."
 
+#. Context: query_qry
 #: 
 msgid "Selects person records with the family role and gender specified."
 msgstr "Chọn hồ sơ cá nhân với vai trò gia đình và giới tính được chỉ định."
 
+#. Context: query_qry
 #: 
 msgid "Returns person records which are assigned the given property."
 msgstr "Trả về các bản ghi người được gán thuộc tính đã cho."
 
+#. Context: query_qry
 #: 
 msgid "Search by any part of Name, City, State, Zip, Home Phone, Email, or Work Email."
 msgstr "Tìm kiếm theo bất kỳ phần nào của Tên, Thành phố, Tiểu bang, Mã zip, Điện thoại nhà riêng, Email hoặc Email cơ quan."
 
+#. Context: query_qry
 #: 
 msgid "People with birthdays in a particular month"
 msgstr "Những người có sinh nhật trong một tháng cụ thể"
 
+#. Context: query_qry
 #: 
 msgid "Find Registered students"
 msgstr "Tìm sinh viên đã đăng ký"
 
+#. Context: query_qry
 #: 
 msgid "Members who joined in a particular month"
 msgstr "Các thành viên đã tham gia vào một tháng cụ thể"
 
+#. Context: query_qry
 #: 
 msgid "People who are registered as database users"
 msgstr "Những người đã đăng ký làm người dùng cơ sở dữ liệu"
 
+#. Context: query_qry
 #: 
 msgid "People who are members"
 msgstr "Những người là thành viên"
 
+#. Context: query_qry
 #: 
 msgid "Find volunteers for a particular opportunity"
 msgstr "Tìm nhân sự cho một mục vụ cụ thể"
 
+#. Context: query_qry
 #: 
 msgid "Friends who signed up in previous months"
 msgstr "Những người bạn đã đăng ký trong những tháng trước"
 
+#. Context: query_qry
 #: 
 msgid "Compare pledges between two fiscal years"
 msgstr "So sánh các cam kết giữa hai năm tài chính"
 
+#. Context: query_qry
 #: 
 msgid "Find people who pledged one year but not another"
 msgstr "Tìm những người đã cam kết một năm chứ không phải người khác"
 
+#. Context: query_qry
 #: 
 msgid "Pledge summary by family name for each fund for the selected fiscal year"
 msgstr "Tóm tắt cam kết theo tên gia đình cho mỗi quỹ trong năm tài chính đã chọn"
 
+#. Context: query_qry
 #: 
 msgid "Find volunteers for who match two specific opportunity codes"
 msgstr "Tìm nhân sự cho hai mục vụ đặc biệt"
 
+#. Context: query_qry
 #: 
 msgid "Find people with a custom field value"
 msgstr "Tìm những người có giá trị trường tùy chỉnh"
@@ -5096,22 +4871,27 @@ msgstr "Tìm những người có giá trị trường tùy chỉnh"
 msgid "Last Edited"
 msgstr "Vừa cập nhật"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "User permission to send email via mailto: links"
 msgstr "Thành viên có quyền gửi email thông qua mailto: links"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "Delimiter to separate emails in mailto: links"
 msgstr "Dấu phân cách để tách các email trong mailto: links"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "User permission to create directories"
 msgstr "Thành viên có quyền tạo ra danh bạ"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "User permission to export CSV files"
 msgstr "Thành viên có quyền xuất tập tin CSV"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "Allow user to add new event"
 msgstr "Cho phép Thành viên thêm sự kiện mới"
@@ -5300,1022 +5080,1277 @@ msgstr "WebDAV"
 msgid "Local"
 msgstr "Địa phương"
 
+#. Context: countries
 #: 
 msgid "Afghanistan (‫افغانستان‬‎)"
 msgstr "Afghanistan (افغانستان)"
 
+#. Context: countries
 #: 
 msgid "Åland Islands (Åland)"
 msgstr "Quần đảo Åland (Åland)"
 
+#. Context: countries
 #: 
 msgid "Albania (Shqipëri)"
 msgstr "Albania (Shqipëri)"
 
+#. Context: countries
 #: 
 msgid "Algeria (‫الجزائر‬‎)"
 msgstr "Algeria (الجزائر)"
 
+#. Context: countries
 #: 
 msgid "American Samoa"
 msgstr "American Samoa"
 
+#. Context: countries
 #: 
 msgid "Andorra"
 msgstr "Andorra"
 
+#. Context: countries
 #: 
 msgid "Angola"
 msgstr "Angola"
 
+#. Context: countries
 #: 
 msgid "Anguilla"
 msgstr "Anguilla"
 
+#. Context: countries
 #: 
 msgid "Antarctica"
 msgstr "Nam Cực"
 
+#. Context: countries
 #: 
 msgid "Antigua and Barbuda"
 msgstr "Antigua và Barbuda"
 
+#. Context: countries
 #: 
 msgid "Argentina"
 msgstr "Argentina"
 
+#. Context: countries
 #: 
 msgid "Armenia (Հայաստան)"
 msgstr "Armenia (Հայաստան)"
 
+#. Context: countries
 #: 
 msgid "Aruba"
 msgstr "Aruba"
 
+#. Context: countries
 #: 
 msgid "Ascension Island"
 msgstr "Đảo Ascension"
 
+#. Context: countries
 #: 
 msgid "Australia"
 msgstr "Châu Úc"
 
+#. Context: countries
 #: 
 msgid "Austria (Österreich)"
 msgstr "Áo (Österreich)"
 
+#. Context: countries
 #: 
 msgid "Azerbaijan (Azərbaycan)"
 msgstr "Azerbaijan (Azərbaycan)"
 
+#. Context: countries
 #: 
 msgid "Bahamas"
 msgstr "Bahamas"
 
+#. Context: countries
 #: 
 msgid "Bahrain (‫البحرين‬‎)"
 msgstr "Bahrain (البحرين)"
 
+#. Context: countries
 #: 
 msgid "Bangladesh (বাংলাদেশ)"
 msgstr "Bangladesh (বাংলাদেশ)"
 
+#. Context: countries
 #: 
 msgid "Barbados"
 msgstr "Barbados"
 
+#. Context: countries
 #: 
 msgid "Belarus (Беларусь)"
 msgstr "Belarus (Беларусь)"
 
+#. Context: countries
 #: 
 msgid "Belgium (België)"
 msgstr "Bỉ (Bỉ)"
 
+#. Context: countries
 #: 
 msgid "Belize"
 msgstr "Belize"
 
+#. Context: countries
 #: 
 msgid "Benin (Bénin)"
 msgstr "Benin (Bénin)"
 
+#. Context: countries
 #: 
 msgid "Bermuda"
 msgstr "Bermuda"
 
+#. Context: countries
 #: 
 msgid "Bhutan (འབྲུག)"
 msgstr "Bhutan (འབྲུག)"
 
+#. Context: countries
 #: 
 msgid "Bolivia"
 msgstr "Bolivia"
 
+#. Context: countries
 #: 
 msgid "Bosnia and Herzegovina (Босна и Херцеговина)"
 msgstr "Bosnia và Herzegovina (Босна и Херцеговина)"
 
+#. Context: countries
 #: 
 msgid "Botswana"
 msgstr "Botswana"
 
+#. Context: countries
 #: 
 msgid "Bouvet Island"
 msgstr "Đảo Bouvet"
 
+#. Context: countries
 #: 
 msgid "Brazil (Brasil)"
 msgstr "Brazil (Brasil)"
 
+#. Context: countries
 #: 
 msgid "British Indian Ocean Territory"
 msgstr "Lãnh thổ Ấn Độ Dương thuộc Anh"
 
+#. Context: countries
 #: 
 msgid "British Virgin Islands"
 msgstr "Quần đảo British Virgin"
 
+#. Context: countries
 #: 
 msgid "Brunei"
 msgstr "Brunei"
 
+#. Context: countries
 #: 
 msgid "Bulgaria (България)"
 msgstr "Bulgaria (България)"
 
+#. Context: countries
 #: 
 msgid "Burkina Faso"
 msgstr "Burkina Faso"
 
+#. Context: countries
 #: 
 msgid "Burundi (Uburundi)"
 msgstr "Burundi (Uburundi)"
 
+#. Context: countries
 #: 
 msgid "Cambodia (កម្ពុជា)"
 msgstr "Campuchia (កម្ពុជា)"
 
+#. Context: countries
 #: 
 msgid "Cameroon (Cameroun)"
 msgstr "Cameroon (Cameroun)"
 
+#. Context: countries
 #: 
 msgid "Canada"
 msgstr "Canada"
 
+#. Context: countries
 #: 
 msgid "Canary Islands (islas Canarias)"
 msgstr "Quần đảo Canary (islas Canarias)"
 
+#. Context: countries
 #: 
 msgid "Cape Verde (Kabu Verdi)"
 msgstr "Cape Verde (Kabu Verdi)"
 
+#. Context: countries
 #: 
 msgid "Caribbean Netherlands"
 msgstr "Caribe Hà Lan"
 
+#. Context: countries
 #: 
 msgid "Cayman Islands"
 msgstr "Quần đảo Cayman"
 
+#. Context: countries
 #: 
 msgid "Central African Republic (République centrafricaine)"
 msgstr "Cộng hòa Trung Phi (République centrafricaine)"
 
+#. Context: countries
 #: 
 msgid "Ceuta and Melilla (Ceuta y Melilla)"
 msgstr "Ceuta và Melilla (Ceuta y Melilla)"
 
+#. Context: countries
 #: 
 msgid "Chad (Tchad)"
 msgstr "Chad (Tchad)"
 
+#. Context: countries
 #: 
 msgid "Chile"
 msgstr "Chile"
 
+#. Context: countries
 #: 
 msgid "China (中国)"
 msgstr "Trung Quốc (中国)"
 
+#. Context: countries
 #: 
 msgid "Christmas Island"
 msgstr "Đảo giáng sinh"
 
+#. Context: countries
 #: 
 msgid "Clipperton Island"
 msgstr "Đảo Clipperton"
 
+#. Context: countries
 #: 
 msgid "Cocos (Keeling) Islands (Kepulauan Cocos (Keeling))"
 msgstr "Quần đảo Cocos (Keeling) (Kepulauan Cocos (Keeling))"
 
+#. Context: countries
 #: 
 msgid "Colombia"
 msgstr "Colombia"
 
+#. Context: countries
 #: 
 msgid "Comoros (‫جزر القمر‬‎)"
 msgstr "Comoros (جزر القمر)"
 
+#. Context: countries
 #: 
 msgid "Congo (DRC) (Jamhuri ya Kidemokrasia ya Kongo)"
 msgstr "Congo (DRC) (Jamhuri ya Kidemokrasia ya Kongo)"
 
+#. Context: countries
 #: 
 msgid "Congo (Republic) (Congo-Brazzaville)"
 msgstr "Congo (Cộng hòa) (Congo-Brazzaville)"
 
+#. Context: countries
 #: 
 msgid "Cook Islands"
 msgstr "Quần đảo Cook"
 
+#. Context: countries
 #: 
 msgid "Costa Rica"
 msgstr "Costa Rica"
 
+#. Context: countries
 #: 
 msgid "Côte d’Ivoire"
 msgstr "Côte d'Ivoire"
 
+#. Context: countries
 #: 
 msgid "Croatia (Hrvatska)"
 msgstr "Croatia (Hrvatska)"
 
+#. Context: countries
 #: 
 msgid "Cuba"
 msgstr "Cuba"
 
+#. Context: countries
 #: 
 msgid "Curaçao"
 msgstr "Rượu cam bì"
 
+#. Context: countries
 #: 
 msgid "Cyprus (Κύπρος)"
 msgstr "Síp (Κύπρος)"
 
+#. Context: countries
 #: 
 msgid "Czech Republic (Česká republika)"
 msgstr "Cộng hòa Séc (Česká republika)"
 
+#. Context: countries
 #: 
 msgid "Denmark (Danmark)"
 msgstr "Đan Mạch (Danmark)"
 
+#. Context: countries
 #: 
 msgid "Diego Garcia"
 msgstr "Diego Garcia"
 
+#. Context: countries
 #: 
 msgid "Djibouti"
 msgstr "Djibouti"
 
+#. Context: countries
 #: 
 msgid "Dominica"
 msgstr "Dominica"
 
+#. Context: countries
 #: 
 msgid "Dominican Republic (República Dominicana)"
 msgstr "Cộng hòa Dominicana (República Dominicana)"
 
+#. Context: countries
 #: 
 msgid "Ecuador"
 msgstr "Ecuador"
 
+#. Context: countries
 #: 
 msgid "Egypt (‫مصر‬‎)"
 msgstr "Ai Cập (مصر)"
 
+#. Context: countries
 #: 
 msgid "El Salvador"
 msgstr "El Salvador"
 
+#. Context: countries
 #: 
 msgid "Equatorial Guinea (Guinea Ecuatorial)"
 msgstr "Guinea Xích đạo (Guinea Ecuatorial)"
 
+#. Context: countries
 #: 
 msgid "Eritrea"
 msgstr "Eritrea"
 
+#. Context: countries
 #: 
 msgid "Estonia (Eesti)"
 msgstr "Estonia (Eesti)"
 
+#. Context: countries
 #: 
 msgid "Ethiopia"
 msgstr "Ethiopia"
 
+#. Context: countries
 #: 
 msgid "Falkland Islands (Islas Malvinas)"
 msgstr "Quần đảo Falkland (Islas Malvinas)"
 
+#. Context: countries
 #: 
 msgid "Faroe Islands (Føroyar)"
 msgstr "Quần đảo Faroe (Føroyar)"
 
+#. Context: countries
 #: 
 msgid "Fiji"
 msgstr "Fiji"
 
+#. Context: countries
 #: 
 msgid "Finland (Suomi)"
 msgstr "Phần Lan (Suomi)"
 
+#. Context: countries
 #: 
 msgid "France"
 msgstr "Pháp"
 
+#. Context: countries
 #: 
 msgid "French Guiana (Guyane française)"
 msgstr "Guiana thuộc Pháp (Guyane française)"
 
+#. Context: countries
 #: 
 msgid "French Polynesia (Polynésie française)"
 msgstr "Polynesia thuộc Pháp (Polynésie française)"
 
+#. Context: countries
 #: 
 msgid "French Southern Territories (Terres australes françaises)"
 msgstr "Lãnh thổ phía Nam của Pháp (Terres australes françaises)"
 
+#. Context: countries
 #: 
 msgid "Gabon"
 msgstr "Gabon"
 
+#. Context: countries
 #: 
 msgid "Gambia"
 msgstr "Gambia"
 
+#. Context: countries
 #: 
 msgid "Georgia (საქართველო)"
 msgstr "Georgia (საქართველო)"
 
+#. Context: countries
 #: 
 msgid "Germany (Deutschland)"
 msgstr "Đức (Deutschland)"
 
+#. Context: countries
 #: 
 msgid "Ghana (Gaana)"
 msgstr "Ghana (Gaana)"
 
+#. Context: countries
 #: 
 msgid "Gibraltar"
 msgstr "Gibraltar"
 
+#. Context: countries
 #: 
 msgid "Greece (Ελλάδα)"
 msgstr "Hy Lạp (Ελλάδα)"
 
+#. Context: countries
 #: 
 msgid "Greenland (Kalaallit Nunaat)"
 msgstr "Greenland (Kalaallit Nunaat)"
 
+#. Context: countries
 #: 
 msgid "Grenada"
 msgstr "Grenada"
 
+#. Context: countries
 #: 
 msgid "Guadeloupe"
 msgstr "Guadeloupe"
 
+#. Context: countries
 #: 
 msgid "Guam"
 msgstr "Guam"
 
+#. Context: countries
 #: 
 msgid "Guatemala"
 msgstr "Guatemala"
 
+#. Context: countries
 #: 
 msgid "Guernsey"
 msgstr "Guernsey"
 
+#. Context: countries
 #: 
 msgid "Guinea (Guinée)"
 msgstr "Guinea (Guinée)"
 
+#. Context: countries
 #: 
 msgid "Guinea-Bissau (Guiné Bissau)"
 msgstr "Guinea-Bissau (Guiné Bissau)"
 
+#. Context: countries
 #: 
 msgid "Guyana"
 msgstr "Guyana"
 
+#. Context: countries
 #: 
 msgid "Haiti"
 msgstr "Haiti"
 
+#. Context: countries
 #: 
 msgid "Heard & McDonald Islands"
 msgstr "Quần đảo Heard & McDonald"
 
+#. Context: countries
 #: 
 msgid "Honduras"
 msgstr "Honduras"
 
+#. Context: countries
 #: 
 msgid "Hong Kong (香港)"
 msgstr "Hồng Kông (香港)"
 
+#. Context: countries
 #: 
 msgid "Hungary (Magyarország)"
 msgstr "Hungary (Magyarország)"
 
+#. Context: countries
 #: 
 msgid "Iceland (Ísland)"
 msgstr "Iceland (Ísland)"
 
+#. Context: countries
 #: 
 msgid "India (भारत)"
 msgstr "Ấn Độ (भारत)"
 
+#. Context: countries
 #: 
 msgid "Indonesia"
 msgstr "Indonesia"
 
+#. Context: countries
 #: 
 msgid "Iran (‫ایران‬‎)"
 msgstr "Iran (ایران)"
 
+#. Context: countries
 #: 
 msgid "Iraq (‫العراق‬‎)"
 msgstr "Iraq (العراق)"
 
+#. Context: countries
 #: 
 msgid "Ireland"
 msgstr "Ireland"
 
+#. Context: countries
 #: 
 msgid "Isle of Man"
 msgstr "Đảo Man"
 
+#. Context: countries
 #: 
 msgid "Israel (‫ישראל‬‎)"
 msgstr "Israel (ישראל)"
 
+#. Context: countries
 #: 
 msgid "Italy (Italia)"
 msgstr "Ý (Italia)"
 
+#. Context: countries
 #: 
 msgid "Jamaica"
 msgstr "Jamaica"
 
+#. Context: countries
 #: 
 msgid "Japan (日本)"
 msgstr "Nhật Bản (日本)"
 
+#. Context: countries
 #: 
 msgid "Jersey"
 msgstr "Jersey"
 
+#. Context: countries
 #: 
 msgid "Jordan (‫الأردن‬‎)"
 msgstr "Jordan (الأردن)"
 
+#. Context: countries
 #: 
 msgid "Kazakhstan (Казахстан)"
 msgstr "Kazakhstan (Казахстан)"
 
+#. Context: countries
 #: 
 msgid "Kenya"
 msgstr "Kenya"
 
+#. Context: countries
 #: 
 msgid "Kiribati"
 msgstr "Kiribati"
 
+#. Context: countries
 #: 
 msgid "Kosovo (Kosovë)"
 msgstr "Kosovo (Kosovë)"
 
+#. Context: countries
 #: 
 msgid "Kuwait (‫الكويت‬‎)"
 msgstr "Kuwait (الكويت)"
 
+#. Context: countries
 #: 
 msgid "Kyrgyzstan (Кыргызстан)"
 msgstr "Kyrgyzstan (Кыргызстан)"
 
+#. Context: countries
 #: 
 msgid "Laos (ລາວ)"
 msgstr "Lào (ລາວ)"
 
+#. Context: countries
 #: 
 msgid "Lebanon (‫لبنان‬‎)"
 msgstr "Lebanon (لبنان)"
 
+#. Context: countries
 #: 
 msgid "Lesotho"
 msgstr "Lesotho"
 
+#. Context: countries
 #: 
 msgid "Liberia"
 msgstr "Liberia"
 
+#. Context: countries
 #: 
 msgid "Libya (‫ليبيا‬‎)"
 msgstr "Libya (ليبيا)"
 
+#. Context: countries
 #: 
 msgid "Liechtenstein"
 msgstr "Liechtenstein"
 
+#. Context: countries
 #: 
 msgid "Lithuania (Lietuva)"
 msgstr "Lithuania (Liệtuva)"
 
+#. Context: countries
 #: 
 msgid "Luxembourg"
 msgstr "Luxembourg"
 
+#. Context: countries
 #: 
 msgid "Macau (澳門)"
 msgstr "Ma Cao (澳門)"
 
+#. Context: countries
 #: 
 msgid "Macedonia (FYROM) (Македонија)"
 msgstr "Macedonia (FYROM) (Македонија)"
 
+#. Context: countries
 #: 
 msgid "Madagascar (Madagasikara)"
 msgstr "Madagascar (Madagasikara)"
 
+#. Context: countries
 #: 
 msgid "Malawi"
 msgstr "Malawi"
 
+#. Context: countries
 #: 
 msgid "Malaysia"
 msgstr "Malaysia"
 
+#. Context: countries
 #: 
 msgid "Maldives"
 msgstr "Maldives"
 
+#. Context: countries
 #: 
 msgid "Mali"
 msgstr "Mali"
 
+#. Context: countries
 #: 
 msgid "Malta"
 msgstr "Malta"
 
+#. Context: countries
 #: 
 msgid "Marshall Islands"
 msgstr "đảo Marshall"
 
+#. Context: countries
 #: 
 msgid "Martinique"
 msgstr "Martinique"
 
+#. Context: countries
 #: 
 msgid "Mauritania (‫موريتانيا‬‎)"
 msgstr "Mauritania (موريتانيا)"
 
+#. Context: countries
 #: 
 msgid "Mauritius (Moris)"
 msgstr "Mauritius (Moris)"
 
+#. Context: countries
 #: 
 msgid "Mayotte"
 msgstr "Mayotte"
 
+#. Context: countries
 #: 
 msgid "Mexico (México)"
 msgstr "Mexico (México)"
 
+#. Context: countries
 #: 
 msgid "Micronesia"
 msgstr "Micronesia"
 
+#. Context: countries
 #: 
 msgid "Moldova (Republica Moldova)"
 msgstr "Moldova (Cộng hòa Moldova)"
 
+#. Context: countries
 #: 
 msgid "Monaco"
 msgstr "Monaco"
 
+#. Context: countries
 #: 
 msgid "Mongolia (Монгол)"
 msgstr "Mông Cổ (Монгол)"
 
+#. Context: countries
 #: 
 msgid "Montenegro (Crna Gora)"
 msgstr "Montenegro (Crna Gora)"
 
+#. Context: countries
 #: 
 msgid "Montserrat"
 msgstr "Montserrat"
 
+#. Context: countries
 #: 
 msgid "Morocco (‫المغرب‬‎)"
 msgstr "Maroc (المغرب)"
 
+#. Context: countries
 #: 
 msgid "Mozambique (Moçambique)"
 msgstr "Mozambique (Moçambique)"
 
+#. Context: countries
 #: 
 msgid "Myanmar (Burma) (မြန်မာ)"
 msgstr "Myanmar (Miến Điện) (မြန်မာ)"
 
+#. Context: countries
 #: 
 msgid "Namibia (Namibië)"
 msgstr "Namibia (Namibië)"
 
+#. Context: countries
 #: 
 msgid "Nauru"
 msgstr "Nauru"
 
+#. Context: countries
 #: 
 msgid "Nepal (नेपाल)"
 msgstr "Nepal (नेपाल)"
 
+#. Context: countries
 #: 
 msgid "Netherlands (Nederland)"
 msgstr "Hà Lan (Nederland)"
 
+#. Context: countries
 #: 
 msgid "New Caledonia (Nouvelle-Calédonie)"
 msgstr "New Caledonia (Nouvelle-Calédonie)"
 
+#. Context: countries
 #: 
 msgid "New Zealand"
 msgstr "New Zealand"
 
+#. Context: countries
 #: 
 msgid "Nicaragua"
 msgstr "Nicaragua"
 
+#. Context: countries
 #: 
 msgid "Niger (Nijar)"
 msgstr "Niger (Nijar)"
 
+#. Context: countries
 #: 
 msgid "Nigeria"
 msgstr "Nigeria"
 
+#. Context: countries
 #: 
 msgid "Niue"
 msgstr "Niue"
 
+#. Context: countries
 #: 
 msgid "Norfolk Island"
 msgstr "Đảo Norfolk"
 
+#. Context: countries
 #: 
 msgid "Northern Mariana Islands"
 msgstr "Quần đảo Bắc Mariana"
 
+#. Context: countries
 #: 
 msgid "North Korea (조선 민주주의 인민 공화국)"
 msgstr "Bắc Triều Tiên (조선 민주주의 인민 공화국)"
 
+#. Context: countries
 #: 
 msgid "Norway (Norge)"
 msgstr "Na Uy (Norge)"
 
+#. Context: countries
 #: 
 msgid "Oman (‫عُمان‬‎)"
 msgstr "Oman (عُمان)"
 
+#. Context: countries
 #: 
 msgid "Pakistan (‫پاکستان‬‎)"
 msgstr "Pakistan (پاکستان)"
 
+#. Context: countries
 #: 
 msgid "Palau"
 msgstr "Palau"
 
+#. Context: countries
 #: 
 msgid "Palestine (‫فلسطين‬‎)"
 msgstr "Palestine (فلسطين)"
 
+#. Context: countries
 #: 
 msgid "Panama (Panamá)"
 msgstr "Panama (Panamá)"
 
+#. Context: countries
 #: 
 msgid "Papua New Guinea"
 msgstr "Papua New Guinea"
 
+#. Context: countries
 #: 
 msgid "Paraguay"
 msgstr "Paraguay"
 
+#. Context: countries
 #: 
 msgid "Peru (Perú)"
 msgstr "Peru (Perú)"
 
+#. Context: countries
 #: 
 msgid "Philippines"
 msgstr "Philippines"
 
+#. Context: countries
 #: 
 msgid "Pitcairn Islands"
 msgstr "Quần đảo Pitcairn"
 
+#. Context: countries
 #: 
 msgid "Poland (Polska)"
 msgstr "Ba Lan (Polska)"
 
+#. Context: countries
 #: 
 msgid "Portugal"
 msgstr "Bồ Đào Nha"
 
+#. Context: countries
 #: 
 msgid "Puerto Rico"
 msgstr "Puerto Rico"
 
+#. Context: countries
 #: 
 msgid "Qatar (‫قطر‬‎)"
 msgstr "Qatar (قطر)"
 
+#. Context: countries
 #: 
 msgid "Réunion (La Réunion)"
 msgstr "Réunion (La Réunion)"
 
+#. Context: countries
 #: 
 msgid "Romania (România)"
 msgstr "Romania (România)"
 
+#. Context: countries
 #: 
 msgid "Russia (Россия)"
 msgstr "Nga (Россия)"
 
+#. Context: countries
 #: 
 msgid "Rwanda"
 msgstr "Rwanda"
 
+#. Context: countries
 #: 
 msgid "Saint Barthélemy (Saint-Barthélemy)"
 msgstr "Saint Barthélemy (Saint-Barthélemy)"
 
+#. Context: countries
 #: 
 msgid "Saint Helena"
 msgstr "Saint Helena"
 
+#. Context: countries
 #: 
 msgid "Saint Kitts and Nevis"
 msgstr "Saint Kitts và Nevis"
 
+#. Context: countries
 #: 
 msgid "Saint Lucia"
 msgstr "Saint Lucia"
 
+#. Context: countries
 #: 
 msgid "Saint Martin (Saint-Martin (partie française))"
 msgstr "Saint Martin (Saint-Martin (partie française))"
 
+#. Context: countries
 #: 
 msgid "Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)"
 msgstr "Saint Pierre và Miquelon (Saint-Pierre-et-Miquelon)"
 
+#. Context: countries
 #: 
 msgid "Samoa"
 msgstr "Samoa"
 
+#. Context: countries
 #: 
 msgid "San Marino"
 msgstr "San Marino"
 
+#. Context: countries
 #: 
 msgid "São Tomé and Príncipe (São Tomé e Príncipe)"
 msgstr "São Tomé và Príncipe (São Tomé e Príncipe)"
 
+#. Context: countries
 #: 
 msgid "Saudi Arabia (‫المملكة العربية السعودية‬‎)"
 msgstr "Ả Rập Xê Út (المملكة العربية السعودية)"
 
+#. Context: countries
 #: 
 msgid "Senegal (Sénégal)"
 msgstr "Senegal (Sénégal)"
 
+#. Context: countries
 #: 
 msgid "Serbia (Србија)"
 msgstr "Serbia (Србија)"
 
+#. Context: countries
 #: 
 msgid "Seychelles"
 msgstr "Seychelles"
 
+#. Context: countries
 #: 
 msgid "Sierra Leone"
 msgstr "Sierra Leone"
 
+#. Context: countries
 #: 
 msgid "Singapore"
 msgstr "Singapore"
 
+#. Context: countries
 #: 
 msgid "Sint Maarten"
 msgstr "Sint Maarten"
 
+#. Context: countries
 #: 
 msgid "Slovakia (Slovensko)"
 msgstr "Slovakia (Slovensko)"
 
+#. Context: countries
 #: 
 msgid "Slovenia (Slovenija)"
 msgstr "Slovenia (Slovenija)"
 
+#. Context: countries
 #: 
 msgid "Solomon Islands"
 msgstr "Quần đảo Solomon"
 
+#. Context: countries
 #: 
 msgid "Somalia (Soomaaliya)"
 msgstr "Somalia (Soomaaliya)"
 
+#. Context: countries
 #: 
 msgid "South Africa"
 msgstr "Nam Phi"
 
+#. Context: countries
 #: 
 msgid "South Georgia & South Sandwich Islands"
 msgstr "Nam Georgia và quần đảo Nam Sandwich"
 
+#. Context: countries
 #: 
 msgid "South Korea (대한민국)"
 msgstr "Hàn Quốc (대한민국)"
 
+#. Context: countries
 #: 
 msgid "South Sudan (‫جنوب السودان‬‎)"
 msgstr "Nam Sudan (جنوب السودان)"
 
+#. Context: countries
 #: 
 msgid "Spain (España)"
 msgstr "Tây Ban Nha (España)"
 
+#. Context: countries
 #: 
 msgid "Sri Lanka (ශ්‍රී ලංකාව)"
 msgstr "Sri Lanka (ශ්‍රී ලංකාව)"
 
+#. Context: countries
 #: 
 msgid "St. Vincent & Grenadines"
 msgstr "St. Vincent & Grenadines"
 
+#. Context: countries
 #: 
 msgid "Sudan (‫السودان‬‎)"
 msgstr "Sudan (السودان)"
 
+#. Context: countries
 #: 
 msgid "Suriname"
 msgstr "Suriname"
 
+#. Context: countries
 #: 
 msgid "Svalbard and Jan Mayen (Svalbard og Jan Mayen)"
 msgstr "Svalbard và Jan Mayen (Svalbard og Jan Mayen)"
 
+#. Context: countries
 #: 
 msgid "Swaziland"
 msgstr "Swaziland"
 
+#. Context: countries
 #: 
 msgid "Sweden (Sverige)"
 msgstr "Thụy Điển (Sverige)"
 
+#. Context: countries
 #: 
 msgid "Switzerland (Schweiz)"
 msgstr "Thụy Sĩ (Schweiz)"
 
+#. Context: countries
 #: 
 msgid "Syria (‫سوريا‬‎)"
 msgstr "Syria (سوريا)"
 
+#. Context: countries
 #: 
 msgid "Taiwan (台灣)"
 msgstr "Đài Loan (台灣)"
 
+#. Context: countries
 #: 
 msgid "Tajikistan"
 msgstr "Tajikistan"
 
+#. Context: countries
 #: 
 msgid "Tanzania"
 msgstr "Tanzania"
 
+#. Context: countries
 #: 
 msgid "Thailand (ไทย)"
 msgstr "Thái Lan (ไทย)"
 
+#. Context: countries
 #: 
 msgid "Timor-Leste"
 msgstr "Timor-Leste"
 
+#. Context: countries
 #: 
 msgid "Togo"
 msgstr "Đi"
 
+#. Context: countries
 #: 
 msgid "Tokelau"
 msgstr "Tokelau"
 
+#. Context: countries
 #: 
 msgid "Tonga"
 msgstr "Tonga"
 
+#. Context: countries
 #: 
 msgid "Trinidad and Tobago"
 msgstr "Trinidad và Tobago"
 
+#. Context: countries
 #: 
 msgid "Tristan da Cunha"
 msgstr "Tristan da Cunha"
 
+#. Context: countries
 #: 
 msgid "Tunisia (‫تونس‬‎)"
 msgstr "Tunisia (تونس)"
 
+#. Context: countries
 #: 
 msgid "Turkey (Türkiye)"
 msgstr "Thổ Nhĩ Kỳ (Türkiye)"
 
+#. Context: countries
 #: 
 msgid "Turkmenistan"
 msgstr "Turkmenistan"
 
+#. Context: countries
 #: 
 msgid "Turks and Caicos Islands"
 msgstr "Quần đảo Turks và Caicos"
 
+#. Context: countries
 #: 
 msgid "Tuvalu"
 msgstr "Tuvalu"
 
+#. Context: countries
 #: 
 msgid "U.S. Outlying Islands"
 msgstr "Quần đảo xa xôi của Hoa Kỳ"
 
+#. Context: countries
 #: 
 msgid "U.S. Virgin Islands"
 msgstr "Quần đảo Virgin thuộc Hoa Kỳ"
 
+#. Context: countries
 #: 
 msgid "Uganda"
 msgstr "Uganda"
 
+#. Context: countries
 #: 
 msgid "Ukraine (Україна)"
 msgstr "Ukraine (Україна)"
 
+#. Context: countries
 #: 
 msgid "United Arab Emirates (‫الإمارات العربية المتحدة‬‎)"
 msgstr "Các Tiểu vương quốc Ả Rập Thống nhất (الإمارات العربية المتحدة)"
 
+#. Context: countries
 #: 
 msgid "United Kingdom"
 msgstr "Vương quốc Anh"
 
+#. Context: countries
 #: 
 msgid "United States"
 msgstr "Hoa Kỳ"
 
+#. Context: countries
 #: 
 msgid "Uruguay"
 msgstr "Uruguay"
 
+#. Context: countries
 #: 
 msgid "Uzbekistan (Oʻzbekiston)"
 msgstr "Uzbekistan (Oʻzbekiston)"
 
+#. Context: countries
 #: 
 msgid "Vanuatu"
 msgstr "Vanuatu"
 
+#. Context: countries
 #: 
 msgid "Vatican City (Città del Vaticano)"
 msgstr "Thành phố Vatican (Città del Vaticano)"
 
+#. Context: countries
 #: 
 msgid "Venezuela"
 msgstr "Venezuela"
 
+#. Context: countries
 #: 
 msgid "Vietnam (Việt Nam)"
 msgstr "Việt Nam (Việt Nam)"
 
+#. Context: countries
 #: 
 msgid "Wallis and Futuna"
 msgstr "Wallis và Futuna"
 
+#. Context: countries
 #: 
 msgid "Western Sahara (‫الصحراء الغربية‬‎)"
 msgstr "Tây Sahara (الصحراء الغربية)"
 
+#. Context: countries
 #: 
 msgid "Yemen (‫اليمن‬‎)"
 msgstr "Yemen (اليمن)"
 
+#. Context: countries
 #: 
 msgid "Zambia"
 msgstr "Zambia"
 
+#. Context: countries
 #: 
 msgid "Zimbabwe"
 msgstr "Zimbabwe"
@@ -6325,11 +6360,11 @@ msgid "Please verify your family's information"
 msgstr "Vui lòng xác minh thông tin của gia đình bạn"
 
 #: 
-msgid "Temple/TrustAddress is not Set."
+msgid "Temple Address is not Set."
 msgstr "Địa chỉ Hội thánh chưa được thiết lập"
 
 #: 
-msgid "Temple/TrustName is set to default value"
+msgid "Temple Name is set to default value"
 msgstr "Tên Hội thánh là giá trị được thiết lập mặc định"
 
 #: 
@@ -6452,82 +6487,102 @@ msgstr "Dùng để kết thúc một lá thư trước Người ký"
 msgid "Google Analytics Tracking Code"
 msgstr "Mã theo dõi Google Analytics"
 
+#. Context: locales
 #: 
 msgid "English - United States"
 msgstr "Anh - Hoa Kỳ"
 
+#. Context: locales
 #: 
 msgid "English - Canada"
 msgstr "Tiếng Anh - Canada"
 
+#. Context: locales
 #: 
 msgid "English - Australia"
 msgstr "Anh - Úc"
 
+#. Context: locales
 #: 
 msgid "English - Great Britain"
 msgstr "Tiếng Anh - Vương quốc Anh"
 
+#. Context: locales
 #: 
 msgid "German - Germany"
 msgstr "Đức - Đức"
 
+#. Context: locales
 #: 
 msgid "Spanish - Spain"
 msgstr "Tây Ban Nha - Tây Ban Nha"
 
+#. Context: locales
 #: 
 msgid "French - France"
 msgstr "Tiếng Pháp nước Pháp"
 
+#. Context: locales
 #: 
 msgid "Hungarian"
 msgstr "người Hungary"
 
+#. Context: locales
 #: 
 msgid "Italian - Italy"
 msgstr "Ý - Ý"
 
+#. Context: locales
 #: 
 msgid "Norwegian"
 msgstr "Nauy"
 
+#. Context: locales
 #: 
 msgid "Dutch - Netherlands"
 msgstr "Dutch - Hà Lan"
 
+#. Context: locales
 #: 
 msgid "Polish"
 msgstr "đánh bóng"
 
+#. Context: locales
 #: 
 msgid "Portuguese - Brazil"
 msgstr "Tiếng Bồ Đào Nha - Brazil"
 
+#. Context: locales
 #: 
 msgid "Romanian - Romania"
 msgstr "Rumani - Rumani"
 
+#. Context: locales
 #: 
 msgid "Russian"
 msgstr "tiếng Nga"
 
+#. Context: locales
 #: 
 msgid "Sami (Northern) (Sweden)"
 msgstr "Sami (Miền Bắc) (Thụy Điển)"
 
+#. Context: locales
 #: 
 msgid "Albanian"
 msgstr "Người Albanian"
 
+#. Context: locales
 #: 
 msgid "Vietnamese"
 msgstr "Tiếng Việt"
 
+#. Context: locales
 #: 
 msgid "Chinese - China"
 msgstr "Trung Quốc - Trung Quốc"
 
+#. Context: locales
 #: 
 msgid "Chinese - Taiwan"
 msgstr "Trung Quốc - Đài Loan"
@@ -6549,7 +6604,7 @@ msgid "Failed"
 msgstr "Thất bại"
 
 #: 
-msgid "Temple/TrustChecking Account Number"
+msgid "Temple Checking Account Number"
 msgstr "Số tài khoản kiểm tra nhà thờ"
 
 #: 
@@ -6597,16 +6652,13 @@ msgid "Profile Image uploaded"
 msgstr "Đã cập nhật hình ảnh đại diện"
 
 #: 
-msgid "payments(s)?"
+#, fuzzy
+msgid "payment(s)?"
 msgstr "(các) khoản thanh toán?"
 
 #: 
 msgid "Please ensure this what you want to do.</p>"
 msgstr "Hãy đảm bảo điều này những gì bạn muốn làm. </p>"
-
-#: 
-msgid " this Family"
-msgstr " gia đình này"
 
 #: 
 msgid "Confirm Deactivation"
@@ -6639,10 +6691,6 @@ msgstr "Tên tệp cơ sở dữ liệu tọa độ:"
 #: 
 msgid "Intersect With Cart"
 msgstr "Giao với giỏ"
-
-#: 
-msgid "Family Member"
-msgstr "Thành viên Gia đình"
 
 #: 
 msgid "select an option"
@@ -6726,8 +6774,8 @@ msgid "Your Account was Deleted"
 msgstr "Tài khoản của bạn đã bị xóa"
 
 #: 
-msgid "Your UnityConnect CRM Account was Deleted."
-msgstr "Tài khoản UnityConnect CRM của bạn đã bị xóa."
+msgid "Your UnityConnectCRM Account was Deleted."
+msgstr "Tài khoản UnityConnectCRM của bạn đã bị xóa."
 
 #: 
 msgid "Account Locked"
@@ -6756,10 +6804,6 @@ msgstr "Xem ảnh"
 #: 
 msgid "Family Photo"
 msgstr "Hình ảnh gia đình"
-
-#: 
-msgid "Quick Settings"
-msgstr "Cài đặt nhanh"
 
 #: 
 msgid "Status"
@@ -6870,20 +6914,20 @@ msgid "Select GeoCoder Provider"
 msgstr "Chọn nhà cung cấp bộ mã hóa địa lý"
 
 #: 
-msgid "Your UnityConnect CRM account was locked."
-msgstr "Tài khoản UnityConnect CRM của bạn đã bị khóa."
+msgid "Your UnityConnectCRM account was locked."
+msgstr "Tài khoản UnityConnectCRM của bạn đã bị khóa."
 
 #: 
-msgid "A UnityConnect CRM account was created for you"
-msgstr "Một tài khoản UnityConnect CRM đã được tạo cho bạn"
+msgid "A UnityConnectCRM account was created for you"
+msgstr "Một tài khoản UnityConnectCRM đã được tạo cho bạn"
 
 #: 
-msgid "You can reset your UnityConnect CRM password by clicking this link"
-msgstr "Bạn có thể đặt lại mật khẩu UnityConnect CRM của mình bằng cách nhấp vào liên kết này"
+msgid "You can reset your UnityConnectCRM password by clicking this link"
+msgstr "Bạn có thể đặt lại mật khẩu UnityConnectCRM của mình bằng cách nhấp vào liên kết này"
 
 #: 
-msgid "Your UnityConnect CRM account was unlocked."
-msgstr "Tài khoản UnityConnect CRM của bạn đã được mở khóa."
+msgid "Your UnityConnectCRM account was unlocked."
+msgstr "Tài khoản UnityConnectCRM của bạn đã được mở khóa."
 
 #: 
 msgid "system user created"
@@ -7051,7 +7095,7 @@ msgstr "Vui lòng đến địa điểm này"
 
 #: 
 #, fuzzy
-msgid "Your UnityConnect CRM password has been changed"
+msgid "Your UnityConnectCRM password has been changed"
 msgstr "Mật khẩu của bạn đã được thay đổi"
 
 #: 
@@ -7063,24 +7107,12 @@ msgid "Reset Password"
 msgstr "Đặt lại mật khẩu"
 
 #: 
-msgid "Unable to reset password"
-msgstr "Không thể đặt lại mật khẩu"
-
-#: 
 msgid "Reset your password"
 msgstr "Khôi phục mật khẩu của bạn"
 
 #: 
 msgid "Sorry, we are unable to process your request at this point in time."
 msgstr "Xin lỗi, chúng tôi không thể xử lý yêu cầu của bạn tại thời điểm này."
-
-#: 
-msgid "Login Name is Required"
-msgstr "Tên đăng nhập là bắt buộc"
-
-#: 
-msgid "A new password was sent to you. Please check your email"
-msgstr "Một mật khẩu mới đã được gửi cho bạn. Xin vui lòng kiểm tra email của bạn"
 
 #: 
 msgid "Kiosk Manager"
@@ -7183,10 +7215,6 @@ msgid "Not all members of this group are in the cart"
 msgstr "Không phải tất cả thành viên của nhóm này đều có trong giỏ hàng"
 
 #: 
-msgid "Add all"
-msgstr "Thêm tất cả"
-
-#: 
 msgid "Are you sure you want to remove the selected group members?"
 msgstr "Bạn có chắc chắn muốn xóa các thành viên nhóm đã chọn không?"
 
@@ -7210,10 +7238,12 @@ msgstr "Ghi chú phát hành"
 msgid "Move"
 msgstr "Di chuyển"
 
+#. Context: locales
 #: 
 msgid "Arabic - Egypt"
 msgstr "Tiếng Ả Rập - Ai Cập"
 
+#. Context: locales
 #: 
 msgid "Thai"
 msgstr "Thái"
@@ -7226,10 +7256,6 @@ msgstr "Trang Facebook của Giáo hội của bạn"
 #, fuzzy
 msgid "Your Church's X Page"
 msgstr "Trang X của Giáo hội của bạn"
-
-#: 
-msgid "lookup user images on Google when no local image is present"
-msgstr "tra cứu hình ảnh người dùng trên Google khi không có hình ảnh cục bộ"
 
 #: 
 msgid "Self Register"
@@ -7247,6 +7273,7 @@ msgstr "Chờ tự xác nhận"
 msgid "Self Verify"
 msgstr "Tự xác nhận"
 
+#. Context: locales
 #: 
 msgid "Indonesian - Indonesia"
 msgstr "Indonesia - Indonesia"
@@ -7292,8 +7319,8 @@ msgid "New Family Added"
 msgstr "Gia đình mới đã được thêm"
 
 #: 
-msgid "Temple/TrustGreeter"
-msgstr "Temple/TrustGreeter"
+msgid "Temple Greeter"
+msgstr "Temple Greeter"
 
 #: 
 msgid "External Calendar API is disabled"
@@ -7432,10 +7459,6 @@ msgid "Maximum number of Addresses"
 msgstr "Số lượng địa chỉ tối đa"
 
 #: 
-msgid "Show type of group:"
-msgstr "Hiển thị loại Ban/Mục vụ"
-
-#: 
 msgid "Add Students"
 msgstr "Thêm học viên"
 
@@ -7482,26 +7505,6 @@ msgstr "Tạo sách ảnh"
 #: 
 msgid "SSE"
 msgstr "SSE"
-
-#: 
-msgid "Height to use for images"
-msgstr "Chiều cao để sử dụng cho hình ảnh"
-
-#: 
-msgid "Width to use for images"
-msgstr "Chiều rộng để sử dụng cho hình ảnh"
-
-#: 
-msgid "Width to use for thumbnails"
-msgstr "Chiều rộng để sử dụng cho hình thu nhỏ"
-
-#: 
-msgid "Point size to use for initials thumbnails"
-msgstr "Kích thước điểm để sử dụng cho hình thu nhỏ viết tắt"
-
-#: 
-msgid "Client cache seconds for images"
-msgstr "Bộ nhớ đệm ứng dụng khách giây cho hình ảnh"
 
 #: 
 msgid "Server cache time for remote images"
@@ -7556,10 +7559,6 @@ msgid "Resize Event"
 msgstr "Thay đổi kích thước sự kiện"
 
 #: 
-msgid "Text from"
-msgstr "Văn bản từ"
-
-#: 
 msgid "Profile"
 msgstr "Hồ sơ của tôi"
 
@@ -7608,8 +7607,8 @@ msgid "Field where last Confession is stored, must be a date type"
 msgstr "Trường nơi lưu trữ Lời thú tội cuối cùng, phải là một loại ngày tháng"
 
 #: 
-msgid "Require that this UnityConnect CRM Database is accessed over HTTPS"
-msgstr "Yêu cầu Cơ sở dữ liệu UnityConnect CRM này được truy cập qua HTTPS"
+msgid "Require that this UnityConnectCRM Database is accessed over HTTPS"
+msgstr "Yêu cầu Cơ sở dữ liệu UnityConnectCRM này được truy cập qua HTTPS"
 
 #: 
 msgid "People Setup"
@@ -7812,16 +7811,13 @@ msgid "Not Found: Unknown calendar id"
 msgstr "Không tìm thấy: Id lịch không xác định"
 
 #: 
-msgid "no found or user without an email"
+#, fuzzy
+msgid "not found or user without an email"
 msgstr "không tìm thấy hoặc người dùng không có email"
 
 #: 
 msgid "UserName not set"
 msgstr "UserName chưa được đặt"
-
-#: 
-msgid "The people and families has been cleared from the database."
-msgstr "Các thành viên và gia đình đã được xóa sạch khỏi bảng dữ liệu"
 
 #: 
 msgid "Self Registrations"
@@ -7989,8 +7985,8 @@ msgid "User must have Delete Records permission"
 msgstr "Người dùng phải có quyền Xóa Bản ghi"
 
 #: 
-msgid "UnityConnect CRM Central Notifications URL"
-msgstr "URL thông báo trung tâm của UnityConnect CRM"
+msgid "ChurchCRM Central Notifications URL"
+msgstr "URL thông báo trung tâm của UnityConnectCRM"
 
 #: 
 #, fuzzy
@@ -8078,10 +8074,6 @@ msgid "Menu Name"
 msgstr "Tên menu"
 
 #: 
-msgid "Max 20 char"
-msgstr "Tối đa 20 ký tự"
-
-#: 
 msgid "Link Address"
 msgstr "Đường dẫn địa chỉ"
 
@@ -8098,20 +8090,8 @@ msgid "is disabled"
 msgstr "đã được vô hiệu hóa"
 
 #: 
-msgid "System Information"
-msgstr "Thông tin hệ thống"
-
-#: 
 msgid "Software Version"
 msgstr "Phiên bản phần mềm"
-
-#: 
-msgid "Valid Mail Server Settings"
-msgstr "Cài đặt giá trị máy chủ Email"
-
-#: 
-msgid "Database"
-msgstr "Dữ liệu"
 
 #: 
 msgid "Database Version"
@@ -8153,6 +8133,7 @@ msgstr "Bao gồm dữ liệu liên hệ và nhân khẩu học trong nội dung
 msgid "Include family custom properties in global search."
 msgstr "Bao gồm các thuộc tính tùy chỉnh dành cho gia đình trong tìm kiếm toàn cầu."
 
+#. Context: countries
 #: 
 msgid "Latvia (Latvija)"
 msgstr "Latvia (Latvija)"
@@ -8177,10 +8158,6 @@ msgstr "Hồ sơ"
 #, fuzzy
 msgid "Emptied into Event"
 msgstr "Đã hết vào sự kiện"
-
-#: 
-msgid "integrityCheck.json file missing"
-msgstr "thiếu tệp tin liêm chính.json"
 
 #: 
 msgid "Passed"
@@ -8211,8 +8188,8 @@ msgid "Warning: Signature mismatch"
 msgstr "Cảnh báo: Chữ ký không khớp"
 
 #: 
-msgid "Some UnityConnect CRM system files may have been modified since the last installation."
-msgstr "Một số tệp hệ thống UnityConnect CRM có thể đã được sửa đổi kể từ lần cài đặt cuối cùng."
+msgid "Some UnityConnectCRM system files may have been modified since the last installation."
+msgstr "Một số tệp hệ thống UnityConnectCRM có thể đã được sửa đổi kể từ lần cài đặt cuối cùng."
 
 #: 
 msgid "This upgrade will completely destroy any customizations made to the following files by reverting the files to the official version."
@@ -8227,10 +8204,6 @@ msgid "Integrity Check Details:"
 msgstr "Chi tiết Kiểm tra Tính toàn vẹn:"
 
 #: 
-msgid "I Understand"
-msgstr "Tôi hiểu"
-
-#: 
 msgid "Unsupported Deposit Types Detected"
 msgstr "Đã phát hiện các loại tiền gửi không được hỗ trợ"
 
@@ -8238,13 +8211,10 @@ msgstr "Đã phát hiện các loại tiền gửi không được hỗ trợ"
 msgid "Support for eGive, Credit Card, and Bank Draft payments has been deprecated.  Existing non-bank reports may no longer be accessible in future versions."
 msgstr "Hỗ trợ cho thanh toán eGive, Thẻ tín dụng và Hối phiếu Ngân hàng đã không còn được dùng nữa. Các báo cáo phi ngân hàng hiện tại có thể không còn truy cập được trong các phiên bản trong tương lai."
 
+#. Context: locales
 #: 
 msgid "Estonian"
 msgstr "Người Estonia"
-
-#: 
-msgid "Error decoding integrity check result file"
-msgstr "Lỗi giải mã tệp kết quả kiểm tra tính toàn vẹn"
 
 #: 
 msgid "Error decoding signature definition file"
@@ -8257,10 +8227,6 @@ msgstr "Tạo bản sao lưu"
 #: 
 msgid "Remote Backup Endpoint.  If WebDAV, this must be url encoded. "
 msgstr "Điểm cuối sao lưu từ xa. Nếu WebDAV, điều này phải được mã hóa url."
-
-#: 
-msgid "Include initials image files, remote image files (gravatar), and thumbnails in backup.  These files are generally able to be reproduced after a restore and add very little value to the backup archive at a large expense of execution time and storage"
-msgstr "Bao gồm các tệp hình ảnh viết tắt, tệp hình ảnh từ xa (gravatar) và hình thu nhỏ trong bản sao lưu. Các tệp này thường có thể được sao chép sau khi khôi phục và thêm rất ít giá trị vào kho lưu trữ sao lưu với chi phí lớn về thời gian thực hiện và lưu trữ"
 
 #: 
 msgid "Password (if any)"
@@ -8316,7 +8282,8 @@ msgid "Unavailable person info inherited from assigned family for display?\n"
 msgstr "Tùy chọn này sẽ hiển thị một số thông tin nhất định từ hồ sơ gia đình được chỉ định của một người NẾU KHÔNG nhập thông tin tương ứng cho người đó."
 
 #: 
-msgid "Press CTRL + C to copy all group members\\' phone numbers"
+#, fuzzy
+msgid "Press CTRL + C to copy all group members' phone numbers"
 msgstr "Nhấn CTRL + C để sao chép tất cả số điện thoại của các thành viên trong nhóm"
 
 #: 
@@ -8362,10 +8329,6 @@ msgstr "Vui lòng kiểm tra nhật ký để biết thêm thông tin"
 #: 
 msgid "Verification URL"
 msgstr "URL xác minh"
-
-#: 
-msgid "Reset System"
-msgstr "Đặt lại hệ thống"
 
 #: 
 msgid "Unexpected Person Id"
@@ -8426,10 +8389,6 @@ msgid "Remove Results from Cart"
 msgstr "Xóa kết quả khỏi giỏ hàng"
 
 #: 
-msgid "Warning: Pre-Upgrade Tasks Detected"
-msgstr "Cảnh báo: Đã phát hiện tác vụ nâng cấp trước"
-
-#: 
 #, fuzzy
 msgid "Some conditions have been identified which may prevent a successful upgrade"
 msgstr "Một số điều kiện đã được xác định có thể ngăn cản việc nâng cấp thành công"
@@ -8443,18 +8402,6 @@ msgid "Database Reset Functions"
 msgstr "Các chức năng thiết lập lại cơ sở dữ liệu"
 
 #: 
-msgid "Reset Members"
-msgstr "Đặt lại thành viên"
-
-#: 
-msgid "This will remove all the member data, people, and families and can't be undone."
-msgstr "Thao tác này sẽ xóa tất cả dữ liệu thành viên, mọi người và gia đình và không thể hoàn tác."
-
-#: 
-msgid "Reset Families/People"
-msgstr "Đặt lại gia đình / người"
-
-#: 
 msgid "Reset Database"
 msgstr "Đặt lại cơ sở dữ liệu"
 
@@ -8462,14 +8409,7 @@ msgstr "Đặt lại cơ sở dữ liệu"
 msgid "This will reset the system data and will restart the system as a new install."
 msgstr "Thao tác này sẽ đặt lại dữ liệu hệ thống và sẽ khởi động lại hệ thống khi cài đặt mới."
 
-#: 
-msgid "Clear Filter"
-msgstr "LÀm sạch bộ lọc"
-
-#: 
-msgid "Add Person"
-msgstr "Thêm người"
-
+#. Context: locales
 #: 
 msgid "Portuguese - Portugal"
 msgstr "Tiếng Bồ Đào Nha - Bồ Đào Nha"
@@ -8487,8 +8427,8 @@ msgid "Requires users to self-enroll in 2 factor authentication"
 msgstr "Yêu cầu người dùng tự đăng ký xác thực 2 yếu tố"
 
 #: 
-msgid "UnityConnect CRM"
-msgstr "UnityConnect CRM"
+msgid "ChurchCRM"
+msgstr "ChurchCRM"
 
 #: 
 msgid "Specify the application name to be displayed in authenticator app"
@@ -8563,8 +8503,8 @@ msgid "Unable To Begin Two Factor Authentication Enrollment"
 msgstr "Không thể bắt đầu đăng ký xác thực hai yếu tố"
 
 #: 
-msgid "Two factor authentication requires UnityConnect CRM administrators to configure a few parameters"
-msgstr "Xác thực hai yếu tố yêu cầu quản trị viên UnityConnect CRM định cấu hình một vài tham số"
+msgid "Two factor authentication requires UnityConnectCRM administrators to configure a few parameters"
+msgstr "Xác thực hai yếu tố yêu cầu quản trị viên UnityConnectCRM định cấu hình một vài tham số"
 
 #: 
 msgid "System configuration "
@@ -8608,10 +8548,6 @@ msgid "Password reset not available.  Please contact your system administrator"
 msgstr "Đặt lại mật khẩu không khả dụng. Xin vui lòng liên hệ với quản trị hệ thống của bạn"
 
 #: 
-msgid "Authentication Issue"
-msgstr "Vấn đề xác thực"
-
-#: 
 msgid "Enter new user password. Administratively set passwords are not subject to length or complexity requirements"
 msgstr "Nhập mật khẩu người dùng mới. Mật khẩu được đặt quản trị không phải tuân theo yêu cầu về độ dài hoặc độ phức tạp"
 
@@ -8639,6 +8575,7 @@ msgstr "Đang tải"
 msgid "List not found"
 msgstr "Danh sách không tìm thấy"
 
+#. typo
 #: 
 #, fuzzy
 msgid "List not in the list"
@@ -8653,24 +8590,12 @@ msgid "Invalid List id"
 msgstr "Id danh sách không hợp lệ"
 
 #: 
-msgid "Audience not in the UnityConnect CRM"
+msgid "Audience not in the UnityConnectCRM"
 msgstr "Khán giả không ở trong Nhà thờCRM"
-
-#: 
-msgid "UnityConnect CRM Installation Information"
-msgstr "Thông tin cài đặt UnityConnect CRM"
-
-#: 
-msgid "Database Server Version"
-msgstr "Phiên bản máy chủ cơ sở dữ liệu"
 
 #: 
 msgid "Web Server"
 msgstr "Máy chủ web"
-
-#: 
-msgid "Email Information"
-msgstr "Thông tin Email"
 
 #: 
 msgid "List maintenance"
@@ -8684,6 +8609,7 @@ msgstr "Những người không có trong danh sách"
 msgid "Audience not in the CRM"
 msgstr "Đối tượng không có trong CRM"
 
+#. Context: locales
 #: 
 msgid "Hebrew"
 msgstr "Tiếng Do Thái"
@@ -8817,16 +8743,16 @@ msgid "Event Description"
 msgstr "Mô tả sự kiện"
 
 #: 
-msgid "Enrolling your UnityConnect CRM user account in Two Factor Authention provides an additional layer of defense against bad actors trying to access your account."
-msgstr "Việc đăng ký tài khoản người dùng UnityConnect CRM của bạn trong Xác thực hai yếu tố cung cấp một lớp bảo vệ bổ sung chống lại những kẻ xấu cố gắng truy cập vào tài khoản của bạn."
+msgid "Enrolling your UnityConnectCRM user account in Two Factor Authention provides an additional layer of defense against bad actors trying to access your account."
+msgstr "Việc đăng ký tài khoản người dùng UnityConnectCRM của bạn trong Xác thực hai yếu tố cung cấp một lớp bảo vệ bổ sung chống lại những kẻ xấu cố gắng truy cập vào tài khoản của bạn."
 
 #: 
-msgid "UnityConnect CRM Two factor supports any TOTP authenticator app, so you're free to choose between Microsoft Authenticator, Google Authenticator, Authy, LastPass, and others"
-msgstr "UnityConnect CRM Two factor hỗ trợ bất kỳ ứng dụng xác thực TOTP nào, vì vậy bạn có thể thoải mái lựa chọn giữa Microsoft Authenticator, Google Authenticator, Authy, LastPass và các ứng dụng khác"
+msgid "ChurchCRM Two factor supports any TOTP authenticator app, so you're free to choose between Microsoft Authenticator, Google Authenticator, Authy, LastPass, and others"
+msgstr "ChurchCRM Two factor hỗ trợ bất kỳ ứng dụng xác thực TOTP nào, vì vậy bạn có thể thoải mái lựa chọn giữa Microsoft Authenticator, Google Authenticator, Authy, LastPass và các ứng dụng khác"
 
 #: 
-msgid "When you sign in to UnityConnect CRM, you'll still enter your username and password like normal"
-msgstr "Khi bạn đăng nhập vào UnityConnect CRM, bạn sẽ vẫn nhập tên người dùng và mật khẩu của mình như bình thường"
+msgid "When you sign in to ChurchCRM, you'll still enter your username and password like normal"
+msgstr "Khi bạn đăng nhập vào ChurchCRM, bạn sẽ vẫn nhập tên người dùng và mật khẩu của mình như bình thường"
 
 #: 
 msgid "However, you'll also need to supply a one-time code from your authenticator device to complete your login"
@@ -8837,8 +8763,8 @@ msgid "After successfully entering both your credentials, and the one-time code,
 msgstr "Sau khi nhập thành công cả thông tin đăng nhập và mã một lần, bạn sẽ đăng nhập như bình thường"
 
 #: 
-msgid "To prevent being locked out of your UnityConnect CRM account, please ensure you're ready to complete two factor enrollment before clicking begin"
-msgstr "Để tránh bị khóa tài khoản UnityConnect CRM của bạn, hãy đảm bảo rằng bạn đã sẵn sàng hoàn tất đăng ký hai yếu tố trước khi nhấp vào bắt đầu"
+msgid "To prevent being locked out of your UnityConnectCRM account, please ensure you're ready to complete two factor enrollment before clicking begin"
+msgstr "Để tránh bị khóa tài khoản UnityConnectCRM của bạn, hãy đảm bảo rằng bạn đã sẵn sàng hoàn tất đăng ký hai yếu tố trước khi nhấp vào bắt đầu"
 
 #: 
 msgid "Beginning enrollment will invalidate any previously enrolled 2 factor devices and recovery codes."
@@ -8908,6 +8834,7 @@ msgstr "Tạo báo cáo tham dự -AND- không tham dự cho các sự kiện"
 msgid "Help translate this project"
 msgstr "Giúp dịch dự án này"
 
+#. Context: locales
 #: 
 msgid "Afrikaans"
 msgstr "Người Afrikaans"
@@ -9024,10 +8951,12 @@ msgstr "Ngày sinh không hợp lệ: Thiếu tháng hoặc ngày sinh."
 msgid "System"
 msgstr "Hệ thống"
 
+#. Context: locales
 #: 
 msgid "Turkish"
 msgstr "Thổ Nhĩ Kỳ"
 
+#. Context: locales
 #: 
 msgid "Ukrainian"
 msgstr "Ukraine"
@@ -9080,14 +9009,17 @@ msgstr "Để ngừng nhận các email này, bạn có thể gửi email"
 msgid "invalid group request"
 msgstr "Yêu cầu nhóm không đúng"
 
+#. Context: locales
 #: 
 msgid "Hindi - India"
 msgstr "Hindi - Ấn Độ"
 
+#. Context: locales
 #: 
 msgid "Japanese"
 msgstr "Nhật Bản"
 
+#. Context: locales
 #: 
 msgid "Tamil - India"
 msgstr "Tamil - Ấn Độ"
@@ -9100,10 +9032,12 @@ msgstr "Không đăng ký"
 msgid "Default Zip"
 msgstr "Mã vùng mặc định"
 
+#. Context: query_qry
 #: 
 msgid "Credit Card People"
 msgstr "Người có phương thức thanh toán là thẻ tín dụng"
 
+#. Context: query_qry
 #: 
 msgid "People who are configured to pay by credit card."
 msgstr "Những người được cài đặt thanh toán bằng thẻ tín dụng."
@@ -9132,10 +9066,12 @@ msgstr "Mailchimp không được cấu hình"
 msgid "Please update the MailChimp API key in:"
 msgstr "Vui lòng cập nhật khóa API MailChimp trong:"
 
+#. Context: locales
 #: 
 msgid "English - South Africa"
 msgstr "Tiếng Anh - Nam Phi"
 
+#. Context: locales
 #: 
 msgid "English - Jamaica"
 msgstr "Tiếng Anh - Jamaica"

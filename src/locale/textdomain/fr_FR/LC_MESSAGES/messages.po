@@ -4,7 +4,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
-"Project-Id-Version: UnityConnect CRM\n"
+"Project-Id-Version: ChurchCRM\n"
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
@@ -18,7 +18,7 @@ msgstr "Supprimer"
 
 #: 
 msgid "Cancel"
-msgstr "Abandonner"
+msgstr "Annuler"
 
 #: 
 msgid "Save"
@@ -32,10 +32,12 @@ msgstr "Non assigné"
 msgid "None"
 msgstr "Aucun"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "City"
 msgstr "Ville"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "State"
 msgstr "Etat"
@@ -48,6 +50,7 @@ msgstr "Pays"
 msgid "Phone"
 msgstr "Téléphone"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Email"
 msgstr "Email"
@@ -61,47 +64,13 @@ msgid "Backup Database"
 msgstr "Base de donnée de secours"
 
 #: 
-msgid "This tool will assist you in manually backing up the UnityConnect CRM database."
-msgstr "Cet assistant va vous aider à sauvegarder manuellement votre base de données UnityConnect CRM"
-
-#: 
-msgid "You should make a manual backup at least once a week unless you already have a regular backup procedure for your systems."
-msgstr "Vous devriez effectuer une sauvegarde manuelle au moins une fois par semaine à moins qu'une sauvegarde régulière ne soit déjà en place sur votre système."
-
-#: 
-msgid "After you download the backup file, you should make two copies. Put one of them in a fire-proof safe on-site and the other in a safe location off-site."
-msgstr "Après avoir téléchargé le fichier de sauvegarde, vous devriez en faire deux copies. Stocker l'une d'elles dans un endroit protégé du feu, sur un site différent."
-
-#: 
-msgid "If you are concerned about confidentiality of data stored in the UnityConnect CRM database, you should encrypt the backup data if it will be stored somewhere potentially accessible to others"
-msgstr "Si vous êtes préoccupé par la confidentialité des données stockées dans la base UnityConnect CRM, vous devriez chiffrer les données de sauvegarde si ces dernières seront stockées dans un endroit potentiellement accessible par des tiers"
-
-#: 
-msgid "Select archive type"
-msgstr "Sélectionner le type d'archive"
-
-#: 
-msgid "Encrypt backup file with a password?"
-msgstr "Chiffrer le fichier de sauvegarde avec un mot de passe ?"
-
-#: 
-msgid "Re-type Password"
-msgstr "Retaper le mot de passe"
-
-#: 
-msgid "Generate and Ship Backup to External Storage"
-msgstr "Générer et envoyer la sauvegarde vers un stockage externe"
-
-#: 
 msgid "Batch Winner Entry"
 msgstr "Entrée du lot gagnant"
 
-#. Not "Winter" (hiver) but "Winner"
 #: 
 msgid "Winner"
 msgstr "Gagnant"
 
-#. Privé is "private", not "price"
 #: 
 msgid "Price"
 msgstr "Prix"
@@ -134,7 +103,6 @@ msgstr "Prénom"
 msgid "Middle Name"
 msgstr "Deuxième prénom"
 
-#. Code is masculine - no "e" for "postal"
 #: 
 msgid "Zip"
 msgstr "Code postal"
@@ -159,6 +127,7 @@ msgstr "Date de naissance / anniversaire de mariage"
 msgid "Age / Years Married"
 msgstr "Nombre d'années de mariage"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Family Role"
 msgstr "Rôle familial"
@@ -203,10 +172,12 @@ msgstr "Utiliser la touche Ctrl pour une sélection multiple"
 msgid "Don't Filter"
 msgstr "Ne pas filtrer"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Male"
 msgstr "Homme"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Female"
 msgstr "Femme"
@@ -275,15 +246,16 @@ msgstr "Titre"
 msgid "Suffix"
 msgstr "Suffixe"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Gender"
 msgstr "Sexe"
 
-#. Cotisation?  Don perhaps?
 #: 
 msgid "Donation Envelope"
 msgstr "Dons"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Home Phone"
 msgstr "Téléphone Fixe"
@@ -334,20 +306,20 @@ msgstr "NOTE : avec séparateurs (tirets, etc) ou sans est sans importance"
 
 #: 
 msgid "Default country if none specified otherwise"
-msgstr "Pays par défaut si aucune indication contraire"
+msgstr "Pays par défaut si aucun autre pays n'est spécifié."
 
-#. Catégorie plus compréhensible en français que Classification https://fr.wikipedia.org/wiki/Cat%C3%A9gorisation
+#. Context: queryparameters_qrp
 #: 
 msgid "Classification"
-msgstr "Catégories"
+msgstr "Classification"
 
 #: 
 msgid "Perform Import"
-msgstr "Lancer Importation"
+msgstr "Effectuer l'importation"
 
 #: 
 msgid "ERROR: the uploaded CSV file no longer exists!"
-msgstr "ERREUR: fichier CSV téléchargé a disparu !"
+msgstr "ERREUR : le fichier CSV chargé n'existe plus !"
 
 #: 
 msgid "Upload CSV File"
@@ -364,10 +336,6 @@ msgstr "des personnes ont été importées"
 #: 
 msgid "Add Cart to Event"
 msgstr "Ajouter Panier à Événement"
-
-#: 
-msgid "Select the event to which you would like to add your cart"
-msgstr "Sélectionner l&#39;événement auquel vous voulez ajouter le panier"
 
 #: 
 msgid "OR"
@@ -389,6 +357,7 @@ msgstr "Pas de nom de famille saisi!"
 msgid "Add Cart to Family"
 msgstr "Ajouter le panier à la famille"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Name"
 msgstr "Nom"
@@ -474,10 +443,6 @@ msgid "Empty Cart to Family"
 msgstr "Vider le panier dans la famille"
 
 #: 
-msgid "Empty Cart to Event"
-msgstr "Vider le panier dans l'événement"
-
-#: 
 msgid "Map Cart"
 msgstr "Visualiser le panier dans la carte"
 
@@ -534,20 +499,8 @@ msgid "Event Checkin"
 msgstr "Enregistrement Événements"
 
 #: 
-msgid "Select the event to which you would like to check people in for"
-msgstr "Sélectionner l&#39;événement pour lequel vous voulez inscrire des personnes"
-
-#: 
 msgid "Select Event"
 msgstr "Sélectionner Événement"
-
-#: 
-msgid "Add Visitor"
-msgstr "Ajouter un visiteur"
-
-#: 
-msgid "CheckIn"
-msgstr "Inscription"
 
 #: 
 msgid "CheckOut"
@@ -573,10 +526,7 @@ msgstr "Désinscrit par"
 msgid "Action"
 msgstr "Action"
 
-#: 
-msgid "No Attendees Assigned to Event"
-msgstr "Aucun participant attribué à Événement"
-
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Member"
 msgstr "Membre"
@@ -606,29 +556,14 @@ msgid "Deposit Slip Number: "
 msgstr "Numéro de Bordereau d&#39;acompte: "
 
 #: 
-msgid "Deposit Details: "
+#, fuzzy
+msgid "Deposit Details"
 msgstr "Détails de l&#39;acompte : "
 
 #: 
-msgid "Close deposit slip (remember to press Save)"
-msgstr "Fermer le bordereau d&#39;acompte (ne pas oublier d&#39;enregistrer)"
-
-#: 
-msgid "Deposit Slip Report"
-msgstr "Rapport du Bordereau d&#39;acompte"
-
-#: 
 #, fuzzy
-msgid "Important note: failed transactions will be deleted permanently when the deposit slip is closed."
+msgid "Important: Failed transactions will be deleted permanently when the deposit slip is closed."
 msgstr "Note importante: quand un bordereau d&#39;acompte est fermé, les transactions non réussies sont définitivement supprimées."
-
-#: 
-msgid "Deposit Summary: "
-msgstr "Synthèse des acomptes: "
-
-#: 
-msgid "Payments on this deposit slip:"
-msgstr "Les paiements sur ce bordereau d&#39;acompte:"
 
 #: 
 msgid "Import eGive"
@@ -639,7 +574,8 @@ msgid "Add Payment"
 msgstr "Ajouter un paiement"
 
 #: 
-msgid "Load Authorized Transactions"
+#, fuzzy
+msgid "Load Authorized"
 msgstr "Charger les transactions autorisées"
 
 #: 
@@ -739,7 +675,7 @@ msgid "Use Title Page"
 msgstr "Utiliser le Titre de la page"
 
 #: 
-msgid "Temple/TrustName"
+msgid "Temple Name"
 msgstr "Nom Église"
 
 #: 
@@ -798,7 +734,6 @@ msgstr "Description"
 msgid "Picture URL"
 msgstr "URL de l'image"
 
-#. not sure here...
 #: 
 msgid "Donation Fund Editor"
 msgstr "Gestionnaire de la caisse de dons/Comptable"
@@ -832,7 +767,7 @@ msgid "Add New Fund"
 msgstr "Ajouter un nouveau capital"
 
 #: 
-msgid " Temple Event Editor"
+msgid "Temple Event Editor"
 msgstr "Gestionnaire d&#39;événement de l&#39;église"
 
 #: 
@@ -875,6 +810,7 @@ msgstr "Famille"
 msgid "Type"
 msgstr "Type"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Fiscal Year"
 msgstr "Année Fiscale"
@@ -891,6 +827,7 @@ msgstr "Capital"
 msgid "Bank"
 msgstr "Banque"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Month"
 msgstr "Mois"
@@ -904,44 +841,8 @@ msgid "Edit"
 msgstr "Editer"
 
 #: 
-msgid "Event Attendees"
-msgstr "Les participants à l&#39;événement"
-
-#: 
-msgid "Event Nonattendees"
-msgstr "Les non participants à l&#39;événements"
-
-#: 
-msgid "Event Guests"
-msgstr "Invités de l&#39;événement"
-
-#: 
-msgid "There "
-msgstr "Là"
-
-#: 
 msgid "Event Title"
 msgstr "Titre de l&#39;événement"
-
-#: 
-msgid "Event Date"
-msgstr "Date de l&#39;événement"
-
-#: 
-msgid "Attending Members"
-msgstr "Membres participants"
-
-#: 
-msgid "Non-Attending Members"
-msgstr "Membres qui ne participent pas"
-
-#: 
-msgid "Guests"
-msgstr "Invités"
-
-#: 
-msgid "There are no events in this category"
-msgstr "Il n&#39;y a aucun événement dans cette catégorie"
 
 #: 
 msgid "Create Event"
@@ -952,20 +853,8 @@ msgid "Create a new Event"
 msgstr "Créer un événement"
 
 #: 
-msgid "Editing Event ID: "
-msgstr "Edition de l'identifiant événement:"
-
-#: 
 msgid " errors. Please see below"
 msgstr " erreurs. Voir ci-dessous"
-
-#: 
-msgid "Items with a "
-msgstr "Articles avec un/une "
-
-#: 
-msgid " are required"
-msgstr " sont requis"
 
 #: 
 msgid "Select your event type"
@@ -976,20 +865,8 @@ msgid "You must pick an event type."
 msgstr "Vous devez choisir un type d&#39;événement."
 
 #: 
-msgid "Event Desc"
-msgstr "Description événement"
-
-#: 
 msgid "No Attendance counts recorded"
 msgstr "Aucune présence enregistrée"
-
-#: 
-msgid "Attendance Notes: "
-msgstr "Notes de présence: "
-
-#: 
-msgid "Event Sermon"
-msgstr "Prédication de l&#39;événement"
 
 #: 
 msgid "Event Status"
@@ -998,10 +875,6 @@ msgstr "Statut de l&#39;événement"
 #: 
 msgid "Return to Events"
 msgstr "Retour aux événements"
-
-#: 
-msgid "EVENT TYPE NAME"
-msgstr "NOM DU TYPE D&#39;ÉVÉNEMENT"
 
 #: 
 msgid "Sundays"
@@ -1030,30 +903,6 @@ msgstr "Vendredis"
 #: 
 msgid "Saturdays"
 msgstr "Samedis"
-
-#: 
-msgid "DEFAULT START TIME"
-msgstr "HEURE DE DÉBUT PAR DÉFAUT"
-
-#: 
-msgid "ATTENDANCE COUNTS"
-msgstr "COMPTE DE PRÉSENCE"
-
-#: 
-msgid "Optional"
-msgstr "Optionnel"
-
-#: 
-msgid "Enter a list of the attendance counts you want to include with this event."
-msgstr "Entrer une liste de compte de présence que vous voulez inclure à cet événement."
-
-#: 
-msgid "Separate each count_name with a comma. e.g. Members, Visitors, Campus, Children"
-msgstr "Séparer chaque nom_compte avec des virgules. Par exemple: Membres, Visiteurs, Campus, Enfants"
-
-#: 
-msgid "Every event type includes a Total count, you do not need to include it."
-msgstr "Chaque type d&#39;événement inclus un nombre total, vous n&#39;êtes pas obligé de l&#39;inclure."
 
 #: 
 msgid "Add Event Type"
@@ -1244,10 +1093,6 @@ msgid "Family List"
 msgstr "Liste des familles"
 
 #: 
-msgid "Add Family"
-msgstr "Ajouter une famille"
-
-#: 
 msgid "Created"
 msgstr "Créé"
 
@@ -1272,10 +1117,6 @@ msgid "Next Family"
 msgstr "Famille suivante"
 
 #: 
-msgid "Delete this Family"
-msgstr "Supprimer cette famille"
-
-#: 
 msgid "Upload Photo"
 msgstr "Télécharger une photo"
 
@@ -1286,10 +1127,6 @@ msgstr "Supprimer une photo"
 #: 
 msgid "Add a Note"
 msgstr "Ajouter une note"
-
-#: 
-msgid "Add All Family Members to Cart"
-msgstr "Ajouter tous les membres de la famille au panier"
 
 #: 
 msgid "Timeline"
@@ -1339,7 +1176,6 @@ msgstr "Montrer les paiements"
 msgid "Since"
 msgstr "Depuis"
 
-#. In the process to update the UnityConnect CRM system, there is a button that ends up with the translation "Système de mise à jour" (I think that's it exactly - just saw it 5 minutes ago).  That sounds like a bad literal translation of "Update System" where "update" is an imperative verb and not a noun.  I can't find this in the POEditor translations - either from an English or French search.  So I don't know the context of this particular "Update" to know whether it's a noun or a verb.  At any rate updating to 2.8.11 still gives this erroneous translation.  So if anyone knows where that text is coming from, the real translation should be something like: "Mettre à jour le système" or "Lancer la mise à jour" or "Commencer la mise à jour".  Thanks!
 #: 
 msgid "Update"
 msgstr "Mise à jour"
@@ -1399,10 +1235,6 @@ msgstr "Vous êtes sur le point d'envoyer une copie des informations de la famil
 #: 
 msgid "Financial Reports"
 msgstr "Rapports financier"
-
-#: 
-msgid "No records were returned from the previous report."
-msgstr "Aucun enregistrement du rapport précédent n&#39;a été retourné."
 
 #: 
 msgid "Report Type:"
@@ -1554,7 +1386,7 @@ msgid "Graphic"
 msgstr "Graphique"
 
 #: 
-msgid "Temple/TrustAddress"
+msgid "Temple Address"
 msgstr "Adresse de l&#39;église"
 
 #: 
@@ -1642,20 +1474,9 @@ msgid "Date End"
 msgstr "Date de fin"
 
 #: 
-msgid "Clear Filters"
+#, fuzzy
+msgid "Clear Filter"
 msgstr "Effacer les filtres"
-
-#: 
-msgid "Previous Page"
-msgstr "Page précédente"
-
-#: 
-msgid "Next Page"
-msgstr "Page suivante"
-
-#: 
-msgid "Display:"
-msgstr "Afficher:"
 
 #: 
 msgid "Number"
@@ -1776,10 +1597,6 @@ msgstr "Intersection avec le panier"
 #: 
 msgid "Remove from Cart"
 msgstr "Retirer du panier"
-
-#: 
-msgid "Text for Event ID: "
-msgstr "Texte pour l'ID de l&#39;événement: "
 
 #: 
 msgid "Group Editor"
@@ -1950,10 +1767,6 @@ msgid "Group View"
 msgstr "Visualiser un Groupe"
 
 #: 
-msgid "Group Functions"
-msgstr "Fonctions du groupe"
-
-#: 
 msgid "Edit this Group"
 msgstr "Modifier ce Groupe"
 
@@ -2014,8 +1827,9 @@ msgid "Assigned Properties"
 msgstr "Propriétés assignées"
 
 #: 
-msgid "Group Members:"
-msgstr "Membres du Groupe:"
+#, fuzzy
+msgid "Group Members"
+msgstr "Membres du Groupe"
 
 #: 
 msgid "Remove Selected Members from group"
@@ -2050,28 +1864,12 @@ msgid "Confirm data labels"
 msgstr "Confirmer les données des étiquettes"
 
 #: 
-msgid "Listing Events of Type = "
-msgstr "Liste des événements de type =␣ "
-
-#: 
 msgid "Listing All Temple Events"
 msgstr "Lister tous les événements de l&#39;église"
 
 #: 
-msgid "Select Event Types To Display"
-msgstr "Sélectionner les types d&#39;événements à afficher"
-
-#: 
-msgid "Display Events in Year"
-msgstr "Afficher les Evénements de l&#39;année"
-
-#: 
 msgid "Start Date/Time"
 msgstr "Date/heure de début"
-
-#: 
-msgid "No Attendance Recorded"
-msgstr "Auncune participation enregistrée"
 
 #: 
 msgid "Attendees"
@@ -2134,7 +1932,7 @@ msgid "Assign starting at #"
 msgstr "Assignée le début à #"
 
 #: 
-msgid "Unable to display map due to missing Temple/TrustLatitude or Longitude. Please update the temple Address in the settings menu."
+msgid "Unable to display map due to missing Temple Latitude or Longitude. Please update the temple Address in the settings menu."
 msgstr "Impossible d'afficher la carte car la longitude ou la latitude de l&#39;église sont manquantes. Veuillez mettre à jour l&#39;adresse de &#39;église dans le menu paramètres."
 
 #: 
@@ -2717,6 +2515,7 @@ msgstr "Liste des Propriétés"
 msgid "Add a New"
 msgstr "Ajouter une nouvelle"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Property"
 msgstr "Propriété"
@@ -2761,6 +2560,7 @@ msgstr "Liste des Types de propriétés"
 msgid "Add a New Property Type"
 msgstr "Ajouter un Type de Propriété"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Class"
 msgstr "Classe"
@@ -2792,10 +2592,6 @@ msgstr "Non, maintenir cette attribution"
 #: 
 msgid "Query Listing"
 msgstr "Liste des requêtes"
-
-#: 
-msgid "Run a Free-Text Query"
-msgstr "Exécuter une Requête de Texte Libre"
 
 #: 
 msgid "Free-Text Query"
@@ -2937,10 +2733,6 @@ msgstr "Supprimer uniquement les données de la Famille"
 #: 
 msgid "Delete Family Record AND Family Members"
 msgstr "Supprimer les données de la famille ET ses membres."
-
-#: 
-msgid "Filter and Cart"
-msgstr "Filtre et Panier"
 
 #: 
 msgid "Listing"
@@ -3280,8 +3072,8 @@ msgid "Custom Drop-Down List"
 msgstr "Liste déroulante personnalisée"
 
 #: 
-msgid "Thank you for registering your UnityConnect CRM installation."
-msgstr "Merci d'avoir enregistré votre installation de UnityConnect CRM."
+msgid "Thank you for registering your UnityConnectCRM installation."
+msgstr "Merci d'avoir enregistré votre installation de ChurchCRM."
 
 #: 
 msgid "PDFs successfully emailed "
@@ -3330,14 +3122,6 @@ msgstr "article(s) ajouté(s) au Panier."
 #: 
 msgid "Select Fiscal Year"
 msgstr "Sélectionner l'année fiscale"
-
-#: 
-msgid "pm"
-msgstr "PM "
-
-#: 
-msgid "am"
-msgstr "du matin"
 
 #: 
 msgid "Invalid Editor ID!"
@@ -3512,8 +3296,8 @@ msgid "Member/Friend"
 msgstr "Membre/Ami"
 
 #: 
-msgid "This option requires at least version 3.22 of MySQL!  Hit browser back button to return to UnityConnect CRM."
-msgstr "Cette option nécessite au moins la version 3.22 de MySQL! Cliquer sur le bouton retour du navigateur pour revenir à UnityConnect CRM."
+msgid "This option requires at least version 3.22 of MySQL!  Hit browser back button to return to ChurchCRM."
+msgstr "Cette option nécessite au moins la version 3.22 de MySQL! Cliquer sur le bouton retour du navigateur pour revenir à ChurchCRM."
 
 #: 
 msgid "Work"
@@ -3640,20 +3424,12 @@ msgid "Sunday School Class Functions"
 msgstr "Fonctions de l&#39;école du dimanche"
 
 #: 
-msgid "Toggle Dropdown"
-msgstr "Menu déroulant"
-
-#: 
 msgid "Teachers"
 msgstr "Moniteurs"
 
 #: 
 msgid "Send Message"
 msgstr "Envoyer un message"
-
-#: 
-msgid "View Profile"
-msgstr "Voir le profil"
 
 #: 
 msgid "Quick Status"
@@ -3811,7 +3587,6 @@ msgstr "Calendrier"
 msgid "Members"
 msgstr "Membres"
 
-#. La précédente traduction était trop longue.
 #: 
 msgid "Add New Person"
 msgstr "Ajouter une personne"
@@ -3890,10 +3665,6 @@ msgid "Details:"
 msgstr "Détails :"
 
 #: 
-msgid "File Missing"
-msgstr "Fichier manquant"
-
-#: 
 msgid "This will overwrite the family envelope numbers in the database with those selected on this page.  Continue?"
 msgstr "Cette action va écraser le nombre d'enveloppe par famille au niveau de la base de données, avec ceux sélectionnés dans cette page. Voulez-vous continuer ?"
 
@@ -3922,8 +3693,8 @@ msgid "CAUTION: This will completely erase the existing database, and replace it
 msgstr "ATTENTION : Cette action va complètement écraser la base de données et la remplacer avec la sauvegarde"
 
 #: 
-msgid "If you upload a backup from ChurchInfo, or a previous version of UnityConnect CRM, it will be automatically upgraded to the current database schema"
-msgstr "Si vous téléchargez une sauvegarde sur Churchinfo, ou une version précédente de UnityConnect CRM, elle sera automatiquement mise à jour avec le schéma courant de la Base de Donnés."
+msgid "If you upload a backup from ChurchInfo, or a previous version of ChurchCRM, it will be automatically upgraded to the current database schema"
+msgstr "Si vous téléchargez une sauvegarde sur Churchinfo, ou une version précédente de ChurchCRM, elle sera automatiquement mise à jour avec le schéma courant de la Base de Donnés."
 
 #: 
 msgid "Upload Files"
@@ -3946,7 +3717,7 @@ msgid "Restore Error."
 msgstr "Erreur de restauration."
 
 #: 
-msgid "Temple"
+msgid "Temple Information"
 msgstr "Information de l'église"
 
 #: 
@@ -3994,68 +3765,12 @@ msgid "Edit Settings"
 msgstr "Modifier les Réglages"
 
 #: 
-msgid "Upgrade UnityConnect CRM"
-msgstr "Mettre à jour UnityConnect CRM"
-
-#: 
-msgid "Step 1: Backup Database"
-msgstr "Étape 1 : Sauvegarder la Base de Données"
-
-#: 
-msgid "Please create a database backup before beginning the upgrade process."
-msgstr "Veuillez créer une sauvegarde de la Base de Données avant de commencer le processus de mise à jour."
-
-#: 
-msgid "Generate Database Backup"
-msgstr "Générer une sauvegarde de la Base de Données"
-
-#: 
-msgid "Step 2: Fetch Update Package on Server"
-msgstr "Étape 2 : télécharger le package de mise à jour sur le serveur"
-
-#: 
-msgid "Fetch the latest files from the UnityConnect CRM GitHub release page"
-msgstr "Télécharger les dernier fichiers de mise à jour de GitHub UnityConnect CRM"
-
-#: 
-msgid "Fetch Update Files"
-msgstr "Télécharger les fichiers de mise à jour"
-
-#: 
-msgid "Step 3: Apply Update Package on Server"
-msgstr "Étape 3 : Appliquer le package de mise à jour sur le serveur"
-
-#: 
-msgid "Extract the upgrade archive, and apply the new files"
-msgstr "Extraire les mises à jour du package et appliquer les nouveaux fichiers"
-
-#: 
 msgid "Full Path:"
 msgstr "Chemin d'accès complet :"
 
 #: 
-msgid "SHA1:"
-msgstr "SHA1 :"
-
-#: 
-msgid "Upgrade System"
-msgstr "Mettre à jour le système"
-
-#: 
-msgid "Step 4: Login"
-msgstr "Étape 4 : Connexion"
-
-#: 
-msgid "Login to Upgraded System"
-msgstr "Connexion sur le système mis à jour"
-
-#: 
 msgid "Backup Complete, Ready for Download."
 msgstr "Sauvegarde complète, prêt à télécharger."
-
-#: 
-msgid "Backup Error."
-msgstr "Erreur de sauvegarde."
 
 #: 
 msgid "Backup Downloaded, Copy on server removed"
@@ -4102,11 +3817,11 @@ msgid "Enter Name"
 msgstr "Entrer le Nom"
 
 #: 
-msgid "Update Temple/TrustInfo"
+msgid "Update Temple Info"
 msgstr "Mettre à jour les informations de l&#39;église"
 
 #: 
-msgid "Set Temple/TrustAddress"
+msgid "Set Temple Address"
 msgstr "Fixer l&#39;adresse de l&#39;église"
 
 #: 
@@ -4148,7 +3863,7 @@ msgstr "Anonyme"
 #: 
 #, fuzzy
 msgid "Attendees for Event"
-msgstr "Participants à l&#39;événement"
+msgstr "Participants à l'événement"
 
 #: 
 msgid "Yearly"
@@ -4157,18 +3872,6 @@ msgstr "Annuel"
 #: 
 msgid "Registration Complete"
 msgstr "Inscription terminée."
-
-#: 
-msgid "Register"
-msgstr "S'inscrire"
-
-#: 
-msgid "Register your family"
-msgstr "Inscrire votre famille"
-
-#: 
-msgid "How many people are in your family"
-msgstr "Combien de personnes êtes vous dans votre famille"
 
 #: 
 msgid "Add All Classes"
@@ -4211,20 +3914,12 @@ msgid "Signature definition file signature failed validation"
 msgstr "La signature du fichier de définition de la signature n&#39;a pas été validé"
 
 #: 
-msgid "Signature definition File Missing"
-msgstr "Le fichier de définition de la signature est introuvable."
-
-#: 
 msgid "One or more files failed signature validation"
 msgstr "Un ou plusieurs fichiers n&#39;ont pas été signé"
 
 #: 
 msgid "Configure HTTPS"
 msgstr "Configurer HTTPS"
-
-#: 
-msgid "Files failing integrity check"
-msgstr "Les fichiers ont échoué au test d'intégrité"
 
 #: 
 msgid "Family:"
@@ -4313,14 +4008,6 @@ msgstr "Date entrée:"
 #: 
 msgid "CSV Import"
 msgstr "Importer un fichier CSV"
-
-#: 
-msgid "Comment:"
-msgstr "Commentaire:"
-
-#: 
-msgid "Closed:"
-msgstr "Fermé:"
 
 #: 
 msgid "Start Date: "
@@ -4415,7 +4102,7 @@ msgid "with this Property..."
 msgstr "avec cette Propriété..."
 
 #: 
-msgid "Temple/TrustEmail"
+msgid "Temple Email"
 msgstr "Email de l'église"
 
 #: 
@@ -4549,8 +4236,8 @@ msgid "Set true to enable family self registration."
 msgstr "Cocher Vrai pour que la famille puisse s'enregistrer elle même"
 
 #: 
-msgid "UnityConnect CRM has been registered.  The UnityConnect CRM team uses registration information to track usage.  This information is kept confidential and never released or sold.  If this field is true the registration option in the admin menu changes to update registration."
-msgstr "UnityConnect CRM a bien été enregistré. L&#39;équipe UnityConnect CRM utilise les informations d&#39;enregistrement pour suivre l'utilisation du logiciel. Cette information est confidentielle et ne sera pas transmise ni vendu. Si ce champ est coché Vrai, l&#39;option d&#39;enregistrement dans le menu admin changera pour mettre à jour l&#39;enregistrement"
+msgid "ChurchCRM has been registered.  The UnityConnectCRM team uses registration information to track usage.  This information is kept confidential and never released or sold.  If this field is true the registration option in the admin menu changes to update registration."
+msgstr "ChurchCRM a bien été enregistré. L&#39;équipe UnityConnectCRM utilise les informations d&#39;enregistrement pour suivre l'utilisation du logiciel. Cette information est confidentielle et ne sera pas transmise ni vendu. Si ce champ est coché Vrai, l&#39;option d&#39;enregistrement dans le menu admin changera pour mettre à jour l&#39;enregistrement"
 
 #: 
 msgid "Left Margin (1 = 1/100th inch)"
@@ -4561,23 +4248,23 @@ msgid "Line Thickness (1 = 1/100th inch"
 msgstr "Épaisseur de la ligne (1=1/100 Inch)"
 
 #: 
-msgid "Temple/TrustCity"
+msgid "Temple City"
 msgstr "Ville de l&#39;église"
 
 #: 
-msgid "Temple/TrustState"
+msgid "Temple State"
 msgstr "Région de l'église"
 
 #: 
-msgid "Temple/TrustZip"
+msgid "Temple Zip"
 msgstr "Code postal de l'église"
 
 #: 
-msgid "Temple/TrustPhone"
+msgid "Temple Phone"
 msgstr "Téléphone de l'église"
 
 #: 
-msgid "Home area code of the church"
+msgid "Home area code of the temple"
 msgstr "Indicatif de l'église"
 
 #: 
@@ -4625,7 +4312,7 @@ msgid "Verbage for the directory report"
 msgstr "Verbiage pour le répertoire"
 
 #: 
-msgid "Temple/TrustLetterhead path and file"
+msgid "Temple Letterhead path and file"
 msgstr "Chemin et fichier de l&#39;En-tête de lettre de l&#39;église"
 
 #: 
@@ -4681,7 +4368,7 @@ msgid "List Temple Events"
 msgstr "Lister les événements de l'église"
 
 #: 
-msgid "Add  Temple Event"
+msgid "Add Temple Event"
 msgstr "Ajouter un nouvel événement d'église"
 
 #: 
@@ -4748,335 +4435,419 @@ msgstr "Propriétés des familles"
 msgid "Property Types"
 msgstr "Types de propriétés"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Zip Code"
 msgstr "Code postal"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "2012/2013"
 msgstr "2012/2013"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "2013/2014"
 msgstr "2013/2014"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "2014/2015"
 msgstr "2014/2015"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "2015/2016"
 msgstr "2015/2016"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "WorkEmail"
 msgstr "Email professionnel"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Regular Attender"
 msgstr "Participant régulier"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Guest"
 msgstr "Invité"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Non-Attender"
 msgstr "Non participant"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Non-Attender (staff)"
 msgstr "Non participant (Staff)"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Minimum Age"
 msgstr "Age minimum"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Maximum Age"
 msgstr "Age maximum"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Beginning Date"
 msgstr "Date de début"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Ending Date"
 msgstr "Date de fin"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Search"
 msgstr "Rechercher"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Field"
 msgstr "Champ"
 
+#. Context: query_qry
+#. Context: queryparameters_qrp
 #: 
 msgid "Registered students"
 msgstr "Étudiants enregistrés"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Volunteer opportunities"
 msgstr "Opportunités de volontariat"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Months"
 msgstr "Mois"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "First Fiscal Year"
 msgstr "Première année fiscale"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Second Fiscal Year"
 msgstr "Deuxième année fiscale"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Custom field"
 msgstr "Champ personnalisé"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Field value"
 msgstr "Valeur du Champ"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The minimum age for which you want records returned."
 msgstr "L'âge minimum pour lequel vous voulez retourner un document."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The maximum age for which you want records returned."
 msgstr "L'âge maximum pour lequel vous voulez retourner un document."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The desired gender to search the database for."
 msgstr "Le sexe désiré à rechercher dans la base de données"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Select the desired family role."
 msgstr "Sélectionner le rôle de famille désiré"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The gender for which you would like records returned."
 msgstr "Le sexe pour lequel vous voudriez retourner des rapports ."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The property for which you would like person records returned."
 msgstr "La propriété pour laquelle vous voudriez que les rapports de personne soient retournés."
 
+#. Context: queryparameters_qrp
 #: 
 #, fuzzy
 msgid "Please select the beginning date to calculate total contributions for each member (i.e. YYYY-MM-DD). NOTE: You can only choose dates that contain donations."
 msgstr "Veuillez choisir la date de début pour calculer des contributions totales pour chaque membre (c'est-à-dire. JJ-MM-AAAA). NOTE : Vous pouvez seulement choisir des dates où des dons ont été faits."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Please enter the last date to calculate total contributions for each member (i.e. YYYY-MM-DD)."
 msgstr "Veuillez entrer la dernière date pour calculer les contributions pour chaque membre (i.e. DD-MM-YYYY)."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Enter any part of the following: Name, City, State, Zip, Home Phone, Email, or Work Email."
 msgstr "Renseigner un des champs : Nom, Ville, Etat, Code postal, Téléphone personnel, Email ou Email professionnel"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Select field to search for."
 msgstr "Sélectionner le champ à rechercher."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The birthday month for which you would like records returned."
 msgstr "Le mois d'anniversaire pour lequel vous voulez retourner les rapports."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The sunday school class for which you would like records returned."
 msgstr "La classe d'école du dimanche pour laquelle vous voulez retourner les rapports."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Group of registered students"
 msgstr "Groupe d'étudiants enregistrés"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The membership anniversary month for which you would like records returned."
 msgstr "Le mois anniversaire de mariage d'adhésion pour lequel vous voulez retourner un enregistrement."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Choose a volunteer opportunity"
 msgstr "Choisir une opportunité de bénévolats"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Number of months since becoming a friend"
 msgstr "Nombre de mois d'amitié"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "First fiscal year for comparison"
 msgstr "Première année fiscale pour comparaison"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Second fiscal year for comparison"
 msgstr "Deuxième année fiscale pour comparaison"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Pledged this year"
 msgstr "Contributions de l'année"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "but not this year"
 msgstr "mais pas cette année"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Fiscal Year."
 msgstr "Année fiscale."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Member, Regular Attender, etc."
 msgstr "Membre, participant régulier, etc ..."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "First volunteer opportunity choice"
 msgstr "Premier choix d'opportunité de bénévolat"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Second volunteer opportunity choice"
 msgstr "Second choix d'opportunité de bénévolat"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Choose customer person field"
 msgstr "Choisir le champ personnalisé de personne"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Match custom field to this value"
 msgstr "Faire correspondre le champ personnalisé à cette valeur"
 
+#. Context: query_qry
 #: 
 msgid "Family Member Count"
 msgstr "Nombre de membres de famille"
 
+#. Context: query_qry
 #: 
 msgid "Person by Age"
 msgstr "Personne par âge"
 
+#. Context: query_qry
 #: 
 msgid "Total By Gender"
 msgstr "Total par sexe"
 
+#. Context: query_qry
 #: 
 msgid "Person by Role and Gender"
 msgstr "Personne par rôle et par sexe"
 
+#. Context: query_qry
 #: 
 msgid "Person by Property"
 msgstr "Personne par propriété"
 
+#. Context: query_qry
 #: 
 msgid "Advanced Search"
 msgstr "Recherche avancée"
 
+#. Context: query_qry
 #: 
 msgid "Birthdays"
 msgstr "Dates d'anniversaire"
 
+#. Context: query_qry
 #: 
 msgid "Membership anniversaries"
 msgstr "Date anniversaire de l'adhésion"
 
+#. Context: query_qry
 #: 
 msgid "Select database users"
 msgstr "Sélectionner les utilisateurs de la Base de Données"
 
+#. Context: query_qry
 #: 
 msgid "Select all members"
 msgstr "Sélectionner tous les membres"
 
+#. Context: query_qry
 #: 
 msgid "Volunteers"
 msgstr "Volontaires"
 
+#. Context: query_qry
 #: 
 msgid "Recent friends"
 msgstr "Amis récents"
 
+#. Context: query_qry
 #: 
 msgid "Pledge comparison"
 msgstr "Comparaison de contribution"
 
+#. Context: query_qry
 #: 
 msgid "Missing pledges"
 msgstr "Contributions manquantes"
 
+#. Context: query_qry
 #: 
 msgid "Family Pledge by Fiscal Year"
 msgstr "Contribution familiale par année fiscale"
 
+#. Context: query_qry
 #: 
 msgid "CustomSearch"
 msgstr "Recherche personnalisé"
 
+#. Context: query_qry
 #: 
 msgid "Returns each family and the total number of people assigned to them."
 msgstr "Renvoyer chaque familles et le nombre total des personnes qui leurs est assignées."
 
+#. Context: query_qry
 #: 
 msgid "Returns any person records with ages between two given ages."
 msgstr "Renvoyer chaque personnes âgé entre deux âges donnés."
 
+#. Context: query_qry
 #: 
 msgid "Total of records matching a given gender."
 msgstr "Nombre total d'enregistrement du sexe spécifié"
 
+#. Context: query_qry
 #: 
 msgid "Selects person records with the family role and gender specified."
 msgstr "Sélectionner les enregistrements de personnes avec un rôle de famille et un sexe spécifié."
 
+#. Context: query_qry
 #: 
 msgid "Returns person records which are assigned the given property."
 msgstr "Renvoyer les enregistrements de personnes qui sont assignées à une propriété spécifié"
 
+#. Context: query_qry
 #: 
 msgid "Search by any part of Name, City, State, Zip, Home Phone, Email, or Work Email."
 msgstr "Rechercher par Nom, Ville, Etat, Code postal, Numéro de téléphone personnel, Email ou Email professionnel"
 
+#. Context: query_qry
 #: 
 msgid "People with birthdays in a particular month"
 msgstr "Personnes nées un mois particulié"
 
+#. Context: query_qry
 #: 
 msgid "Find Registered students"
 msgstr "Rechercher les étudiant enregistré"
 
+#. Context: query_qry
 #: 
 msgid "Members who joined in a particular month"
 msgstr "Les membres qui nous ont rejoint à un mois particulier"
 
+#. Context: query_qry
 #: 
 msgid "People who are registered as database users"
 msgstr "Personnes qui sont enregistrées comme utilisateurs de la Base de Données "
 
+#. Context: query_qry
 #: 
 msgid "People who are members"
 msgstr "Personnes qui sont membres"
 
+#. Context: query_qry
 #: 
 msgid "Find volunteers for a particular opportunity"
 msgstr "Rechercher des volontaires pour une opportunitée particulière"
 
+#. Context: query_qry
 #: 
 msgid "Friends who signed up in previous months"
 msgstr "Les amis qui ont souscrit dans les mois précédents"
 
+#. Context: query_qry
 #: 
 msgid "Compare pledges between two fiscal years"
 msgstr "Comparer les contributions entre deux années fiscales."
 
+#. Context: query_qry
 #: 
 msgid "Find people who pledged one year but not another"
 msgstr "Rechercher les Personnes qui ont contribué une année mais plus par la suite"
 
+#. Context: query_qry
 #: 
 msgid "Pledge summary by family name for each fund for the selected fiscal year"
 msgstr "Résumé des contributions par nom de famille pour chaque fond de l'année fiscale sélectionnée"
 
+#. Context: query_qry
 #: 
 msgid "Find volunteers for who match two specific opportunity codes"
 msgstr "Rechercher des volontaires qui correspondent avec deux codes opportunité"
 
+#. Context: query_qry
 #: 
 msgid "Find people with a custom field value"
 msgstr "Rechercher des personnes avec un champ de valeur personnalisé"
@@ -5085,22 +4856,27 @@ msgstr "Rechercher des personnes avec un champ de valeur personnalisé"
 msgid "Last Edited"
 msgstr "Dernière edition"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "User permission to send email via mailto: links"
 msgstr "Permission de l&#39;utilisateur pour lui envoyer des email via des liens Mailto"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "Delimiter to separate emails in mailto: links"
 msgstr "Délimiteur pour séparer les adresses email dans les liens Mailto"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "User permission to create directories"
 msgstr "Permission de l&#39;utilisateur pour créer des annuaires."
 
+#. Context: userconfig_ucfg
 #: 
 msgid "User permission to export CSV files"
 msgstr "Permission de l&#39;utilisateur pour exporter des fichiers CSV"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "Allow user to add new event"
 msgstr "Autoriser les utilisateurs à ajouter un nouvel événement"
@@ -5289,1022 +5065,1277 @@ msgstr "WebDAV"
 msgid "Local"
 msgstr "Local"
 
+#. Context: countries
 #: 
 msgid "Afghanistan (‫افغانستان‬‎)"
 msgstr "Afghanistan (‫افغانستان‬‎)"
 
+#. Context: countries
 #: 
 msgid "Åland Islands (Åland)"
 msgstr "Îles Åland (Åland)"
 
+#. Context: countries
 #: 
 msgid "Albania (Shqipëri)"
 msgstr "Albanie (Shqipëri) "
 
+#. Context: countries
 #: 
 msgid "Algeria (‫الجزائر‬‎)"
 msgstr "Algérie (‫الجزائر‬‎)"
 
+#. Context: countries
 #: 
 msgid "American Samoa"
 msgstr "Samoa américaines"
 
+#. Context: countries
 #: 
 msgid "Andorra"
 msgstr "Andore"
 
+#. Context: countries
 #: 
 msgid "Angola"
 msgstr "Angola"
 
+#. Context: countries
 #: 
 msgid "Anguilla"
 msgstr "Anguilla"
 
+#. Context: countries
 #: 
 msgid "Antarctica"
 msgstr "Antarctique"
 
+#. Context: countries
 #: 
 msgid "Antigua and Barbuda"
 msgstr "Antigua-et-Barbuda"
 
+#. Context: countries
 #: 
 msgid "Argentina"
 msgstr "Argentine"
 
+#. Context: countries
 #: 
 msgid "Armenia (Հայաստան)"
 msgstr "Arménie (Հայաստան)"
 
+#. Context: countries
 #: 
 msgid "Aruba"
 msgstr "Aruba"
 
+#. Context: countries
 #: 
 msgid "Ascension Island"
 msgstr "Îles Ascension"
 
+#. Context: countries
 #: 
 msgid "Australia"
 msgstr "Australie"
 
+#. Context: countries
 #: 
 msgid "Austria (Österreich)"
 msgstr "Autriche (Österreich) "
 
+#. Context: countries
 #: 
 msgid "Azerbaijan (Azərbaycan)"
 msgstr "Azerbaijan (Azərbaycan) "
 
+#. Context: countries
 #: 
 msgid "Bahamas"
 msgstr "Bahamas"
 
+#. Context: countries
 #: 
 msgid "Bahrain (‫البحرين‬‎)"
 msgstr "Bahrain (‫البحرين‬‎) "
 
+#. Context: countries
 #: 
 msgid "Bangladesh (বাংলাদেশ)"
 msgstr "Bangladesh (বাংলাদেশ) "
 
+#. Context: countries
 #: 
 msgid "Barbados"
 msgstr "Barbade"
 
+#. Context: countries
 #: 
 msgid "Belarus (Беларусь)"
 msgstr "Belarus (Беларусь) "
 
+#. Context: countries
 #: 
 msgid "Belgium (België)"
 msgstr "Belgique (België)"
 
+#. Context: countries
 #: 
 msgid "Belize"
 msgstr "Belize"
 
+#. Context: countries
 #: 
 msgid "Benin (Bénin)"
 msgstr "Bénin"
 
+#. Context: countries
 #: 
 msgid "Bermuda"
 msgstr "Bermuda"
 
+#. Context: countries
 #: 
 msgid "Bhutan (འབྲུག)"
 msgstr "Bhutan (འབྲུག) "
 
+#. Context: countries
 #: 
 msgid "Bolivia"
 msgstr "Bolivie"
 
+#. Context: countries
 #: 
 msgid "Bosnia and Herzegovina (Босна и Херцеговина)"
 msgstr "Bosnie et Herzégovine (Босна и Херцеговина) "
 
+#. Context: countries
 #: 
 msgid "Botswana"
 msgstr "Botswana"
 
+#. Context: countries
 #: 
 msgid "Bouvet Island"
 msgstr "Îles de Bouvet"
 
+#. Context: countries
 #: 
 msgid "Brazil (Brasil)"
 msgstr "Brésil"
 
+#. Context: countries
 #: 
 msgid "British Indian Ocean Territory"
 msgstr "Territoire britannique de l'océan Indien"
 
+#. Context: countries
 #: 
 msgid "British Virgin Islands"
 msgstr "Îles Vierges britanniques"
 
+#. Context: countries
 #: 
 msgid "Brunei"
 msgstr "Brunei"
 
+#. Context: countries
 #: 
 msgid "Bulgaria (България)"
 msgstr "Bulgarie (България)"
 
+#. Context: countries
 #: 
 msgid "Burkina Faso"
 msgstr "Burkina Faso"
 
+#. Context: countries
 #: 
 msgid "Burundi (Uburundi)"
 msgstr "Burundi (Uburundi)"
 
+#. Context: countries
 #: 
 msgid "Cambodia (កម្ពុជា)"
 msgstr "Cambodge (កម្ពុជា)"
 
+#. Context: countries
 #: 
 msgid "Cameroon (Cameroun)"
 msgstr "Cameroun"
 
+#. Context: countries
 #: 
 msgid "Canada"
 msgstr "Canada"
 
+#. Context: countries
 #: 
 msgid "Canary Islands (islas Canarias)"
 msgstr "Îles Canarie (islas Canarias) "
 
+#. Context: countries
 #: 
 msgid "Cape Verde (Kabu Verdi)"
 msgstr "Cap vert (Kabu Verdi)"
 
+#. Context: countries
 #: 
 msgid "Caribbean Netherlands"
 msgstr "Caraïbes Pays Bas"
 
+#. Context: countries
 #: 
 msgid "Cayman Islands"
 msgstr "Îles Cayman"
 
+#. Context: countries
 #: 
 msgid "Central African Republic (République centrafricaine)"
 msgstr "République centrafricaine"
 
+#. Context: countries
 #: 
 msgid "Ceuta and Melilla (Ceuta y Melilla)"
 msgstr "Ceuta y Melilla"
 
+#. Context: countries
 #: 
 msgid "Chad (Tchad)"
 msgstr "Tchad"
 
+#. Context: countries
 #: 
 msgid "Chile"
 msgstr "Chili"
 
+#. Context: countries
 #: 
 msgid "China (中国)"
 msgstr "Chine (中国)"
 
+#. Context: countries
 #: 
 msgid "Christmas Island"
 msgstr "Île Christmas"
 
+#. Context: countries
 #: 
 msgid "Clipperton Island"
 msgstr "Île now Clipperton"
 
+#. Context: countries
 #: 
 msgid "Cocos (Keeling) Islands (Kepulauan Cocos (Keeling))"
 msgstr "Îles Cocos (Keeling) (Kepulauan Cocos (Keeling))"
 
+#. Context: countries
 #: 
 msgid "Colombia"
 msgstr "Colombie"
 
+#. Context: countries
 #: 
 msgid "Comoros (‫جزر القمر‬‎)"
 msgstr " Comoros (‫جزر القمر‬‎)"
 
+#. Context: countries
 #: 
 msgid "Congo (DRC) (Jamhuri ya Kidemokrasia ya Kongo)"
 msgstr "Congo (RDC) (Jamhuri ya Kidemokrasia ya Kongo) "
 
+#. Context: countries
 #: 
 msgid "Congo (Republic) (Congo-Brazzaville)"
 msgstr "Congo (République) (Congo-Brazzaville) "
 
+#. Context: countries
 #: 
 msgid "Cook Islands"
 msgstr "Îles Cook"
 
+#. Context: countries
 #: 
 msgid "Costa Rica"
 msgstr "Costa Rica"
 
+#. Context: countries
 #: 
 msgid "Côte d’Ivoire"
 msgstr "Côte d’Ivoire"
 
+#. Context: countries
 #: 
 msgid "Croatia (Hrvatska)"
 msgstr "Croatie (Hrvatska)"
 
+#. Context: countries
 #: 
 msgid "Cuba"
 msgstr "Cuba"
 
+#. Context: countries
 #: 
 msgid "Curaçao"
 msgstr "Curaçao"
 
+#. Context: countries
 #: 
 msgid "Cyprus (Κύπρος)"
 msgstr "Chypre (Κύπρος)"
 
+#. Context: countries
 #: 
 msgid "Czech Republic (Česká republika)"
 msgstr "République Tchèque"
 
+#. Context: countries
 #: 
 msgid "Denmark (Danmark)"
 msgstr "Danemark (Danmark)"
 
+#. Context: countries
 #: 
 msgid "Diego Garcia"
 msgstr "Diego Garcia"
 
+#. Context: countries
 #: 
 msgid "Djibouti"
 msgstr "Djibouti"
 
+#. Context: countries
 #: 
 msgid "Dominica"
 msgstr "Dominique"
 
+#. Context: countries
 #: 
 msgid "Dominican Republic (República Dominicana)"
 msgstr "République dominicaine (República Dominicana) "
 
+#. Context: countries
 #: 
 msgid "Ecuador"
 msgstr "Équateur"
 
+#. Context: countries
 #: 
 msgid "Egypt (‫مصر‬‎)"
 msgstr "Egypte (‫مصر‬‎) "
 
+#. Context: countries
 #: 
 msgid "El Salvador"
 msgstr "Salvador"
 
+#. Context: countries
 #: 
 msgid "Equatorial Guinea (Guinea Ecuatorial)"
 msgstr "Guinée équatoriale"
 
+#. Context: countries
 #: 
 msgid "Eritrea"
 msgstr "Érythrée"
 
+#. Context: countries
 #: 
 msgid "Estonia (Eesti)"
 msgstr "Estonie (Eesti) "
 
+#. Context: countries
 #: 
 msgid "Ethiopia"
 msgstr "Ethiopie"
 
+#. Context: countries
 #: 
 msgid "Falkland Islands (Islas Malvinas)"
 msgstr "Îles Malouines"
 
+#. Context: countries
 #: 
 msgid "Faroe Islands (Føroyar)"
 msgstr "Îles Féroé (Føroyar)"
 
+#. Context: countries
 #: 
 msgid "Fiji"
 msgstr "Fiji"
 
+#. Context: countries
 #: 
 msgid "Finland (Suomi)"
 msgstr "Finlande (Suomi)"
 
+#. Context: countries
 #: 
 msgid "France"
 msgstr "France"
 
+#. Context: countries
 #: 
 msgid "French Guiana (Guyane française)"
 msgstr "Guyane française"
 
+#. Context: countries
 #: 
 msgid "French Polynesia (Polynésie française)"
 msgstr "Polynésie française"
 
+#. Context: countries
 #: 
 msgid "French Southern Territories (Terres australes françaises)"
 msgstr "Terres australes françaises"
 
+#. Context: countries
 #: 
 msgid "Gabon"
 msgstr "Gabon"
 
+#. Context: countries
 #: 
 msgid "Gambia"
 msgstr "Gambie"
 
+#. Context: countries
 #: 
 msgid "Georgia (საქართველო)"
 msgstr "Georgie (საქართველო)"
 
+#. Context: countries
 #: 
 msgid "Germany (Deutschland)"
 msgstr "Allemagne"
 
+#. Context: countries
 #: 
 msgid "Ghana (Gaana)"
 msgstr "Gaana"
 
+#. Context: countries
 #: 
 msgid "Gibraltar"
 msgstr "Gibraltar"
 
+#. Context: countries
 #: 
 msgid "Greece (Ελλάδα)"
 msgstr "Grèce (Ελλάδα)"
 
+#. Context: countries
 #: 
 msgid "Greenland (Kalaallit Nunaat)"
 msgstr "Greenland"
 
+#. Context: countries
 #: 
 msgid "Grenada"
 msgstr "Grenade"
 
+#. Context: countries
 #: 
 msgid "Guadeloupe"
 msgstr "Guadeloupe"
 
+#. Context: countries
 #: 
 msgid "Guam"
 msgstr "Guam"
 
+#. Context: countries
 #: 
 msgid "Guatemala"
 msgstr "Guatemala"
 
+#. Context: countries
 #: 
 msgid "Guernsey"
 msgstr "Guernsey"
 
+#. Context: countries
 #: 
 msgid "Guinea (Guinée)"
 msgstr "Guinée"
 
+#. Context: countries
 #: 
 msgid "Guinea-Bissau (Guiné Bissau)"
 msgstr "Guiné Bissau"
 
+#. Context: countries
 #: 
 msgid "Guyana"
 msgstr "Guyane"
 
+#. Context: countries
 #: 
 msgid "Haiti"
 msgstr "Haïti"
 
+#. Context: countries
 #: 
 msgid "Heard & McDonald Islands"
 msgstr "Îles Heard-et-MacDonald"
 
+#. Context: countries
 #: 
 msgid "Honduras"
 msgstr "Honduras"
 
+#. Context: countries
 #: 
 msgid "Hong Kong (香港)"
 msgstr "Hong Kong (香港) "
 
+#. Context: countries
 #: 
 msgid "Hungary (Magyarország)"
 msgstr "Hngrie (Magyarország)"
 
+#. Context: countries
 #: 
 msgid "Iceland (Ísland)"
 msgstr "Islande (Ísland)"
 
+#. Context: countries
 #: 
 msgid "India (भारत)"
 msgstr "Indes (भारत) "
 
+#. Context: countries
 #: 
 msgid "Indonesia"
 msgstr "Indonésie"
 
+#. Context: countries
 #: 
 msgid "Iran (‫ایران‬‎)"
 msgstr "Iran (‫ایران‬‎) "
 
+#. Context: countries
 #: 
 msgid "Iraq (‫العراق‬‎)"
 msgstr "Iraq (‫العراق‬‎)"
 
+#. Context: countries
 #: 
 msgid "Ireland"
 msgstr "Irlande"
 
+#. Context: countries
 #: 
 msgid "Isle of Man"
 msgstr "Île de Man"
 
+#. Context: countries
 #: 
 msgid "Israel (‫ישראל‬‎)"
 msgstr "Israël (‫ישראל‬‎) "
 
+#. Context: countries
 #: 
 msgid "Italy (Italia)"
 msgstr "Italie (Italia)"
 
+#. Context: countries
 #: 
 msgid "Jamaica"
 msgstr "Jamaïque"
 
+#. Context: countries
 #: 
 msgid "Japan (日本)"
 msgstr "Japon (日本) "
 
+#. Context: countries
 #: 
 msgid "Jersey"
 msgstr "Jersey"
 
+#. Context: countries
 #: 
 msgid "Jordan (‫الأردن‬‎)"
 msgstr "Jordanie (‫الأردن‬‎) "
 
+#. Context: countries
 #: 
 msgid "Kazakhstan (Казахстан)"
 msgstr "Kazakhstan (Казахстан) "
 
+#. Context: countries
 #: 
 msgid "Kenya"
 msgstr "Kenya"
 
+#. Context: countries
 #: 
 msgid "Kiribati"
 msgstr "Kiribati"
 
+#. Context: countries
 #: 
 msgid "Kosovo (Kosovë)"
 msgstr "Kosovo (Kosovë)"
 
+#. Context: countries
 #: 
 msgid "Kuwait (‫الكويت‬‎)"
 msgstr "Koweit (الكويت‬‎)"
 
+#. Context: countries
 #: 
 msgid "Kyrgyzstan (Кыргызстан)"
 msgstr "Kyrgyzstan (Кыргызстан)"
 
+#. Context: countries
 #: 
 msgid "Laos (ລາວ)"
 msgstr "Laos (ລາວ) "
 
+#. Context: countries
 #: 
 msgid "Lebanon (‫لبنان‬‎)"
 msgstr "Liban (‫لبنان‬‎) "
 
+#. Context: countries
 #: 
 msgid "Lesotho"
 msgstr "Lesotho"
 
+#. Context: countries
 #: 
 msgid "Liberia"
 msgstr "Liberia"
 
+#. Context: countries
 #: 
 msgid "Libya (‫ليبيا‬‎)"
 msgstr "Libye (‫ليبيا‬‎)"
 
+#. Context: countries
 #: 
 msgid "Liechtenstein"
 msgstr "Liechtenstein"
 
+#. Context: countries
 #: 
 msgid "Lithuania (Lietuva)"
 msgstr "Lituanie (Lietuva)"
 
+#. Context: countries
 #: 
 msgid "Luxembourg"
 msgstr "Luxembourg"
 
+#. Context: countries
 #: 
 msgid "Macau (澳門)"
 msgstr "Macao (澳門)"
 
+#. Context: countries
 #: 
 msgid "Macedonia (FYROM) (Македонија)"
 msgstr "Macédoine (FYROM) (Македонија) "
 
+#. Context: countries
 #: 
 msgid "Madagascar (Madagasikara)"
 msgstr "Madagascar (Madagasikara)"
 
+#. Context: countries
 #: 
 msgid "Malawi"
 msgstr "Malawi"
 
+#. Context: countries
 #: 
 msgid "Malaysia"
 msgstr "Malaisie"
 
+#. Context: countries
 #: 
 msgid "Maldives"
 msgstr "Maldives"
 
+#. Context: countries
 #: 
 msgid "Mali"
 msgstr "Mali"
 
+#. Context: countries
 #: 
 msgid "Malta"
 msgstr "Malte"
 
+#. Context: countries
 #: 
 msgid "Marshall Islands"
 msgstr "Îles Marshall"
 
+#. Context: countries
 #: 
 msgid "Martinique"
 msgstr "Martinique"
 
+#. Context: countries
 #: 
 msgid "Mauritania (‫موريتانيا‬‎)"
 msgstr "Mauritanie (‫موريتانيا‬‎) "
 
+#. Context: countries
 #: 
 msgid "Mauritius (Moris)"
 msgstr "Île Maurice"
 
+#. Context: countries
 #: 
 msgid "Mayotte"
 msgstr "Mayotte"
 
+#. Context: countries
 #: 
 msgid "Mexico (México)"
 msgstr "Mexique (México)"
 
+#. Context: countries
 #: 
 msgid "Micronesia"
 msgstr "Micronésie"
 
+#. Context: countries
 #: 
 msgid "Moldova (Republica Moldova)"
 msgstr "Moldovie (Republica Moldova)"
 
+#. Context: countries
 #: 
 msgid "Monaco"
 msgstr "Monaco"
 
+#. Context: countries
 #: 
 msgid "Mongolia (Монгол)"
 msgstr "Mongolie (Монгол)"
 
+#. Context: countries
 #: 
 msgid "Montenegro (Crna Gora)"
 msgstr "Montenegro (Crna Gora)"
 
+#. Context: countries
 #: 
 msgid "Montserrat"
 msgstr "Abbaye de Montserrat"
 
+#. Context: countries
 #: 
 msgid "Morocco (‫المغرب‬‎)"
 msgstr "Maroc (‫المغرب‬‎) "
 
+#. Context: countries
 #: 
 msgid "Mozambique (Moçambique)"
 msgstr "Mozambique (Moçambique)"
 
+#. Context: countries
 #: 
 msgid "Myanmar (Burma) (မြန်မာ)"
 msgstr "Myanmar (Burma) (မြန်မာ) "
 
+#. Context: countries
 #: 
 msgid "Namibia (Namibië)"
 msgstr "Namibie (Namibië) "
 
+#. Context: countries
 #: 
 msgid "Nauru"
 msgstr "Nauru"
 
+#. Context: countries
 #: 
 msgid "Nepal (नेपाल)"
 msgstr "Nepal (नेपाल)"
 
+#. Context: countries
 #: 
 msgid "Netherlands (Nederland)"
 msgstr "Hollande (Nederland)"
 
+#. Context: countries
 #: 
 msgid "New Caledonia (Nouvelle-Calédonie)"
 msgstr "Nouvelle-Calédonie (New Caledonia)"
 
+#. Context: countries
 #: 
 msgid "New Zealand"
 msgstr "Nouvelle Zélande"
 
+#. Context: countries
 #: 
 msgid "Nicaragua"
 msgstr "Nicaragua"
 
+#. Context: countries
 #: 
 msgid "Niger (Nijar)"
 msgstr "Niger (Nijar)"
 
+#. Context: countries
 #: 
 msgid "Nigeria"
 msgstr "Niger"
 
+#. Context: countries
 #: 
 msgid "Niue"
 msgstr "Nioué"
 
+#. Context: countries
 #: 
 msgid "Norfolk Island"
 msgstr "Île Norfolk"
 
+#. Context: countries
 #: 
 msgid "Northern Mariana Islands"
 msgstr "Îles Mariannes du Nord"
 
+#. Context: countries
 #: 
 msgid "North Korea (조선 민주주의 인민 공화국)"
 msgstr "Corée du Nord (조선 민주주의 인민 공화국) "
 
+#. Context: countries
 #: 
 msgid "Norway (Norge)"
 msgstr "Norvège (Norge)"
 
+#. Context: countries
 #: 
 msgid "Oman (‫عُمان‬‎)"
 msgstr "Oman (‫عُمان‬‎)"
 
+#. Context: countries
 #: 
 msgid "Pakistan (‫پاکستان‬‎)"
 msgstr "Pakistan (‫پاکستان‬‎)"
 
+#. Context: countries
 #: 
 msgid "Palau"
 msgstr "Palaos"
 
+#. Context: countries
 #: 
 msgid "Palestine (‫فلسطين‬‎)"
 msgstr "Palestine (‫فلسطين‬‎) "
 
+#. Context: countries
 #: 
 msgid "Panama (Panamá)"
 msgstr "Panama (Panamá)"
 
+#. Context: countries
 #: 
 msgid "Papua New Guinea"
 msgstr "Papouasie-Nouvelle-Guinée"
 
+#. Context: countries
 #: 
 msgid "Paraguay"
 msgstr "Paraguay"
 
+#. Context: countries
 #: 
 msgid "Peru (Perú)"
 msgstr "Perou (Perú)"
 
+#. Context: countries
 #: 
 msgid "Philippines"
 msgstr "Philippines"
 
+#. Context: countries
 #: 
 msgid "Pitcairn Islands"
 msgstr "Îles Pitcairn"
 
+#. Context: countries
 #: 
 msgid "Poland (Polska)"
 msgstr "Pologne (Polska)"
 
+#. Context: countries
 #: 
 msgid "Portugal"
 msgstr "Portugal"
 
+#. Context: countries
 #: 
 msgid "Puerto Rico"
 msgstr "Puerto Rico"
 
+#. Context: countries
 #: 
 msgid "Qatar (‫قطر‬‎)"
 msgstr "Qatar (‫قطر‬‎) "
 
+#. Context: countries
 #: 
 msgid "Réunion (La Réunion)"
 msgstr "Réunion (La Réunion)"
 
+#. Context: countries
 #: 
 msgid "Romania (România)"
 msgstr "Roumanie (România)"
 
+#. Context: countries
 #: 
 msgid "Russia (Россия)"
 msgstr "Russie (Россия)"
 
+#. Context: countries
 #: 
 msgid "Rwanda"
 msgstr "Rwanda"
 
+#. Context: countries
 #: 
 msgid "Saint Barthélemy (Saint-Barthélemy)"
 msgstr "Saint Barthélemy (Saint-Barthélemy)"
 
+#. Context: countries
 #: 
 msgid "Saint Helena"
 msgstr "Saint Héléne"
 
+#. Context: countries
 #: 
 msgid "Saint Kitts and Nevis"
 msgstr "Saint-Christophe-et-Niévès"
 
+#. Context: countries
 #: 
 msgid "Saint Lucia"
 msgstr "Sainte-Lucie"
 
+#. Context: countries
 #: 
 msgid "Saint Martin (Saint-Martin (partie française))"
 msgstr "Saint-Martin (partie française)"
 
+#. Context: countries
 #: 
 msgid "Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)"
 msgstr "Saint-Pierre-et-Miquelon"
 
+#. Context: countries
 #: 
 msgid "Samoa"
 msgstr "Samoa"
 
+#. Context: countries
 #: 
 msgid "San Marino"
 msgstr "Saint-Marin"
 
+#. Context: countries
 #: 
 msgid "São Tomé and Príncipe (São Tomé e Príncipe)"
 msgstr "Sao Tomé-et-Principe  (São Tomé e Príncipe)"
 
+#. Context: countries
 #: 
 msgid "Saudi Arabia (‫المملكة العربية السعودية‬‎)"
 msgstr "Arabie saoudite (‫المملكة العربية السعودية‬‎)"
 
+#. Context: countries
 #: 
 msgid "Senegal (Sénégal)"
 msgstr "Sénégal"
 
+#. Context: countries
 #: 
 msgid "Serbia (Србија)"
 msgstr "Serbie (Србија)"
 
+#. Context: countries
 #: 
 msgid "Seychelles"
 msgstr "Seychelles"
 
+#. Context: countries
 #: 
 msgid "Sierra Leone"
 msgstr "Sierra Leone"
 
+#. Context: countries
 #: 
 msgid "Singapore"
 msgstr "Singapour"
 
+#. Context: countries
 #: 
 msgid "Sint Maarten"
 msgstr "Saint-Martin"
 
+#. Context: countries
 #: 
 msgid "Slovakia (Slovensko)"
 msgstr "Slovaquie (Slovensko)"
 
+#. Context: countries
 #: 
 msgid "Slovenia (Slovenija)"
 msgstr "Slovenie (Slovenija)"
 
+#. Context: countries
 #: 
 msgid "Solomon Islands"
 msgstr "Îles Salomon"
 
+#. Context: countries
 #: 
 msgid "Somalia (Soomaaliya)"
 msgstr "Somalie (Soomaaliya)"
 
+#. Context: countries
 #: 
 msgid "South Africa"
 msgstr "Afrique du Sud"
 
+#. Context: countries
 #: 
 msgid "South Georgia & South Sandwich Islands"
 msgstr "Géorgie du Sud-et-les Îles Sandwich du Sud"
 
+#. Context: countries
 #: 
 msgid "South Korea (대한민국)"
 msgstr "Corée du sud (대한민국)"
 
+#. Context: countries
 #: 
 msgid "South Sudan (‫جنوب السودان‬‎)"
 msgstr "Soudan du Sud"
 
+#. Context: countries
 #: 
 msgid "Spain (España)"
 msgstr "Espagne (España)"
 
+#. Context: countries
 #: 
 msgid "Sri Lanka (ශ්‍රී ලංකාව)"
 msgstr "Sri Lanka (ශ්‍රී ලංකාව)"
 
+#. Context: countries
 #: 
 msgid "St. Vincent & Grenadines"
 msgstr "St. Vincent & Grenadines"
 
+#. Context: countries
 #: 
 msgid "Sudan (‫السودان‬‎)"
 msgstr "Soudan (‫السودان‬‎)"
 
+#. Context: countries
 #: 
 msgid "Suriname"
 msgstr "Suriname"
 
+#. Context: countries
 #: 
 msgid "Svalbard and Jan Mayen (Svalbard og Jan Mayen)"
 msgstr "Svalbard et Jan Mayen (Svalbard og Jan Mayen)"
 
+#. Context: countries
 #: 
 msgid "Swaziland"
 msgstr "Swaziland"
 
+#. Context: countries
 #: 
 msgid "Sweden (Sverige)"
 msgstr "Suède"
 
+#. Context: countries
 #: 
 msgid "Switzerland (Schweiz)"
 msgstr "Suisse"
 
+#. Context: countries
 #: 
 msgid "Syria (‫سوريا‬‎)"
 msgstr "Syrie (‫سوريا‬‎)"
 
+#. Context: countries
 #: 
 msgid "Taiwan (台灣)"
 msgstr "Taiwan (台灣)"
 
+#. Context: countries
 #: 
 msgid "Tajikistan"
 msgstr "Tajikistan"
 
+#. Context: countries
 #: 
 msgid "Tanzania"
 msgstr "Tanzanie"
 
+#. Context: countries
 #: 
 msgid "Thailand (ไทย)"
 msgstr "Thailande (ไทย)"
 
+#. Context: countries
 #: 
 msgid "Timor-Leste"
 msgstr "Timor oriental"
 
+#. Context: countries
 #: 
 msgid "Togo"
 msgstr "Togo"
 
+#. Context: countries
 #: 
 msgid "Tokelau"
 msgstr "Tokelau"
 
+#. Context: countries
 #: 
 msgid "Tonga"
 msgstr "Tonga"
 
+#. Context: countries
 #: 
 msgid "Trinidad and Tobago"
 msgstr "Trinité-et-Tobago"
 
+#. Context: countries
 #: 
 msgid "Tristan da Cunha"
 msgstr "Tristan da Cunha"
 
+#. Context: countries
 #: 
 msgid "Tunisia (‫تونس‬‎)"
 msgstr "Tunisie (‫تونس‬‎)"
 
+#. Context: countries
 #: 
 msgid "Turkey (Türkiye)"
 msgstr "Turquie (Türkiye)"
 
+#. Context: countries
 #: 
 msgid "Turkmenistan"
 msgstr "Turkmenistan"
 
+#. Context: countries
 #: 
 msgid "Turks and Caicos Islands"
 msgstr "Îles Turks-et-Caïcos"
 
+#. Context: countries
 #: 
 msgid "Tuvalu"
 msgstr "Tuvalu"
 
+#. Context: countries
 #: 
 msgid "U.S. Outlying Islands"
 msgstr "Îles mineures éloignées des États-Unis"
 
+#. Context: countries
 #: 
 msgid "U.S. Virgin Islands"
 msgstr "Îles Vierges des États-Unis"
 
+#. Context: countries
 #: 
 msgid "Uganda"
 msgstr "Uganda"
 
+#. Context: countries
 #: 
 msgid "Ukraine (Україна)"
 msgstr "Ukraine (Україна)"
 
+#. Context: countries
 #: 
 msgid "United Arab Emirates (‫الإمارات العربية المتحدة‬‎)"
 msgstr "Émirats Arabes Unis (‫الإمارات العربية المتحدة‬‎) "
 
+#. Context: countries
 #: 
 msgid "United Kingdom"
 msgstr "Angleterre"
 
+#. Context: countries
 #: 
 msgid "United States"
 msgstr "États unis"
 
+#. Context: countries
 #: 
 msgid "Uruguay"
 msgstr "Uruguay"
 
+#. Context: countries
 #: 
 msgid "Uzbekistan (Oʻzbekiston)"
 msgstr "Uzbekistan (Oʻzbekiston)"
 
+#. Context: countries
 #: 
 msgid "Vanuatu"
 msgstr "Vanuatu"
 
+#. Context: countries
 #: 
 msgid "Vatican City (Città del Vaticano)"
 msgstr "Cité du Vatican (Città del Vaticano)"
 
+#. Context: countries
 #: 
 msgid "Venezuela"
 msgstr "Venezuela"
 
+#. Context: countries
 #: 
 msgid "Vietnam (Việt Nam)"
 msgstr "Vietnam (Việt Nam)"
 
+#. Context: countries
 #: 
 msgid "Wallis and Futuna"
 msgstr "Wallis et Futuna"
 
+#. Context: countries
 #: 
 msgid "Western Sahara (‫الصحراء الغربية‬‎)"
 msgstr " ccidental Sahara (‫الصحراء الغربية‬‎)"
 
+#. Context: countries
 #: 
 msgid "Yemen (‫اليمن‬‎)"
 msgstr "Yemen (‫اليمن‬‎)"
 
+#. Context: countries
 #: 
 msgid "Zambia"
 msgstr "Zambie"
 
+#. Context: countries
 #: 
 msgid "Zimbabwe"
 msgstr "Zimbabwe"
@@ -6314,11 +6345,11 @@ msgid "Please verify your family's information"
 msgstr "Veuillez vérifier vos informations familiales"
 
 #: 
-msgid "Temple/TrustAddress is not Set."
+msgid "Temple Address is not Set."
 msgstr "L'adresse de l'église n'est pas fixée."
 
 #: 
-msgid "Temple/TrustName is set to default value"
+msgid "Temple Name is set to default value"
 msgstr "Le nom de l'église est à sa valeur par défaut."
 
 #: 
@@ -6441,82 +6472,102 @@ msgstr "Utilisé pour mettre fin à une lettre avant Signataire"
 msgid "Google Analytics Tracking Code"
 msgstr "Code de suivi Google Analytics"
 
+#. Context: locales
 #: 
 msgid "English - United States"
 msgstr "Anglais - USA"
 
+#. Context: locales
 #: 
 msgid "English - Canada"
 msgstr "Anglais - Canada"
 
+#. Context: locales
 #: 
 msgid "English - Australia"
 msgstr "Anglais - Australie"
 
+#. Context: locales
 #: 
 msgid "English - Great Britain"
 msgstr "Anglais - Grande Bretagne"
 
+#. Context: locales
 #: 
 msgid "German - Germany"
 msgstr "Allemand - Allemagne"
 
+#. Context: locales
 #: 
 msgid "Spanish - Spain"
 msgstr "Espagnol - Espagne"
 
+#. Context: locales
 #: 
 msgid "French - France"
 msgstr "Français - France"
 
+#. Context: locales
 #: 
 msgid "Hungarian"
 msgstr "Hongrois"
 
+#. Context: locales
 #: 
 msgid "Italian - Italy"
 msgstr "Italien - Italie"
 
+#. Context: locales
 #: 
 msgid "Norwegian"
 msgstr "Norvégien"
 
+#. Context: locales
 #: 
 msgid "Dutch - Netherlands"
 msgstr "Hollandais - Hollande"
 
+#. Context: locales
 #: 
 msgid "Polish"
 msgstr "Polonais"
 
+#. Context: locales
 #: 
 msgid "Portuguese - Brazil"
 msgstr "Portugais - Brésil"
 
+#. Context: locales
 #: 
 msgid "Romanian - Romania"
 msgstr "Roumain - Roumanie"
 
+#. Context: locales
 #: 
 msgid "Russian"
 msgstr "Russe"
 
+#. Context: locales
 #: 
 msgid "Sami (Northern) (Sweden)"
 msgstr "Sami (Northern) (Suède)"
 
+#. Context: locales
 #: 
 msgid "Albanian"
 msgstr "Albanais"
 
+#. Context: locales
 #: 
 msgid "Vietnamese"
 msgstr "Vietnamien"
 
+#. Context: locales
 #: 
 msgid "Chinese - China"
 msgstr "Chinois - Chine"
 
+#. Context: locales
 #: 
 msgid "Chinese - Taiwan"
 msgstr "Chinois - Taiwan"
@@ -6538,7 +6589,7 @@ msgid "Failed"
 msgstr "Échec"
 
 #: 
-msgid "Temple/TrustChecking Account Number"
+msgid "Temple Checking Account Number"
 msgstr "Vérification du numéro de compte de l'église"
 
 #: 
@@ -6586,16 +6637,13 @@ msgid "Profile Image uploaded"
 msgstr "Image de profil téléchargée"
 
 #: 
-msgid "payments(s)?"
+#, fuzzy
+msgid "payment(s)?"
 msgstr "paiement(s)?"
 
 #: 
 msgid "Please ensure this what you want to do.</p>"
 msgstr "Vérifier que c'est ce que vous voulez faire.</p>"
-
-#: 
-msgid " this Family"
-msgstr " cette famille"
 
 #: 
 msgid "Confirm Deactivation"
@@ -6628,10 +6676,6 @@ msgstr "Nom du fichier de la base de données de coordonnées :"
 #: 
 msgid "Intersect With Cart"
 msgstr "Croisement avec le Panier"
-
-#: 
-msgid "Family Member"
-msgstr "Membre de la Famille"
 
 #: 
 msgid "select an option"
@@ -6715,8 +6759,8 @@ msgid "Your Account was Deleted"
 msgstr "Votre compte a été supprimé"
 
 #: 
-msgid "Your UnityConnect CRM Account was Deleted."
-msgstr "Votre compte UnityConnect CRM a été supprimé"
+msgid "Your UnityConnectCRM Account was Deleted."
+msgstr "Votre compte UnityConnectCRM a été supprimé"
 
 #: 
 msgid "Account Locked"
@@ -6745,10 +6789,6 @@ msgstr "Voir la Photo"
 #: 
 msgid "Family Photo"
 msgstr "Photo de Famille"
-
-#: 
-msgid "Quick Settings"
-msgstr "Réglages rapides"
 
 #: 
 msgid "Status"
@@ -6818,7 +6858,6 @@ msgstr "Action confirmée"
 msgid "Please confirm reset failed login count"
 msgstr "Veuillez confirmer l'échec de la réinitialisation de l'identifiant"
 
-#. "Voir" est plus court que "Afficher" (sinon, on ne voit pas dans le menu)
 #: 
 msgid "View Active Families"
 msgstr "Voir les familles actives"
@@ -6860,20 +6899,20 @@ msgid "Select GeoCoder Provider"
 msgstr "Sélectionner Provider Geocoder"
 
 #: 
-msgid "Your UnityConnect CRM account was locked."
-msgstr "Votre compte UnityConnect CRM a été verrouillé."
+msgid "Your UnityConnectCRM account was locked."
+msgstr "Votre compte UnityConnectCRM a été verrouillé."
 
 #: 
-msgid "A UnityConnect CRM account was created for you"
-msgstr "Un compte UnityConnect CRM a été créé pour vous"
+msgid "A UnityConnectCRM account was created for you"
+msgstr "Un compte UnityConnectCRM a été créé pour vous"
 
 #: 
-msgid "You can reset your UnityConnect CRM password by clicking this link"
-msgstr "Vous pouvez réinitialiser votre mot de passe UnityConnect CRM en cliquant sur ce lien"
+msgid "You can reset your UnityConnectCRM password by clicking this link"
+msgstr "Vous pouvez réinitialiser votre mot de passe UnityConnectCRM en cliquant sur ce lien"
 
 #: 
-msgid "Your UnityConnect CRM account was unlocked."
-msgstr "Votre compte UnityConnect CRM a été déverrouillé."
+msgid "Your UnityConnectCRM account was unlocked."
+msgstr "Votre compte UnityConnectCRM a été déverrouillé."
 
 #: 
 msgid "system user created"
@@ -7041,8 +7080,8 @@ msgstr "Allez à l'emplacement"
 
 #: 
 #, fuzzy
-msgid "Your UnityConnect CRM password has been changed"
-msgstr "La Mise à jour de votre mot de passe UnityConnect CRM a été effectué"
+msgid "Your UnityConnectCRM password has been changed"
+msgstr "La Mise à jour de votre mot de passe UnityConnectCRM a été effectué"
 
 #: 
 msgid "Password Reset Link"
@@ -7053,24 +7092,12 @@ msgid "Reset Password"
 msgstr "Réinitialisation du Mot de Passe"
 
 #: 
-msgid "Unable to reset password"
-msgstr "Impossible de réinitialiser le Mot de Passe"
-
-#: 
 msgid "Reset your password"
 msgstr "Réinitialiser votre Mot de Passe"
 
 #: 
 msgid "Sorry, we are unable to process your request at this point in time."
 msgstr "Désolé, nous ne pouvons répondre à votre requête pour le moment."
-
-#: 
-msgid "Login Name is Required"
-msgstr "L'identifiant est requit"
-
-#: 
-msgid "A new password was sent to you. Please check your email"
-msgstr "Un nouveau mot de passe vous a été envoyé. Veuillez vérifier votre boîte mail."
 
 #: 
 msgid "Kiosk Manager"
@@ -7173,10 +7200,6 @@ msgid "Not all members of this group are in the cart"
 msgstr "Le panier ne contient pas tous les membres du groupe"
 
 #: 
-msgid "Add all"
-msgstr "Tout ajouter"
-
-#: 
 msgid "Are you sure you want to remove the selected group members?"
 msgstr "Êtes vous sûr de vouloir effacer tous les membres du groupe sélectionné ?"
 
@@ -7200,10 +7223,12 @@ msgstr "Notes de version"
 msgid "Move"
 msgstr "Déplacer"
 
+#. Context: locales
 #: 
 msgid "Arabic - Egypt"
 msgstr "Arabe - Egypte"
 
+#. Context: locales
 #: 
 msgid "Thai"
 msgstr "Thai"
@@ -7216,10 +7241,6 @@ msgstr "La page Facebook de l'église"
 #, fuzzy
 msgid "Your Church's X Page"
 msgstr "La page X de l'église"
-
-#: 
-msgid "lookup user images on Google when no local image is present"
-msgstr "chercher des images de l'utilisateur sur Google en l'absence d'image locale"
 
 #: 
 msgid "Self Register"
@@ -7237,6 +7258,7 @@ msgstr "En attente de vérification automatique"
 msgid "Self Verify"
 msgstr "Vérification automatique"
 
+#. Context: locales
 #: 
 msgid "Indonesian - Indonesia"
 msgstr "Indonésien - Indonésie"
@@ -7282,7 +7304,7 @@ msgid "New Family Added"
 msgstr "Nouvelle Famille ajoutée"
 
 #: 
-msgid "Temple/TrustGreeter"
+msgid "Temple Greeter"
 msgstr "Personne d'accueil"
 
 #: 
@@ -7422,10 +7444,6 @@ msgid "Maximum number of Addresses"
 msgstr "Nombre maximum d'adresses"
 
 #: 
-msgid "Show type of group:"
-msgstr "Visualiser le type de groupes :"
-
-#: 
 msgid "Add Students"
 msgstr "Ajouter des étudiants"
 
@@ -7472,26 +7490,6 @@ msgstr "Créer un trombinoscope"
 #: 
 msgid "SSE"
 msgstr "SSE"
-
-#: 
-msgid "Height to use for images"
-msgstr "La hauteur à utilisé pour les images"
-
-#: 
-msgid "Width to use for images"
-msgstr "La largeur à utilisé pour les images"
-
-#: 
-msgid "Width to use for thumbnails"
-msgstr "La largeur à utilisé pour les miniatures"
-
-#: 
-msgid "Point size to use for initials thumbnails"
-msgstr "La taille en points à utilisé pour les miniatures des initiales"
-
-#: 
-msgid "Client cache seconds for images"
-msgstr "Nombre de seconds de cache client pour les images"
 
 #: 
 msgid "Server cache time for remote images"
@@ -7546,10 +7544,6 @@ msgid "Resize Event"
 msgstr "Redimensionner événement"
 
 #: 
-msgid "Text from"
-msgstr "Texte de"
-
-#: 
 msgid "Profile"
 msgstr "Profil"
 
@@ -7598,8 +7592,8 @@ msgid "Field where last Confession is stored, must be a date type"
 msgstr "Champ où la dernière confession est enregistré, doit être sous forme de date"
 
 #: 
-msgid "Require that this UnityConnect CRM Database is accessed over HTTPS"
-msgstr "Requière que la base de données de UnityConnect CRM soit accessible par HTTPS"
+msgid "Require that this UnityConnectCRM Database is accessed over HTTPS"
+msgstr "Requière que la base de données de UnityConnectCRM soit accessible par HTTPS"
 
 #: 
 msgid "People Setup"
@@ -7802,16 +7796,13 @@ msgid "Not Found: Unknown calendar id"
 msgstr "Introuvable : ID de calendrier inconnu"
 
 #: 
-msgid "no found or user without an email"
+#, fuzzy
+msgid "not found or user without an email"
 msgstr "introuvable ou utilisateur sans e-mail"
 
 #: 
 msgid "UserName not set"
 msgstr "Nom d'utilisateur non défini"
-
-#: 
-msgid "The people and families has been cleared from the database."
-msgstr "Les personnes et familles ont été effacées de la base de données."
 
 #: 
 msgid "Self Registrations"
@@ -7979,8 +7970,8 @@ msgid "User must have Delete Records permission"
 msgstr "L'utilisateur doit avoir l'autorisation d'effacer des enregistrements"
 
 #: 
-msgid "UnityConnect CRM Central Notifications URL"
-msgstr "URL de notifications de UnityConnect CRM"
+msgid "ChurchCRM Central Notifications URL"
+msgstr "URL de notifications de UnityConnectCRM"
 
 #: 
 #, fuzzy
@@ -8068,10 +8059,6 @@ msgid "Menu Name"
 msgstr "Nom du menu"
 
 #: 
-msgid "Max 20 char"
-msgstr "Max. 20 car."
-
-#: 
 msgid "Link Address"
 msgstr "Adresse du lien"
 
@@ -8088,20 +8075,8 @@ msgid "is disabled"
 msgstr "est en situation de handicap"
 
 #: 
-msgid "System Information"
-msgstr "Informations système"
-
-#: 
 msgid "Software Version"
 msgstr "Version du logiciel"
-
-#: 
-msgid "Valid Mail Server Settings"
-msgstr "Paramètres du serveur de mail corrects"
-
-#: 
-msgid "Database"
-msgstr "Base de données"
 
 #: 
 msgid "Database Version"
@@ -8143,6 +8118,7 @@ msgstr "Inclure les contacts et les données démographiques dans le corps de l'
 msgid "Include family custom properties in global search."
 msgstr "Inclure les propriétés personnalisées des familles dans la recherche globale."
 
+#. Context: countries
 #: 
 msgid "Latvia (Latvija)"
 msgstr "Lettonie (Latvija)"
@@ -8169,10 +8145,6 @@ msgid "Emptied into Event"
 msgstr "Vidé dans d'événement"
 
 #: 
-msgid "integrityCheck.json file missing"
-msgstr "fichier integrityCheck.json manquant"
-
-#: 
 msgid "Passed"
 msgstr "Réussi"
 
@@ -8188,7 +8160,6 @@ msgstr "Augmenter la limite du temps d'exécution PHP pour permettre la sauvegar
 msgid "Application Integrity Check"
 msgstr "Vérification de l'intégrité de l'application"
 
-#. We need the context, that is in a sentence, otherwise difficult to translate.
 #: 
 msgid "Focus"
 msgstr "le point"
@@ -8202,7 +8173,7 @@ msgid "Warning: Signature mismatch"
 msgstr "Attention : signature incompatible"
 
 #: 
-msgid "Some UnityConnect CRM system files may have been modified since the last installation."
+msgid "Some UnityConnectCRM system files may have been modified since the last installation."
 msgstr "Des fichiers système ChurchCROM ont pu avoir été modifiées depuis la dernière installation"
 
 #: 
@@ -8218,10 +8189,6 @@ msgid "Integrity Check Details:"
 msgstr "Détails de la vérification de l'intégrité"
 
 #: 
-msgid "I Understand"
-msgstr "Je comprends"
-
-#: 
 msgid "Unsupported Deposit Types Detected"
 msgstr "Types de dépôts incorrects"
 
@@ -8229,13 +8196,10 @@ msgstr "Types de dépôts incorrects"
 msgid "Support for eGive, Credit Card, and Bank Draft payments has been deprecated.  Existing non-bank reports may no longer be accessible in future versions."
 msgstr "La prise en charge des paiements par eGive, par carte de crédit et par traite bancaire a été abandonnée. Désolé, mais les rapports non bancaires existants pourraient ne plus être accessibles dans les futures versions."
 
+#. Context: locales
 #: 
 msgid "Estonian"
 msgstr "Estonien"
-
-#: 
-msgid "Error decoding integrity check result file"
-msgstr "Erreur lors du décodage du fichier de résultat du contrôle d'intégrité"
 
 #: 
 msgid "Error decoding signature definition file"
@@ -8248,10 +8212,6 @@ msgstr "Effectuer une sauvegarde"
 #: 
 msgid "Remote Backup Endpoint.  If WebDAV, this must be url encoded. "
 msgstr "Point de restauration à distance. S'il s'agit de WebDAV, l'URL doit être encodée."
-
-#: 
-msgid "Include initials image files, remote image files (gravatar), and thumbnails in backup.  These files are generally able to be reproduced after a restore and add very little value to the backup archive at a large expense of execution time and storage"
-msgstr "Inclus les fichiers image des initiales, les fichiers image distants (gravatar) et les vignettes dans la sauvegarde. Ces fichiers sont généralement capables d'être reproduits après une restauration et ajoutent très peu de valeur à l'archive de sauvegarde au détriment du temps d'exécution et du stockage."
 
 #: 
 msgid "Password (if any)"
@@ -8315,7 +8275,8 @@ msgstr "Informations sur la personne non disponibles héritées de la famille at
 "affiché SI les informations correspondantes n'ont PAS été saisies pour cette personne."
 
 #: 
-msgid "Press CTRL + C to copy all group members\\' phone numbers"
+#, fuzzy
+msgid "Press CTRL + C to copy all group members' phone numbers"
 msgstr "Pressez CTRL+C pour copier le téléphone de tous les membres du groupe"
 
 #: 
@@ -8361,10 +8322,6 @@ msgstr "Regardez dans les traces (logs) pour plus d'information"
 #: 
 msgid "Verification URL"
 msgstr "URL de vérification"
-
-#: 
-msgid "Reset System"
-msgstr "Réinitialisation"
 
 #: 
 msgid "Unexpected Person Id"
@@ -8427,10 +8384,6 @@ msgid "Remove Results from Cart"
 msgstr "Enlever les résultats du panier"
 
 #: 
-msgid "Warning: Pre-Upgrade Tasks Detected"
-msgstr "Avertissement : Des opérations pré-migrations sont requises"
-
-#: 
 #, fuzzy
 msgid "Some conditions have been identified which may prevent a successful upgrade"
 msgstr "Certaines conditions qui ont été identifiées peuvent empêcher la réussite de la mise à niveau"
@@ -8444,18 +8397,6 @@ msgid "Database Reset Functions"
 msgstr "Fonctions de réinitialisation de la base de données"
 
 #: 
-msgid "Reset Members"
-msgstr "Réinitialiser les membres"
-
-#: 
-msgid "This will remove all the member data, people, and families and can't be undone."
-msgstr "Cette opération est irréversible, elle supprimera toutes les données des membres, personnes et familles."
-
-#: 
-msgid "Reset Families/People"
-msgstr "Réinitialiser les familles/individus"
-
-#: 
 msgid "Reset Database"
 msgstr "Réinitialiser la base"
 
@@ -8463,14 +8404,7 @@ msgstr "Réinitialiser la base"
 msgid "This will reset the system data and will restart the system as a new install."
 msgstr "Ceci réinitialisera le système et redémarrera comme une nouvelle installation"
 
-#: 
-msgid "Clear Filter"
-msgstr "Supprimer filtres"
-
-#: 
-msgid "Add Person"
-msgstr "Ajouter un individu"
-
+#. Context: locales
 #: 
 msgid "Portuguese - Portugal"
 msgstr "Portugais - Portugal"
@@ -8488,8 +8422,8 @@ msgid "Requires users to self-enroll in 2 factor authentication"
 msgstr "Exige que les utilisateurs s'auto-inscrivent à l'authentification à 2 facteurs"
 
 #: 
-msgid "UnityConnect CRM"
-msgstr "UnityConnect CRM"
+msgid "ChurchCRM"
+msgstr "ChurchCRM"
 
 #: 
 msgid "Specify the application name to be displayed in authenticator app"
@@ -8564,8 +8498,8 @@ msgid "Unable To Begin Two Factor Authentication Enrollment"
 msgstr "Impossible de démarrer le souscription de l'authentification à 2 facteurs"
 
 #: 
-msgid "Two factor authentication requires UnityConnect CRM administrators to configure a few parameters"
-msgstr "L'authentification à 2 facteurs nécessite une intervention de l'administrateur UnityConnect CRM"
+msgid "Two factor authentication requires UnityConnectCRM administrators to configure a few parameters"
+msgstr "L'authentification à 2 facteurs nécessite une intervention de l'administrateur UnityConnectCRM"
 
 #: 
 msgid "System configuration "
@@ -8609,10 +8543,6 @@ msgid "Password reset not available.  Please contact your system administrator"
 msgstr "Réinitialisation du mot de passe non disponible. Veuillez contacter votre administrateur système"
 
 #: 
-msgid "Authentication Issue"
-msgstr "Erreur d'authentification"
-
-#: 
 msgid "Enter new user password. Administratively set passwords are not subject to length or complexity requirements"
 msgstr "Entrez le nouveau mot de passe utilisateur. Les mots de passe définis administrativement ne sont pas soumis à des exigences de longueur ou de complexité"
 
@@ -8640,6 +8570,7 @@ msgstr "Chargement en cours"
 msgid "List not found"
 msgstr "Liste introuvable"
 
+#. typo
 #: 
 #, fuzzy
 msgid "List not in the list"
@@ -8654,24 +8585,12 @@ msgid "Invalid List id"
 msgstr "Identifiant de liste non valide"
 
 #: 
-msgid "Audience not in the UnityConnect CRM"
-msgstr "Public non membre de UnityConnect CRM"
-
-#: 
-msgid "UnityConnect CRM Installation Information"
-msgstr "Informations d'installation de UnityConnect CRM"
-
-#: 
-msgid "Database Server Version"
-msgstr "Version de base  de données"
+msgid "Audience not in the UnityConnectCRM"
+msgstr "Public non membre de UnityConnectCRM"
 
 #: 
 msgid "Web Server"
 msgstr "Serveur wen"
-
-#: 
-msgid "Email Information"
-msgstr "Informations par e-mail"
 
 #: 
 msgid "List maintenance"
@@ -8685,6 +8604,7 @@ msgstr "Personnes non répertoriées"
 msgid "Audience not in the CRM"
 msgstr "Public absent du CRM"
 
+#. Context: locales
 #: 
 msgid "Hebrew"
 msgstr "hébreu"
@@ -8818,16 +8738,16 @@ msgid "Event Description"
 msgstr "Description de l'événement"
 
 #: 
-msgid "Enrolling your UnityConnect CRM user account in Two Factor Authention provides an additional layer of defense against bad actors trying to access your account."
-msgstr "L'inscription de votre compte d'utilisateur UnityConnect CRM dans l'authentification à 2 facteurs fournit une couche supplémentaire de défense contre les mauvais acteurs essayant d'accéder à votre compte."
+msgid "Enrolling your UnityConnectCRM user account in Two Factor Authention provides an additional layer of defense against bad actors trying to access your account."
+msgstr "L'inscription de votre compte d'utilisateur UnityConnectCRM dans l'authentification à 2 facteurs fournit une couche supplémentaire de défense contre les mauvais acteurs essayant d'accéder à votre compte."
 
 #: 
-msgid "UnityConnect CRM Two factor supports any TOTP authenticator app, so you're free to choose between Microsoft Authenticator, Google Authenticator, Authy, LastPass, and others"
-msgstr "UnityConnect CRM 2 facteurs prend en charge n'importe quelle application d'authentification TOTP, vous êtes donc libre de choisir entre Microsoft Authenticator, Google Authenticator, Authy, LastPass et autres"
+msgid "ChurchCRM Two factor supports any TOTP authenticator app, so you're free to choose between Microsoft Authenticator, Google Authenticator, Authy, LastPass, and others"
+msgstr "ChurchCRM 2 facteurs prend en charge n'importe quelle application d'authentification TOTP, vous êtes donc libre de choisir entre Microsoft Authenticator, Google Authenticator, Authy, LastPass et autres"
 
 #: 
-msgid "When you sign in to UnityConnect CRM, you'll still enter your username and password like normal"
-msgstr "Lorsque vous vous connectez à UnityConnect CRM, vous entrez toujours votre nom d'utilisateur et votre mot de passe comme d'habitude"
+msgid "When you sign in to ChurchCRM, you'll still enter your username and password like normal"
+msgstr "Lorsque vous vous connectez à ChurchCRM, vous entrez toujours votre nom d'utilisateur et votre mot de passe comme d'habitude"
 
 #: 
 msgid "However, you'll also need to supply a one-time code from your authenticator device to complete your login"
@@ -8838,8 +8758,8 @@ msgid "After successfully entering both your credentials, and the one-time code,
 msgstr "Après avoir entré avec succès vos informations d'identification et le code à usage unique, vous serez connecté normalement"
 
 #: 
-msgid "To prevent being locked out of your UnityConnect CRM account, please ensure you're ready to complete two factor enrollment before clicking begin"
-msgstr "Pour éviter d'être bloqué sur votre compte UnityConnect CRM, veuillez vous assurer que vous êtes prêt à terminer l'inscription à deux facteurs avant de cliquer sur commencer"
+msgid "To prevent being locked out of your UnityConnectCRM account, please ensure you're ready to complete two factor enrollment before clicking begin"
+msgstr "Pour éviter d'être bloqué sur votre compte ChurchCRM, veuillez vous assurer que vous êtes prêt à terminer l'inscription à deux facteurs avant de cliquer sur commencer"
 
 #: 
 msgid "Beginning enrollment will invalidate any previously enrolled 2 factor devices and recovery codes."
@@ -8909,6 +8829,7 @@ msgstr "Générer des rapports de présence -ET- d'absence pour les événements
 msgid "Help translate this project"
 msgstr "Aidez à traduire ce projet"
 
+#. Context: locales
 #: 
 msgid "Afrikaans"
 msgstr "Afrikaans"
@@ -8956,11 +8877,11 @@ msgstr "Régénérer la clef API"
 
 #: 
 msgid "View Family Page"
-msgstr "Page du foyer"
+msgstr "Voir page de la Famille"
 
 #: 
 msgid "View Person Page"
-msgstr "Page de la persone"
+msgstr "Voir Page de la personne"
 
 #: 
 msgid "Verify"
@@ -9023,10 +8944,1234 @@ msgid "Invalid Birth Date: Missing birth month and day."
 msgstr "Date de naissance invalide : Mois ou jour de naissance manquant."
 
 #: 
+msgid "System"
+msgstr "Système"
+
+#. Context: locales
+#: 
+msgid "Amharic - Ethiopia"
+msgstr "Amharique - Éthiopie"
+
+#. Context: locales
+#: 
+msgid "Czech"
+msgstr "Tchèque"
+
+#. Context: locales
+#: 
+msgid "Finnish"
+msgstr "Finlandais"
+
+#. Context: locales
+#: 
+msgid "Greek"
+msgstr "Grec"
+
+#. Context: locales
+#: 
+msgid "Turkish"
+msgstr "Turc"
+
+#. Context: locales
+#: 
+msgid "Ukrainian"
+msgstr "Ukrainien"
+
+#: 
+msgid "When you click \"Submit to GitHub\" you will be directed to GitHub issues page with your system info prefilled."
+msgstr "Lorsque vous cliquez sur « Soumettre à GitHub », vous serez redirigé vers la page des problèmes GitHub avec les informations de votre système préremplies."
+
+#: 
+msgid "Submit to GitHub"
+msgstr "Envoyer à GitHub"
+
+#: 
+msgid "Change role"
+msgstr "Changer le rôle"
+
+#: 
+msgid "Closed"
+msgstr "Fermé"
+
+#: 
+msgid "Delete this person?"
+msgstr "Effacer cette personne ?"
+
+#: 
+msgid "Deposit ID"
+msgstr "ID de dépôt"
+
+#: 
+msgid "Deposit Total"
+msgstr "Total dépôt"
+
+#: 
+msgid "Group Cart Status"
+msgstr "Statut du panier de groupe"
+
+#: 
+msgid "If that doesn't work, copy and paste the following link in your browser"
+msgstr "Si cela ne fonctionne pas, copiez et collez le lien suivant dans votre navigateur."
+
+#: 
+msgid "You received this email because we received a request for activity on your account. If you didn't request this you can safely delete this email."
+msgstr "Vous avez reçu ce courriel car nous avons reçu une demande d'activité concernant votre compte. Si vous n'êtes pas à l'origine de cette demande, vous pouvez supprimer ce courriel sans risque."
+
+#: 
+msgid "To stop receiving these emails, you can email"
+msgstr "Pour ne plus recevoir ces courriels, vous pouvez envoyer un courriel"
+
+#. Context: queryparameteroptions_qpo
+#: 
+msgid "2016/2017"
+msgstr "2016/2017"
+
+#. Context: queryparameteroptions_qpo
+#: 
+msgid "2017/2018"
+msgstr "2017/2018"
+
+#. Context: queryparameteroptions_qpo
+#: 
+msgid "2018/2019"
+msgstr "2018/2019"
+
+#. Context: queryparameteroptions_qpo
+#: 
+msgid "2019/2020"
+msgstr "2019/2020"
+
+#. Context: queryparameteroptions_qpo
+#: 
+msgid "2020/2021"
+msgstr "2020/2021"
+
+#. Context: queryparameteroptions_qpo
+#: 
+msgid "2021/2022"
+msgstr "2021/2022"
+
+#. Context: queryparameteroptions_qpo
+#: 
+msgid "2022/2023"
+msgstr "2022/2023"
+
+#: 
+msgid "invalid group request"
+msgstr "demande de groupe invalide"
+
+#. Context: locales
+#: 
+msgid "Hindi - India"
+msgstr "Hindi - Inde"
+
+#. Context: locales
+#: 
+msgid "Japanese"
+msgstr "Japonais"
+
+#. Context: locales
+#: 
+msgid "Tamil - India"
+msgstr "Tamoul - Inde"
+
+#: 
+msgid "Not Subscribed"
+msgstr "Non abonné"
+
+#: 
+msgid "property"
+msgstr "propriété"
+
+#: 
+msgid "Default Zip"
+msgstr "Zip par défaut"
+
+#. Context: query_qry
+#: 
+msgid "Credit Card People"
+msgstr "Personnes de carte de crédit"
+
+#. Context: query_qry
+#: 
+msgid "People who are configured to pay by credit card."
+msgstr "Les personnes configurées pour payer par carte de crédit."
+
+#: 
 msgid "Adult Name (Optional)"
 msgstr "Nom de l'adulte (Optionnel)"
 
 #: 
+msgid "As part of the restore, external backups have been disabled.  If you wish to continue automatic backups, you must manually re-enable the bEnableExternalBackupTarget setting."
+msgstr "Dans le cadre de la restauration, les sauvegardes externes ont été désactivées. Si vous souhaitez poursuivre les sauvegardes automatiques, vous devez réactiver manuellement la cible de sauvegarde externe bEnableExternalBackupTarget."
+
+#: 
+msgid "The previous integrity check passed. All system file hashes match the expected values."
+msgstr "Le contrôle d'intégrité précédent a réussi. Tous les hachages des fichiers système correspondent aux valeurs attendues."
+
+#: 
+msgid "Comma separated list of classifications that should appear as inactive"
+msgstr "Liste, séparée par des virgules, des classifications qui doivent apparaître comme inactives"
+
+#: 
 msgid "MailChimp is not configured"
 msgstr "MailChimp n'est pas configuré"
+
+#: 
+msgid "Please update the MailChimp API key in:"
+msgstr "Veuillez mettre à jour la clé API MailChimp dans :"
+
+#. Context: locales
+#: 
+msgid "English - South Africa"
+msgstr "Anglais - Afrique du sud"
+
+#. Context: locales
+#: 
+msgid "English - Jamaica"
+msgstr "Anglais - Jamaïque"
+
+#. Context: locales
+#: 
+msgid "Swahili"
+msgstr "Swahili"
+
+#: 
+msgid "One character from FirstName and one character from LastName"
+msgstr "Un caractère du prénom et un caractère du nom"
+
+#: 
+msgid "Two characters from FirstName"
+msgstr "Deux caractères du prénom"
+
+#: 
+msgid "Set font to render initials. Upload custom font to fonts directory"
+msgstr "Définir la police d'écriture pour les initiales. Téléverser la police personnalisée dans le répertoire des polices"
+
+#: 
+msgid "Person List Columns"
+msgstr "Colonne Personne"
+
+#: 
+msgid "Family List Columns"
+msgstr "Colonne Famille"
+
+#: 
+msgid "Temple Email not set, please visit the settings page"
+msgstr "Adresse e-mail de l'église non configurée, veuillez consulter la page des paramètres"
+
+#. Context: locales
+#: 
+msgid "Telugu - India"
+msgstr "Telugu - Inde"
+
+#. Context: locales
+#: 
+msgid "Korean"
+msgstr "Coréen"
+
+#: 
+msgid "System Logs"
+msgstr "Journaux système"
+
+#: 
+msgid "Enforce Content Security Policy (CSP) to help protect against cross-site scripting. When disabled, CSP violations are only reported."
+msgstr "Appliquez la politique de sécurité du contenu (CSP) pour vous protéger contre les attaques XSS. Lorsqu'elle est désactivée, seules les violations de la CSP sont signalées."
+
+#: 
+msgid "Maximum number of log files to keep"
+msgstr "Nombre maximal de fichiers journaux à conserver"
+
+#: 
+msgid "Too Many Log Files"
+msgstr "Trop de fichiers journaux"
+
+#: 
+msgid "The logs directory contains many log files. Clean up old log files to free up disk space."
+msgstr "Le répertoire des journaux contient de nombreux fichiers journaux. Supprimez les anciens fichiers journaux pour libérer de l'espace disque."
+
+#: 
+msgid "Enter event description..."
+msgstr "Entrez la description de l'événement..."
+
+#: 
+msgid "Event ID"
+msgstr "ID d'événement"
+
+#: 
+msgid "Enter note text here..."
+msgstr "Saisissez votre texte ici..."
+
+#: 
+msgid "No notes have been added for this person."
+msgstr "Aucune note n'a été ajoutée pour cette personne."
+
+#: 
+msgid "Note"
+msgstr "Note"
+
+#: 
+msgid "Log Settings"
+msgstr "Paramètres du journal"
+
+#: 
+msgid "Log Level:"
+msgstr "Niveau de journalisation :"
+
+#: 
+msgid "Save Log Level"
+msgstr "Enregistrer le niveau de journalisation"
+
+#: 
+msgid "Lower numbers log more details. Higher numbers log only severe issues. Changes apply to new log entries immediately."
+msgstr "Les chiffres les plus bas indiquent plus de détails. Les chiffres les plus élevés ne signalent que les problèmes graves. Les modifications s'appliquent immédiatement aux nouvelles entrées du journal."
+
+#: 
+msgid "View application logs. Click on a log file to view its contents."
+msgstr "Consultez les journaux d'application. Cliquez sur un fichier journal pour afficher son contenu."
+
+#: 
+msgid "Delete All Logs"
+msgstr "Supprimer tous les journaux"
+
+#: 
+msgid "No log files found."
+msgstr "Aucun fichier journal trouvé."
+
+#: 
+msgid "Log File"
+msgstr "Fichier journal"
+
+#: 
+msgid "Size"
+msgstr "Taille"
+
+#: 
+msgid "Last Modified"
+msgstr "Dernière modification"
+
+#: 
+msgid "View"
+msgstr "Voir"
+
+#: 
+msgid "Log File Viewer"
+msgstr "Visionneuse de fichiers journaux"
+
+#: 
+msgid "Filter by log level:"
+msgstr "Filtrer par niveau de journalisation :"
+
+#: 
+msgid "Error"
+msgstr "Erreur"
+
+#: 
+msgid "Info"
+msgstr "Information"
+
+#: 
+msgid "Number of lines to display:"
+msgstr "Nombre de lignes à afficher :"
+
+#: 
+msgid "Loading log file..."
+msgstr "Chargement du fichier journal..."
+
+#: 
+msgid "No notes have been added for this family."
+msgstr "Aucune note n'a été ajoutée pour cette famille."
+
+#: 
+msgid "A Calendar access token has been generated and saved."
+msgstr "Un jeton d'accès au calendrier a été généré et enregistré."
+
+#: 
+msgid "added"
+msgstr "ajouté"
+
+#: 
+msgid "Added"
+msgstr "Ajouté"
+
+#: 
+msgid "Added to cart successfully"
+msgstr "Ajouté au panier avec succès"
+
+#: 
+msgid "All members already in cart"
+msgstr "Tous les membres sont déjà dans le panier"
+
+#: 
+msgid "already in cart"
+msgstr "déjà dans le panier"
+
+#: 
+msgid "Calendar properties could not be loaded. This calendar may be missing an access token or is not configured correctly."
+msgstr "Impossible de charger les propriétés du calendrier. Ce calendrier ne possède peut-être pas de jeton d'accès ou n'est pas correctement configuré."
+
+#: 
+msgid "Cart emptied successfully"
+msgstr "Panier vidé avec succès"
+
+#: 
+msgid "Cart emptied to group successfully"
+msgstr "Le panier du groupe a été vidé avec succès"
+
+#: 
+msgid "Empty your entire cart?"
+msgstr "Vider entièrement votre panier ?"
+
+#: 
+msgid "Failed to add family to cart"
+msgstr "Impossible d'ajouter la famille au panier"
+
+#: 
+msgid "Failed to add group to cart"
+msgstr "Impossible d'ajouter le groupe au panier"
+
+#: 
+msgid "Failed to add to cart"
+msgstr "Impossible d'ajouter au panier"
+
+#: 
+msgid "Failed to empty cart"
+msgstr "Impossible de vider le chariot"
+
+#: 
+msgid "Failed to empty cart to group"
+msgstr "Impossible de vider le panier dans le groupe"
+
+#: 
+msgid "Failed to remove family from cart"
+msgstr "Impossible de retirer la famille du panier"
+
+#: 
+msgid "Failed to remove from cart"
+msgstr "Impossible de retirer du panier"
+
+#: 
+msgid "Failed to remove group"
+msgstr "Échec de la suppression du groupe"
+
+#: 
+msgid "Family added to cart"
+msgstr "Famille ajoutée au panier"
+
+#: 
+msgid "Family removed from cart"
+msgstr "Famille retirée du panier"
+
+#: 
+msgid "Group added to cart"
+msgstr "Groupe ajouté au panier"
+
+#: 
+msgid "Group removed from cart"
+msgstr "Groupe supprimé du panier"
+
+#: 
+msgid "in cart"
+msgstr "dans le panier"
+
+#: 
+msgid "members. Already had"
+msgstr "membres. J'avais déjà"
+
+#: 
+msgid "people added to cart"
+msgstr "personnes ajoutées au panier"
+
+#: 
+msgid "people already in cart"
+msgstr "personnes déjà dans le panier"
+
+#: 
+msgid "people from cart"
+msgstr "personnes du panier"
+
+#: 
+msgid "people removed from cart"
+msgstr "personnes retirées du panier"
+
+#: 
+msgid "Person already in cart"
+msgstr "Personne déjà dans le panier"
+
+#: 
+msgid "Remove this family from cart?"
+msgstr "Retirer cette famille du panier ?"
+
+#: 
+msgid "Remove this group from cart?"
+msgstr "Supprimer ce groupe du panier ?"
+
+#: 
+msgid "Remove this person from cart?"
+msgstr "Retirer cette personne du panier ?"
+
+#: 
+msgid "Removed from cart successfully"
+msgstr "Article retiré du panier avec succès"
+
+#: 
+msgid "Yes, Empty Cart"
+msgstr "Oui, panier vide"
+
+#: 
+msgid "Yes, Remove"
+msgstr "Oui, Retirer"
+
+#: 
+msgid "Add Group"
+msgstr "Ajouter un groupe"
+
+#: 
+msgid "Back to Group List"
+msgstr "Retour à la liste des groupes"
+
+#: 
+msgid "Default role updated."
+msgstr "Rôle par défaut mis à jour."
+
+#: 
+msgid "Edit Group"
+msgstr "Modifier le groupe"
+
+#: 
+msgid "Enter group name"
+msgstr "Entrez le nom du groupe"
+
+#: 
+msgid "Failed to add role. Please try again."
+msgstr "Impossible d'ajouter le rôle. Veuillez réessayer."
+
+#: 
+msgid "Failed to create group. Please try again."
+msgstr "Impossible de créer le groupe. Veuillez réessayer."
+
+#: 
+msgid "Failed to delete role. Please try again."
+msgstr "Impossible de supprimer le rôle. Veuillez réessayer."
+
+#: 
+msgid "Failed to load cart status."
+msgstr "Impossible de charger l'état du panier."
+
+#: 
+msgid "Failed to load groups. Please refresh the page."
+msgstr "Impossible de charger les groupes. Veuillez actualiser la page."
+
+#: 
+msgid "Failed to set default role. Please try again."
+msgstr "Impossible de définir le rôle par défaut. Veuillez réessayer."
+
+#: 
+msgid "Failed to update group. Please try again."
+msgstr "Impossible de mettre à jour le groupe. Veuillez réessayer."
+
+#: 
+msgid "Failed to update properties. Please try again."
+msgstr "Impossible de mettre à jour les propriétés. Veuillez réessayer."
+
+#: 
+msgid "Failed to update role name. Please try again."
+msgstr "Impossible de mettre à jour le nom du rôle. Veuillez réessayer."
+
+#: 
+msgid "Leave blank to keep existing password"
+msgstr "Laissez vide pour conserver le mot de passe existant"
+
+#: 
+msgid "Please enter a group name."
+msgstr "Veuillez saisir un nom de groupe."
+
+#: 
+msgid "Role added successfully."
+msgstr "Rôle ajouté avec succès."
+
+#: 
+msgid "Role deleted successfully."
+msgstr "Rôle supprimé avec succès."
+
+#: 
+msgid "Role name updated."
+msgstr "Nom du rôle mis à jour."
+
+#: 
+msgid "View Group"
+msgstr "Voir le groupe"
+
+#: 
+msgid "Add Note"
+msgstr "Ajouter une note"
+
+#: 
+msgid "Events Today"
+msgstr "Événements aujourd'hui"
+
+#: 
+msgid "Sunday School Overview"
+msgstr "Aperçu de l’école du dimanche"
+
+#: 
+msgid "Add Family Member"
+msgstr "Ajouter un membre de la famille"
+
+#: 
+msgid "Address is required"
+msgstr "L'adresse est obligatoire"
+
+#: 
+msgid "Base URL is required"
+msgstr "L'URL de base est obligatoire"
+
+#: 
+msgid "City is required"
+msgstr "La ville est obligatoire"
+
+#: 
+msgid "Database name is required"
+msgstr "Le nom de la base de donnée est obligatoire"
+
+#: 
+msgid "Database server hostname or IP address is required (e.g., localhost or 127.0.0.1)"
+msgstr "Le nom d'hôte ou l'adresse IP du serveur de base de données est obligatoire (par exemple : localhost ou 127.0.0.1)"
+
+#: 
+msgid "Database server port is required (e.g., 3306)"
+msgstr "Le port du serveur de base de données est obligatoire (par exemple, 3306)"
+
+#: 
+msgid "Database username is required"
+msgstr "Le nom d'utilisateur de la base de données est obligatoire"
+
+#: 
+msgid "Email Address"
+msgstr "Adresse email"
+
+#: 
+msgid "Email address"
+msgstr "adresse email"
+
+#: 
+msgid "Enter family name"
+msgstr "Entrez le nom de famille"
+
+#: 
+msgid "Family Information"
+msgstr "Informations sur la famille"
+
+#: 
+msgid "Family name is required"
+msgstr "Le nom de famille est requis"
+
+#: 
+msgid "Family name must be at least 2 characters"
+msgstr "Le nom de famille doit comporter au moins 2 caractères"
+
+#: 
+msgid "First name"
+msgstr "Prénom"
+
+#: 
+msgid "First name is required"
+msgstr "Le prénom est obligatoire"
+
+#: 
+msgid "First name must be at least 2 characters"
+msgstr "Le prénom doit comporter au moins 2 caractères"
+
+#: 
+msgid "Home phone is required"
+msgstr "Le téléphone de la maison est obligatoire"
+
+#: 
+msgid "Home phone number"
+msgstr "Numéro de téléphone de la maison"
+
+#: 
+msgid "Invalid format"
+msgstr "Format invalide"
+
+#: 
+msgid "Join our community by registering your family"
+msgstr "Rejoignez notre communauté en inscrivant votre famille"
+
+#: 
+msgid "Last name"
+msgstr "Nom de famille"
+
+#: 
+msgid "Last name is required"
+msgstr "Le nom de famille est obligatoire"
+
+#: 
+msgid "Last name must be at least 2 characters"
+msgstr "Le nom de famille doit comporter au moins 2 caractères"
+
+#: 
+msgid "Maximum length is"
+msgstr "La longueur maximale est"
+
+#: 
+msgid "Minimum length is"
+msgstr "La longueur minimale est"
+
+#: 
+msgid "Must be a valid URL starting with http:// or https://"
+msgstr "Doit être une URL valide commençant par http:// ou https://"
+
+#: 
+msgid "Must be a valid URL starting with http:// or https:// (e.g., http://localhost or https://domain.com)"
+msgstr "Doit être une URL valide commençant par http:// ou https:// (par exemple, http://localhost ou https://domain.com)"
+
+#: 
+msgid "Must be a valid port number (e.g., 3306)"
+msgstr "Doit être un numéro de port valide (par exemple, 3306)"
+
+#: 
+msgctxt ", -, ., / allowed."
+msgid "Must start with / if not empty, no trailing slash. Only letters, numbers, "
+msgstr "Doit commencer par / si non vide, sans barre oblique finale. Seules les lettres, les chiffres, -, ., /sont autorisés."
+
+#: 
+msgid "Next Member"
+msgstr "Membre suivant"
+
+#: 
+msgid "Passwords do not match"
+msgstr "Les mots de passe ne correspondent pas"
+
+#: 
+msgid "Phone Type"
+msgstr "Type de téléphone"
+
+#: 
+msgid "Phone number"
+msgstr "Numéro de téléphone"
+
+#: 
+msgid "Please add at least one family member."
+msgstr "Veuillez ajouter au moins un membre de la famille."
+
+#: 
+msgid "Please correct the validation errors before continuing."
+msgstr "Veuillez corriger les erreurs de validation avant de continuer."
+
+#: 
+msgid "Please enter a valid URL"
+msgstr "Veuillez saisir une URL valide"
+
+#: 
+msgid "Please enter a valid email address"
+msgstr "S'il vous plaît, mettez une adresse email valide"
+
+#: 
+msgid "Please enter a valid email address (e.g., name@example.com)"
+msgstr "Veuillez saisir une adresse électronique valide (par exemple, nom@exemple.com)"
+
+#: 
+msgid "Please enter a valid number"
+msgstr "Veuillez saisir un numéro valide"
+
+#: 
+msgid "Please enter a valid phone number"
+msgstr "Veuillez saisir un numéro valide"
+
+#: 
+msgid "Please fill in all required fields correctly."
+msgstr "Veuillez remplir correctement tous les champs obligatoires."
+
+#: 
+msgid "Please review all information carefully before submitting. You can go back to make changes if needed."
+msgstr "Veuillez vérifier attentivement toutes les informations avant de les soumettre. Vous pouvez revenir en arrière pour apporter des modifications si nécessaire."
+
+#: 
+msgid "Previous"
+msgstr "Précédent"
+
+#: 
+msgid "Registration Error"
+msgstr "Erreur d'enregistrement"
+
+#: 
+msgid "Review & Submit"
+msgstr "Vérifier et soumettre"
+
+#: 
+msgid "Role in Family"
+msgstr "Rôle dans la famille"
+
+#: 
+msgid "Select date"
+msgstr "Sélectionnez une date"
+
+#: 
+msgid "Street address"
+msgstr "Adresse de la rue"
+
+#: 
+msgid "Submit Registration"
+msgstr "Soumettre l'inscription"
+
+#: 
+msgid "Zip code is required"
+msgstr "Le code postal est obligatoire"
+
+#: 
+msgid "denotes required fields"
+msgstr "désigne les champs obligatoires"
+
+#: 
+msgid "A new password has been generated and sent to your email address."
+msgstr "Un nouveau mot de passe a été généré et envoyé à votre adresse électronique."
+
+#: 
+msgid "A new version of UnityConnectCRM is available for installation."
+msgstr "Une nouvelle version de UnityConnectCRM est disponible pour installation."
+
+#: 
+msgid "Actual Hash"
+msgstr "Hachage Actuel"
+
+#: 
+msgid "All pre-upgrade checks have passed. You may proceed with the upgrade."
+msgstr "Toutes les vérifications préalables à la mise à niveau ont été effectuées avec succès. Vous pouvez procéder à la mise à niveau."
+
+#: 
+msgid "Allow Pre-release Upgrades"
+msgstr "Autoriser les mises à jour avant la version finale"
+
+#: 
+msgid "Apply Update Now"
+msgstr "Appliquer la mise à jour maintenant"
+
+#: 
+msgid "Applying System Update..."
+msgstr "Application de la mise à jour système..."
+
+#: 
+msgid "Available Version:"
+msgstr "Version disponible :"
+
+#: 
+msgid "Back to Login"
+msgstr "Retour à la connexion"
+
+#: 
+msgid "Back to login"
+msgstr "Retour à la connexion"
+
+#: 
+msgid "Backup Skipped"
+msgstr "Sauvegarde ignorée"
+
+#: 
+msgid "Check GitHub for the latest release information"
+msgstr "Consultez GitHub pour obtenir les dernières informations sur la version."
+
+#: 
+msgid "Complete"
+msgstr "Complet"
+
+#: 
+msgid "Continue to Backup"
+msgstr "Continuer la sauvegarde"
+
+#: 
+msgid "Continue to Download & Apply"
+msgstr "Continuez à télécharger et à appliquer"
+
+#: 
+msgid "Create Backup"
+msgstr "Créer une sauvegarde"
+
+#: 
+msgid "Create a backup of your database before applying the update."
+msgstr "Créez une sauvegarde de votre base de données avant d'appliquer la mise à jour."
+
+#: 
+msgid "Current Version:"
+msgstr "Version Actuelle:"
+
+#: 
+msgid "Database Backup"
+msgstr "Sauvegarde de base de données"
+
+#: 
+msgid "Download & Apply"
+msgstr "Téléchargez et Appliquer"
+
+#: 
+msgid "Download and Apply System Update"
+msgstr "Télécharger et appliquer la mise à jour système"
+
+#: 
+msgid "Download the latest release and apply it to your UnityConnectCRM installation."
+msgstr "Téléchargez la dernière version et appliquez-la à votre installation ChurchCRM."
+
+#: 
+msgid "Downloaded"
+msgstr "Téléchargé"
+
+#: 
+msgid "Downloading latest release from GitHub..."
+msgstr "Téléchargement de la dernière version depuis GitHub..."
+
+#: 
+msgid "Enter your login name and we will email you a link to reset your password."
+msgstr "Saisissez votre identifiant et nous vous enverrons par e-mail un lien pour réinitialiser votre mot de passe."
+
+#: 
+msgid "Expected Hash"
+msgstr "Hachage attendu"
+
+#: 
+msgid "Failed to create backup."
+msgstr "Échec de la création de la sauvegarde."
+
+#: 
+msgid "Failed to download update package."
+msgstr "Échec du téléchargement du package de mise à jour."
+
+#: 
+msgid "Failed to refresh upgrade information from GitHub."
+msgstr "Impossible d'actualiser les informations de mise à niveau depuis GitHub."
+
+#: 
+msgid "Failed to refresh upgrade information. Please try again."
+msgstr "Impossible d'actualiser les informations de mise à niveau. Veuillez réessayer."
+
+#: 
+msgid "Failed to save setting. Please try again."
+msgstr "Impossible d'enregistrer les paramètres. Veuillez réessayer."
+
+#: 
+msgid "File Name"
+msgstr "Nom de fichier"
+
+#: 
+msgid "Files Missing"
+msgstr "Fichiers manquants"
+
+#: 
+msgid "Files Modified"
+msgstr "Fichiers modifiés"
+
+#: 
+msgid "Go to Login"
+msgstr "Allez à la page de Connexion"
+
+#: 
+msgid "I Understand - Continue"
+msgstr "Je comprends - Continuer"
+
+#: 
+msgid "Language updated to"
+msgstr "Langue mise à jour à"
+
+#: 
+msgid "Login Name is required"
+msgstr "Un nom d'utilisateur est obligatoire"
+
+#: 
+msgid "Once you receive the email, you can log in with your temporary password and change it to something you prefer."
+msgstr "Une fois que vous aurez reçu l'e-mail, vous pourrez vous connecter avec votre mot de passe temporaire et le modifier pour en choisir un autre."
+
+#: 
+msgid "Password Reset Error"
+msgstr "Erreur de réinitialisation du mot de passe"
+
+#: 
+msgid "Password Reset Successful"
+msgstr "Réinitialisation du mot de passe réussie"
+
+#: 
+msgid "Please check your email (including spam/junk folder) for your temporary password."
+msgstr "Veuillez vérifier votre boîte mail (y compris le dossier spam/courrier indésirable) pour retrouver votre mot de passe temporaire."
+
+#: 
+msgid "Please do not close this window or refresh the page."
+msgstr "Veuillez ne pas fermer cette fenêtre ni actualiser la page."
+
+#: 
+msgid "Pre-Upgrade Tasks Complete"
+msgstr "Tâches préalables à la mise à niveau terminées"
+
+#: 
+msgid "Pre-Upgrade Tasks Detected"
+msgstr "Tâches préalables à la mise à niveau détectées"
+
+#: 
+msgid "Pre-Upgrade Warnings"
+msgstr "Avertissements préalables à la mise à niveau"
+
+#: 
+msgid "Refresh from GitHub"
+msgstr "Actualiser depuis GitHub"
+
+#: 
+msgid "Release Notes:"
+msgstr "Notes de version :"
+
+#: 
+msgid "Request Password Reset"
+msgstr "Demander la réinitialisation du mot de passe"
+
+#: 
+msgid "Retry Download"
+msgstr "Réessayer de télécharger"
+
+#: 
+msgid "Return to Dashboard"
+msgstr "Retour au tableau de bord"
+
+#: 
+msgid "SHA1 Hash:"
+msgstr "Hachage SHA1 :"
+
+#: 
+msgid "Send Reset Email"
+msgstr "Envoyer un e-mail de réinitialisation"
+
+#: 
+msgid "Setting saved. Reloading page..."
+msgstr "Paramètres enregistrés. Rechargement de la page…"
+
+#: 
+msgid "Setting updated successfully"
+msgstr "Paramètre mis à jour avec succès"
+
+#: 
+msgid "Skip Backup"
+msgstr "Ignorer la sauvegarde"
+
+#: 
+msgid "System Up to Date"
+msgstr "Système à jour"
+
+#: 
+msgid "System Upgrade Wizard"
+msgstr "Assistant de mise à niveau du système"
+
+#: 
+msgid "System upgrade completed successfully!"
+msgstr "Mise à niveau du système effectuée avec succès !"
+
+#: 
+msgid "This may take several minutes."
+msgstr "Cela peut prendre plusieurs minutes."
+
+#: 
+msgid "Up to date"
+msgstr "À jour"
+
+#: 
+msgid "Update Available!"
+msgstr "Mise à jour disponible !"
+
+#: 
+msgid "Update Package Details"
+msgstr "Mettre à jour les détails du package"
+
+#: 
+msgid "Update package downloaded successfully."
+msgstr "Le package de mise à jour a été téléchargé avec succès."
+
+#: 
+msgid "Upgrade Complete!"
+msgstr "Mise à jour terminée !"
+
+#: 
+msgid "Upgrade failed."
+msgstr "La mise à jour a échoué."
+
+#: 
+msgid "Upgrade failed. Please check the logs."
+msgstr "La mise à jour a échoué. Veuillez consulter les journaux."
+
+#: 
+msgid "Upgrade information refreshed successfully"
+msgstr "Informations de mise à jour actualisées avec succès"
+
+#: 
+msgid "Upgrade information refreshed. Reloading page..."
+msgstr "Informations de mise à jour actualisées. Rechargement de la page…"
+
+#: 
+msgid "Version Information"
+msgstr "Informations sur la version"
+
+#: 
+msgid "Warnings"
+msgstr "Avertissements"
+
+#: 
+msgid "We were unable to process your password reset request. Please try requesting a new password reset link."
+msgstr "Nous n'avons pas pu traiter votre demande de réinitialisation de mot de passe. Veuillez réessayer en demandant un nouveau lien de réinitialisation."
+
+#: 
+msgid "You have chosen to skip the backup. It is strongly recommended to have a backup before proceeding with the upgrade."
+msgstr "Vous avez choisi de ne pas effectuer de sauvegarde. Il est fortement recommandé d'en effectuer une avant de procéder à la mise à jour."
+
+#: 
+msgid "Your UnityConnectCRM installation has been successfully upgraded."
+msgstr "Votre installation UnityConnectCRM a été mise à jour avec succès."
+
+#: 
+msgid "Your UnityConnectCRM installation is running the latest version."
+msgstr "Votre installation de UnityConnectCRM utilise la dernière version."
+
+#: 
+msgid "2-50 characters"
+msgstr "2 à 50 caractères"
+
+#: 
+msgid "Dear Friend"
+msgstr "Cher ami"
+
+#: 
+msgid "No Data Found"
+msgstr "Aucune donnée trouvée"
+
+#: 
+msgid "No records were returned from the previous report. Please adjust your filters or date range and try again."
+msgstr "Aucun enregistrement n'a été trouvé dans le rapport précédent. Veuillez modifier vos filtres ou votre plage de dates et réessayer."
+
+#: 
+msgid "Please enter a menu name (2-50 characters)"
+msgstr "Veuillez saisir un nom de menu (2 à 50 caractères)"
+
+#: 
+msgid "Please enter a valid URL starting with http:// or https://"
+msgstr "Veuillez saisir une URL valide commençant par http:// ou https://"
+
+#: 
+msgid "All system file signatures match the expected values."
+msgstr "Toutes les signatures des fichiers système correspondent aux valeurs attendues"
+
+#: 
+msgid "Files with issues"
+msgstr "Fichiers avec des problèmes"
+
+#: 
+msgid "Integrity check failed"
+msgstr "Le contrôle d'intégrité a échoué"
+
+#: 
+msgid "Integrity check passed"
+msgstr "Contrôle d'intégrité réussi"
+
+#: 
+msgid "Signature definition file exists but is not readable. Check file permissions."
+msgstr "Le fichier de définition de signature existe, mais il est illisible. Vérifiez les permissions du fichier."
+
+#: 
+msgid "Signature definition file is missing at %s. Run the packaging task or deploy an official release to regenerate signatures."
+msgstr "Le fichier de définition de signature est manquant à l'emplacement %s. Exécutez la tâche de packaging ou déployez une version officielle pour régénérer les signatures."
+
+#: 
+msgid "Unable to contact integrity endpoint. Check web server error logs."
+msgstr "Impossible de contacter le point de terminaison d'intégrité. Consultez les journaux d'erreurs du serveur web."
+
+#: 
+msgid "Add any additional notes about this deposit"
+msgstr "Ajoutez toute note supplémentaire concernant ce dépôt."
+
+#: 
+msgid "Amount exceeds maximum allowed value (999999.99)."
+msgstr "Le montant dépasse la valeur maximale autorisée (999999,99)."
+
+#: 
+msgid "Checks"
+msgstr "Chèques"
+
+#: 
+msgid "Clear Filters"
+msgstr "Effacer les filtres"
+
+#: 
+msgid "Click a bar to filter payments"
+msgstr "Cliquez sur une barre pour filtrer les paiements"
+
+#: 
+msgid "Delete Selected"
+msgstr "Supprimer la sélection"
+
+#: 
+msgid "Deposit saved successfully"
+msgstr "Dépôt enregistré avec succès"
+
+#: 
+msgid "Error deleting payments"
+msgstr "Erreur lors de la suppression des paiements"
+
+#: 
+msgid "Error loading payments"
+msgstr "Erreur lors du chargement des paiements"
+
+#: 
+msgid "Error saving deposit"
+msgstr "Erreur lors de l'enregistrement du dépôt"
+
+#: 
+msgid "Funds"
+msgstr "Fonds"
+
+#: 
+msgid "Generate Report"
+msgstr "Générer un rapport"
+
+#: 
+msgid "No Cash"
+msgstr "Pas d'argent liquide"
+
+#: 
+msgid "No Checks"
+msgstr "Aucun chèque"
+
+#: 
+msgid "No payments yet. Click \"Add Payment\" to get started."
+msgstr "Aucun paiement pour l'instant. Cliquez sur « Ajouter un paiement » pour commencer."
+
+#: 
+msgid "NonDeductible amount exceeds maximum allowed value (999999.99)."
+msgstr "Le montant non déductible dépasse la valeur maximale autorisée (999999,99)."
+
+#: 
+msgid "Payments"
+msgstr "Paiements"
+
+#: 
+msgid "Payments deleted successfully"
+msgstr "Paiements supprimés avec succès"
+
+#: 
+msgid "Please select a date"
+msgstr "Veuillez sélectionner une date"
+
+#: 
+msgid "Please select rows to delete"
+msgstr "Veuillez sélectionner les lignes à supprimer"
+
+#: 
+msgid "Saving..."
+msgstr "Enregistrement..."
+
+#: 
+msgid "This action cannot be undone."
+msgstr "Cette action est irréversible."
+
+#: 
+msgid "Total Deposit"
+msgstr "Dépôt total"
+
+#: 
+msgid "Total Payments"
+msgstr "Paiements totaux"
+
+#: 
+msgid "payments(s)?"
+msgstr "paiement(s) ?"
 

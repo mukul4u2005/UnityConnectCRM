@@ -571,7 +571,7 @@
         </vendor>
     </table>
 
-    <table name="user_usr" idMethod="native" phpName="User" description="This contains the login information and specific settings for each ChurchCRM user">
+    <table name="user_usr" idMethod="native" phpName="User" description="This contains the login information and specific settings for each UnityConnectCRM user">
         <column name="usr_per_ID" phpName="PersonId" type="SMALLINT" size="9" sqlType="mediumint(9) unsigned" primaryKey="true" required="true" defaultValue="0"/>
         <column name="usr_Password" phpName="Password" type="VARCHAR" size="500" required="true" defaultValue=""/>
         <column name="usr_NeedPasswordChange" phpName="NeedPasswordChange" type="BOOLEAN" size="1" sqlType="tinyint(3) unsigned" required="true" defaultValue="1"/>
@@ -822,7 +822,7 @@
         </vendor>
     </table>
 
-    <table name="locations" idMethod="native" phpName="Location"  description="This is a table for storing all physical locations (Temple/TrustOffices, Events, etc) ">
+    <table name="locations" idMethod="native" phpName="Location"  description="This is a table for storing all physical locations (Church Offices, Events, etc) ">
         <column name="location_id" phpName="LocationId" type="SMALLINT" size="8" sqlType="mediumint(8) unsigned" required="true"  primaryKey="true"/>
         <column name="location_typeID" phpName="LocationType" type="SMALLINT" size="8" sqlType="mediumint(8) unsigned" required="true"/>
         <column name="location_name" type="VARCHAR" size="256" required="true" defaultValue="" description="Location Name (e.g 'Main Campus')"/>

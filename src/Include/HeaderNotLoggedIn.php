@@ -3,9 +3,7 @@
 use ChurchCRM\dto\SystemConfig;
 use ChurchCRM\dto\SystemURLs;
 
-if (SystemConfig::debugEnabled()) {
-    require_once 'Header-Security.php';
-}
+require_once 'Header-Security.php';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -15,21 +13,26 @@ if (SystemConfig::debugEnabled()) {
     <meta http-equiv="Content-Type" content="text/html">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Custom ChurchCRM styles -->
-    <link rel="stylesheet" href="<?= SystemURLs::getRootPath() ?>/skin/churchcrm.min.css">
-    <link rel="stylesheet" href="<?= SystemURLs::getRootPath() ?>/skin/external/fontawesome/css/all.css">
+    <!-- Core UnityConnectCRM bundle (includes jQuery) -->
+    <script src="<?= SystemURLs::getRootPath() ?>/skin/v2/churchcrm.min.js"></script>
+    <link rel="stylesheet" href="<?= SystemURLs::getRootPath() ?>/skin/v2/churchcrm.min.css">
 
-    <!-- jQuery JS -->
-    <script src="<?= SystemURLs::getRootPath() ?>/skin/external/jquery/jquery.min.js"></script>
+    <script src="<?= SystemURLs::getRootPath() ?>/skin/external/moment/moment.min.js"></script>
 
-    <title>UnityConnectCRM: <?= $sPageTitle ?></title>
+    <title>ChurchCRM: <?= $sPageTitle ?></title>
 
 </head>
 <body class="hold-transition login-page">
 
   <script nonce="<?= SystemURLs::getCSPNonce() ?>"  >
-    window.CRM = {
+    // Initialize window.CRM if not already created by webpack bundles
+    if (!window.CRM) {
+        window.CRM = {};
+    }
+    
+    // Extend window.CRM with server-side configuration (preserving existing properties like notify)
+    Object.assign(window.CRM, {
       root: "<?= SystemURLs::getRootPath() ?>",
       churchWebSite:"<?= SystemConfig::getValue('sTempleWebSite') ?>"
-    };
+    });
   </script>

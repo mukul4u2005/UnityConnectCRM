@@ -6,7 +6,8 @@ use ChurchCRM\model\ChurchCRM\Calendar;
 use ChurchCRM\model\ChurchCRM\CalendarQuery;
 use ChurchCRM\model\ChurchCRM\EventQuery;
 use ChurchCRM\Slim\Middleware\Request\Auth\AddEventsRoleAuthMiddleware;
-use ChurchCRM\Slim\Request\SlimUtils;
+use ChurchCRM\Slim\SlimUtils;
+use ChurchCRM\Utils\InputUtils;
 use Propel\Runtime\Collection\ObjectCollection;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
@@ -100,6 +101,11 @@ function getUserCalendars(Request $request, Response $response, array $args): Re
         throw new HttpNotFoundException($request, 'No calendars returned');
     }
 
+    // Prevent caching of calendar API responses
+    $response = $response
+        ->withHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0')
+        ->withHeader('Pragma', 'no-cache');
+
     return SlimUtils::renderStringJSON($response, $Calendars->toJSON());
 }
 
@@ -188,7 +194,7 @@ function NewCalendar(Request $request, Response $response, $args): Response
 {
     $input = $request->getParsedBody();
     $Calendar = new Calendar();
-    $Calendar->setName($input['Name']);
+    $Calendar->setName(InputUtils::sanitizeText($input['Name']));
     $Calendar->setForegroundColor($input['ForegroundColor']);
     $Calendar->setBackgroundColor($input['BackgroundColor']);
     $Calendar->save();

@@ -14,6 +14,7 @@ use ChurchCRM\model\ChurchCRM\Version;
 use ChurchCRM\SQLUtils;
 use ChurchCRM\Utils\LoggerUtils;
 use ChurchCRM\Utils\MiscUtils;
+use ChurchCRM\Utils\VersionUtils;
 use Propel\Runtime\Propel;
 
 class UpgradeService
@@ -21,16 +22,18 @@ class UpgradeService
     public static function upgradeDatabaseVersion(): bool
     {
         $logger = LoggerUtils::getAppLogger();
-        $db_version = SystemService::getDBVersion();
+        $db_version = VersionUtils::getDBVersion();
+        $installed_version = VersionUtils::getInstalledVersion();
 
         $logger->info(
-            "Current Version: $db_version",
+            "Current Version: $db_version, Installed Version: $installed_version",
             [
                 'dbVersion'                => $db_version,
-                'softwareInstalledVersion' => $_SESSION['sSoftwareInstalledVersion'],
+                'softwareInstalledVersion' => $installed_version,
             ]
         );
-        if ($db_version === $_SESSION['sSoftwareInstalledVersion']) {
+        if ($db_version === $installed_version) {
+            $logger->info('Database is already at current version, no upgrade needed');
             return true;
         }
 
@@ -47,7 +50,7 @@ class UpgradeService
             $upgradeScriptsExecuted = 0;
             foreach ($dbUpdates as $dbUpdate) {
                 try {
-                    if (in_array(SystemService::getDBVersion(), $dbUpdate['versions'])) {
+                    if (in_array(VersionUtils::getDBVersion(), $dbUpdate['versions'])) {
                         $version = new Version();
                         $version->setVersion($dbUpdate['dbVersion']);
                         $version->setUpdateStart(new \DateTimeImmutable());
@@ -90,10 +93,20 @@ class UpgradeService
             }
 
             if ($upgradeScriptsExecuted === 0) {
-                $logger->warning('No upgrade path for ' . SystemService::getDBVersion() . ' to ' . $_SESSION['sSoftwareInstalledVersion']);
+                $logger->warning('No upgrade path for ' . VersionUtils::getDBVersion() . ' to ' . $installed_version);
             }
             // always rebuild the views
             SQLUtils::sqlImport(SystemURLs::getDocumentRoot() . '/mysql/upgrade/rebuild_views.sql', $connection);
+
+            // Mark session to avoid immediate redirect loop while bootstrapper re-reads DB version
+            if (session_status() !== PHP_SESSION_ACTIVE) {
+                @session_start();
+            }
+            try {
+                $_SESSION['dbUpgradeJustRan'] = true;
+            } catch (\Exception $e) {
+                // ignore session write failures - not critical
+            }
 
             return true;
         } catch (\Exception $exc) {

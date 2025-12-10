@@ -4,7 +4,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
-"Project-Id-Version: UnityConnect CRM\n"
+"Project-Id-Version: ChurchCRM\n"
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
@@ -32,10 +32,12 @@ msgstr "Не назначен"
 msgid "None"
 msgstr "Отсутствует"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "City"
 msgstr "Город"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "State"
 msgstr "Область"
@@ -48,6 +50,7 @@ msgstr "Страна"
 msgid "Phone"
 msgstr "Телефон"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Email"
 msgstr "Эл.почта"
@@ -60,40 +63,6 @@ msgstr "Кредитная карта"
 msgid "Backup Database"
 msgstr "Резервное копирование базы данных"
 
-#: 
-msgid "This tool will assist you in manually backing up the UnityConnect CRM database."
-msgstr "Этот инструмент поможет вам вручную создать резервную копию базы данных UnityConnect CRM."
-
-#: 
-msgid "You should make a manual backup at least once a week unless you already have a regular backup procedure for your systems."
-msgstr "Следует в ручную создавать резервную копию не реже одного раза в неделю, если только у вас нет регулярной процедуры резервного копирования ваших систем."
-
-#. This is too explicit. maybe it would be better to suggest to regularly keep backed up copies in two or more safe locations (on-site, off-site, vault, lockers)?
-#: 
-msgid "After you download the backup file, you should make two copies. Put one of them in a fire-proof safe on-site and the other in a safe location off-site."
-msgstr "После загрузки файла резервной копии. Одну копию следует хранить в несгораемом сейфе на месте, и продублированную в безопасном месте за пределами предприятия."
-
-#: 
-msgid "If you are concerned about confidentiality of data stored in the UnityConnect CRM database, you should encrypt the backup data if it will be stored somewhere potentially accessible to others"
-msgstr "Если вас беспокоит конфиденциальность данных, хранящихся в базе данных UnityConnect CRM, вы должны зашифровать данные резервного копии, если она будет храниться в потенциально доступном для других месте"
-
-#: 
-msgid "Select archive type"
-msgstr "Выберите тип архива"
-
-#: 
-msgid "Encrypt backup file with a password?"
-msgstr "Зашифровать файл резервной копии паролем?"
-
-#: 
-msgid "Re-type Password"
-msgstr "Введите пароль еще раз"
-
-#: 
-msgid "Generate and Ship Backup to External Storage"
-msgstr "Создать резервную копию и сохранить на внешнем хранилище"
-
-#. more context required.
 #: 
 msgid "Batch Winner Entry"
 msgstr "Победитель пакетный ввод"
@@ -130,7 +99,6 @@ msgstr "Требуется"
 msgid "First Name"
 msgstr "Имя"
 
-#. In Russian usually there are no Middle names. but there are Father's names. which are totally different. But your list does not have Father's name
 #: 
 #, fuzzy
 msgid "Middle Name"
@@ -148,13 +116,11 @@ msgstr "Конверт"
 msgid "Work/Other Email"
 msgstr "Рабочий/другой адрес эл.почты"
 
-#. Do you mean membership of Church? or membership of some kind of fraction inside the temple or is there any other meaning?
 #: 
 #, fuzzy
 msgid "Membership Date"
 msgstr "Дата вступления"
 
-#. Hmm. Birthday? Anniversary date? need context. personal anniversaries or is it related to churches? and is it like 50 years old, 60, 70,... 100?
 #: 
 msgid "Birth / Anniversary Date"
 msgstr "Дата рождения / годовщина"
@@ -163,6 +129,7 @@ msgstr "Дата рождения / годовщина"
 msgid "Age / Years Married"
 msgstr "Возраст / лет в браке"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Family Role"
 msgstr "Роль в семье"
@@ -176,7 +143,6 @@ msgstr "Зависит ли с помощью человека или выход
 msgid "Custom Field Selection"
 msgstr "Выбор пользовательского поля"
 
-#. Need more context.
 #: 
 #, fuzzy
 msgid "Custom Person Fields"
@@ -212,10 +178,12 @@ msgstr "Используйте клавишу Ctrl, чтобы выбрать н
 msgid "Don't Filter"
 msgstr "Без фильтра"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Male"
 msgstr "Муж."
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Female"
 msgstr "Жен."
@@ -250,13 +218,11 @@ msgstr "Метод вывода:"
 msgid "CSV Individual Records"
 msgstr "Персональные данные в CSV файле"
 
-#. need more context
 #: 
 #, fuzzy
 msgid "CSV Combine Families"
 msgstr "CSV комбинат семей"
 
-#. Context please. how to add individuals to cart? to buy?
 #: 
 #, fuzzy
 msgid "Add Individuals to Cart"
@@ -290,6 +256,7 @@ msgstr "Название"
 msgid "Suffix"
 msgstr "Суффикс"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Gender"
 msgstr "Пол"
@@ -298,6 +265,7 @@ msgstr "Пол"
 msgid "Donation Envelope"
 msgstr "Пожертвование наличными"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Home Phone"
 msgstr "Домашний телефон"
@@ -338,7 +306,6 @@ msgstr "Патриарх"
 msgid "Matriarch"
 msgstr "Матриарх"
 
-#. didn't quite understand. what are the family types?
 #: 
 msgid "Family Type: used with Make Family records... option above"
 msgstr "Тип семьи: используется с семейными записями... вариант выше"
@@ -351,6 +318,7 @@ msgstr "ПРИМЕЧАНИЕ: Разделители (тире и т.д.) или
 msgid "Default country if none specified otherwise"
 msgstr "Страна по умолчанию, если ничего не указано"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Classification"
 msgstr "Классификация"
@@ -380,11 +348,6 @@ msgid "Add Cart to Event"
 msgstr "Добавить корзину Событие"
 
 #: 
-#, fuzzy
-msgid "Select the event to which you would like to add your cart"
-msgstr "Выберите событие, к которому вы хотели бы добавить вашу корзину"
-
-#: 
 msgid "OR"
 msgstr "ИЛИ"
 
@@ -404,6 +367,7 @@ msgstr "Без названия семья не введены!"
 msgid "Add Cart to Family"
 msgstr "Добавить корзину, чтобы семьи"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Name"
 msgstr "Название"
@@ -492,10 +456,6 @@ msgid "Empty Cart to Family"
 msgstr "Очистить корзину для семьи"
 
 #: 
-msgid "Empty Cart to Event"
-msgstr "Очистить корзину Событие"
-
-#: 
 msgid "Map Cart"
 msgstr "Карта Корзина"
 
@@ -552,21 +512,8 @@ msgid "Event Checkin"
 msgstr "Событие заезда"
 
 #: 
-#, fuzzy
-msgid "Select the event to which you would like to check people in for"
-msgstr "Выберите событие, к которому вы хотели бы проверить людей в течение"
-
-#: 
 msgid "Select Event"
 msgstr "Выберите событие"
-
-#: 
-msgid "Add Visitor"
-msgstr "Добавить Посетитель"
-
-#: 
-msgid "CheckIn"
-msgstr "Регистрация"
 
 #: 
 msgid "CheckOut"
@@ -592,10 +539,7 @@ msgstr "Извлечен"
 msgid "Action"
 msgstr "Действие"
 
-#: 
-msgid "No Attendees Assigned to Event"
-msgstr "Нет Участники назначенного событию"
-
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Member"
 msgstr "Член"
@@ -625,29 +569,14 @@ msgid "Deposit Slip Number: "
 msgstr "Депозит номер накладной: "
 
 #: 
-msgid "Deposit Details: "
+#, fuzzy
+msgid "Deposit Details"
 msgstr "Детали депозита: "
 
 #: 
-msgid "Close deposit slip (remember to press Save)"
-msgstr "Закрыть квитанции (не забудьте нажать Сохранить)"
-
-#: 
-msgid "Deposit Slip Report"
-msgstr "Квитанции Сообщить"
-
-#: 
 #, fuzzy
-msgid "Important note: failed transactions will be deleted permanently when the deposit slip is closed."
+msgid "Important: Failed transactions will be deleted permanently when the deposit slip is closed."
 msgstr "Важное замечание: не удалось сделки будут удалены них постоянно, когда квитанции закрыт."
-
-#: 
-msgid "Deposit Summary: "
-msgstr "Резюме депозита: "
-
-#: 
-msgid "Payments on this deposit slip:"
-msgstr "Выплаты по этой квитанции:"
 
 #: 
 msgid "Import eGive"
@@ -658,7 +587,8 @@ msgid "Add Payment"
 msgstr "Оплатить"
 
 #: 
-msgid "Load Authorized Transactions"
+#, fuzzy
+msgid "Load Authorized"
 msgstr "Груза, разрешенной Сделки"
 
 #: 
@@ -763,7 +693,7 @@ msgid "Use Title Page"
 msgstr "Используйте титульный лист"
 
 #: 
-msgid "Temple/TrustName"
+msgid "Temple Name"
 msgstr "Церковь Имя"
 
 #: 
@@ -855,7 +785,7 @@ msgid "Add New Fund"
 msgstr "Добавить новый фонд"
 
 #: 
-msgid " Temple Event Editor"
+msgid "Temple Event Editor"
 msgstr "Церковь редакторе событий"
 
 #: 
@@ -899,6 +829,7 @@ msgstr "Семья"
 msgid "Type"
 msgstr "Тип"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Fiscal Year"
 msgstr "Отчетный год"
@@ -915,6 +846,7 @@ msgstr "Фонд"
 msgid "Bank"
 msgstr "Банк:    "
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Month"
 msgstr "Mесяц"
@@ -928,44 +860,8 @@ msgid "Edit"
 msgstr "Редактировать"
 
 #: 
-msgid "Event Attendees"
-msgstr "Участники мероприятия"
-
-#: 
-msgid "Event Nonattendees"
-msgstr "Событие Nonattendees"
-
-#: 
-msgid "Event Guests"
-msgstr "Гости события"
-
-#: 
-msgid "There "
-msgstr "Вот об этом (Вот) "
-
-#: 
 msgid "Event Title"
 msgstr "Событие Название"
-
-#: 
-msgid "Event Date"
-msgstr "Дата Событие"
-
-#: 
-msgid "Attending Members"
-msgstr "Посещение Пользователи"
-
-#: 
-msgid "Non-Attending Members"
-msgstr "Не посещающих Пользователи"
-
-#: 
-msgid "Guests"
-msgstr "Гости"
-
-#: 
-msgid "There are no events in this category"
-msgstr "Там не было никаких событий в этой категории"
 
 #: 
 msgid "Create Event"
@@ -976,20 +872,8 @@ msgid "Create a new Event"
 msgstr "Создать новое событие"
 
 #: 
-msgid "Editing Event ID: "
-msgstr "Редактирование события: "
-
-#: 
 msgid " errors. Please see below"
 msgstr " Ошибки. Пожалуйста, смотрите ниже"
-
-#: 
-msgid "Items with a "
-msgstr "Элементы с "
-
-#: 
-msgid " are required"
-msgstr " требуется"
 
 #: 
 msgid "Select your event type"
@@ -1000,22 +884,8 @@ msgid "You must pick an event type."
 msgstr "Вы должны выбрать тип события."
 
 #: 
-#, fuzzy
-msgid "Event Desc"
-msgstr "Событие Описание изделия"
-
-#: 
 msgid "No Attendance counts recorded"
 msgstr "Нет посещений счету не записаны"
-
-#: 
-msgid "Attendance Notes: "
-msgstr "Посещений Примечания: "
-
-#: 
-#, fuzzy
-msgid "Event Sermon"
-msgstr "Проповедь события"
 
 #: 
 #, fuzzy
@@ -1025,10 +895,6 @@ msgstr "Статус события"
 #: 
 msgid "Return to Events"
 msgstr "Вернуться к Событиям"
-
-#: 
-msgid "EVENT TYPE NAME"
-msgstr "Название события ТИП"
 
 #: 
 msgid "Sundays"
@@ -1057,30 +923,6 @@ msgstr "Пятницам"
 #: 
 msgid "Saturdays"
 msgstr "По субботам"
-
-#: 
-msgid "DEFAULT START TIME"
-msgstr "ВРЕМЯ НАЧАЛА ПО УМОЛЧАНИЮ"
-
-#: 
-msgid "ATTENDANCE COUNTS"
-msgstr "УЧАСТНИКИ COUNTS"
-
-#: 
-msgid "Optional"
-msgstr "По желанию"
-
-#: 
-msgid "Enter a list of the attendance counts you want to include with this event."
-msgstr "Введите список показателей посещаемости, который вы хотите добавить в это мероприятие."
-
-#: 
-msgid "Separate each count_name with a comma. e.g. Members, Visitors, Campus, Children"
-msgstr "Разделите каждую категорию комой: участник, посетитель, комплекс, ребенок"
-
-#: 
-msgid "Every event type includes a Total count, you do not need to include it."
-msgstr "Каждый тип события включает общий подсчет, вам не нужно его включать."
 
 #: 
 msgid "Add Event Type"
@@ -1267,10 +1109,6 @@ msgid "Family List"
 msgstr "Семейный список"
 
 #: 
-msgid "Add Family"
-msgstr "Добавить семью"
-
-#: 
 msgid "Created"
 msgstr "Создано "
 
@@ -1295,10 +1133,6 @@ msgid "Next Family"
 msgstr "Следующая Семья"
 
 #: 
-msgid "Delete this Family"
-msgstr "Удалить эту семью"
-
-#: 
 msgid "Upload Photo"
 msgstr "Идет загрузка фото"
 
@@ -1309,10 +1143,6 @@ msgstr "Удалить фотографию"
 #: 
 msgid "Add a Note"
 msgstr "Добавить примечание "
-
-#: 
-msgid "Add All Family Members to Cart"
-msgstr "Добавить свех членов семьи в  Cart"
 
 #: 
 msgid "Timeline"
@@ -1424,10 +1254,6 @@ msgstr "Вы собираетесь отправить копию семейно
 #: 
 msgid "Financial Reports"
 msgstr "Финансовые отчеты"
-
-#: 
-msgid "No records were returned from the previous report."
-msgstr "Нет записей были возвращены из предыдущего доклада."
 
 #: 
 msgid "Report Type:"
@@ -1581,7 +1407,7 @@ msgid "Graphic"
 msgstr "Графика"
 
 #: 
-msgid "Temple/TrustAddress"
+msgid "Temple Address"
 msgstr "Церковь Адрес"
 
 #: 
@@ -1667,20 +1493,9 @@ msgid "Date End"
 msgstr "Дата окончания"
 
 #: 
-msgid "Clear Filters"
+#, fuzzy
+msgid "Clear Filter"
 msgstr "Очистить фильтры"
-
-#: 
-msgid "Previous Page"
-msgstr "Предыдущая страниц"
-
-#: 
-msgid "Next Page"
-msgstr "Следующая страниц"
-
-#: 
-msgid "Display:"
-msgstr "Дисплей:"
 
 #: 
 msgid "Number"
@@ -1802,10 +1617,6 @@ msgstr "Пересечь с корзину"
 #: 
 msgid "Remove from Cart"
 msgstr "Удалить из корзины"
-
-#: 
-msgid "Text for Event ID: "
-msgstr "Текст для события с кодом: "
 
 #: 
 msgid "Group Editor"
@@ -1987,10 +1798,6 @@ msgid "Group View"
 msgstr "Вид группы"
 
 #: 
-msgid "Group Functions"
-msgstr "Функции группы"
-
-#: 
 msgid "Edit this Group"
 msgstr "Редактировать этот группу"
 
@@ -2056,8 +1863,9 @@ msgid "Assigned Properties"
 msgstr "Заданными свойствами"
 
 #: 
-msgid "Group Members:"
-msgstr "Участники группы:"
+#, fuzzy
+msgid "Group Members"
+msgstr "Участники группы"
 
 #: 
 msgid "Remove Selected Members from group"
@@ -2092,28 +1900,12 @@ msgid "Confirm data labels"
 msgstr "Подтвердите метки данных"
 
 #: 
-msgid "Listing Events of Type = "
-msgstr "Список событий типа"
-
-#: 
 msgid "Listing All Temple Events"
 msgstr "Листинг всех церковных событий"
 
 #: 
-msgid "Select Event Types To Display"
-msgstr "Выберите типы событий, чтобы отобразить"
-
-#: 
-msgid "Display Events in Year"
-msgstr "Показать события в году"
-
-#: 
 msgid "Start Date/Time"
 msgstr "Дата начала / Время"
-
-#: 
-msgid "No Attendance Recorded"
-msgstr "Посещений не было записи"
 
 #: 
 #, fuzzy
@@ -2177,7 +1969,7 @@ msgid "Assign starting at #"
 msgstr "Связать начиная с #"
 
 #: 
-msgid "Unable to display map due to missing Temple/TrustLatitude or Longitude. Please update the temple Address in the settings menu."
+msgid "Unable to display map due to missing Temple Latitude or Longitude. Please update the temple Address in the settings menu."
 msgstr "Невозможно отобразить карту из-за отсутствия широты или долготы церкви. Пожалуйста, обновите адрес церкви в меню настроек."
 
 #: 
@@ -2759,6 +2551,7 @@ msgstr "Список недвижимости"
 msgid "Add a New"
 msgstr "Добавить новые"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Property"
 msgstr "Объявление"
@@ -2804,6 +2597,7 @@ msgstr "Тип недвижимости Список"
 msgid "Add a New Property Type"
 msgstr "Добавить Новый тип недвижимости"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Class"
 msgstr "Класс"
@@ -2836,10 +2630,6 @@ msgstr "Нет, сохранить эту задачу"
 #: 
 msgid "Query Listing"
 msgstr "Запрос Листинг"
-
-#: 
-msgid "Run a Free-Text Query"
-msgstr "Запустите Free-текст запроса"
 
 #: 
 msgid "Free-Text Query"
@@ -2982,10 +2772,6 @@ msgstr "ТОЛЬКО удаление семейной записи"
 #: 
 msgid "Delete Family Record AND Family Members"
 msgstr "Удалить семейные записи и членов их семей"
-
-#: 
-msgid "Filter and Cart"
-msgstr "Фильтр и корзина"
 
 #: 
 msgid "Listing"
@@ -3339,8 +3125,8 @@ msgid "Custom Drop-Down List"
 msgstr "Пользовательские раскрывающемся списке"
 
 #: 
-msgid "Thank you for registering your UnityConnect CRM installation."
-msgstr "Спасибо за регистрацию установки UnityConnect CRM."
+msgid "Thank you for registering your UnityConnectCRM installation."
+msgstr "Спасибо за регистрацию установки ChurchCRM."
 
 #: 
 msgid "PDFs successfully emailed "
@@ -3390,14 +3176,6 @@ msgstr "товар (ов) добавлен в корзину."
 #: 
 msgid "Select Fiscal Year"
 msgstr "Выберите финансовый год"
-
-#: 
-msgid "pm"
-msgstr "вечера"
-
-#: 
-msgid "am"
-msgstr "утра"
 
 #: 
 msgid "Invalid Editor ID!"
@@ -3580,8 +3358,8 @@ msgid "Member/Friend"
 msgstr "Участник / другу"
 
 #: 
-msgid "This option requires at least version 3.22 of MySQL!  Hit browser back button to return to UnityConnect CRM."
-msgstr "Эта опция требует, по крайней мере, версия 3.22 MySQL! Хит-браузер кнопку назад, чтобы вернуться к UnityConnect CRM."
+msgid "This option requires at least version 3.22 of MySQL!  Hit browser back button to return to ChurchCRM."
+msgstr "Эта опция требует, по крайней мере, версия 3.22 MySQL! Хит-браузер кнопку назад, чтобы вернуться к ChurchCRM."
 
 #: 
 msgid "Work"
@@ -3708,20 +3486,12 @@ msgid "Sunday School Class Functions"
 msgstr "Функции класса Воскресной школы"
 
 #: 
-msgid "Toggle Dropdown"
-msgstr "Переключить раскрывающийся список"
-
-#: 
 msgid "Teachers"
 msgstr "Учителя"
 
 #: 
 msgid "Send Message"
 msgstr "Отправить сообщение"
-
-#: 
-msgid "View Profile"
-msgstr "Просмотреть профайл"
 
 #: 
 msgid "Quick Status"
@@ -3962,10 +3732,6 @@ msgid "Details:"
 msgstr "Детали"
 
 #: 
-msgid "File Missing"
-msgstr "Файл отсутствует"
-
-#: 
 msgid "Family Select"
 msgstr "Семейный выбор"
 
@@ -3990,8 +3756,8 @@ msgid "CAUTION: This will completely erase the existing database, and replace it
 msgstr "ВНИМАНИЕ: это полностью сотрет существующую базу данных и заменит ее резервной."
 
 #: 
-msgid "If you upload a backup from ChurchInfo, or a previous version of UnityConnect CRM, it will be automatically upgraded to the current database schema"
-msgstr "Если вы загрузите резервную копию из ChurchInfo или предыдущей версии UnityConnect CRM, она будет автоматически обновлена ​​до текущей схемы базы данных."
+msgid "If you upload a backup from ChurchInfo, or a previous version of ChurchCRM, it will be automatically upgraded to the current database schema"
+msgstr "Если вы загрузите резервную копию из ChurchInfo или предыдущей версии ChurchCRM, она будет автоматически обновлена ​​до текущей схемы базы данных."
 
 #: 
 msgid "Upload Files"
@@ -4014,7 +3780,7 @@ msgid "Restore Error."
 msgstr "Войти в восстановленную базу данных"
 
 #: 
-msgid "Temple"
+msgid "Temple Information"
 msgstr "Информация о церкви"
 
 #: 
@@ -4063,64 +3829,12 @@ msgid "Edit Settings"
 msgstr "Изменить настройки"
 
 #: 
-msgid "Upgrade UnityConnect CRM"
-msgstr "Обновить UnityConnect CRM"
-
-#: 
-msgid "Step 1: Backup Database"
-msgstr "Шаг 1. Резервное копирование базы данных"
-
-#: 
-msgid "Please create a database backup before beginning the upgrade process."
-msgstr "Пожалуйста, создайте резервную копию базы данных перед началом процесса обновления."
-
-#: 
-msgid "Generate Database Backup"
-msgstr "Создать резервную копию базы данных"
-
-#: 
-msgid "Step 2: Fetch Update Package on Server"
-msgstr "Создать копию базы данных"
-
-#: 
-msgid "Fetch the latest files from the UnityConnect CRM GitHub release page"
-msgstr "Получите последние файлы со страницы выпуска UnityConnect CRM GitHub"
-
-#: 
-msgid "Fetch Update Files"
-msgstr "Получить файлы обновления"
-
-#: 
-msgid "Step 3: Apply Update Package on Server"
-msgstr "Шаг 3. Примените пакет обновления на сервере"
-
-#: 
-msgid "Extract the upgrade archive, and apply the new files"
-msgstr "Распакуйте архив обновления и примените новые файлы."
-
-#: 
 msgid "Full Path:"
 msgstr "Полный путь:"
 
 #: 
-msgid "Upgrade System"
-msgstr "Система обновлений"
-
-#: 
-msgid "Step 4: Login"
-msgstr "Шаг 4: Войти"
-
-#: 
-msgid "Login to Upgraded System"
-msgstr "Войти в обновленную систему"
-
-#: 
 msgid "Backup Complete, Ready for Download."
 msgstr "Резервное копирование завершено, готово к загрузке."
-
-#: 
-msgid "Backup Error."
-msgstr "Ошибка резервного копирования."
 
 #: 
 msgid "Backup Downloaded, Copy on server removed"
@@ -4167,11 +3881,11 @@ msgid "Enter Name"
 msgstr "Введите Имя"
 
 #: 
-msgid "Update Temple/TrustInfo"
+msgid "Update Temple Info"
 msgstr "Обновить информацию о церкви"
 
 #: 
-msgid "Set Temple/TrustAddress"
+msgid "Set Temple Address"
 msgstr "Установить адрес церкви"
 
 #: 
@@ -4224,18 +3938,6 @@ msgid "Registration Complete"
 msgstr "Регистрация завершена"
 
 #: 
-msgid "Register"
-msgstr "Регистр"
-
-#: 
-msgid "Register your family"
-msgstr "Зарегистрируйте свою семью"
-
-#: 
-msgid "How many people are in your family"
-msgstr "Сколько человек в вашей семье"
-
-#: 
 msgid "Add All Classes"
 msgstr "Добавить все классы"
 
@@ -4276,20 +3978,12 @@ msgid "Signature definition file signature failed validation"
 msgstr "Ошибка проверки подписи файла определения подписи"
 
 #: 
-msgid "Signature definition File Missing"
-msgstr "Ошибка проверки подписи файла определений подписи"
-
-#: 
 msgid "One or more files failed signature validation"
 msgstr "Один или несколько файлов не прошли проверку подписи"
 
 #: 
 msgid "Configure HTTPS"
 msgstr "Настроить HTTPS"
-
-#: 
-msgid "Files failing integrity check"
-msgstr "Файлы, не прошедшие проверку целостности"
 
 #: 
 msgid "Family:"
@@ -4376,14 +4070,6 @@ msgid "CSV Import"
 msgstr "CSV Импорт"
 
 #: 
-msgid "Comment:"
-msgstr "Комментарий"
-
-#: 
-msgid "Closed:"
-msgstr "Закрыто"
-
-#: 
 msgid "Start Date: "
 msgstr "Дата начала:"
 
@@ -4464,7 +4150,7 @@ msgid "Total $"
 msgstr "Итого $"
 
 #: 
-msgid "Temple/TrustEmail"
+msgid "Temple Email"
 msgstr "Электронная почта церкви"
 
 #: 
@@ -4562,8 +4248,8 @@ msgid "Set true to enable family self registration."
 msgstr "Установите значение true, чтобы разрешить саморегистрацию семьи."
 
 #: 
-msgid "UnityConnect CRM has been registered.  The UnityConnect CRM team uses registration information to track usage.  This information is kept confidential and never released or sold.  If this field is true the registration option in the admin menu changes to update registration."
-msgstr "UnityConnect CRM зарегистрирован. Команда UnityConnect CRM использует регистрационную информацию для отслеживания использования. Эта информация является конфиденциальной и никогда не разглашается и не продается. Если это поле верно, опция регистрации в меню администратора изменится на обновление регистрации."
+msgid "ChurchCRM has been registered.  The UnityConnectCRM team uses registration information to track usage.  This information is kept confidential and never released or sold.  If this field is true the registration option in the admin menu changes to update registration."
+msgstr "ChurchCRM зарегистрирован. Команда UnityConnectCRM использует регистрационную информацию для отслеживания использования. Эта информация является конфиденциальной и никогда не разглашается и не продается. Если это поле верно, опция регистрации в меню администратора изменится на обновление регистрации."
 
 #: 
 msgid "Left Margin (1 = 1/100th inch)"
@@ -4574,23 +4260,23 @@ msgid "Line Thickness (1 = 1/100th inch"
 msgstr "Толщина линии (1 = 1/100 дюйма"
 
 #: 
-msgid "Temple/TrustCity"
+msgid "Temple City"
 msgstr "В каком городе находится церковь"
 
 #: 
-msgid "Temple/TrustState"
+msgid "Temple State"
 msgstr "В какой области находится церковь"
 
 #: 
-msgid "Temple/TrustZip"
+msgid "Temple Zip"
 msgstr "Почтовый индекс"
 
 #: 
-msgid "Temple/TrustPhone"
+msgid "Temple Phone"
 msgstr "Номер телеофна церкви"
 
 #: 
-msgid "Home area code of the church"
+msgid "Home area code of the temple"
 msgstr "Домашний код города церкви"
 
 #: 
@@ -4690,7 +4376,7 @@ msgid "List Temple Events"
 msgstr "Список церковных событий"
 
 #: 
-msgid "Add  Temple Event"
+msgid "Add Temple Event"
 msgstr "Добавить церковное событие"
 
 #: 
@@ -4757,295 +4443,369 @@ msgstr "Семейные свойства"
 msgid "Property Types"
 msgstr "Типы собственности"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Zip Code"
 msgstr "Почтовый индекс"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "WorkEmail"
 msgstr "Рабочий адрес электронной почты"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Regular Attender"
 msgstr "Постоянный посетитель"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Guest"
 msgstr "Гость"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Non-Attender"
 msgstr "Не присутствующий"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Non-Attender (staff)"
 msgstr "Не присутствующий (персонал)"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Minimum Age"
 msgstr "Минимальный возраст"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Maximum Age"
 msgstr "Максимальный возвраст"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Beginning Date"
 msgstr "Дата начала"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Ending Date"
 msgstr "Дата окончания"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Search"
 msgstr "Поиск"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Field"
 msgstr "Поле"
 
+#. Context: query_qry
+#. Context: queryparameters_qrp
 #: 
 msgid "Registered students"
 msgstr "Зарегистрированные студенты"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Volunteer opportunities"
 msgstr "Возможности волонтерства"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Months"
 msgstr "Месяцы"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "First Fiscal Year"
 msgstr "Первый финансовый год"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Second Fiscal Year"
 msgstr "Второй финансовый год"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Custom field"
 msgstr "Пользовательское поле"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Field value"
 msgstr "Значение поля"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The minimum age for which you want records returned."
 msgstr "Минимальный возраст, для которого вы хотите вернуть записи."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The maximum age for which you want records returned."
 msgstr "Максимальный возраст, для которого вы хотите вернуть записи."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The desired gender to search the database for."
 msgstr "Желаемый пол для поиска в базе данных."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Select the desired family role."
 msgstr "Выберите желаемую семейную роль."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The gender for which you would like records returned."
 msgstr "Пол, для которого вы хотите вернуть записи."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The property for which you would like person records returned."
 msgstr "Свойство, для которого вы хотите вернуть личные записи."
 
+#. Context: queryparameters_qrp
 #: 
 #, fuzzy
 msgid "Please select the beginning date to calculate total contributions for each member (i.e. YYYY-MM-DD). NOTE: You can only choose dates that contain donations."
 msgstr "Пожалуйста, выберите дату начала для расчета общих взносов для каждого члена (например, ГГГГ-ММ-ДД). ПРИМЕЧАНИЕ. Вы можете выбирать только даты, в которые поступают пожертвования."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Please enter the last date to calculate total contributions for each member (i.e. YYYY-MM-DD)."
 msgstr "Пожалуйста, введите последнюю дату для расчета общих взносов для каждого участника (например, ГГГГ-ММ-ДД)."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Enter any part of the following: Name, City, State, Zip, Home Phone, Email, or Work Email."
 msgstr "Введите любую часть следующего: имя, город, область, почтовый индекс, домашний телефон, адрес электронной почты или рабочий адрес электронной почты."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Select field to search for."
 msgstr "Выберите поле для поиска."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The birthday month for which you would like records returned."
 msgstr "Месяц дня рождения, для которого вы хотите вернуть записи."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The sunday school class for which you would like records returned."
 msgstr "Класс воскресной школы, по которому вы хотите вернуть записи."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Group of registered students"
 msgstr "Группа зарегистрированных студентов"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The membership anniversary month for which you would like records returned."
 msgstr "Месяц годовщины членства, за который вы хотите вернуть записи."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Choose a volunteer opportunity"
 msgstr "Выберите возможность стать волонтером"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "First fiscal year for comparison"
 msgstr "Первый финансовый год для сравнения"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Pledged this year"
 msgstr "Залог в этом году"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "but not this year"
 msgstr "но не в этом году"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Fiscal Year."
 msgstr "Отчетный год"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Member, Regular Attender, etc."
 msgstr "Участник, постоянный посетитель и т. Д."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "First volunteer opportunity choice"
 msgstr "Выбор первой возможности волонтера"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Choose customer person field"
 msgstr "Выберите поле клиента"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Match custom field to this value"
 msgstr "Соответствие настраиваемого поля этому значению"
 
+#. Context: query_qry
 #: 
 msgid "Family Member Count"
 msgstr "Количество членов семьи"
 
+#. Context: query_qry
 #: 
 msgid "Person by Age"
 msgstr "Человек по возрасту"
 
+#. Context: query_qry
 #: 
 msgid "Total By Gender"
 msgstr "Всего по полу"
 
+#. Context: query_qry
 #: 
 msgid "Person by Role and Gender"
 msgstr "Человек по ролям и полу"
 
+#. Context: query_qry
 #: 
 msgid "Advanced Search"
 msgstr "Расширенный поиск"
 
+#. Context: query_qry
 #: 
 msgid "Birthdays"
 msgstr "Дни рождения"
 
+#. Context: query_qry
 #: 
 msgid "Membership anniversaries"
 msgstr "Годовщины членства"
 
+#. Context: query_qry
 #: 
 msgid "Select database users"
 msgstr "Выберите пользователей базы данных"
 
+#. Context: query_qry
 #: 
 msgid "Select all members"
 msgstr "Выберите всех участников"
 
+#. Context: query_qry
 #: 
 msgid "Volunteers"
 msgstr "Волонтеры"
 
+#. Context: query_qry
 #: 
 msgid "Pledge comparison"
 msgstr "Сравнение залога"
 
+#. Context: query_qry
 #: 
 msgid "Missing pledges"
 msgstr "Недостающие залоги"
 
+#. Context: query_qry
 #: 
 msgid "CustomSearch"
 msgstr "Пользовательский поиск"
 
+#. Context: query_qry
 #: 
 msgid "Returns each family and the total number of people assigned to them."
 msgstr "Возвращает каждую семью и общее количество назначенных ей людей."
 
+#. Context: query_qry
 #: 
 msgid "Returns any person records with ages between two given ages."
 msgstr "Возвращает записи любого человека с возрастом между двумя заданными возрастами."
 
+#. Context: query_qry
 #: 
 msgid "Total of records matching a given gender."
 msgstr "Общее количество записей, соответствующих данному полу."
 
+#. Context: query_qry
 #: 
 msgid "Selects person records with the family role and gender specified."
 msgstr "Выберите записи о людях с указанием семейной роли и пола."
 
+#. Context: query_qry
 #: 
 msgid "Returns person records which are assigned the given property."
 msgstr "Возвращает записи о людях, которым присвоено данное свойство."
 
+#. Context: query_qry
 #: 
 msgid "Search by any part of Name, City, State, Zip, Home Phone, Email, or Work Email."
 msgstr "Поиск по любой части имени, города, области, почтового индекса, домашнего телефона, электронной или рабочей электронной почты."
 
+#. Context: query_qry
 #: 
 msgid "People with birthdays in a particular month"
 msgstr "Люди с днями рождения в определенном месяце"
 
+#. Context: query_qry
 #: 
 msgid "Find Registered students"
 msgstr "Найти зарегистрированных студентов"
 
+#. Context: query_qry
 #: 
 msgid "Members who joined in a particular month"
 msgstr "Участники, которые присоединились в конкретный месяц"
 
+#. Context: query_qry
 #: 
 msgid "People who are registered as database users"
 msgstr "Люди, которые зарегистрированы как пользователи базы данных"
 
+#. Context: query_qry
 #: 
 msgid "People who are members"
 msgstr "Люди, которые являются участниками"
 
+#. Context: query_qry
 #: 
 msgid "Find volunteers for a particular opportunity"
 msgstr "Найти волонтеров для конкретного случая"
 
+#. Context: query_qry
 #: 
 msgid "Friends who signed up in previous months"
 msgstr "Друзья, которые регистрировались в предыдущие месяцы"
 
+#. Context: query_qry
 #: 
 msgid "Compare pledges between two fiscal years"
 msgstr "Сравните взносы за два финансовых года"
 
+#. Context: query_qry
 #: 
 msgid "Find people who pledged one year but not another"
 msgstr "Найдите людей, которые обещали один год, а другой нет"
 
+#. Context: query_qry
 #: 
 msgid "Pledge summary by family name for each fund for the selected fiscal year"
 msgstr "Сводка обещаний с указанием фамилии для каждого фонда за выбранный финансовый год"
 
+#. Context: query_qry
 #: 
 msgid "Find volunteers for who match two specific opportunity codes"
 msgstr "Найдите добровольцев, которые соответствуют двум конкретным кодам возможностей"
 
+#. Context: query_qry
 #: 
 msgid "Find people with a custom field value"
 msgstr "Найдите людей со значением настраиваемого поля"
@@ -5054,22 +4814,27 @@ msgstr "Найдите людей со значением настраиваем
 msgid "Last Edited"
 msgstr "Последнее редактирование"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "User permission to send email via mailto: links"
 msgstr "Разрешение пользователя на отправку электронной почты через mailto: ссылки"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "Delimiter to separate emails in mailto: links"
 msgstr "Разделитель для разделения писем в mailto: ссылки"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "User permission to create directories"
 msgstr "Разрешение пользователя на создание каталогов"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "User permission to export CSV files"
 msgstr "Разрешение пользователя на экспорт файлов CSV"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "Allow user to add new event"
 msgstr "Разрешить пользователю добавлять новое событие"
@@ -5218,191 +4983,238 @@ msgstr "Километры"
 msgid "Local"
 msgstr "Местный"
 
+#. Context: countries
 #: 
 msgid "Afghanistan (‫افغانستان‬‎)"
 msgstr "Афганистан"
 
+#. Context: countries
 #: 
 msgid "Åland Islands (Åland)"
 msgstr "Аландские острова (Аландские острова)"
 
+#. Context: countries
 #: 
 msgid "Albania (Shqipëri)"
 msgstr "Албания (Шкипери)"
 
+#. Context: countries
 #: 
 msgid "Algeria (‫الجزائر‬‎)"
 msgstr "Алжир\n"
 ""
 
+#. Context: countries
 #: 
 msgid "American Samoa"
 msgstr "американское Самоа"
 
+#. Context: countries
 #: 
 msgid "Andorra"
 msgstr "Андорра "
 
+#. Context: countries
 #: 
 msgid "Angola"
 msgstr "Ангола"
 
+#. Context: countries
 #: 
 msgid "Anguilla"
 msgstr "Ангилья"
 
+#. Context: countries
 #: 
 msgid "Antarctica"
 msgstr "Антарктида"
 
+#. Context: countries
 #: 
 msgid "Antigua and Barbuda"
 msgstr "Антигуа и Барбуда"
 
+#. Context: countries
 #: 
 msgid "Argentina"
 msgstr "Аргентина"
 
+#. Context: countries
 #: 
 msgid "Armenia (Հայաստան)"
 msgstr "Армения"
 
+#. Context: countries
 #: 
 msgid "Aruba"
 msgstr "Аруба"
 
+#. Context: countries
 #: 
 msgid "Ascension Island"
 msgstr "Остров Вознесения"
 
+#. Context: countries
 #: 
 msgid "Australia"
 msgstr "Австралия"
 
+#. Context: countries
 #: 
 msgid "Austria (Österreich)"
 msgstr "Австрия (Österreich)"
 
+#. Context: countries
 #: 
 msgid "Azerbaijan (Azərbaycan)"
 msgstr "Азербайджан"
 
+#. Context: countries
 #: 
 msgid "Bahamas"
 msgstr "Багамы "
 
+#. Context: countries
 #: 
 msgid "Bahrain (‫البحرين‬‎)"
 msgstr "Бахрейн"
 
+#. Context: countries
 #: 
 msgid "Bangladesh (বাংলাদেশ)"
 msgstr "Бангладеш"
 
+#. Context: countries
 #: 
 msgid "Barbados"
 msgstr "Барбадос"
 
+#. Context: countries
 #: 
 msgid "Belarus (Беларусь)"
 msgstr "Беларусь"
 
+#. Context: countries
 #: 
 msgid "Belgium (België)"
 msgstr "Бельгия"
 
+#. Context: countries
 #: 
 msgid "Belize"
 msgstr "Белиз "
 
+#. Context: countries
 #: 
 msgid "Benin (Bénin)"
 msgstr "Бенин"
 
+#. Context: countries
 #: 
 msgid "Bermuda"
 msgstr "Бермуды"
 
+#. Context: countries
 #: 
 msgid "Bhutan (འབྲུག)"
 msgstr "Бутан"
 
+#. Context: countries
 #: 
 msgid "Bolivia"
 msgstr "Боливия"
 
+#. Context: countries
 #: 
 msgid "Bosnia and Herzegovina (Босна и Херцеговина)"
 msgstr "Босния и Герцоговина"
 
+#. Context: countries
 #: 
 msgid "Botswana"
 msgstr "Ботсвана"
 
+#. Context: countries
 #: 
 msgid "Bouvet Island"
 msgstr "Остров Буве"
 
+#. Context: countries
 #: 
 msgid "Brazil (Brasil)"
 msgstr "Бразилия"
 
+#. Context: countries
 #: 
 msgid "British Indian Ocean Territory"
 msgstr "Британская территория Индийского океана"
 
+#. Context: countries
 #: 
 msgid "British Virgin Islands"
 msgstr "Британские Виргинские острова"
 
+#. Context: countries
 #: 
 msgid "Brunei"
 msgstr "Бруней"
 
+#. Context: countries
 #: 
 msgid "Bulgaria (България)"
 msgstr "Болгария"
 
+#. Context: countries
 #: 
 msgid "Burkina Faso"
 msgstr "Буркина-Фасо"
 
+#. Context: countries
 #: 
 msgid "Burundi (Uburundi)"
 msgstr "Бурунди (Убурунди)"
 
+#. Context: countries
 #: 
 msgid "Cambodia (កម្ពុជា)"
 msgstr "Камбоджа"
 
+#. Context: countries
 #: 
 msgid "Cameroon (Cameroun)"
 msgstr "Камерун (Камерун)"
 
+#. Context: countries
 #: 
 msgid "Canada"
 msgstr "Канада"
 
+#. Context: countries
 #: 
 msgid "Canary Islands (islas Canarias)"
 msgstr "Канарские острова (islas Canarias)"
 
+#. Context: countries
 #: 
 msgid "Cape Verde (Kabu Verdi)"
 msgstr "Кабо-Верде (Кабу-Верди)"
 
+#. Context: countries
 #: 
 msgid "Caribbean Netherlands"
 msgstr "Карибские Нидерланды"
 
+#. Context: countries
 #: 
 msgid "Cayman Islands"
 msgstr "Кайманские острова"
 
+#. Context: countries
 #: 
 msgid "Central African Republic (République centrafricaine)"
 msgstr "Центральноафриканская Республика (République centrafricaine)"
 
+#. Context: countries
 #: 
 msgid "Ceuta and Melilla (Ceuta y Melilla)"
 msgstr "Сеута и Мелилья (Ceuta y Melilla)"
@@ -5415,7 +5227,6 @@ msgstr "Панель Управления Людей"
 msgid "return to People Dashboard"
 msgstr "Вернутся к Панели Управления Людьми"
 
-#. didn't quite understand. do you mean upgrade of system? and do you mean maintain personal data that system update might delete?
 #: 
 #, fuzzy
 msgid "If you wish to maintain your changes to these files, please take a manual backup of these files before proceeding with this upgrade, and then manually restore the files after the upgrade is complete."
@@ -5424,10 +5235,6 @@ msgstr "Если вы хотите сохранить свои изменени�
 #: 
 msgid "Integrity Check Details:"
 msgstr "Детальная информация проверки целостности данных:"
-
-#: 
-msgid "I Understand"
-msgstr "Я понимаю"
 
 #: 
 msgid "Generate Backup"
@@ -5483,7 +5290,8 @@ msgstr "Недоступная информация о человеке, уна�
 "Этот параметр приводит к отображению определенной информации из назначенной семейной записи человека, если соответствующая информация для этого человека НЕ была введена.␣"
 
 #: 
-msgid "Press CTRL + C to copy all group members\\' phone numbers"
+#, fuzzy
+msgid "Press CTRL + C to copy all group members' phone numbers"
 msgstr "Нажмите CTRL + C, чтобы скопировать телефонные номера членов всех групп"
 
 #: 
@@ -5527,10 +5335,6 @@ msgid "Verification URL"
 msgstr "Верификация URL"
 
 #: 
-msgid "Reset System"
-msgstr "Сброс системы"
-
-#: 
 msgid "Unexpected Person Id"
 msgstr "Непредусмотренный ID человека"
 
@@ -5550,7 +5354,6 @@ msgstr "Поиск событий календаря"
 msgid "Maximum number of Calendar Events"
 msgstr "Максимальное количество событий календаря"
 
-#. https://s3.eu-west-1.amazonaws.com/po-pub/i/4I3Vj2PQsiMuQccur5HkUs7k.jpg
 #: 
 msgid "%d month old"
 msgid_plural "%d months old"
@@ -5572,10 +5375,6 @@ msgid "Remove Results from Cart"
 msgstr "Удалить результаты из корзины"
 
 #: 
-msgid "Warning: Pre-Upgrade Tasks Detected"
-msgstr "Предупреждение: Обнаружены задачи предварительного обновления"
-
-#: 
 #, fuzzy
 msgid "Some conditions have been identified which may prevent a successful upgrade"
 msgstr "Обнаружены некоторые условия, которые могут помешать успешному обновлению"
@@ -5589,18 +5388,6 @@ msgid "Database Reset Functions"
 msgstr "Функции сброса базы данных"
 
 #: 
-msgid "Reset Members"
-msgstr "Сбросить участников"
-
-#: 
-msgid "This will remove all the member data, people, and families and can't be undone."
-msgstr "Это приведет к удалению всех данных участника, людей и семей и не может быть отменено."
-
-#: 
-msgid "Reset Families/People"
-msgstr "Сбросить семьи/людей"
-
-#: 
 msgid "Reset Database"
 msgstr "Сбросить базу данных"
 
@@ -5608,14 +5395,7 @@ msgstr "Сбросить базу данных"
 msgid "This will reset the system data and will restart the system as a new install."
 msgstr "Это приведет к сбросу системных данных и перезапуску системы как новую установку."
 
-#: 
-msgid "Clear Filter"
-msgstr "Очистить фильтр"
-
-#: 
-msgid "Add Person"
-msgstr "Добавить человека"
-
+#. Context: locales
 #: 
 msgid "Portuguese - Portugal"
 msgstr "Португальский - Португалия"
@@ -5633,8 +5413,8 @@ msgid "Requires users to self-enroll in 2 factor authentication"
 msgstr "Требуется, чтобы пользователи самостоятельно регистрировались с помощью двухфакторной аутентификации"
 
 #: 
-msgid "UnityConnect CRM"
-msgstr "UnityConnect CRM"
+msgid "ChurchCRM"
+msgstr "ChurchCRM"
 
 #: 
 msgid "Specify the application name to be displayed in authenticator app"
@@ -5701,8 +5481,8 @@ msgid "Unable To Begin Two Factor Authentication Enrollment"
 msgstr "Невозможно начать регистрацию двухфакторной аутентификации"
 
 #: 
-msgid "Two factor authentication requires UnityConnect CRM administrators to configure a few parameters"
-msgstr "Двухфакторная аутентификация требует от администраторов UnityConnect CRM настройки нескольких параметров"
+msgid "Two factor authentication requires UnityConnectCRM administrators to configure a few parameters"
+msgstr "Двухфакторная аутентификация требует от администраторов UnityConnectCRM настройки нескольких параметров"
 
 #: 
 msgid "System configuration "
@@ -5757,7 +5537,7 @@ msgstr "загрузка"
 msgid "List not found"
 msgstr "Список не найден"
 
-#. what is inList?
+#. typo
 #: 
 #, fuzzy
 msgid "List not in the list"
@@ -5776,21 +5556,16 @@ msgid "Web Server"
 msgstr "Веб-сервер"
 
 #: 
-msgid "Email Information"
-msgstr "Сведения эл.почты"
-
-#: 
 #, fuzzy
 msgid "People not in list"
 msgstr "Люди не в списке"
 
-#. without context translation may be wrong
 #: 
 #, fuzzy
 msgid "Audience not in the CRM"
 msgstr "Аудитория не в CRM"
 
-#. Or second translation: Еврейский.
+#. Context: locales
 #: 
 msgid "Hebrew"
 msgstr "Иврит"
@@ -5815,7 +5590,6 @@ msgstr "Пароли"
 msgid "2FA"
 msgstr "2FA"
 
-#. without context might be wrong
 #: 
 #, fuzzy
 msgid "Session Timeout"

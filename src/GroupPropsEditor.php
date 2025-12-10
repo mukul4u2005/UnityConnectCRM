@@ -8,7 +8,7 @@ use ChurchCRM\Utils\InputUtils;
 use ChurchCRM\Utils\RedirectUtils;
 
 // Security: user must be allowed to edit records to use this page.
-AuthenticationManager::redirectHomeIfFalse(AuthenticationManager::getCurrentUser()->isEditRecordsEnabled());
+AuthenticationManager::redirectHomeIfFalse(AuthenticationManager::getCurrentUser()->isEditRecordsEnabled(), 'EditRecords');
 
 $sPageTitle = gettext('Group Member Properties Editor');
 
@@ -102,17 +102,17 @@ if (isset($_POST['GroupPropSubmit'])) {
 require_once 'Include/Header.php';
 
 if (mysqli_num_rows($rsPropList) === 0) {
-    ?>
+?>
     <form>
         <h3><?= gettext('This group currently has no properties!  You can add them in the Group Editor.') ?></h3>
         <BR>
-        <input type="button" class="btn btn-default" value="<?= gettext('Return to Person Record') ?>" Name="Cancel" onclick="javascript:document.location='PersonView.php?PersonID=<?= $iPersonID ?>';">
+        <input type="button" class="btn btn-secondary" value="<?= gettext('Return to Person Record') ?>" Name="Cancel" onclick="javascript:document.location='PersonView.php?PersonID=<?= $iPersonID ?>';">
     </form>
-    <?php
+<?php
 } else {
-    ?>
+?>
 
-    <div class="box ">
+    <div class="card">
         <div class="card-header">
             <h3 class="card-title"><?= gettext('Editing') ?> <i> <?= $grp_Name ?> </i> <?= gettext('data for member') ?> <i> <?= $per_FirstName . ' ' . $per_LastName ?> </i></h3>
         </div>
@@ -140,25 +140,25 @@ if (mysqli_num_rows($rsPropList) === 0) {
                                 formCustomField($type_ID, $prop_Field, $currentFieldData, $prop_Special, !isset($_POST['GroupPropSubmit']));
 
                                 if (array_key_exists($prop_Field, $aPropErrors)) {
-                                    echo '<span style="color: red; ">' . $aPropErrors[$prop_Field] . '</span>';
+                                    echo '<span class="text-error">' . $aPropErrors[$prop_Field] . '</span>';
                                 } ?>
                             </td>
                             <td><?= $prop_Description ?></td>
                         </tr>
-                        <?php
+                    <?php
                     } ?>
                     <tr>
-                        <td align="center" colspan="3">
+                        <td class="text-center" colspan="3">
                             <br><br>
                             <input type="submit" class="btn btn-primary" value="<?= gettext('Save') ?>" Name="GroupPropSubmit">
                             &nbsp;
-                            <input type="button" class="btn btn-default" value="<?= gettext('Cancel') ?>" Name="Cancel" onclick="javascript:document.location='PersonView.php?PersonID=<?= $iPersonID ?>';">
+                            <input type="button" class="btn btn-secondary" value="<?= gettext('Cancel') ?>" Name="Cancel" onclick="javascript:document.location='PersonView.php?PersonID=<?= $iPersonID ?>';">
                         </td>
                     </tr>
                 </table>
             </form>
         </div>
     </div>
-    <?php
+<?php
 }
 require_once 'Include/Footer.php';

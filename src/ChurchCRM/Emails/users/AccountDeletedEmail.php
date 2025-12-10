@@ -11,6 +11,6 @@ class AccountDeletedEmail extends BaseUserEmail
 
     protected function buildMessageBody(): string
     {
-        return gettext('Your ChurchCRM Account was Deleted.');
+        return gettext('Your UnityConnectCRM Account was Deleted.');
     }
 }

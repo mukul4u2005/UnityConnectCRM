@@ -4,7 +4,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
-"Project-Id-Version: UnityConnect CRM\n"
+"Project-Id-Version: ChurchCRM\n"
 "Language: uk\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
@@ -32,10 +32,12 @@ msgstr "Невизначено"
 msgid "None"
 msgstr "Жоден"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "City"
 msgstr "Місто"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "State"
 msgstr "Район"
@@ -48,6 +50,7 @@ msgstr "Країна"
 msgid "Phone"
 msgstr "Телефон"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Email"
 msgstr "Електронна скринька"
@@ -59,39 +62,6 @@ msgstr "Кредитна карта"
 #: 
 msgid "Backup Database"
 msgstr "Створити резервну копію бази даних"
-
-#: 
-msgid "This tool will assist you in manually backing up the UnityConnect CRM database."
-msgstr "Цей інструмент допоможе вам вручну створити резервну копію бази даних \"UnityConnect CRM\"."
-
-#: 
-#, fuzzy
-msgid "You should make a manual backup at least once a week unless you already have a regular backup procedure for your systems."
-msgstr "Ви повинні робити резервну копію вручну принаймні раз на тиждень, якщо у вас вже є регулярне резервне копіювання для ваших систем."
-
-#: 
-msgid "After you download the backup file, you should make two copies. Put one of them in a fire-proof safe on-site and the other in a safe location off-site."
-msgstr "Після завантаження файлу резервної копії слід зробити дві копії. Покладіть одну з них у вогнестійкий сейф на місці, а інший в безпечному місці поза територією помешкання."
-
-#: 
-msgid "If you are concerned about confidentiality of data stored in the UnityConnect CRM database, you should encrypt the backup data if it will be stored somewhere potentially accessible to others"
-msgstr "Якщо ви турбуєтеся про конфіденційність даних, що зберігаються в базі даних, ви повинні зашифрувати резервні копії даних, якщо він буде зберігатися десь потенційно доступним для інших"
-
-#: 
-msgid "Select archive type"
-msgstr "Виберіть тип архіву"
-
-#: 
-msgid "Encrypt backup file with a password?"
-msgstr "Зашифрувати файл резервної копії з паролем?"
-
-#: 
-msgid "Re-type Password"
-msgstr "Повторно введіть пароль"
-
-#: 
-msgid "Generate and Ship Backup to External Storage"
-msgstr "Створити та відправити резервну копію на зовнішнє сховище"
 
 #: 
 msgid "Batch Winner Entry"
@@ -157,6 +127,7 @@ msgstr "Дата дня народження/річниці"
 msgid "Age / Years Married"
 msgstr "Вік / років одружений(-а)"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Family Role"
 msgstr "Роль у сімʼї"
@@ -201,10 +172,12 @@ msgstr "Щоб вибрати декілька скористайтесь кла
 msgid "Don't Filter"
 msgstr "Не фільтрувати"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Male"
 msgstr "Чоловіча"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Female"
 msgstr "Жіноча"
@@ -273,6 +246,7 @@ msgstr "Звернення"
 msgid "Suffix"
 msgstr "Суфікс"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Gender"
 msgstr "Стать"
@@ -281,6 +255,7 @@ msgstr "Стать"
 msgid "Donation Envelope"
 msgstr "Конверт пожертв"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Home Phone"
 msgstr "Домашній телефон"
@@ -333,6 +308,7 @@ msgstr "ПРИМІТКА: Роздільники (тире та ін.) Або ї
 msgid "Default country if none specified otherwise"
 msgstr "Країна по замовчанню, якщо інше не вказано"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Classification"
 msgstr "Класифікація"
@@ -362,10 +338,6 @@ msgid "Add Cart to Event"
 msgstr "Додати кошик до події"
 
 #: 
-msgid "Select the event to which you would like to add your cart"
-msgstr "Виберіть подію, до якої ви хочете додати свій кошик"
-
-#: 
 msgid "OR"
 msgstr "АБО"
 
@@ -385,6 +357,7 @@ msgstr "Прізвище не введено!"
 msgid "Add Cart to Family"
 msgstr "Додати кошик до родини"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Name"
 msgstr "Ім'я"
@@ -470,10 +443,6 @@ msgid "Empty Cart to Family"
 msgstr "Порожній кошик для сім'ї"
 
 #: 
-msgid "Empty Cart to Event"
-msgstr "Порожній кошик до події"
-
-#: 
 msgid "Map Cart"
 msgstr "Карта кошика"
 
@@ -530,20 +499,9 @@ msgid "Event Checkin"
 msgstr "Реєстрація події"
 
 #: 
-msgid "Select the event to which you would like to check people in for"
-msgstr "Виберіть подію, на яку ви хочете зареєструвати людей"
-
-#: 
+#, fuzzy
 msgid "Select Event"
-msgstr "Виберіть Подія"
-
-#: 
-msgid "Add Visitor"
-msgstr "Додати відвідувача"
-
-#: 
-msgid "CheckIn"
-msgstr "Перевірь"
+msgstr "Виберіть Подію"
 
 #: 
 msgid "CheckOut"
@@ -569,10 +527,7 @@ msgstr "Зареєстрував"
 msgid "Action"
 msgstr "Дія"
 
-#: 
-msgid "No Attendees Assigned to Event"
-msgstr "Жоден учасник не призначений на подію"
-
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Member"
 msgstr "Член"
@@ -602,29 +557,14 @@ msgid "Deposit Slip Number: "
 msgstr "Номер депозитного квитанції: "
 
 #: 
-msgid "Deposit Details: "
+#, fuzzy
+msgid "Deposit Details"
 msgstr "Деталі депозиту: "
 
 #: 
-msgid "Close deposit slip (remember to press Save)"
-msgstr "Закрийте депозит (не забудьте натиснути Зберегти)"
-
-#: 
-msgid "Deposit Slip Report"
-msgstr "Звіт про депозит"
-
-#: 
 #, fuzzy
-msgid "Important note: failed transactions will be deleted permanently when the deposit slip is closed."
+msgid "Important: Failed transactions will be deleted permanently when the deposit slip is closed."
 msgstr "Важливе зауваження: невдалі транзакції будуть постійно видалятися, коли депозитний депозит буде закритий."
-
-#: 
-msgid "Deposit Summary: "
-msgstr "Підсумок депозиту: "
-
-#: 
-msgid "Payments on this deposit slip:"
-msgstr "Платежі за цим депозитним листом:"
 
 #: 
 msgid "Import eGive"
@@ -635,7 +575,8 @@ msgid "Add Payment"
 msgstr "Додати платіж"
 
 #: 
-msgid "Load Authorized Transactions"
+#, fuzzy
+msgid "Load Authorized"
 msgstr "Завантажте авторизовані транзакції"
 
 #: 
@@ -735,7 +676,7 @@ msgid "Use Title Page"
 msgstr "Використовуйте титульну сторінку"
 
 #: 
-msgid "Temple/TrustName"
+msgid "Temple Name"
 msgstr "Назва церкви"
 
 #: 
@@ -827,7 +768,7 @@ msgid "Add New Fund"
 msgstr "Додати новий фонд"
 
 #: 
-msgid " Temple Event Editor"
+msgid "Temple Event Editor"
 msgstr "Редактор церковних подій"
 
 #: 
@@ -870,6 +811,7 @@ msgstr "Сім'я"
 msgid "Type"
 msgstr "Тип"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Fiscal Year"
 msgstr "Фінансовий рік"
@@ -886,6 +828,7 @@ msgstr "Фонд"
 msgid "Bank"
 msgstr "Банку"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Month"
 msgstr "Місяць"
@@ -899,44 +842,8 @@ msgid "Edit"
 msgstr "Редагувати"
 
 #: 
-msgid "Event Attendees"
-msgstr "Учасники заходу"
-
-#: 
-msgid "Event Nonattendees"
-msgstr "Події без учасників"
-
-#: 
-msgid "Event Guests"
-msgstr "Гості заходу"
-
-#: 
-msgid "There "
-msgstr "Там "
-
-#: 
 msgid "Event Title"
 msgstr "Назва події"
-
-#: 
-msgid "Event Date"
-msgstr "Дата події"
-
-#: 
-msgid "Attending Members"
-msgstr "Присутні члени"
-
-#: 
-msgid "Non-Attending Members"
-msgstr "Неприсутні члени"
-
-#: 
-msgid "Guests"
-msgstr "Гості"
-
-#: 
-msgid "There are no events in this category"
-msgstr "У цій категорії немає подій"
 
 #: 
 msgid "Create Event"
@@ -947,20 +854,8 @@ msgid "Create a new Event"
 msgstr "Створити нову подію"
 
 #: 
-msgid "Editing Event ID: "
-msgstr "Редагування ідентифікатора події: "
-
-#: 
 msgid " errors. Please see below"
 msgstr " помилки. Дивіться нижче"
-
-#: 
-msgid "Items with a "
-msgstr "Елементи з a "
-
-#: 
-msgid " are required"
-msgstr " вимагаються"
 
 #: 
 msgid "Select your event type"
@@ -971,20 +866,8 @@ msgid "You must pick an event type."
 msgstr "Ви повинні вибрати тип події."
 
 #: 
-msgid "Event Desc"
-msgstr "Опис події"
-
-#: 
 msgid "No Attendance counts recorded"
 msgstr "Кількість відвідувачів не зафіксовано"
-
-#: 
-msgid "Attendance Notes: "
-msgstr "Примітки щодо відвідуваності: "
-
-#: 
-msgid "Event Sermon"
-msgstr "Проповідь події"
 
 #: 
 msgid "Event Status"
@@ -993,10 +876,6 @@ msgstr "Статус події"
 #: 
 msgid "Return to Events"
 msgstr "Повернутися до подій"
-
-#: 
-msgid "EVENT TYPE NAME"
-msgstr "НАЗВА ТИПУ ПОДІЇ"
 
 #: 
 msgid "Sundays"
@@ -1025,30 +904,6 @@ msgstr "П’ятниці"
 #: 
 msgid "Saturdays"
 msgstr "Суботи"
-
-#: 
-msgid "DEFAULT START TIME"
-msgstr "ЗАВДАННЯ ЧАС ПОЧАТКУ"
-
-#: 
-msgid "ATTENDANCE COUNTS"
-msgstr "ЛІЧЕННЯ НА УЧАСТЬ"
-
-#: 
-msgid "Optional"
-msgstr "Необов’язково"
-
-#: 
-msgid "Enter a list of the attendance counts you want to include with this event."
-msgstr "Введіть список кількості відвідувачів, який ви хочете включити в цю подію."
-
-#: 
-msgid "Separate each count_name with a comma. e.g. Members, Visitors, Campus, Children"
-msgstr "Відокремте кожне ім'я_читання комою. напр. Учасники, відвідувачі, кампус, діти"
-
-#: 
-msgid "Every event type includes a Total count, you do not need to include it."
-msgstr "Кожен тип події включає загальну кількість, вам не потрібно її включати."
 
 #: 
 msgid "Add Event Type"
@@ -1239,10 +1094,6 @@ msgid "Family List"
 msgstr "Сімейний список"
 
 #: 
-msgid "Add Family"
-msgstr "Додати сім’ю"
-
-#: 
 msgid "Created"
 msgstr "Створено"
 
@@ -1267,10 +1118,6 @@ msgid "Next Family"
 msgstr "Наступна сім'я"
 
 #: 
-msgid "Delete this Family"
-msgstr "Видалити цю сім’ю"
-
-#: 
 msgid "Upload Photo"
 msgstr "Завантажити фото"
 
@@ -1281,10 +1128,6 @@ msgstr "Видалити фото"
 #: 
 msgid "Add a Note"
 msgstr "Додайте примітку"
-
-#: 
-msgid "Add All Family Members to Cart"
-msgstr "Додати всіх членів сім'ї в кошик"
 
 #: 
 msgid "Timeline"
@@ -1393,10 +1236,6 @@ msgstr "Ви збираєтесь надіслати копію сімейної
 #: 
 msgid "Financial Reports"
 msgstr "Фінансові звіти"
-
-#: 
-msgid "No records were returned from the previous report."
-msgstr "З попереднього звіту не повернуто жодних записів."
 
 #: 
 msgid "Report Type:"
@@ -1548,7 +1387,7 @@ msgid "Graphic"
 msgstr "Графічний"
 
 #: 
-msgid "Temple/TrustAddress"
+msgid "Temple Address"
 msgstr "Адреса церкви"
 
 #: 
@@ -1636,20 +1475,9 @@ msgid "Date End"
 msgstr "Дата закінчення"
 
 #: 
-msgid "Clear Filters"
+#, fuzzy
+msgid "Clear Filter"
 msgstr "Очистити фільтри"
-
-#: 
-msgid "Previous Page"
-msgstr "Попередня сторінка"
-
-#: 
-msgid "Next Page"
-msgstr "Наступна сторінка"
-
-#: 
-msgid "Display:"
-msgstr "Дисплей:"
 
 #: 
 msgid "Number"
@@ -1770,10 +1598,6 @@ msgstr "Перетин з кошиком"
 #: 
 msgid "Remove from Cart"
 msgstr "Видалити з кошика"
-
-#: 
-msgid "Text for Event ID: "
-msgstr "Текст для ідентифікатора події: "
 
 #: 
 msgid "Group Editor"
@@ -1944,10 +1768,6 @@ msgid "Group View"
 msgstr "Перегляд групи"
 
 #: 
-msgid "Group Functions"
-msgstr "Функції групи"
-
-#: 
 msgid "Edit this Group"
 msgstr "Редагувати цю групу"
 
@@ -2008,8 +1828,9 @@ msgid "Assigned Properties"
 msgstr "Присвоєні властивості"
 
 #: 
-msgid "Group Members:"
-msgstr "Учасники групи:"
+#, fuzzy
+msgid "Group Members"
+msgstr "Учасники групи"
 
 #: 
 msgid "Remove Selected Members from group"
@@ -2044,28 +1865,12 @@ msgid "Confirm data labels"
 msgstr "Підтвердьте мітки даних"
 
 #: 
-msgid "Listing Events of Type = "
-msgstr "Перелік подій типу = "
-
-#: 
 msgid "Listing All Temple Events"
 msgstr "Перелік усіх церковних подій"
 
 #: 
-msgid "Select Event Types To Display"
-msgstr "Виберіть типи подій для відображення"
-
-#: 
-msgid "Display Events in Year"
-msgstr "Відобразити події в році"
-
-#: 
 msgid "Start Date/Time"
 msgstr "Дата / час початку"
-
-#: 
-msgid "No Attendance Recorded"
-msgstr "Відсутність зафіксовано"
 
 #: 
 msgid "Attendees"
@@ -2128,7 +1933,7 @@ msgid "Assign starting at #"
 msgstr "Призначати починаючи з #"
 
 #: 
-msgid "Unable to display map due to missing Temple/TrustLatitude or Longitude. Please update the temple Address in the settings menu."
+msgid "Unable to display map due to missing Temple Latitude or Longitude. Please update the temple Address in the settings menu."
 msgstr "Не вдається відобразити карту через відсутність церковної широти чи довготи. Будь ласка, оновіть Адресу церкви в меню налаштувань."
 
 #: 
@@ -2711,6 +2516,7 @@ msgstr "Перелік властивостей"
 msgid "Add a New"
 msgstr "Додати новий"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Property"
 msgstr "Власність"
@@ -2755,6 +2561,7 @@ msgstr "Перелік типів властивостей"
 msgid "Add a New Property Type"
 msgstr "Додайте новий тип властивості"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Class"
 msgstr "Клас"
@@ -2786,10 +2593,6 @@ msgstr "Ні, збережіть це доручення"
 #: 
 msgid "Query Listing"
 msgstr "Список запитів"
-
-#: 
-msgid "Run a Free-Text Query"
-msgstr "Запустіть текстовий запит"
 
 #: 
 msgid "Free-Text Query"
@@ -2931,10 +2734,6 @@ msgstr "Видалити ТІЛЬКИ сімейний запис"
 #: 
 msgid "Delete Family Record AND Family Members"
 msgstr "Видалити сімейний запис та членів сім’ї"
-
-#: 
-msgid "Filter and Cart"
-msgstr "Фільтр і кошик"
 
 #: 
 msgid "Listing"
@@ -3274,8 +3073,8 @@ msgid "Custom Drop-Down List"
 msgstr "Спеціальний випадаючий список"
 
 #: 
-msgid "Thank you for registering your UnityConnect CRM installation."
-msgstr "Дякуємо, що зареєстрували свою установку UnityConnect CRM."
+msgid "Thank you for registering your UnityConnectCRM installation."
+msgstr "Дякуємо, що зареєстрували свою установку ChurchCRM."
 
 #: 
 msgid "PDFs successfully emailed "
@@ -3324,14 +3123,6 @@ msgstr "товари, додані в кошик."
 #: 
 msgid "Select Fiscal Year"
 msgstr "Виберіть фінансовий рік"
-
-#: 
-msgid "pm"
-msgstr "вечора"
-
-#: 
-msgid "am"
-msgstr "ранку"
 
 #: 
 msgid "Invalid Editor ID!"
@@ -3506,8 +3297,8 @@ msgid "Member/Friend"
 msgstr "Член / друг"
 
 #: 
-msgid "This option requires at least version 3.22 of MySQL!  Hit browser back button to return to UnityConnect CRM."
-msgstr "Для цього варіанту потрібна принаймні версія 3.22 MySQL! Натисніть кнопку повернення браузера, щоб повернутися до UnityConnect CRM."
+msgid "This option requires at least version 3.22 of MySQL!  Hit browser back button to return to ChurchCRM."
+msgstr "Для цього варіанту потрібна принаймні версія 3.22 MySQL! Натисніть кнопку повернення браузера, щоб повернутися до ChurchCRM."
 
 #: 
 msgid "Work"
@@ -3634,20 +3425,12 @@ msgid "Sunday School Class Functions"
 msgstr "Функції класу недільної школи"
 
 #: 
-msgid "Toggle Dropdown"
-msgstr "Перемкнути спадне меню"
-
-#: 
 msgid "Teachers"
 msgstr "Вчителі"
 
 #: 
 msgid "Send Message"
 msgstr "Відправити повідомлення"
-
-#: 
-msgid "View Profile"
-msgstr "Перегляд профілю"
 
 #: 
 msgid "Quick Status"
@@ -3882,10 +3665,6 @@ msgid "Details:"
 msgstr "Подробиці:"
 
 #: 
-msgid "File Missing"
-msgstr "Файл відсутній"
-
-#: 
 msgid "This will overwrite the family envelope numbers in the database with those selected on this page.  Continue?"
 msgstr "Це призведе до заміни номерів сімейних конвертів у базі даних на вибрані на цій сторінці. Продовжити?"
 
@@ -3914,8 +3693,8 @@ msgid "CAUTION: This will completely erase the existing database, and replace it
 msgstr "ПОПЕРЕДЖЕННЯ. Це повністю видалить існуючу базу даних і замінить її резервною"
 
 #: 
-msgid "If you upload a backup from ChurchInfo, or a previous version of UnityConnect CRM, it will be automatically upgraded to the current database schema"
-msgstr "Якщо ви завантажите резервну копію з ChurchInfo або попередньої версії UnityConnect CRM, вона буде автоматично оновлена до поточної схеми бази даних"
+msgid "If you upload a backup from ChurchInfo, or a previous version of ChurchCRM, it will be automatically upgraded to the current database schema"
+msgstr "Якщо ви завантажите резервну копію з ChurchInfo або попередньої версії ChurchCRM, вона буде автоматично оновлена до поточної схеми бази даних"
 
 #: 
 msgid "Upload Files"
@@ -3938,7 +3717,7 @@ msgid "Restore Error."
 msgstr "Помилка відновлення."
 
 #: 
-msgid "Temple"
+msgid "Temple Information"
 msgstr "Церковна інформація"
 
 #: 
@@ -3986,68 +3765,12 @@ msgid "Edit Settings"
 msgstr "Редагувати налаштування"
 
 #: 
-msgid "Upgrade UnityConnect CRM"
-msgstr "Оновіть UnityConnect CRM"
-
-#: 
-msgid "Step 1: Backup Database"
-msgstr "Крок 1: Резервне копіювання бази даних"
-
-#: 
-msgid "Please create a database backup before beginning the upgrade process."
-msgstr "Будь ласка, створіть резервну копію бази даних перед початком процесу оновлення."
-
-#: 
-msgid "Generate Database Backup"
-msgstr "Створити резервну копію бази даних"
-
-#: 
-msgid "Step 2: Fetch Update Package on Server"
-msgstr "Крок 2: Отримати пакет оновлення на сервері"
-
-#: 
-msgid "Fetch the latest files from the UnityConnect CRM GitHub release page"
-msgstr "Завантажте найновіші файли зі сторінки випуску UnityConnect CRM GitHub"
-
-#: 
-msgid "Fetch Update Files"
-msgstr "Отримати файли оновлення"
-
-#: 
-msgid "Step 3: Apply Update Package on Server"
-msgstr "Крок 3: Застосуйте пакет оновлень на сервері"
-
-#: 
-msgid "Extract the upgrade archive, and apply the new files"
-msgstr "Витягніть архів оновлення та застосуйте нові файли"
-
-#: 
 msgid "Full Path:"
 msgstr "Повний шлях:"
 
 #: 
-msgid "SHA1:"
-msgstr "SHA1:"
-
-#: 
-msgid "Upgrade System"
-msgstr "Система оновлення"
-
-#: 
-msgid "Step 4: Login"
-msgstr "Крок 4: Вхід"
-
-#: 
-msgid "Login to Upgraded System"
-msgstr "Увійдіть в оновлену систему"
-
-#: 
 msgid "Backup Complete, Ready for Download."
 msgstr "Резервне копіювання завершено, готове до завантаження."
-
-#: 
-msgid "Backup Error."
-msgstr "Помилка резервного копіювання."
 
 #: 
 msgid "Backup Downloaded, Copy on server removed"
@@ -4094,11 +3817,11 @@ msgid "Enter Name"
 msgstr "Введіть ім'я"
 
 #: 
-msgid "Update Temple/TrustInfo"
+msgid "Update Temple Info"
 msgstr "Оновіть інформацію про церкву"
 
 #: 
-msgid "Set Temple/TrustAddress"
+msgid "Set Temple Address"
 msgstr "Встановити адресу церкви"
 
 #: 
@@ -4151,18 +3874,6 @@ msgid "Registration Complete"
 msgstr "Реєстрація завершена"
 
 #: 
-msgid "Register"
-msgstr "Зареєструйтесь"
-
-#: 
-msgid "Register your family"
-msgstr "Зареєструйте свою сім'ю"
-
-#: 
-msgid "How many people are in your family"
-msgstr "Скільки людей у вашій родині"
-
-#: 
 msgid "Add All Classes"
 msgstr "Додати всі класи"
 
@@ -4203,20 +3914,12 @@ msgid "Signature definition file signature failed validation"
 msgstr "Підпис файлу визначення підпису не вдалося перевірити"
 
 #: 
-msgid "Signature definition File Missing"
-msgstr "Файл визначення підпису відсутній"
-
-#: 
 msgid "One or more files failed signature validation"
 msgstr "Один або кілька файлів не вдалося перевірити підпис"
 
 #: 
 msgid "Configure HTTPS"
 msgstr "Налаштуйте HTTPS"
-
-#: 
-msgid "Files failing integrity check"
-msgstr "Файли не вдалося перевірити цілісність"
 
 #: 
 msgid "Family:"
@@ -4305,14 +4008,6 @@ msgstr "Дата вступу:"
 #: 
 msgid "CSV Import"
 msgstr "Імпорт CSV"
-
-#: 
-msgid "Comment:"
-msgstr "Коментар:"
-
-#: 
-msgid "Closed:"
-msgstr "Зачинено:"
 
 #: 
 msgid "Start Date: "
@@ -4407,7 +4102,7 @@ msgid "with this Property..."
 msgstr "з цим майном ..."
 
 #: 
-msgid "Temple/TrustEmail"
+msgid "Temple Email"
 msgstr "Церковна електронна пошта"
 
 #: 
@@ -4541,8 +4236,8 @@ msgid "Set true to enable family self registration."
 msgstr "Встановіть значення true, щоб дозволити самореєстрацію в сім’ї."
 
 #: 
-msgid "UnityConnect CRM has been registered.  The UnityConnect CRM team uses registration information to track usage.  This information is kept confidential and never released or sold.  If this field is true the registration option in the admin menu changes to update registration."
-msgstr "UnityConnect CRM зареєстровано. Команда UnityConnect CRM використовує реєстраційну інформацію для відстеження використання. Ця інформація зберігається в конфіденційності, ніколи не розголошується та не продається. Якщо це поле відповідає дійсності, параметр реєстрації в меню адміністратора змінюється на оновлення реєстрації."
+msgid "ChurchCRM has been registered.  The UnityConnectCRM team uses registration information to track usage.  This information is kept confidential and never released or sold.  If this field is true the registration option in the admin menu changes to update registration."
+msgstr "ChurchCRM зареєстровано. Команда UnityConnectCRM використовує реєстраційну інформацію для відстеження використання. Ця інформація зберігається в конфіденційності, ніколи не розголошується та не продається. Якщо це поле відповідає дійсності, параметр реєстрації в меню адміністратора змінюється на оновлення реєстрації."
 
 #: 
 msgid "Left Margin (1 = 1/100th inch)"
@@ -4553,23 +4248,23 @@ msgid "Line Thickness (1 = 1/100th inch"
 msgstr "Товщина лінії (1 = 1/100 дюйма"
 
 #: 
-msgid "Temple/TrustCity"
+msgid "Temple City"
 msgstr "Церковне місто"
 
 #: 
-msgid "Temple/TrustState"
+msgid "Temple State"
 msgstr "Церковна держава"
 
 #: 
-msgid "Temple/TrustZip"
+msgid "Temple Zip"
 msgstr "Церковний Zip"
 
 #: 
-msgid "Temple/TrustPhone"
+msgid "Temple Phone"
 msgstr "Церковний телефон"
 
 #: 
-msgid "Home area code of the church"
+msgid "Home area code of the temple"
 msgstr "Місцевий телефонний код церкви"
 
 #: 
@@ -4617,7 +4312,7 @@ msgid "Verbage for the directory report"
 msgstr "Verbage для звіту каталогу"
 
 #: 
-msgid "Temple/TrustLetterhead path and file"
+msgid "Temple Letterhead path and file"
 msgstr "Шлях та файл церковного бланка"
 
 #: 
@@ -4673,7 +4368,7 @@ msgid "List Temple Events"
 msgstr "Перелічіть церковні події"
 
 #: 
-msgid "Add  Temple Event"
+msgid "Add Temple Event"
 msgstr "Додати церковну подію"
 
 #: 
@@ -4740,335 +4435,419 @@ msgstr "Сімейні властивості"
 msgid "Property Types"
 msgstr "Типи властивостей"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Zip Code"
 msgstr "ЗІП код"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "2012/2013"
 msgstr "2012/2013"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "2013/2014"
 msgstr "2013/2014"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "2014/2015"
 msgstr "2014/2015"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "2015/2016"
 msgstr "2015/2016"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "WorkEmail"
 msgstr "WorkEmail"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Regular Attender"
 msgstr "Звичайний учасник"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Guest"
 msgstr "Гість"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Non-Attender"
 msgstr "Нездатний"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Non-Attender (staff)"
 msgstr "Не присутні (персонал)"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Minimum Age"
 msgstr "Мінімальний вік"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Maximum Age"
 msgstr "Максимальний вік"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Beginning Date"
 msgstr "Дата початку"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Ending Date"
 msgstr "Дата закінчення"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Search"
 msgstr "Пошук"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Field"
 msgstr "Польовий"
 
+#. Context: query_qry
+#. Context: queryparameters_qrp
 #: 
 msgid "Registered students"
 msgstr "Зареєстровані студенти"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Volunteer opportunities"
 msgstr "Волонтерські можливості"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Months"
 msgstr "Місяці"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "First Fiscal Year"
 msgstr "Перший фінансовий рік"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Second Fiscal Year"
 msgstr "Другий фінансовий рік"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Custom field"
 msgstr "Спеціальне поле"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Field value"
 msgstr "Значення поля"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The minimum age for which you want records returned."
 msgstr "Мінімальний вік, для якого потрібно повернути записи."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The maximum age for which you want records returned."
 msgstr "Максимальний вік, для якого потрібно повернути записи."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The desired gender to search the database for."
 msgstr "Бажана стать для пошуку в базі даних."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Select the desired family role."
 msgstr "Виберіть бажану сімейну роль."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The gender for which you would like records returned."
 msgstr "Стать, для якої ви хочете повернути записи."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The property for which you would like person records returned."
 msgstr "Власність, для якої ви хотіли б повернути особові записи."
 
+#. Context: queryparameters_qrp
 #: 
 #, fuzzy
 msgid "Please select the beginning date to calculate total contributions for each member (i.e. YYYY-MM-DD). NOTE: You can only choose dates that contain donations."
 msgstr "Виберіть дату початку, щоб розрахувати загальний внесок для кожного учасника (тобто РРРР-ММ-ДД). ПРИМІТКА. Ви можете вибирати лише дати, на які пожертвуватимуть."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Please enter the last date to calculate total contributions for each member (i.e. YYYY-MM-DD)."
 msgstr "Введіть останню дату для розрахунку загальної суми внесків для кожного учасника (тобто РРРР-ММ-ДД)."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Enter any part of the following: Name, City, State, Zip, Home Phone, Email, or Work Email."
 msgstr "Введіть будь-яку частину з наступного: Ім'я, місто, штат, поштовий індекс, домашній телефон, електронна пошта або робоча електронна адреса."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Select field to search for."
 msgstr "Виберіть поле для пошуку."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The birthday month for which you would like records returned."
 msgstr "Місяць народження, за який ви хотіли б повернути записи."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The sunday school class for which you would like records returned."
 msgstr "Недільний шкільний клас, для якого ви хотіли б записати записи."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Group of registered students"
 msgstr "Група зареєстрованих студентів"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The membership anniversary month for which you would like records returned."
 msgstr "Місячний ювілейний членський період, за який ви хотіли б повернути записи."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Choose a volunteer opportunity"
 msgstr "Виберіть можливість для волонтерів"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Number of months since becoming a friend"
 msgstr "Кількість місяців з моменту, коли я став другом"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "First fiscal year for comparison"
 msgstr "Перший фінансовий рік для порівняння"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Second fiscal year for comparison"
 msgstr "Другий фінансовий рік для порівняння"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Pledged this year"
 msgstr "Пообіцяв цього року"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "but not this year"
 msgstr "але не цього року"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Fiscal Year."
 msgstr "Фінансовий рік."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Member, Regular Attender, etc."
 msgstr "Член, регулярний учасник тощо."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "First volunteer opportunity choice"
 msgstr "Перший вибір волонтерської можливості"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Second volunteer opportunity choice"
 msgstr "Другий вибір волонтерської можливості"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Choose customer person field"
 msgstr "Виберіть поле клієнта"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Match custom field to this value"
 msgstr "Установіть відповідність спеціального поля до цього значення"
 
+#. Context: query_qry
 #: 
 msgid "Family Member Count"
 msgstr "Кількість членів сім'ї"
 
+#. Context: query_qry
 #: 
 msgid "Person by Age"
 msgstr "Людина за віком"
 
+#. Context: query_qry
 #: 
 msgid "Total By Gender"
 msgstr "Усього за статтю"
 
+#. Context: query_qry
 #: 
 msgid "Person by Role and Gender"
 msgstr "Людина за роллю та статтю"
 
+#. Context: query_qry
 #: 
 msgid "Person by Property"
 msgstr "Особа за майном"
 
+#. Context: query_qry
 #: 
 msgid "Advanced Search"
 msgstr "розширений пошук"
 
+#. Context: query_qry
 #: 
 msgid "Birthdays"
 msgstr "Дні народження"
 
+#. Context: query_qry
 #: 
 msgid "Membership anniversaries"
 msgstr "Ювілеї членства"
 
+#. Context: query_qry
 #: 
 msgid "Select database users"
 msgstr "Виберіть користувачів бази даних"
 
+#. Context: query_qry
 #: 
 msgid "Select all members"
 msgstr "Виберіть усіх учасників"
 
+#. Context: query_qry
 #: 
 msgid "Volunteers"
 msgstr "Волонтери"
 
+#. Context: query_qry
 #: 
 msgid "Recent friends"
 msgstr "Останні друзі"
 
+#. Context: query_qry
 #: 
 msgid "Pledge comparison"
 msgstr "Порівняння застави"
 
+#. Context: query_qry
 #: 
 msgid "Missing pledges"
 msgstr "Відсутні застави"
 
+#. Context: query_qry
 #: 
 msgid "Family Pledge by Fiscal Year"
 msgstr "Сімейна застава за фінансовим роком"
 
+#. Context: query_qry
 #: 
 msgid "CustomSearch"
 msgstr "CustomSearch"
 
+#. Context: query_qry
 #: 
 msgid "Returns each family and the total number of people assigned to them."
 msgstr "Повертає кожну сім’ю та загальну кількість призначених їм людей."
 
+#. Context: query_qry
 #: 
 msgid "Returns any person records with ages between two given ages."
 msgstr "Повертає записи будь-якої особи віком від двох до даного віку."
 
+#. Context: query_qry
 #: 
 msgid "Total of records matching a given gender."
 msgstr "Загальна кількість записів, що відповідають даній статі."
 
+#. Context: query_qry
 #: 
 msgid "Selects person records with the family role and gender specified."
 msgstr "Вибирає записи людей із зазначенням ролі сім'ї та статі."
 
+#. Context: query_qry
 #: 
 msgid "Returns person records which are assigned the given property."
 msgstr "Повертає записи особи, яким присвоєно дане властивість."
 
+#. Context: query_qry
 #: 
 msgid "Search by any part of Name, City, State, Zip, Home Phone, Email, or Work Email."
 msgstr "Шукайте за будь-якою частиною імені, міста, штату, поштового індексу, домашнього телефону, електронної пошти чи робочої електронної пошти."
 
+#. Context: query_qry
 #: 
 msgid "People with birthdays in a particular month"
 msgstr "Люди з днями народження в певному місяці"
 
+#. Context: query_qry
 #: 
 msgid "Find Registered students"
 msgstr "Знайдіть зареєстрованих студентів"
 
+#. Context: query_qry
 #: 
 msgid "Members who joined in a particular month"
 msgstr "Члени, які приєдналися до певного місяця"
 
+#. Context: query_qry
 #: 
 msgid "People who are registered as database users"
 msgstr "Люди, які зареєстровані як користувачі баз даних"
 
+#. Context: query_qry
 #: 
 msgid "People who are members"
 msgstr "Люди, які є членами"
 
+#. Context: query_qry
 #: 
 msgid "Find volunteers for a particular opportunity"
 msgstr "Знайдіть волонтерів для певної можливості"
 
+#. Context: query_qry
 #: 
 msgid "Friends who signed up in previous months"
 msgstr "Друзі, які записалися в попередні місяці"
 
+#. Context: query_qry
 #: 
 msgid "Compare pledges between two fiscal years"
 msgstr "Порівняйте обіцянки між двома фінансовими роками"
 
+#. Context: query_qry
 #: 
 msgid "Find people who pledged one year but not another"
 msgstr "Знайдіть людей, які пообіцяли один рік, але не інший"
 
+#. Context: query_qry
 #: 
 msgid "Pledge summary by family name for each fund for the selected fiscal year"
 msgstr "Підсумок застави за прізвищем для кожного фонду на вибраний фінансовий рік"
 
+#. Context: query_qry
 #: 
 msgid "Find volunteers for who match two specific opportunity codes"
 msgstr "Знайдіть добровольців, які відповідають двом конкретним кодам можливостей"
 
+#. Context: query_qry
 #: 
 msgid "Find people with a custom field value"
 msgstr "Знайдіть людей із користувацьким значенням поля"
@@ -5077,22 +4856,27 @@ msgstr "Знайдіть людей із користувацьким значе
 msgid "Last Edited"
 msgstr "Останнє редагування"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "User permission to send email via mailto: links"
 msgstr "Дозвіл користувача на надсилання електронного листа через mailto: посилання"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "Delimiter to separate emails in mailto: links"
 msgstr "Розділювач для відокремлення електронних листів у mailto: посилання"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "User permission to create directories"
 msgstr "Дозвіл користувача на створення каталогів"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "User permission to export CSV files"
 msgstr "Дозвіл користувача на експорт файлів CSV"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "Allow user to add new event"
 msgstr "Дозволити користувачеві додавати нову подію"
@@ -5281,1022 +5065,1277 @@ msgstr "WebDAV"
 msgid "Local"
 msgstr "Місцеві"
 
+#. Context: countries
 #: 
 msgid "Afghanistan (‫افغانستان‬‎)"
 msgstr "Афганістан (افغانستان)"
 
+#. Context: countries
 #: 
 msgid "Åland Islands (Åland)"
 msgstr "Аландські острови (Аланд)"
 
+#. Context: countries
 #: 
 msgid "Albania (Shqipëri)"
 msgstr "Албанія (Shqipëri)"
 
+#. Context: countries
 #: 
 msgid "Algeria (‫الجزائر‬‎)"
 msgstr "Алжир (الجزائر)"
 
+#. Context: countries
 #: 
 msgid "American Samoa"
 msgstr "Американське Самоа"
 
+#. Context: countries
 #: 
 msgid "Andorra"
 msgstr "Андорра"
 
+#. Context: countries
 #: 
 msgid "Angola"
 msgstr "Ангола"
 
+#. Context: countries
 #: 
 msgid "Anguilla"
 msgstr "Ангілья"
 
+#. Context: countries
 #: 
 msgid "Antarctica"
 msgstr "Антарктида"
 
+#. Context: countries
 #: 
 msgid "Antigua and Barbuda"
 msgstr "Антигуа та Барбуда"
 
+#. Context: countries
 #: 
 msgid "Argentina"
 msgstr "Аргентина"
 
+#. Context: countries
 #: 
 msgid "Armenia (Հայաստան)"
 msgstr "Вірменія (Հայաստան)"
 
+#. Context: countries
 #: 
 msgid "Aruba"
 msgstr "Аруба"
 
+#. Context: countries
 #: 
 msgid "Ascension Island"
 msgstr "Острів Вознесіння"
 
+#. Context: countries
 #: 
 msgid "Australia"
 msgstr "Австралія"
 
+#. Context: countries
 #: 
 msgid "Austria (Österreich)"
 msgstr "Австрія (Österreich)"
 
+#. Context: countries
 #: 
 msgid "Azerbaijan (Azərbaycan)"
 msgstr "Азербайджан (Azərbaycan)"
 
+#. Context: countries
 #: 
 msgid "Bahamas"
 msgstr "Багамські острови"
 
+#. Context: countries
 #: 
 msgid "Bahrain (‫البحرين‬‎)"
 msgstr "Бахрейн (البحرين)"
 
+#. Context: countries
 #: 
 msgid "Bangladesh (বাংলাদেশ)"
 msgstr "Бангладеш (বাংলাদেশ)"
 
+#. Context: countries
 #: 
 msgid "Barbados"
 msgstr "Барбадос"
 
+#. Context: countries
 #: 
 msgid "Belarus (Беларусь)"
 msgstr "Білорусь (Беларусь)"
 
+#. Context: countries
 #: 
 msgid "Belgium (België)"
 msgstr "Бельгія (Бельгія)"
 
+#. Context: countries
 #: 
 msgid "Belize"
 msgstr "Беліз"
 
+#. Context: countries
 #: 
 msgid "Benin (Bénin)"
 msgstr "Бенін (Бенін)"
 
+#. Context: countries
 #: 
 msgid "Bermuda"
 msgstr "Бермудські острови"
 
+#. Context: countries
 #: 
 msgid "Bhutan (འབྲུག)"
 msgstr "Бутан (འབྲུག)"
 
+#. Context: countries
 #: 
 msgid "Bolivia"
 msgstr "Болівія"
 
+#. Context: countries
 #: 
 msgid "Bosnia and Herzegovina (Босна и Херцеговина)"
 msgstr "Босна і Герцеговина (Босна і Херцеговина)"
 
+#. Context: countries
 #: 
 msgid "Botswana"
 msgstr "Ботсвана"
 
+#. Context: countries
 #: 
 msgid "Bouvet Island"
 msgstr "Острів Буве"
 
+#. Context: countries
 #: 
 msgid "Brazil (Brasil)"
 msgstr "Бразилія (Бразилія)"
 
+#. Context: countries
 #: 
 msgid "British Indian Ocean Territory"
 msgstr "Британська територія в Індійському океані"
 
+#. Context: countries
 #: 
 msgid "British Virgin Islands"
 msgstr "Британські Віргінські острови"
 
+#. Context: countries
 #: 
 msgid "Brunei"
 msgstr "Бруней"
 
+#. Context: countries
 #: 
 msgid "Bulgaria (България)"
 msgstr "Болгарія (България)"
 
+#. Context: countries
 #: 
 msgid "Burkina Faso"
 msgstr "Буркіна-Фасо"
 
+#. Context: countries
 #: 
 msgid "Burundi (Uburundi)"
 msgstr "Бурунді (Убурунді)"
 
+#. Context: countries
 #: 
 msgid "Cambodia (កម្ពុជា)"
 msgstr "Камбоджа (កម្ពុជា)"
 
+#. Context: countries
 #: 
 msgid "Cameroon (Cameroun)"
 msgstr "Камерун (Камерун)"
 
+#. Context: countries
 #: 
 msgid "Canada"
 msgstr "Канада"
 
+#. Context: countries
 #: 
 msgid "Canary Islands (islas Canarias)"
 msgstr "Канарські острови (острови Канаріас)"
 
+#. Context: countries
 #: 
 msgid "Cape Verde (Kabu Verdi)"
 msgstr "Кабо-Верде (Кабу-Верді)"
 
+#. Context: countries
 #: 
 msgid "Caribbean Netherlands"
 msgstr "Карибські Нідерланди"
 
+#. Context: countries
 #: 
 msgid "Cayman Islands"
 msgstr "Кайманові острови"
 
+#. Context: countries
 #: 
 msgid "Central African Republic (République centrafricaine)"
 msgstr "Центральноафриканська Республіка (République centrafricaine)"
 
+#. Context: countries
 #: 
 msgid "Ceuta and Melilla (Ceuta y Melilla)"
 msgstr "Сеута і Мелілья (Ceuta y Melilla)"
 
+#. Context: countries
 #: 
 msgid "Chad (Tchad)"
 msgstr "Чад (Чад)"
 
+#. Context: countries
 #: 
 msgid "Chile"
 msgstr "Чилі"
 
+#. Context: countries
 #: 
 msgid "China (中国)"
 msgstr "Китай (中国)"
 
+#. Context: countries
 #: 
 msgid "Christmas Island"
 msgstr "Острів Різдва"
 
+#. Context: countries
 #: 
 msgid "Clipperton Island"
 msgstr "Острів Кліппертон"
 
+#. Context: countries
 #: 
 msgid "Cocos (Keeling) Islands (Kepulauan Cocos (Keeling))"
 msgstr "Кокосові (Кілінг) острови (Кепулауанські Кокоси (Кілінг))"
 
+#. Context: countries
 #: 
 msgid "Colombia"
 msgstr "Колумбія"
 
+#. Context: countries
 #: 
 msgid "Comoros (‫جزر القمر‬‎)"
 msgstr "Коморські острови (جزر القمر)"
 
+#. Context: countries
 #: 
 msgid "Congo (DRC) (Jamhuri ya Kidemokrasia ya Kongo)"
 msgstr "Конго (ДРК) (Jamhuri ya Kidemokrasia ya Kongo)"
 
+#. Context: countries
 #: 
 msgid "Congo (Republic) (Congo-Brazzaville)"
 msgstr "Конго (Республіка) (Конго-Браззавіль)"
 
+#. Context: countries
 #: 
 msgid "Cook Islands"
 msgstr "Острови Кука"
 
+#. Context: countries
 #: 
 msgid "Costa Rica"
 msgstr "Коста-Ріка"
 
+#. Context: countries
 #: 
 msgid "Côte d’Ivoire"
 msgstr "Кот-д’Івуар"
 
+#. Context: countries
 #: 
 msgid "Croatia (Hrvatska)"
 msgstr "Хорватія (Hrvatska)"
 
+#. Context: countries
 #: 
 msgid "Cuba"
 msgstr "Куба"
 
+#. Context: countries
 #: 
 msgid "Curaçao"
 msgstr "Кюрасао"
 
+#. Context: countries
 #: 
 msgid "Cyprus (Κύπρος)"
 msgstr "Кіпр (Κύπρος)"
 
+#. Context: countries
 #: 
 msgid "Czech Republic (Česká republika)"
 msgstr "Чеська Республіка (Чеська Республіка)"
 
+#. Context: countries
 #: 
 msgid "Denmark (Danmark)"
 msgstr "Данія (Данія)"
 
+#. Context: countries
 #: 
 msgid "Diego Garcia"
 msgstr "Дієго Гарсія"
 
+#. Context: countries
 #: 
 msgid "Djibouti"
 msgstr "Джибуті"
 
+#. Context: countries
 #: 
 msgid "Dominica"
 msgstr "Домініка"
 
+#. Context: countries
 #: 
 msgid "Dominican Republic (República Dominicana)"
 msgstr "Домініканська Республіка (República Dominicana)"
 
+#. Context: countries
 #: 
 msgid "Ecuador"
 msgstr "Еквадор"
 
+#. Context: countries
 #: 
 msgid "Egypt (‫مصر‬‎)"
 msgstr "Єгипет (مصر)"
 
+#. Context: countries
 #: 
 msgid "El Salvador"
 msgstr "Сальвадор"
 
+#. Context: countries
 #: 
 msgid "Equatorial Guinea (Guinea Ecuatorial)"
 msgstr "Екваторіальна Гвінея (Екваторіальна Гвінея)"
 
+#. Context: countries
 #: 
 msgid "Eritrea"
 msgstr "Еритрея"
 
+#. Context: countries
 #: 
 msgid "Estonia (Eesti)"
 msgstr "Естонія (Естонія)"
 
+#. Context: countries
 #: 
 msgid "Ethiopia"
 msgstr "Ефіопія"
 
+#. Context: countries
 #: 
 msgid "Falkland Islands (Islas Malvinas)"
 msgstr "Фолклендські острови (Мальвінські острови)"
 
+#. Context: countries
 #: 
 msgid "Faroe Islands (Føroyar)"
 msgstr "Фарерські острови (Føroyar)"
 
+#. Context: countries
 #: 
 msgid "Fiji"
 msgstr "Фіджі"
 
+#. Context: countries
 #: 
 msgid "Finland (Suomi)"
 msgstr "Фінляндія (Суомі)"
 
+#. Context: countries
 #: 
 msgid "France"
 msgstr "Франція"
 
+#. Context: countries
 #: 
 msgid "French Guiana (Guyane française)"
 msgstr "Французька Гвіана (Французька Гайана)"
 
+#. Context: countries
 #: 
 msgid "French Polynesia (Polynésie française)"
 msgstr "Французька Полінезія (Polynésie française)"
 
+#. Context: countries
 #: 
 msgid "French Southern Territories (Terres australes françaises)"
 msgstr "Французькі південні території (Terres australes françaises)"
 
+#. Context: countries
 #: 
 msgid "Gabon"
 msgstr "Габон"
 
+#. Context: countries
 #: 
 msgid "Gambia"
 msgstr "Гамбія"
 
+#. Context: countries
 #: 
 msgid "Georgia (საქართველო)"
 msgstr "Грузія (საქართველო)"
 
+#. Context: countries
 #: 
 msgid "Germany (Deutschland)"
 msgstr "Німеччина (Німеччина)"
 
+#. Context: countries
 #: 
 msgid "Ghana (Gaana)"
 msgstr "Гана (Гаана)"
 
+#. Context: countries
 #: 
 msgid "Gibraltar"
 msgstr "Гібралтар"
 
+#. Context: countries
 #: 
 msgid "Greece (Ελλάδα)"
 msgstr "Греція (Ελλάδα)"
 
+#. Context: countries
 #: 
 msgid "Greenland (Kalaallit Nunaat)"
 msgstr "Гренландія (Kalaallit Nunaat)"
 
+#. Context: countries
 #: 
 msgid "Grenada"
 msgstr "Гренада"
 
+#. Context: countries
 #: 
 msgid "Guadeloupe"
 msgstr "Гваделупа"
 
+#. Context: countries
 #: 
 msgid "Guam"
 msgstr "Гуам"
 
+#. Context: countries
 #: 
 msgid "Guatemala"
 msgstr "Гватемала"
 
+#. Context: countries
 #: 
 msgid "Guernsey"
 msgstr "Гернсі"
 
+#. Context: countries
 #: 
 msgid "Guinea (Guinée)"
 msgstr "Гвінея (Гвінея)"
 
+#. Context: countries
 #: 
 msgid "Guinea-Bissau (Guiné Bissau)"
 msgstr "Гвінея-Бісау (Гвіне-Бісау)"
 
+#. Context: countries
 #: 
 msgid "Guyana"
 msgstr "Гайана"
 
+#. Context: countries
 #: 
 msgid "Haiti"
 msgstr "Гаїті"
 
+#. Context: countries
 #: 
 msgid "Heard & McDonald Islands"
 msgstr "Острови Херда і Макдональда"
 
+#. Context: countries
 #: 
 msgid "Honduras"
 msgstr "Гондурас"
 
+#. Context: countries
 #: 
 msgid "Hong Kong (香港)"
 msgstr "Гонконг (香港)"
 
+#. Context: countries
 #: 
 msgid "Hungary (Magyarország)"
 msgstr "Угорщина (Magyarország)"
 
+#. Context: countries
 #: 
 msgid "Iceland (Ísland)"
 msgstr "Ісландія (Ісландія)"
 
+#. Context: countries
 #: 
 msgid "India (भारत)"
 msgstr "Індія (भारत)"
 
+#. Context: countries
 #: 
 msgid "Indonesia"
 msgstr "Індонезія"
 
+#. Context: countries
 #: 
 msgid "Iran (‫ایران‬‎)"
 msgstr "Іран (ایران)"
 
+#. Context: countries
 #: 
 msgid "Iraq (‫العراق‬‎)"
 msgstr "Ірак (العراق)"
 
+#. Context: countries
 #: 
 msgid "Ireland"
 msgstr "Ірландія"
 
+#. Context: countries
 #: 
 msgid "Isle of Man"
 msgstr "Острів Мен"
 
+#. Context: countries
 #: 
 msgid "Israel (‫ישראל‬‎)"
 msgstr "Ізраїль (ישראל)"
 
+#. Context: countries
 #: 
 msgid "Italy (Italia)"
 msgstr "Італія (Італія)"
 
+#. Context: countries
 #: 
 msgid "Jamaica"
 msgstr "Ямайка"
 
+#. Context: countries
 #: 
 msgid "Japan (日本)"
 msgstr "Японія (日本)"
 
+#. Context: countries
 #: 
 msgid "Jersey"
 msgstr "Джерсі"
 
+#. Context: countries
 #: 
 msgid "Jordan (‫الأردن‬‎)"
 msgstr "Йорданія (الأردن)"
 
+#. Context: countries
 #: 
 msgid "Kazakhstan (Казахстан)"
 msgstr "Казахстан (Казахстан)"
 
+#. Context: countries
 #: 
 msgid "Kenya"
 msgstr "Кенія"
 
+#. Context: countries
 #: 
 msgid "Kiribati"
 msgstr "Кірібаті"
 
+#. Context: countries
 #: 
 msgid "Kosovo (Kosovë)"
 msgstr "Косово (Косово)"
 
+#. Context: countries
 #: 
 msgid "Kuwait (‫الكويت‬‎)"
 msgstr "Кувейт (الكويت)"
 
+#. Context: countries
 #: 
 msgid "Kyrgyzstan (Кыргызстан)"
 msgstr "Киргизстан (Киргизстан)"
 
+#. Context: countries
 #: 
 msgid "Laos (ລາວ)"
 msgstr "Лаос (ລາວ)"
 
+#. Context: countries
 #: 
 msgid "Lebanon (‫لبنان‬‎)"
 msgstr "Ліван (لبنان)"
 
+#. Context: countries
 #: 
 msgid "Lesotho"
 msgstr "Лесото"
 
+#. Context: countries
 #: 
 msgid "Liberia"
 msgstr "Ліберія"
 
+#. Context: countries
 #: 
 msgid "Libya (‫ليبيا‬‎)"
 msgstr "Лівія (ليبيا)"
 
+#. Context: countries
 #: 
 msgid "Liechtenstein"
 msgstr "Ліхтенштейн"
 
+#. Context: countries
 #: 
 msgid "Lithuania (Lietuva)"
 msgstr "Литва (Lietuva)"
 
+#. Context: countries
 #: 
 msgid "Luxembourg"
 msgstr "Люксембург"
 
+#. Context: countries
 #: 
 msgid "Macau (澳門)"
 msgstr "Макао (澳門)"
 
+#. Context: countries
 #: 
 msgid "Macedonia (FYROM) (Македонија)"
 msgstr "Македонія (КЮРМ) (Македонія)"
 
+#. Context: countries
 #: 
 msgid "Madagascar (Madagasikara)"
 msgstr "Мадагаскар (Мадагасікара)"
 
+#. Context: countries
 #: 
 msgid "Malawi"
 msgstr "Малаві"
 
+#. Context: countries
 #: 
 msgid "Malaysia"
 msgstr "Малайзія"
 
+#. Context: countries
 #: 
 msgid "Maldives"
 msgstr "Мальдіви"
 
+#. Context: countries
 #: 
 msgid "Mali"
 msgstr "Малі"
 
+#. Context: countries
 #: 
 msgid "Malta"
 msgstr "Мальта"
 
+#. Context: countries
 #: 
 msgid "Marshall Islands"
 msgstr "Маршаллові острови"
 
+#. Context: countries
 #: 
 msgid "Martinique"
 msgstr "Мартініка"
 
+#. Context: countries
 #: 
 msgid "Mauritania (‫موريتانيا‬‎)"
 msgstr "Мавританія (Македонія)"
 
+#. Context: countries
 #: 
 msgid "Mauritius (Moris)"
 msgstr "Маврикій (Моріс)"
 
+#. Context: countries
 #: 
 msgid "Mayotte"
 msgstr "Майотта"
 
+#. Context: countries
 #: 
 msgid "Mexico (México)"
 msgstr "Мексика (Мексика)"
 
+#. Context: countries
 #: 
 msgid "Micronesia"
 msgstr "Мікронезія"
 
+#. Context: countries
 #: 
 msgid "Moldova (Republica Moldova)"
 msgstr "Молдова (Республіка Молдова)"
 
+#. Context: countries
 #: 
 msgid "Monaco"
 msgstr "Монако"
 
+#. Context: countries
 #: 
 msgid "Mongolia (Монгол)"
 msgstr "Монголія (Монгол)"
 
+#. Context: countries
 #: 
 msgid "Montenegro (Crna Gora)"
 msgstr "Чорногорія (Чорна Гора)"
 
+#. Context: countries
 #: 
 msgid "Montserrat"
 msgstr "Монтсеррат"
 
+#. Context: countries
 #: 
 msgid "Morocco (‫المغرب‬‎)"
 msgstr "Марокко (المغرب)"
 
+#. Context: countries
 #: 
 msgid "Mozambique (Moçambique)"
 msgstr "Мозамбік (Moçambique)"
 
+#. Context: countries
 #: 
 msgid "Myanmar (Burma) (မြန်မာ)"
 msgstr "М'янма (Бірма) (မြန်မာ)"
 
+#. Context: countries
 #: 
 msgid "Namibia (Namibië)"
 msgstr "Намібія (Намібія)"
 
+#. Context: countries
 #: 
 msgid "Nauru"
 msgstr "Науру"
 
+#. Context: countries
 #: 
 msgid "Nepal (नेपाल)"
 msgstr "Непал (Непал)"
 
+#. Context: countries
 #: 
 msgid "Netherlands (Nederland)"
 msgstr "Нідерланди (Нідерланди)"
 
+#. Context: countries
 #: 
 msgid "New Caledonia (Nouvelle-Calédonie)"
 msgstr "Нова Каледонія (Нувель-Каледонія)"
 
+#. Context: countries
 #: 
 msgid "New Zealand"
 msgstr "Нова Зеландія"
 
+#. Context: countries
 #: 
 msgid "Nicaragua"
 msgstr "Нікарагуа"
 
+#. Context: countries
 #: 
 msgid "Niger (Nijar)"
 msgstr "Нігер (Ніджар)"
 
+#. Context: countries
 #: 
 msgid "Nigeria"
 msgstr "Нігерія"
 
+#. Context: countries
 #: 
 msgid "Niue"
 msgstr "Ніуе"
 
+#. Context: countries
 #: 
 msgid "Norfolk Island"
 msgstr "Острів Норфолк"
 
+#. Context: countries
 #: 
 msgid "Northern Mariana Islands"
 msgstr "Північні Маріанські острови"
 
+#. Context: countries
 #: 
 msgid "North Korea (조선 민주주의 인민 공화국)"
 msgstr "Північна Корея (조선 민주주의 인민 공화국)"
 
+#. Context: countries
 #: 
 msgid "Norway (Norge)"
 msgstr "Норвегія (Норвегія)"
 
+#. Context: countries
 #: 
 msgid "Oman (‫عُمان‬‎)"
 msgstr "Оман (عُمان)"
 
+#. Context: countries
 #: 
 msgid "Pakistan (‫پاکستان‬‎)"
 msgstr "Пакистан (پاکستان)"
 
+#. Context: countries
 #: 
 msgid "Palau"
 msgstr "Палау"
 
+#. Context: countries
 #: 
 msgid "Palestine (‫فلسطين‬‎)"
 msgstr "Палестина (فلسطين)"
 
+#. Context: countries
 #: 
 msgid "Panama (Panamá)"
 msgstr "Панама (Панама)"
 
+#. Context: countries
 #: 
 msgid "Papua New Guinea"
 msgstr "Папуа-Нова Гвінея"
 
+#. Context: countries
 #: 
 msgid "Paraguay"
 msgstr "Парагвай"
 
+#. Context: countries
 #: 
 msgid "Peru (Perú)"
 msgstr "Перу (Перу)"
 
+#. Context: countries
 #: 
 msgid "Philippines"
 msgstr "Філіппіни"
 
+#. Context: countries
 #: 
 msgid "Pitcairn Islands"
 msgstr "Острови Піткерн"
 
+#. Context: countries
 #: 
 msgid "Poland (Polska)"
 msgstr "Польща (Польща)"
 
+#. Context: countries
 #: 
 msgid "Portugal"
 msgstr "Португалія"
 
+#. Context: countries
 #: 
 msgid "Puerto Rico"
 msgstr "Пуерто-Рико"
 
+#. Context: countries
 #: 
 msgid "Qatar (‫قطر‬‎)"
 msgstr "Катар (قطر)"
 
+#. Context: countries
 #: 
 msgid "Réunion (La Réunion)"
 msgstr "Реюньйон (Реюньйон)"
 
+#. Context: countries
 #: 
 msgid "Romania (România)"
 msgstr "Румунія (Романія)"
 
+#. Context: countries
 #: 
 msgid "Russia (Россия)"
 msgstr "Росія (Россия)"
 
+#. Context: countries
 #: 
 msgid "Rwanda"
 msgstr "Руанда"
 
+#. Context: countries
 #: 
 msgid "Saint Barthélemy (Saint-Barthélemy)"
 msgstr "Сен-Бартелемі (Saint-Barthélemy)"
 
+#. Context: countries
 #: 
 msgid "Saint Helena"
 msgstr "Свята Олена"
 
+#. Context: countries
 #: 
 msgid "Saint Kitts and Nevis"
 msgstr "Сент-Кітс і Невіс"
 
+#. Context: countries
 #: 
 msgid "Saint Lucia"
 msgstr "Сент-Люсія"
 
+#. Context: countries
 #: 
 msgid "Saint Martin (Saint-Martin (partie française))"
 msgstr "Сен-Мартен (Сен-Мартен (partie française))"
 
+#. Context: countries
 #: 
 msgid "Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)"
 msgstr "Сен-П'єр і Мікелон (Saint-Pierre-et-Miquelon)"
 
+#. Context: countries
 #: 
 msgid "Samoa"
 msgstr "Самоа"
 
+#. Context: countries
 #: 
 msgid "San Marino"
 msgstr "Сан-Марино"
 
+#. Context: countries
 #: 
 msgid "São Tomé and Príncipe (São Tomé e Príncipe)"
 msgstr "Сан-Томе і Принсіпі (Сан-Томе і Принсіпі)"
 
+#. Context: countries
 #: 
 msgid "Saudi Arabia (‫المملكة العربية السعودية‬‎)"
 msgstr "Саудівська Аравія (المملكة العربية السعودية)"
 
+#. Context: countries
 #: 
 msgid "Senegal (Sénégal)"
 msgstr "Сенегал (Сенегал)"
 
+#. Context: countries
 #: 
 msgid "Serbia (Србија)"
 msgstr "Сербія (Србіја)"
 
+#. Context: countries
 #: 
 msgid "Seychelles"
 msgstr "Сейшельські острови"
 
+#. Context: countries
 #: 
 msgid "Sierra Leone"
 msgstr "Сьєрра-Леоне"
 
+#. Context: countries
 #: 
 msgid "Singapore"
 msgstr "Сінгапур"
 
+#. Context: countries
 #: 
 msgid "Sint Maarten"
 msgstr "Сінт-Мартен"
 
+#. Context: countries
 #: 
 msgid "Slovakia (Slovensko)"
 msgstr "Словаччина (Slovensko)"
 
+#. Context: countries
 #: 
 msgid "Slovenia (Slovenija)"
 msgstr "Словенія (Словенія)"
 
+#. Context: countries
 #: 
 msgid "Solomon Islands"
 msgstr "Соломонові острови"
 
+#. Context: countries
 #: 
 msgid "Somalia (Soomaaliya)"
 msgstr "Сомалі (Соомаалія)"
 
+#. Context: countries
 #: 
 msgid "South Africa"
 msgstr "Південна Африка"
 
+#. Context: countries
 #: 
 msgid "South Georgia & South Sandwich Islands"
 msgstr "Південна Джорджія та Південні Сандвічеві острови"
 
+#. Context: countries
 #: 
 msgid "South Korea (대한민국)"
 msgstr "Південна Корея (대한민국)"
 
+#. Context: countries
 #: 
 msgid "South Sudan (‫جنوب السودان‬‎)"
 msgstr "Південний Судан (جنوب السودان)"
 
+#. Context: countries
 #: 
 msgid "Spain (España)"
 msgstr "Іспанія (Іспанія)"
 
+#. Context: countries
 #: 
 msgid "Sri Lanka (ශ්‍රී ලංකාව)"
 msgstr "Шрі-Ланка (ශ්‍රී ලංකාව)"
 
+#. Context: countries
 #: 
 msgid "St. Vincent & Grenadines"
 msgstr "Сент-Вінсент і Гренадини"
 
+#. Context: countries
 #: 
 msgid "Sudan (‫السودان‬‎)"
 msgstr "Судан (السودان)"
 
+#. Context: countries
 #: 
 msgid "Suriname"
 msgstr "Суринам"
 
+#. Context: countries
 #: 
 msgid "Svalbard and Jan Mayen (Svalbard og Jan Mayen)"
 msgstr "Шпіцберген та Ян Майєн (Шпіцберген та Ян Майєн)"
 
+#. Context: countries
 #: 
 msgid "Swaziland"
 msgstr "Свазіленд"
 
+#. Context: countries
 #: 
 msgid "Sweden (Sverige)"
 msgstr "Швеція (Швеція)"
 
+#. Context: countries
 #: 
 msgid "Switzerland (Schweiz)"
 msgstr "Швейцарія (Schweiz)"
 
+#. Context: countries
 #: 
 msgid "Syria (‫سوريا‬‎)"
 msgstr "Сирія (Швеція)"
 
+#. Context: countries
 #: 
 msgid "Taiwan (台灣)"
 msgstr "Тайвань (台灣)"
 
+#. Context: countries
 #: 
 msgid "Tajikistan"
 msgstr "Таджикистан"
 
+#. Context: countries
 #: 
 msgid "Tanzania"
 msgstr "Танзанія"
 
+#. Context: countries
 #: 
 msgid "Thailand (ไทย)"
 msgstr "Таїланд (ไทย)"
 
+#. Context: countries
 #: 
 msgid "Timor-Leste"
 msgstr "Восточний Тимор"
 
+#. Context: countries
 #: 
 msgid "Togo"
 msgstr "Йти"
 
+#. Context: countries
 #: 
 msgid "Tokelau"
 msgstr "Токелау"
 
+#. Context: countries
 #: 
 msgid "Tonga"
 msgstr "Тонга"
 
+#. Context: countries
 #: 
 msgid "Trinidad and Tobago"
 msgstr "Тринідад і Тобаго"
 
+#. Context: countries
 #: 
 msgid "Tristan da Cunha"
 msgstr "Трістан да Кунья"
 
+#. Context: countries
 #: 
 msgid "Tunisia (‫تونس‬‎)"
 msgstr "Туніс (تونس)"
 
+#. Context: countries
 #: 
 msgid "Turkey (Türkiye)"
 msgstr "Туреччина (Туреччина)"
 
+#. Context: countries
 #: 
 msgid "Turkmenistan"
 msgstr "Туркменістан"
 
+#. Context: countries
 #: 
 msgid "Turks and Caicos Islands"
 msgstr "Острови Теркс і Кайкос"
 
+#. Context: countries
 #: 
 msgid "Tuvalu"
 msgstr "Тувалу"
 
+#. Context: countries
 #: 
 msgid "U.S. Outlying Islands"
 msgstr "Віддалені острови США"
 
+#. Context: countries
 #: 
 msgid "U.S. Virgin Islands"
 msgstr "Віргінські острови США"
 
+#. Context: countries
 #: 
 msgid "Uganda"
 msgstr "Уганда"
 
+#. Context: countries
 #: 
 msgid "Ukraine (Україна)"
 msgstr "Україна (Україна)"
 
+#. Context: countries
 #: 
 msgid "United Arab Emirates (‫الإمارات العربية المتحدة‬‎)"
 msgstr "Об'єднані Арабські Емірати (الإمارات العربية المتحدة)"
 
+#. Context: countries
 #: 
 msgid "United Kingdom"
 msgstr "Об'єднане Королівство"
 
+#. Context: countries
 #: 
 msgid "United States"
 msgstr "Сполучені Штати"
 
+#. Context: countries
 #: 
 msgid "Uruguay"
 msgstr "Уругвай"
 
+#. Context: countries
 #: 
 msgid "Uzbekistan (Oʻzbekiston)"
 msgstr "Узбекистан (Узбекістон)"
 
+#. Context: countries
 #: 
 msgid "Vanuatu"
 msgstr "Вануату"
 
+#. Context: countries
 #: 
 msgid "Vatican City (Città del Vaticano)"
 msgstr "Ватикан (Città del Vaticano)"
 
+#. Context: countries
 #: 
 msgid "Venezuela"
 msgstr "Венесуела"
 
+#. Context: countries
 #: 
 msgid "Vietnam (Việt Nam)"
 msgstr "В'єтнам (В'єтнам)"
 
+#. Context: countries
 #: 
 msgid "Wallis and Futuna"
 msgstr "Уолліс і Футуна"
 
+#. Context: countries
 #: 
 msgid "Western Sahara (‫الصحراء الغربية‬‎)"
 msgstr "Західна Сахара (الصحراء الغربية)"
 
+#. Context: countries
 #: 
 msgid "Yemen (‫اليمن‬‎)"
 msgstr "Ємен (اليمن)"
 
+#. Context: countries
 #: 
 msgid "Zambia"
 msgstr "Замбія"
 
+#. Context: countries
 #: 
 msgid "Zimbabwe"
 msgstr "Зімбабве"
@@ -6306,11 +6345,11 @@ msgid "Please verify your family's information"
 msgstr "Будь ласка, перевірте інформацію про свою сім’ю"
 
 #: 
-msgid "Temple/TrustAddress is not Set."
+msgid "Temple Address is not Set."
 msgstr "Адреса церкви не встановлена."
 
 #: 
-msgid "Temple/TrustName is set to default value"
+msgid "Temple Name is set to default value"
 msgstr "Ім'я церкви встановлено за значенням за замовчуванням"
 
 #: 
@@ -6433,82 +6472,102 @@ msgstr "Використовується для закінчення листа 
 msgid "Google Analytics Tracking Code"
 msgstr "Код відстеження Google Analytics"
 
+#. Context: locales
 #: 
 msgid "English - United States"
 msgstr "Англійська - США"
 
+#. Context: locales
 #: 
 msgid "English - Canada"
 msgstr "Англійська - Канада"
 
+#. Context: locales
 #: 
 msgid "English - Australia"
 msgstr "Англійська - Австралія"
 
+#. Context: locales
 #: 
 msgid "English - Great Britain"
 msgstr "Англійська - Великобританія"
 
+#. Context: locales
 #: 
 msgid "German - Germany"
 msgstr "Німецька - Німеччина"
 
+#. Context: locales
 #: 
 msgid "Spanish - Spain"
 msgstr "Іспанська - Іспанія"
 
+#. Context: locales
 #: 
 msgid "French - France"
 msgstr "Французька - Франція"
 
+#. Context: locales
 #: 
 msgid "Hungarian"
 msgstr "Угорська"
 
+#. Context: locales
 #: 
 msgid "Italian - Italy"
 msgstr "Італійська - Італія"
 
+#. Context: locales
 #: 
 msgid "Norwegian"
 msgstr "Норвезька"
 
+#. Context: locales
 #: 
 msgid "Dutch - Netherlands"
 msgstr "Голландська - Нідерланди"
 
+#. Context: locales
 #: 
 msgid "Polish"
 msgstr "Польська"
 
+#. Context: locales
 #: 
 msgid "Portuguese - Brazil"
 msgstr "Португальська - Бразилія"
 
+#. Context: locales
 #: 
 msgid "Romanian - Romania"
 msgstr "Румунська - Румунія"
 
+#. Context: locales
 #: 
 msgid "Russian"
 msgstr "російський"
 
+#. Context: locales
 #: 
 msgid "Sami (Northern) (Sweden)"
 msgstr "Саамі (північ) (Швеція)"
 
+#. Context: locales
 #: 
 msgid "Albanian"
 msgstr "Албанська"
 
+#. Context: locales
 #: 
 msgid "Vietnamese"
 msgstr "В’єтнамські"
 
+#. Context: locales
 #: 
 msgid "Chinese - China"
 msgstr "Китайський - Китай"
 
+#. Context: locales
 #: 
 msgid "Chinese - Taiwan"
 msgstr "Китайська - Тайвань"
@@ -6530,7 +6589,7 @@ msgid "Failed"
 msgstr "Помилка"
 
 #: 
-msgid "Temple/TrustChecking Account Number"
+msgid "Temple Checking Account Number"
 msgstr "Номер церковного чекового рахунку"
 
 #: 
@@ -6578,16 +6637,13 @@ msgid "Profile Image uploaded"
 msgstr "Зображення профілю завантажено"
 
 #: 
-msgid "payments(s)?"
+#, fuzzy
+msgid "payment(s)?"
 msgstr "платежі?"
 
 #: 
 msgid "Please ensure this what you want to do.</p>"
 msgstr "Будь ласка, переконайтеся, що ви хочете зробити. </p>"
-
-#: 
-msgid " this Family"
-msgstr " ця Родина"
 
 #: 
 msgid "Confirm Deactivation"
@@ -6620,10 +6676,6 @@ msgstr "Назва файлу бази даних координат:"
 #: 
 msgid "Intersect With Cart"
 msgstr "Перетин з кошиком"
-
-#: 
-msgid "Family Member"
-msgstr "Член сім'ї"
 
 #: 
 msgid "select an option"
@@ -6707,8 +6759,8 @@ msgid "Your Account was Deleted"
 msgstr "Ваш рахунок був видалений"
 
 #: 
-msgid "Your UnityConnect CRM Account was Deleted."
-msgstr "Ваш обліковий запис UnityConnect CRM видалено."
+msgid "Your UnityConnectCRM Account was Deleted."
+msgstr "Ваш обліковий запис UnityConnectCRM видалено."
 
 #: 
 msgid "Account Locked"
@@ -6737,10 +6789,6 @@ msgstr "Переглянути фото"
 #: 
 msgid "Family Photo"
 msgstr "Сімейне фото"
-
-#: 
-msgid "Quick Settings"
-msgstr "Швидкі налаштування"
 
 #: 
 msgid "Status"
@@ -6851,20 +6899,20 @@ msgid "Select GeoCoder Provider"
 msgstr "Виберіть постачальника геокодерів"
 
 #: 
-msgid "Your UnityConnect CRM account was locked."
-msgstr "Ваш обліковий запис UnityConnect CRM був заблокований."
+msgid "Your UnityConnectCRM account was locked."
+msgstr "Ваш обліковий запис UnityConnectCRM був заблокований."
 
 #: 
-msgid "A UnityConnect CRM account was created for you"
-msgstr "Для вас був створений обліковий запис UnityConnect CRM"
+msgid "A UnityConnectCRM account was created for you"
+msgstr "Для вас був створений обліковий запис UnityConnectCRM"
 
 #: 
-msgid "You can reset your UnityConnect CRM password by clicking this link"
-msgstr "Ви можете скинути свій пароль UnityConnect CRM, натиснувши це посилання"
+msgid "You can reset your UnityConnectCRM password by clicking this link"
+msgstr "Ви можете скинути свій пароль ChurchCRM, натиснувши це посилання"
 
 #: 
-msgid "Your UnityConnect CRM account was unlocked."
-msgstr "Ваш акаунт UnityConnect CRM був розблокований."
+msgid "Your UnityConnectCRM account was unlocked."
+msgstr "Ваш акаунт UnityConnectCRM був розблокований."
 
 #: 
 msgid "system user created"
@@ -7032,8 +7080,8 @@ msgstr "Будь ласка, перейдіть за цим місцем"
 
 #: 
 #, fuzzy
-msgid "Your UnityConnect CRM password has been changed"
-msgstr "Оновлений вами пароль для UnityConnect CRM змінено"
+msgid "Your UnityConnectCRM password has been changed"
+msgstr "Оновлений вами пароль для UnityConnectCRM змінено"
 
 #: 
 msgid "Password Reset Link"
@@ -7044,24 +7092,12 @@ msgid "Reset Password"
 msgstr "Скинути пароль"
 
 #: 
-msgid "Unable to reset password"
-msgstr "Не вдається скинути пароль"
-
-#: 
 msgid "Reset your password"
 msgstr "Скинути пароль"
 
 #: 
 msgid "Sorry, we are unable to process your request at this point in time."
 msgstr "На жаль, наразі ми не можемо обробити ваш запит."
-
-#: 
-msgid "Login Name is Required"
-msgstr "Ім'я для входу обов’язкове"
-
-#: 
-msgid "A new password was sent to you. Please check your email"
-msgstr "Вам надіслано новий пароль. Будь ласка, перевірте свою електронну пошту"
 
 #: 
 msgid "Kiosk Manager"
@@ -7164,10 +7200,6 @@ msgid "Not all members of this group are in the cart"
 msgstr "Не всі учасники цієї групи знаходяться в кошику"
 
 #: 
-msgid "Add all"
-msgstr "Додати все"
-
-#: 
 msgid "Are you sure you want to remove the selected group members?"
 msgstr "Ви впевнені, що хочете видалити вибраних членів групи?"
 
@@ -7191,10 +7223,12 @@ msgstr "Примітки до випуску"
 msgid "Move"
 msgstr "Рухайся"
 
+#. Context: locales
 #: 
 msgid "Arabic - Egypt"
 msgstr "Арабська - Єгипет"
 
+#. Context: locales
 #: 
 msgid "Thai"
 msgstr "Тайська"
@@ -7207,10 +7241,6 @@ msgstr "Сторінка Вашої Церкви у Facebook"
 #, fuzzy
 msgid "Your Church's X Page"
 msgstr "Сторінка Вашої Церкви у X"
-
-#: 
-msgid "lookup user images on Google when no local image is present"
-msgstr "шукати зображення користувачів у Google, коли немає локального зображення"
 
 #: 
 msgid "Self Register"
@@ -7228,6 +7258,7 @@ msgstr "Очікує на самостійну перевірку"
 msgid "Self Verify"
 msgstr "Самоперевірка"
 
+#. Context: locales
 #: 
 msgid "Indonesian - Indonesia"
 msgstr "Індонезійська - Індонезія"
@@ -7273,8 +7304,8 @@ msgid "New Family Added"
 msgstr "Додано нову сім’ю"
 
 #: 
-msgid "Temple/TrustGreeter"
-msgstr "Temple/TrustGreeter"
+msgid "Temple Greeter"
+msgstr "Temple Greeter"
 
 #: 
 msgid "External Calendar API is disabled"
@@ -7413,10 +7444,6 @@ msgid "Maximum number of Addresses"
 msgstr "Максимальна кількість адрес"
 
 #: 
-msgid "Show type of group:"
-msgstr "Показати тип групи:"
-
-#: 
 msgid "Add Students"
 msgstr "Додати студентів"
 
@@ -7463,26 +7490,6 @@ msgstr "Створіть PhotoBook"
 #: 
 msgid "SSE"
 msgstr "SSE"
-
-#: 
-msgid "Height to use for images"
-msgstr "Висота для зображення"
-
-#: 
-msgid "Width to use for images"
-msgstr "Ширина для зображення"
-
-#: 
-msgid "Width to use for thumbnails"
-msgstr "Ширина для ескізів"
-
-#: 
-msgid "Point size to use for initials thumbnails"
-msgstr "Розмір точки для ескізів ініціалів"
-
-#: 
-msgid "Client cache seconds for images"
-msgstr "Клієнтські кеш-секунди для зображень"
 
 #: 
 msgid "Server cache time for remote images"
@@ -7537,10 +7544,6 @@ msgid "Resize Event"
 msgstr "Змінити розмір події"
 
 #: 
-msgid "Text from"
-msgstr "Текст від"
-
-#: 
 msgid "Profile"
 msgstr "Профіль"
 
@@ -7589,8 +7592,8 @@ msgid "Field where last Confession is stored, must be a date type"
 msgstr "Поле, де зберігається останнє Сповідь, має бути типом дати"
 
 #: 
-msgid "Require that this UnityConnect CRM Database is accessed over HTTPS"
-msgstr "Потрібно мати доступ до цієї бази даних UnityConnect CRM через HTTPS"
+msgid "Require that this UnityConnectCRM Database is accessed over HTTPS"
+msgstr "Потрібно мати доступ до цієї бази даних UnityConnectCRM через HTTPS"
 
 #: 
 msgid "People Setup"
@@ -7793,16 +7796,13 @@ msgid "Not Found: Unknown calendar id"
 msgstr "Не знайдено: невідомий ідентифікатор календаря"
 
 #: 
-msgid "no found or user without an email"
+#, fuzzy
+msgid "not found or user without an email"
 msgstr "жодного знайденого або користувача без електронної пошти"
 
 #: 
 msgid "UserName not set"
 msgstr "Ім'я користувача не встановлено"
-
-#: 
-msgid "The people and families has been cleared from the database."
-msgstr "Люди та сім'ї вилучені з бази даних."
 
 #: 
 msgid "Self Registrations"
@@ -7970,8 +7970,8 @@ msgid "User must have Delete Records permission"
 msgstr "Користувач повинен мати дозвіл на видалення записів"
 
 #: 
-msgid "UnityConnect CRM Central Notifications URL"
-msgstr "URL-адреса центральних сповіщень UnityConnect CRM"
+msgid "ChurchCRM Central Notifications URL"
+msgstr "URL-адреса центральних сповіщень UnityConnectCRM"
 
 #: 
 #, fuzzy
@@ -8059,10 +8059,6 @@ msgid "Menu Name"
 msgstr "Назва меню"
 
 #: 
-msgid "Max 20 char"
-msgstr "Макс. 20 символів"
-
-#: 
 msgid "Link Address"
 msgstr "Адреса посилання"
 
@@ -8079,20 +8075,8 @@ msgid "is disabled"
 msgstr "вимкнено"
 
 #: 
-msgid "System Information"
-msgstr "Інформація про систему"
-
-#: 
 msgid "Software Version"
 msgstr "Версія програмного забезпечення"
-
-#: 
-msgid "Valid Mail Server Settings"
-msgstr "Дійсні налаштування поштового сервера"
-
-#: 
-msgid "Database"
-msgstr "База даних"
 
 #: 
 msgid "Database Version"
@@ -8134,6 +8118,7 @@ msgstr "Включіть контактні та демографічні дан
 msgid "Include family custom properties in global search."
 msgstr "Включіть власні властивості родини у глобальний пошук."
 
+#. Context: countries
 #: 
 msgid "Latvia (Latvija)"
 msgstr "Латвія (Латвія)"
@@ -8158,10 +8143,6 @@ msgstr "Записи"
 #, fuzzy
 msgid "Emptied into Event"
 msgstr "Порожній в ідентифікаторі події"
-
-#: 
-msgid "integrityCheck.json file missing"
-msgstr "Файл integritetCheck.json відсутній"
 
 #: 
 msgid "Passed"
@@ -8192,8 +8173,8 @@ msgid "Warning: Signature mismatch"
 msgstr "Попередження: Невідповідність підпису"
 
 #: 
-msgid "Some UnityConnect CRM system files may have been modified since the last installation."
-msgstr "Деякі системні файли UnityConnect CRM, можливо, були змінені після останньої інсталяції."
+msgid "Some UnityConnectCRM system files may have been modified since the last installation."
+msgstr "Деякі системні файли ChurchCRM, можливо, були змінені після останньої інсталяції."
 
 #: 
 msgid "This upgrade will completely destroy any customizations made to the following files by reverting the files to the official version."
@@ -8208,10 +8189,6 @@ msgid "Integrity Check Details:"
 msgstr "Подробиці перевірки цілісності:"
 
 #: 
-msgid "I Understand"
-msgstr "Я розумію"
-
-#: 
 msgid "Unsupported Deposit Types Detected"
 msgstr "Виявлено непідтримувані типи депозитів"
 
@@ -8219,13 +8196,10 @@ msgstr "Виявлено непідтримувані типи депозиті�
 msgid "Support for eGive, Credit Card, and Bank Draft payments has been deprecated.  Existing non-bank reports may no longer be accessible in future versions."
 msgstr "Підтримка платежів eGive, кредитних карток та банківських векселів застаріла. Існуючі небанківські звіти можуть бути недоступними в наступних версіях."
 
+#. Context: locales
 #: 
 msgid "Estonian"
 msgstr "Естонська"
-
-#: 
-msgid "Error decoding integrity check result file"
-msgstr "Помилка декодування файлу результатів перевірки цілісності"
 
 #: 
 msgid "Error decoding signature definition file"
@@ -8238,10 +8212,6 @@ msgstr "Створити резервну копію"
 #: 
 msgid "Remote Backup Endpoint.  If WebDAV, this must be url encoded. "
 msgstr "Кінцева точка віддаленого резервного копіювання. Якщо WebDAV, це має бути закодовано за адресою url. "
-
-#: 
-msgid "Include initials image files, remote image files (gravatar), and thumbnails in backup.  These files are generally able to be reproduced after a restore and add very little value to the backup archive at a large expense of execution time and storage"
-msgstr "Включіть у резервну копію файли зображень ініціалів, віддалені файли зображень (gravatar) та ескізи. Ці файли, як правило, можуть бути відтворені після відновлення та додають дуже мало значення архіву резервних копій за великих витрат часу виконання та зберігання"
 
 #: 
 msgid "Password (if any)"
@@ -8306,7 +8276,8 @@ msgstr "Недоступна інформація про особу, успад�
 "відображається, ЯКЩО відповідна інформація НЕ була введена для цієї особи. "
 
 #: 
-msgid "Press CTRL + C to copy all group members\\' phone numbers"
+#, fuzzy
+msgid "Press CTRL + C to copy all group members' phone numbers"
 msgstr "Натисніть CTRL + C, щоб скопіювати всі телефонні номери членів групи"
 
 #: 
@@ -8352,10 +8323,6 @@ msgstr "Будь ласка, перевірте журнали для отрим
 #: 
 msgid "Verification URL"
 msgstr "URL-адреса для підтвердження"
-
-#: 
-msgid "Reset System"
-msgstr "Скинути систему"
 
 #: 
 msgid "Unexpected Person Id"
@@ -8406,10 +8373,6 @@ msgid "Remove Results from Cart"
 msgstr "Видаліть результати з кошика"
 
 #: 
-msgid "Warning: Pre-Upgrade Tasks Detected"
-msgstr "Попередження: Виявлено завдання перед оновленням"
-
-#: 
 #, fuzzy
 msgid "Some conditions have been identified which may prevent a successful upgrade"
 msgstr "Виявлено деякі умови, які можуть перешкодити успішному оновленню"
@@ -8423,18 +8386,6 @@ msgid "Database Reset Functions"
 msgstr "Функції скидання бази даних"
 
 #: 
-msgid "Reset Members"
-msgstr "Скинути учасників"
-
-#: 
-msgid "This will remove all the member data, people, and families and can't be undone."
-msgstr "Це призведе до видалення всіх даних учасників, людей та сімей, і їх не можна скасувати."
-
-#: 
-msgid "Reset Families/People"
-msgstr "Скинути налаштування сімей / людей"
-
-#: 
 msgid "Reset Database"
 msgstr "Скинути базу даних"
 
@@ -8442,14 +8393,7 @@ msgstr "Скинути базу даних"
 msgid "This will reset the system data and will restart the system as a new install."
 msgstr "Це скине дані системи та перезапустить систему як нову установку."
 
-#: 
-msgid "Clear Filter"
-msgstr "Очистити фільтр"
-
-#: 
-msgid "Add Person"
-msgstr "Додати особу"
-
+#. Context: locales
 #: 
 msgid "Portuguese - Portugal"
 msgstr "Португальська - Португалія"
@@ -8467,8 +8411,8 @@ msgid "Requires users to self-enroll in 2 factor authentication"
 msgstr "Потрібно, щоб користувачі самостійно реєструвались у двофакторній аутентифікації"
 
 #: 
-msgid "UnityConnect CRM"
-msgstr "UnityConnect CRM"
+msgid "ChurchCRM"
+msgstr "ChurchCRM"
 
 #: 
 msgid "Specify the application name to be displayed in authenticator app"
@@ -8543,8 +8487,8 @@ msgid "Unable To Begin Two Factor Authentication Enrollment"
 msgstr "Неможливо розпочати реєстрацію аутентифікації за двома факторами"
 
 #: 
-msgid "Two factor authentication requires UnityConnect CRM administrators to configure a few parameters"
-msgstr "Двофакторна автентифікація вимагає від адміністраторів UnityConnect CRM налаштування кількох параметрів"
+msgid "Two factor authentication requires UnityConnectCRM administrators to configure a few parameters"
+msgstr "Двофакторна автентифікація вимагає від адміністраторів UnityConnectCRM налаштування кількох параметрів"
 
 #: 
 msgid "System configuration "
@@ -8588,10 +8532,6 @@ msgid "Password reset not available.  Please contact your system administrator"
 msgstr "Скидання пароля недоступне. Зверніться до свого системного адміністратора"
 
 #: 
-msgid "Authentication Issue"
-msgstr "Випуск автентифікації"
-
-#: 
 msgid "Enter new user password. Administratively set passwords are not subject to length or complexity requirements"
 msgstr "Введіть новий пароль користувача. Адміністративно встановлені паролі не підпадають під вимоги довжини та складності"
 
@@ -8619,6 +8559,7 @@ msgstr "завантаження"
 msgid "List not found"
 msgstr "Список не знайдено"
 
+#. typo
 #: 
 #, fuzzy
 msgid "List not in the list"
@@ -8633,24 +8574,12 @@ msgid "Invalid List id"
 msgstr "Недійсний ідентифікатор списку"
 
 #: 
-msgid "Audience not in the UnityConnect CRM"
-msgstr "Аудиторія не в UnityConnect CRM"
-
-#: 
-msgid "UnityConnect CRM Installation Information"
-msgstr "Інформація про встановлення UnityConnect CRM"
-
-#: 
-msgid "Database Server Version"
-msgstr "Версія сервера баз даних"
+msgid "Audience not in the UnityConnectCRM"
+msgstr "Аудиторія не в UnityConnectCRM"
 
 #: 
 msgid "Web Server"
 msgstr "Веб-сервер"
-
-#: 
-msgid "Email Information"
-msgstr "Інформація про електронну пошту"
 
 #: 
 msgid "List maintenance"
@@ -8664,6 +8593,7 @@ msgstr "Люди, яких немає в списку"
 msgid "Audience not in the CRM"
 msgstr "Аудиторія не в CRM"
 
+#. Context: locales
 #: 
 msgid "Hebrew"
 msgstr "Іврит"
@@ -8797,16 +8727,16 @@ msgid "Event Description"
 msgstr "Опис події"
 
 #: 
-msgid "Enrolling your UnityConnect CRM user account in Two Factor Authention provides an additional layer of defense against bad actors trying to access your account."
-msgstr "Зареєструвавши свій обліковий запис користувача UnityConnect CRM у двофакторній автентифікації, ви отримуєте додатковий рівень захисту від поганих акторів, які намагаються отримати доступ до вашого облікового запису."
+msgid "Enrolling your UnityConnectCRM user account in Two Factor Authention provides an additional layer of defense against bad actors trying to access your account."
+msgstr "Зареєструвавши свій обліковий запис користувача UnityConnectCRM у двофакторній автентифікації, ви отримуєте додатковий рівень захисту від поганих акторів, які намагаються отримати доступ до вашого облікового запису."
 
 #: 
-msgid "UnityConnect CRM Two factor supports any TOTP authenticator app, so you're free to choose between Microsoft Authenticator, Google Authenticator, Authy, LastPass, and others"
-msgstr "UnityConnect CRM Two factor підтримує будь-яку програму автентифікації TOTP, тому ви можете вільно вибирати між Microsoft Authenticator, Google Authenticator, Authy, LastPass та іншими"
+msgid "ChurchCRM Two factor supports any TOTP authenticator app, so you're free to choose between Microsoft Authenticator, Google Authenticator, Authy, LastPass, and others"
+msgstr "ChurchCRM Two factor підтримує будь-яку програму автентифікації TOTP, тому ви можете вільно вибирати між Microsoft Authenticator, Google Authenticator, Authy, LastPass та іншими"
 
 #: 
-msgid "When you sign in to UnityConnect CRM, you'll still enter your username and password like normal"
-msgstr "Коли ви входите в UnityConnect CRM, ви все одно введете своє ім’я користувача та пароль, як зазвичай"
+msgid "When you sign in to ChurchCRM, you'll still enter your username and password like normal"
+msgstr "Коли ви входите в ChurchCRM, ви все одно введете своє ім’я користувача та пароль, як зазвичай"
 
 #: 
 msgid "However, you'll also need to supply a one-time code from your authenticator device to complete your login"
@@ -8817,8 +8747,8 @@ msgid "After successfully entering both your credentials, and the one-time code,
 msgstr "Після успішного введення як ваших облікових даних, так і одноразового коду, ви ввійдете в систему як зазвичай"
 
 #: 
-msgid "To prevent being locked out of your UnityConnect CRM account, please ensure you're ready to complete two factor enrollment before clicking begin"
-msgstr "Щоб запобігти блокуванню вашого облікового запису UnityConnect CRM, будь ласка, переконайтесь, що ви готові пройти реєстрацію за двома факторами, перш ніж натискати «Почати»"
+msgid "To prevent being locked out of your UnityConnectCRM account, please ensure you're ready to complete two factor enrollment before clicking begin"
+msgstr "Щоб запобігти блокуванню вашого облікового запису ChurchCRM, будь ласка, переконайтесь, що ви готові пройти реєстрацію за двома факторами, перш ніж натискати «Почати»"
 
 #: 
 msgid "Beginning enrollment will invalidate any previously enrolled 2 factor devices and recovery codes."
@@ -8888,6 +8818,7 @@ msgstr "Створення відвідуваності -І- звіти про �
 msgid "Help translate this project"
 msgstr "Допоможіть перекласти цей проект"
 
+#. Context: locales
 #: 
 msgid "Afrikaans"
 msgstr "Африкаанс"
@@ -9003,4 +8934,12 @@ msgstr "Недійсна дата народження: відсутні міс�
 #: 
 msgid "Adult Name (Optional)"
 msgstr "Ім'я дорослого (необов’язково)"
+
+#: 
+msgid "Please enter a group name."
+msgstr "Введіть назву групи"
+
+#: 
+msgid "Role added successfully."
+msgstr "Роль успішно додано"
 

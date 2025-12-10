@@ -25,6 +25,8 @@ CREATE TABLE `config_cfg` (
   UNIQUE KEY `cfg_name` (`cfg_name`)
 ) ENGINE=InnoDB CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
+-- `src/mysql/upgrade/6.2.0.sql` to delete the deprecated config row.
+
 --
 -- Table structure for table `deposit_dep`
 --
@@ -230,7 +232,7 @@ CREATE TABLE `event_types` (
 --
 
 INSERT INTO `event_types` (`type_id`, `type_name`, `type_defstarttime`, `type_defrecurtype`, `type_defrecurDOW`, `type_defrecurDOM`, `type_defrecurDOY`, `type_active`) VALUES
-  (1, ' Temple Service', '10:30:00', 'weekly', 'Sunday', '', '2016-01-01', 1),
+  (1, 'Temple Service', '10:30:00', 'weekly', 'Sunday', '', '2016-01-01', 1),
   (2, 'Sunday School', '09:30:00', 'weekly', 'Sunday', '', '2016-01-01', 1);
 
 -- --------------------------------------------------------

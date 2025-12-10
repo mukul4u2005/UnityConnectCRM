@@ -4,7 +4,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
-"Project-Id-Version: UnityConnect CRM\n"
+"Project-Id-Version: ChurchCRM\n"
 "Language: hi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
@@ -32,10 +32,12 @@ msgstr "कोई नहीं"
 msgid "None"
 msgstr "कोई नहीं"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "City"
 msgstr "शहर"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "State"
 msgstr "\n"
@@ -49,6 +51,7 @@ msgstr "देश"
 msgid "Phone"
 msgstr "फ़ोन"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Email"
 msgstr "ईमेल"
@@ -60,38 +63,6 @@ msgstr "क्रेडिट कार्ड"
 #: 
 msgid "Backup Database"
 msgstr "बैकअप डेटाबेस"
-
-#: 
-msgid "This tool will assist you in manually backing up the UnityConnect CRM database."
-msgstr "यह टूल UnityConnect CRM डेटाबेस का मैन्युअल रूप से बैकअप लेने में आपकी सहायता करेगा।"
-
-#: 
-msgid "You should make a manual backup at least once a week unless you already have a regular backup procedure for your systems."
-msgstr "आपको सप्ताह में कम से कम एक बार मैन्युअल बैकअप बनाना चाहिए, जब तक कि आपके पास पहले से ही आपके सिस्टम के लिए नियमित बैकअप प्रक्रिया न हो।"
-
-#: 
-msgid "After you download the backup file, you should make two copies. Put one of them in a fire-proof safe on-site and the other in a safe location off-site."
-msgstr "बैकअप फ़ाइल डाउनलोड करने के बाद, आपको दो प्रतियां बनानी चाहिए। उनमें से एक को साइट पर अग्निरोधक तिजोरी में रखें और दूसरे को साइट से बाहर किसी सुरक्षित स्थान पर रखें।"
-
-#: 
-msgid "If you are concerned about confidentiality of data stored in the UnityConnect CRM database, you should encrypt the backup data if it will be stored somewhere potentially accessible to others"
-msgstr "यदि आप चर्चसीआरएम डेटाबेस में संग्रहीत डेटा की गोपनीयता के बारे में चिंतित हैं, तो आपको बैकअप डेटा को एन्क्रिप्ट करना चाहिए यदि इसे किसी ऐसे स्थान पर संग्रहीत किया जाएगा जो संभावित रूप से दूसरों के लिए सुलभ हो।"
-
-#: 
-msgid "Select archive type"
-msgstr "संग्रह प्रकार चुनें"
-
-#: 
-msgid "Encrypt backup file with a password?"
-msgstr "बैकअप फ़ाइल को पासवर्ड से एन्क्रिप्ट करें?"
-
-#: 
-msgid "Re-type Password"
-msgstr "पासवर्ड फिर से लिखें"
-
-#: 
-msgid "Generate and Ship Backup to External Storage"
-msgstr "बैकअप जेनरेट करें और बाह्य संग्रहण में भेजें"
 
 #: 
 msgid "Batch Winner Entry"
@@ -157,6 +128,7 @@ msgstr "जन्म/वर्षगांठ तिथि"
 msgid "Age / Years Married"
 msgstr "विवाह की आयु/वर्ष"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Family Role"
 msgstr "पारिवारिक भूमिका"
@@ -201,10 +173,12 @@ msgstr "एकाधिक का चयन करने के लिए Ctrl �
 msgid "Don't Filter"
 msgstr "फ़िल्टर न करें"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Male"
 msgstr "पुरुष"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Female"
 msgstr "महिला"
@@ -273,6 +247,7 @@ msgstr "शीर्षक"
 msgid "Suffix"
 msgstr "प्रत्यय"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Gender"
 msgstr "लिंग"
@@ -281,6 +256,7 @@ msgstr "लिंग"
 msgid "Donation Envelope"
 msgstr "दान लिफ़ाफ़ा"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Home Phone"
 msgstr "घर का फोन"
@@ -333,6 +309,7 @@ msgstr "ध्यान दें: विभाजक (डैश, आदि) य
 msgid "Default country if none specified otherwise"
 msgstr "यदि कोई अन्यथा निर्दिष्ट नहीं है तो डिफ़ॉल्ट देश"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Classification"
 msgstr "वर्गीकरण"

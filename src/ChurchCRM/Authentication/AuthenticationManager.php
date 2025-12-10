@@ -13,6 +13,7 @@ use ChurchCRM\Bootstrapper;
 use ChurchCRM\dto\SystemURLs;
 use ChurchCRM\model\ChurchCRM\User;
 use ChurchCRM\Service\NotificationService;
+use ChurchCRM\Utils\ChurchCRMReleaseManager;
 use ChurchCRM\Utils\LoggerUtils;
 use ChurchCRM\Utils\RedirectUtils;
 
@@ -55,6 +56,16 @@ class AuthenticationManager
         }
     }
 
+    public static function isUserAuthenticated(): bool
+    {
+        try {
+            $user = self::getCurrentUser();
+            return $user !== null;
+        } catch (\Exception $e) {
+            return false;
+        }
+    }
+
     public static function endSession(bool $preventRedirect = false): void
     {
         $logger = LoggerUtils::getAuthLogger();
@@ -70,10 +81,8 @@ class AuthenticationManager
         try {
             self::getAuthenticationProvider()->endSession();
 
-            $_COOKIE = [];
-            $_SESSION = [];
+            session_unset();
             session_destroy();
-            Bootstrapper::initSession();
             $logger->info(
                 'Ended Local session for user',
                 $logCtx
@@ -131,6 +140,10 @@ class AuthenticationManager
             }
             $redirectLocation ??= $_SESSION['location'] ?? 'v2/dashboard';
             NotificationService::updateNotifications();
+            
+            // Check for system updates once on login for admin users
+            self::checkSystemUpdates();
+            
             $logger->debug(
                 'Authentication Successful; redirecting to: ' . $redirectLocation
             );
@@ -142,6 +155,16 @@ class AuthenticationManager
 
     public static function validateUserSessionIsActive(bool $updateLastOperationTimestamp = true): bool
     {
+        // Check if an authentication provider is set before attempting validation
+        // This prevents unnecessary logging for public API calls that don't require authentication
+        if (
+            !isset($_SESSION) ||
+            !array_key_exists('AuthenticationProvider', $_SESSION) ||
+            !$_SESSION['AuthenticationProvider'] instanceof IAuthenticationProvider
+        ) {
+            return false;
+        }
+
         try {
             $result = self::getAuthenticationProvider()
                 ->validateUserSessionIsActive($updateLastOperationTimestamp);
@@ -217,17 +240,16 @@ class AuthenticationManager
 
     public static function getForgotPasswordURL(): string
     {
-        // this assumes we're using local authentication
-        // TODO: when we implement other authentication providers (SAML/etc)
-        // this URL will need to be configurable by the system administrator
-        // since they likely will not want users attempting to reset ChurchCRM passwords
-        // but rather redirect users to some other password reset mechanism.
         return SystemURLs::getRootPath() . '/session/forgot-password/reset-request';
     }
-    public static function redirectHomeIfFalse(bool $hasAccess): void
+    public static function redirectHomeIfFalse(bool $hasAccess, string $missingRole = ''): void
     {
         if (!$hasAccess) {
-            RedirectUtils::redirect('v2/dashboard');
+            if ($missingRole !== '') {
+                RedirectUtils::securityRedirect($missingRole);
+            } else {
+                RedirectUtils::redirect('v2/dashboard');
+            }
         }
     }
 
@@ -236,5 +258,25 @@ class AuthenticationManager
         if (!AuthenticationManager::getCurrentUser()->isAdmin()) {
             RedirectUtils::securityRedirect('Admin');
         }
+    }
+
+    /**
+     * Check for system updates and store result in session
+     * Only runs for admin users on login
+     */
+    private static function checkSystemUpdates(): void
+    {
+        $currentUser = self::getCurrentUser();
+        if (!$currentUser->isAdmin()) {
+            $_SESSION['systemUpdateAvailable'] = false;
+            $_SESSION['systemUpdateVersion'] = null;
+            $_SESSION['systemLatestVersion'] = null;
+            return;
+        }
+
+        $updateInfo = ChurchCRMReleaseManager::checkSystemUpdateAvailable();
+        $_SESSION['systemUpdateAvailable'] = $updateInfo['available'];
+        $_SESSION['systemUpdateVersion'] = $updateInfo['version'];
+        $_SESSION['systemLatestVersion'] = $updateInfo['latestVersion'];
     }
 }

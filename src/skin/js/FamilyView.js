@@ -1,4 +1,4 @@
-$(function () {
+function initializeFamilyView() {
     if (!window.CRM.currentActive) {
         $("#family-deactivated").removeClass("d-none");
     }
@@ -7,21 +7,15 @@ $(function () {
         path: `family/${window.CRM.currentFamily}/nav`,
     }).then(function (data) {
         if (data?.PreFamilyId) {
-            $("#lastFamily").attr(
-                "href",
-                `${window.CRM.root}/v2/family/${data.PreFamilyId}`,
-            );
+            $("#lastFamily").attr("href", `${window.CRM.root}/v2/family/${data.PreFamilyId}`);
         } else {
-            $("#lastFamily").addClass("hidden");
+            $("#lastFamily").addClass("disabled").attr("aria-disabled", "true").removeAttr("href");
         }
 
         if (data?.NextFamilyId) {
-            $("#nextFamily").attr(
-                "href",
-                `${window.CRM.root}/v2/family/${data.NextFamilyId}`,
-            );
+            $("#nextFamily").attr("href", `${window.CRM.root}/v2/family/${data.NextFamilyId}`);
         } else {
-            $("#nextFamily").addClass("hidden");
+            $("#nextFamily").addClass("disabled").attr("aria-disabled", "true").removeAttr("href");
         }
     });
 
@@ -46,20 +40,14 @@ $(function () {
             } else {
                 $("#family-property-table").show();
                 $.each(data, function (key, prop) {
-                    let {
-                        id: propId,
-                        name: propName,
-                        value: propVal,
-                        allowEdit,
-                        allowDelete,
-                    } = prop;
+                    let { id: propId, name: propName, value: propVal, allowEdit, allowDelete } = prop;
                     selectedFamilyProperties.push(propId);
 
                     let editIcon = allowEdit
-                        ? `<a href="${window.CRM.root}/PropertyAssign.php?FamilyID=${window.CRM.currentFamily}&PropertyID=${propId}"><button type="button" class="btn btn-xs btn-primary"><i class="fa fa-pen"></i></button></a>`
+                        ? `<a href="${window.CRM.root}/PropertyAssign.php?FamilyID=${window.CRM.currentFamily}&PropertyID=${propId}"><button type="button" class="btn btn-xs btn-primary"><i class="fa-solid fa-pen"></i></button></a>`
                         : "";
                     let deleteIcon = allowDelete
-                        ? `<div class="btn btn-xs btn-danger delete-property" data-property-id="${propId}" data-property-name="${propName}"><i class="fa fa-trash"></i></div>`
+                        ? `<div class="btn btn-xs btn-danger delete-property" data-property-id="${propId}" data-property-name="${propName}"><i class="fa-solid fa-trash"></i></div>`
                         : "";
 
                     $("#family-property-table").append(
@@ -74,10 +62,7 @@ $(function () {
 
     $("#add-family-property").on("click", function () {
         let inputOptions = masterFamilyProperties
-            .filter(
-                (masterProp) =>
-                    !selectedFamilyProperties.includes(masterProp.ProId),
-            )
+            .filter((masterProp) => !selectedFamilyProperties.includes(masterProp.ProId))
             .map(({ ProName: text, ProId: value }) => ({ text, value }));
 
         bootbox.prompt({
@@ -132,13 +117,13 @@ $(function () {
                 data: "GroupKey",
                 render: function (data, type, row) {
                     return (
-                        '<a class="btn btn-default" href="' +
+                        '<a class="btn btn-sm btn-primary" href="' +
                         window.CRM.root +
                         "/PledgeEditor.php?GroupKey=" +
                         row.GroupKey +
                         "&amp;linkBack=v2/family/" +
                         window.CRM.currentFamily +
-                        '"><i class="fas fa-pen bg-info"></i></a>'
+                        '"><i class="fa-solid fa-pen"></i></a>'
                     );
                 },
                 searchable: false,
@@ -150,13 +135,13 @@ $(function () {
                 data: "GroupKey",
                 render: function (data, type, row) {
                     return (
-                        '<a class="btn btn-default" href="' +
+                        '<a class="btn btn-sm btn-danger" href="' +
                         window.CRM.root +
                         "/PledgeDelete.php?GroupKey=" +
                         row.GroupKey +
                         "&amp;linkBack=v2/family/" +
                         window.CRM.currentFamily +
-                        '"><i class="fa fa-trash bg-red"></i></a>'
+                        '"><i class="fa-solid fa-trash-can"></i></a>'
                     );
                 },
                 searchable: false,
@@ -248,15 +233,8 @@ $(function () {
     });
 
     $("#verifyDownloadPDF").on("click", function () {
-        window.open(
-            `${window.CRM.root}/Reports/ConfirmReport.php?familyId=${window.CRM.currentFamily}`,
-            "_blank",
-        );
+        window.open(`${window.CRM.root}/Reports/ConfirmReport.php?familyId=${window.CRM.currentFamily}`, "_blank");
         $("#confirm-verify").modal("hide");
-    });
-
-    $("#AddFamilyToCart").on("click", function () {
-        window.CRM.cart.addFamily($(this).data("familyid"));
     });
 
     // Photos
@@ -283,9 +261,7 @@ $(function () {
     });
 
     $("#activateDeactivate").on("click", function () {
-        let popupTitle = window.CRM.currentActive
-            ? i18next.t("Confirm Deactivation")
-            : i18next.t("Confirm Activation");
+        let popupTitle = window.CRM.currentActive ? i18next.t("Confirm Deactivation") : i18next.t("Confirm Activation");
         let popupMessage = window.CRM.currentActive
             ? `${i18next.t("Please confirm deactivation of family")}: ${window.CRM.currentFamilyName}`
             : `${i18next.t("Please confirm activation of family")}: ${window.CRM.currentFamilyName}`;
@@ -309,17 +285,11 @@ $(function () {
     });
 
     $("#ShowPledges").on("change", function () {
-        updateUserSetting(
-            "finance.show.pledges",
-            $(this).prop("checked") ? "true" : "false",
-        );
+        updateUserSetting("finance.show.pledges", $(this).prop("checked") ? "true" : "false");
     });
 
     $("#ShowPayments").on("change", function () {
-        updateUserSetting(
-            "finance.show.payments",
-            $(this).prop("checked") ? "true" : "false",
-        );
+        updateUserSetting("finance.show.payments", $(this).prop("checked") ? "true" : "false");
     });
 
     $("#ShowSinceDate").on("change", function () {
@@ -364,4 +334,9 @@ $(function () {
             }
         });
     }
+}
+
+// Wait for locales to load before initializing
+$(document).ready(function () {
+    window.CRM.onLocalesReady(initializeFamilyView);
 });

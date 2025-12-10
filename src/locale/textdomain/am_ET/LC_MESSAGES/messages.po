@@ -4,7 +4,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
-"Project-Id-Version: UnityConnect CRM\n"
+"Project-Id-Version: ChurchCRM\n"
 "Language: am\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
@@ -32,10 +32,12 @@ msgstr "ያልተመደበ"
 msgid "None"
 msgstr "ምንም"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "City"
 msgstr "ከተማ"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "State"
 msgstr "ክፍለ ሀገር"
@@ -48,6 +50,7 @@ msgstr "ሀገር"
 msgid "Phone"
 msgstr "ስልክ"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Email"
 msgstr "ኢሜይል"
@@ -59,40 +62,6 @@ msgstr "ክሬዲት ካርድ"
 #: 
 msgid "Backup Database"
 msgstr "የመረጃ ቋቱን አስቀምጥ"
-
-#: 
-msgid "This tool will assist you in manually backing up the UnityConnect CRM database."
-msgstr "ይሄ መሳሪያ የUnityConnect CRM  መረጃ ቋት ለማስቀመጥ ይረዳል"
-
-#: 
-#, fuzzy
-msgid "You should make a manual backup at least once a week unless you already have a regular backup procedure for your systems."
-msgstr "ሳምንታዊ የምትኬ መንገድ እስከሌለ ድረስ ቢያንስ በሳምንት አንዴ የመረጃ ቋቱን ምትኬ ማስቀመጥ ያስፈልጋል።"
-
-#: 
-#, fuzzy
-msgid "After you download the backup file, you should make two copies. Put one of them in a fire-proof safe on-site and the other in a safe location off-site."
-msgstr "የምትኬ ሰነዱን ካወረዱ በኋላ በሁለት ቅጂዎች መዘጋጀት አለበት። አንደኛውን እሳት በማይደርስበት ድህረ ገፅ ላይ ይቀመጥ፥ ሁለተኛውን ምትኬ በሌላ ስፍራ ያስቀምጡት።"
-
-#: 
-msgid "If you are concerned about confidentiality of data stored in the UnityConnect CRM database, you should encrypt the backup data if it will be stored somewhere potentially accessible to others"
-msgstr "በዚህ ሶፍትዌር የሚቀመጠው መረጃ ደህንነት ካሳሰብዎት፤ አባክዎ ሰዎች ሊያገኙት በሚችሉት ቦታ የተቀመጠን የውሂብ ጎታ አመስጥረው ያስቀምጡ።"
-
-#: 
-msgid "Select archive type"
-msgstr "የማህደሩን አይነት ይምረጡ"
-
-#: 
-msgid "Encrypt backup file with a password?"
-msgstr "የምትኬውን ሰነድ በይለፍ ቃል ያመስጥሩት?"
-
-#: 
-msgid "Re-type Password"
-msgstr "የይለፍቃሉን እንደገና ይፃፉ"
-
-#: 
-msgid "Generate and Ship Backup to External Storage"
-msgstr "ለውጫዊ የመረጃ ማስቀመጫ ምትኬ አዘጋጅ"
 
 #: 
 msgid "Batch Winner Entry"
@@ -158,6 +127,7 @@ msgstr "ልደት / እዩበልዩ"
 msgid "Age / Years Married"
 msgstr "እድሜ / የጋብቻ እድሜ"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Family Role"
 msgstr "የቤተሰብ አባልነት"
@@ -202,10 +172,12 @@ msgstr "ብዙ ለመምረጥ Ctlን ይጠቀሙ"
 msgid "Don't Filter"
 msgstr "አይጣራ"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Male"
 msgstr "ወንድ"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Female"
 msgstr "ሴት"
@@ -274,6 +246,7 @@ msgstr "ርዕስ"
 msgid "Suffix"
 msgstr "ቅጥያ"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Gender"
 msgstr "ጾታ"
@@ -282,6 +255,7 @@ msgstr "ጾታ"
 msgid "Donation Envelope"
 msgstr "የልገሳ ኤንቨሎፕ"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Home Phone"
 msgstr "የቤት ስልክ"
@@ -334,6 +308,7 @@ msgstr "ማሳሰቢያ፡ መለያዎች (ሰረዞች፣ ወዘተ) ወይም
 msgid "Default country if none specified otherwise"
 msgstr "ሌላ ካልተገለጸ ነባሪ አገር"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Classification"
 msgstr "ምደባ"
@@ -363,10 +338,6 @@ msgid "Add Cart to Event"
 msgstr "ጋሪን ወደ ክስተት ያክሉ"
 
 #: 
-msgid "Select the event to which you would like to add your cart"
-msgstr "ጋሪዎን ለመጨመር የሚፈልጉትን ክስተት ይምረጡ"
-
-#: 
 msgid "OR"
 msgstr "ወይም"
 
@@ -386,6 +357,7 @@ msgstr "ምንም የቤተሰብ ስም አልገባም!"
 msgid "Add Cart to Family"
 msgstr "ጋሪ ወደ ቤተሰብ ያክሉ"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Name"
 msgstr "ስም"
@@ -471,10 +443,6 @@ msgid "Empty Cart to Family"
 msgstr "ባዶ ጋሪ ለቤተሰብ"
 
 #: 
-msgid "Empty Cart to Event"
-msgstr "ባዶ ጋሪ ወደ ክስተት"
-
-#: 
 msgid "Map Cart"
 msgstr "የካርታ ጋሪ"
 
@@ -531,20 +499,8 @@ msgid "Event Checkin"
 msgstr "የክስተት ተመዝግቦ መግባት"
 
 #: 
-msgid "Select the event to which you would like to check people in for"
-msgstr "ሰዎችን ማረጋገጥ የምትፈልገውን ክስተት ምረጥ"
-
-#: 
 msgid "Select Event"
 msgstr "ክስተት ይምረጡ"
-
-#: 
-msgid "Add Visitor"
-msgstr "ጎብኝን ጨምር"
-
-#: 
-msgid "CheckIn"
-msgstr "ያረጋግጡ"
 
 #: 
 msgid "CheckOut"
@@ -570,10 +526,7 @@ msgstr "የተረጋገጠ በ"
 msgid "Action"
 msgstr "ድርጊት"
 
-#: 
-msgid "No Attendees Assigned to Event"
-msgstr "ለክስተቱ የተመደቡ ተሳታፊዎች የሉም"
-
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Member"
 msgstr "አባል"
@@ -603,29 +556,14 @@ msgid "Deposit Slip Number: "
 msgstr "የተቀማጭ ወረቀት ቁጥር፡- "
 
 #: 
-msgid "Deposit Details: "
+#, fuzzy
+msgid "Deposit Details"
 msgstr "የተቀማጭ ዝርዝሮች፡- "
 
 #: 
-msgid "Close deposit slip (remember to press Save)"
-msgstr "የተቀማጭ ወረቀት ዝጋ (አስቀምጥን መጫንዎን ያስታውሱ)"
-
-#: 
-msgid "Deposit Slip Report"
-msgstr "የተቀማጭ መንሸራተት ሪፖርት"
-
-#: 
 #, fuzzy
-msgid "Important note: failed transactions will be deleted permanently when the deposit slip is closed."
+msgid "Important: Failed transactions will be deleted permanently when the deposit slip is closed."
 msgstr "ጠቃሚ ማስታወሻ፡ የተቀማጭ ወረቀቱ ሲዘጋ ያልተሳኩ ግብይቶች እስከመጨረሻው ይሰረዛሉ።"
-
-#: 
-msgid "Deposit Summary: "
-msgstr "የተቀማጭ ገንዘብ ማጠቃለያ፡- "
-
-#: 
-msgid "Payments on this deposit slip:"
-msgstr "በዚህ የተቀማጭ ወረቀት ላይ ክፍያዎች፡-"
 
 #: 
 msgid "Import eGive"
@@ -636,7 +574,8 @@ msgid "Add Payment"
 msgstr "ክፍያ ጨምር"
 
 #: 
-msgid "Load Authorized Transactions"
+#, fuzzy
+msgid "Load Authorized"
 msgstr "የተፈቀዱ ግብይቶችን ጫን"
 
 #: 
@@ -736,7 +675,7 @@ msgid "Use Title Page"
 msgstr "የርዕስ ገጽን ተጠቀም"
 
 #: 
-msgid "Temple/TrustName"
+msgid "Temple Name"
 msgstr "የቤተክርስቲያን ስም"
 
 #: 
@@ -828,7 +767,7 @@ msgid "Add New Fund"
 msgstr "አዲስ ፈንድ አክል"
 
 #: 
-msgid " Temple Event Editor"
+msgid "Temple Event Editor"
 msgstr "የቤተ ክርስቲያን ዝግጅት አዘጋጅ"
 
 #: 
@@ -871,6 +810,7 @@ msgstr "ቤተሰብ"
 msgid "Type"
 msgstr "ዓይነት"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Fiscal Year"
 msgstr "የበጀት ዓመት"
@@ -887,6 +827,7 @@ msgstr "ፈንድ"
 msgid "Bank"
 msgstr "ባንክ"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Month"
 msgstr "ወር"
@@ -900,44 +841,8 @@ msgid "Edit"
 msgstr "አርትዕ"
 
 #: 
-msgid "Event Attendees"
-msgstr "የክስተት ተሳታፊዎች"
-
-#: 
-msgid "Event Nonattendees"
-msgstr "የክስተት ተሳታፊ ያልሆኑ"
-
-#: 
-msgid "Event Guests"
-msgstr "የክስተት እንግዶች"
-
-#: 
-msgid "There "
-msgstr "እዚያ "
-
-#: 
 msgid "Event Title"
 msgstr "የክስተት ርዕስ"
-
-#: 
-msgid "Event Date"
-msgstr "የክስተት ቀን"
-
-#: 
-msgid "Attending Members"
-msgstr "ተሳታፊ አባላት"
-
-#: 
-msgid "Non-Attending Members"
-msgstr "የማይሳተፉ አባላት"
-
-#: 
-msgid "Guests"
-msgstr "እንግዶች"
-
-#: 
-msgid "There are no events in this category"
-msgstr "በዚህ ምድብ ውስጥ ምንም ክስተቶች የሉም"
 
 #: 
 msgid "Create Event"
@@ -948,20 +853,8 @@ msgid "Create a new Event"
 msgstr "አዲስ ክስተት ይፍጠሩ"
 
 #: 
-msgid "Editing Event ID: "
-msgstr "የክስተት መታወቂያ ማረም፡ "
-
-#: 
 msgid " errors. Please see below"
 msgstr " ስህተቶች. እባኮትን ከታች ይመልከቱ"
-
-#: 
-msgid "Items with a "
-msgstr "እቃዎች ከ ሀ "
-
-#: 
-msgid " are required"
-msgstr " ያስፈልጋሉ"
 
 #: 
 msgid "Select your event type"
@@ -972,20 +865,8 @@ msgid "You must pick an event type."
 msgstr "የክስተት አይነት መምረጥ አለብህ።"
 
 #: 
-msgid "Event Desc"
-msgstr "የክስተት Desc"
-
-#: 
 msgid "No Attendance counts recorded"
 msgstr "ምንም የተገኝነት ብዛት ተመዝግቧል"
-
-#: 
-msgid "Attendance Notes: "
-msgstr "የመገኘት ማስታወሻዎች፡- "
-
-#: 
-msgid "Event Sermon"
-msgstr "የክስተት ስብከት"
 
 #: 
 msgid "Event Status"
@@ -994,10 +875,6 @@ msgstr "የክስተት ሁኔታ"
 #: 
 msgid "Return to Events"
 msgstr "ወደ ዝግጅቶች ተመለስ"
-
-#: 
-msgid "EVENT TYPE NAME"
-msgstr "የክስተት አይነት ስም"
 
 #: 
 msgid "Sundays"
@@ -1026,30 +903,6 @@ msgstr "አርብ"
 #: 
 msgid "Saturdays"
 msgstr "ቅዳሜ"
-
-#: 
-msgid "DEFAULT START TIME"
-msgstr "ነባሪ መጀመሪያ ሰዓት"
-
-#: 
-msgid "ATTENDANCE COUNTS"
-msgstr "የመገኘት ብዛት"
-
-#: 
-msgid "Optional"
-msgstr "አማራጭ"
-
-#: 
-msgid "Enter a list of the attendance counts you want to include with this event."
-msgstr "ከዚህ ክስተት ጋር ማካተት የሚፈልጉትን የመገኘት ብዛት ዝርዝር ያስገቡ።"
-
-#: 
-msgid "Separate each count_name with a comma. e.g. Members, Visitors, Campus, Children"
-msgstr "እያንዳንዱን የቁጥር_ስም በነጠላ ሰረዝ ለይ። ለምሳሌ. አባላት፣ ጎብኝዎች፣ ካምፓስ፣ ልጆች"
-
-#: 
-msgid "Every event type includes a Total count, you do not need to include it."
-msgstr "እያንዳንዱ የክስተት አይነት ጠቅላላ ቆጠራን ያካትታል፣ እሱን ማካተት አያስፈልግዎትም።"
 
 #: 
 msgid "Add Event Type"
@@ -1240,10 +1093,6 @@ msgid "Family List"
 msgstr "የቤተሰብ ዝርዝር"
 
 #: 
-msgid "Add Family"
-msgstr "ቤተሰብ ጨምር"
-
-#: 
 msgid "Created"
 msgstr "ተፈጥሯል"
 
@@ -1268,10 +1117,6 @@ msgid "Next Family"
 msgstr "ቀጣይ ቤተሰብ"
 
 #: 
-msgid "Delete this Family"
-msgstr "ይህን ቤተሰብ ሰርዝ"
-
-#: 
 msgid "Upload Photo"
 msgstr "ፎቶ ጫን"
 
@@ -1282,10 +1127,6 @@ msgstr "ፎቶ ሰርዝ"
 #: 
 msgid "Add a Note"
 msgstr "ማስታወሻ ጨምር"
-
-#: 
-msgid "Add All Family Members to Cart"
-msgstr "ሁሉንም የቤተሰብ አባላት ወደ ጋሪው ይጨምሩ"
 
 #: 
 msgid "Timeline"
@@ -1394,10 +1235,6 @@ msgstr "የቤተሰቡን መረጃ ቅጂ ወደሚከተለው ኢሜይሎ�
 #: 
 msgid "Financial Reports"
 msgstr "የፋይናንስ ሪፖርቶች"
-
-#: 
-msgid "No records were returned from the previous report."
-msgstr "ካለፈው ሪፖርት ምንም መዝገቦች አልተመለሱም።"
 
 #: 
 msgid "Report Type:"
@@ -1549,7 +1386,7 @@ msgid "Graphic"
 msgstr "ግራፊክ"
 
 #: 
-msgid "Temple/TrustAddress"
+msgid "Temple Address"
 msgstr "የቤተ ክርስቲያን አድራሻ"
 
 #: 
@@ -1637,20 +1474,9 @@ msgid "Date End"
 msgstr "የመጨረሻ ቀን"
 
 #: 
-msgid "Clear Filters"
+#, fuzzy
+msgid "Clear Filter"
 msgstr "ማጣሪያዎችን አጽዳ"
-
-#: 
-msgid "Previous Page"
-msgstr "የቀድሞ ገጽ"
-
-#: 
-msgid "Next Page"
-msgstr "ቀጣይ ገጽ"
-
-#: 
-msgid "Display:"
-msgstr "ማሳያ፡-"
 
 #: 
 msgid "Number"
@@ -1771,10 +1597,6 @@ msgstr "በጋሪ ያቋርጡ"
 #: 
 msgid "Remove from Cart"
 msgstr "ከጋሪ አስወግድ"
-
-#: 
-msgid "Text for Event ID: "
-msgstr "የክስተት መታወቂያ ጽሑፍ፡- "
 
 #: 
 msgid "Group Editor"
@@ -1945,10 +1767,6 @@ msgid "Group View"
 msgstr "የቡድን እይታ"
 
 #: 
-msgid "Group Functions"
-msgstr "የቡድን ተግባራት"
-
-#: 
 msgid "Edit this Group"
 msgstr "ይህን ቡድን አርትዕ ያድርጉ"
 
@@ -2009,8 +1827,9 @@ msgid "Assigned Properties"
 msgstr "የተመደቡ ንብረቶች"
 
 #: 
-msgid "Group Members:"
-msgstr "የቡድን አባላት፡-"
+#, fuzzy
+msgid "Group Members"
+msgstr "የቡድን አባላት"
 
 #: 
 msgid "Remove Selected Members from group"
@@ -2045,28 +1864,12 @@ msgid "Confirm data labels"
 msgstr "የውሂብ መለያዎችን ያረጋግጡ"
 
 #: 
-msgid "Listing Events of Type = "
-msgstr "የ. ዓይነት ክስተቶች ዝርዝር "
-
-#: 
 msgid "Listing All Temple Events"
 msgstr "ሁሉንም የቤተ ክርስቲያን ክስተቶች መዘርዘር"
 
 #: 
-msgid "Select Event Types To Display"
-msgstr "ለማሳየት የዝግጅት ዓይነቶችን ይምረጡ"
-
-#: 
-msgid "Display Events in Year"
-msgstr "በዓመት ውስጥ ያሉ ዝግጅቶችን አሳይ"
-
-#: 
 msgid "Start Date/Time"
 msgstr "የመጀመሪያ ቀን/ሰዓት"
-
-#: 
-msgid "No Attendance Recorded"
-msgstr "ምንም ተሳትፎ አልተመዘገበም።"
 
 #: 
 msgid "Attendees"
@@ -2129,7 +1932,7 @@ msgid "Assign starting at #"
 msgstr "ከ# ጀምሮ መድብ"
 
 #: 
-msgid "Unable to display map due to missing Temple/TrustLatitude or Longitude. Please update the temple Address in the settings menu."
+msgid "Unable to display map due to missing Temple Latitude or Longitude. Please update the temple Address in the settings menu."
 msgstr "በቤተክርስትያን ኬክሮስ ወይም ኬንትሮስ አለመገኘት ምክንያት ካርታ ማሳየት አልተቻለም። እባክዎ በቅንብሮች ምናሌ ውስጥ የቤተክርስቲያኑን አድራሻ ያዘምኑ።"
 
 #: 
@@ -2712,6 +2515,7 @@ msgstr "የንብረት ዝርዝር"
 msgid "Add a New"
 msgstr "አዲስ ጨምር"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Property"
 msgstr "ንብረት"
@@ -2756,6 +2560,7 @@ msgstr "የንብረት አይነት ዝርዝር"
 msgid "Add a New Property Type"
 msgstr "አዲስ የንብረት አይነት ጨምር"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Class"
 msgstr "ክፍል"
@@ -2787,10 +2592,6 @@ msgstr "አይ፣ ይህን ምደባ አቆይ"
 #: 
 msgid "Query Listing"
 msgstr "የጥያቄ ዝርዝር"
-
-#: 
-msgid "Run a Free-Text Query"
-msgstr "የነጻ ጽሑፍ መጠይቅ አስኪድ"
 
 #: 
 msgid "Free-Text Query"
@@ -2932,10 +2733,6 @@ msgstr "የቤተሰብ መዝገብ ብቻ ሰርዝ"
 #: 
 msgid "Delete Family Record AND Family Members"
 msgstr "የቤተሰብ መዝገብ እና የቤተሰብ አባላት ሰርዝ "
-
-#: 
-msgid "Filter and Cart"
-msgstr "ወንፊት እና ጋሪ"
 
 #: 
 msgid "Listing"
@@ -3275,8 +3072,8 @@ msgid "Custom Drop-Down List"
 msgstr "ብጁ ተቆልቋይ ዝርዝር"
 
 #: 
-msgid "Thank you for registering your UnityConnect CRM installation."
-msgstr "የUnityConnect CRM ጭነትዎን ስላስመዘገቡ እናመሰግናለን"
+msgid "Thank you for registering your UnityConnectCRM installation."
+msgstr "የChurchCRM ጭነትዎን ስላስመዘገቡ እናመሰግናለን"
 
 #: 
 msgid "PDFs successfully emailed "
@@ -3325,14 +3122,6 @@ msgstr "ወደ መዝገብዎ የተጨመረው ንጥል(ቶች)"
 #: 
 msgid "Select Fiscal Year"
 msgstr "የበጀት ዓመት ይምረጡ"
-
-#: 
-msgid "pm"
-msgstr "ከሰዓት"
-
-#: 
-msgid "am"
-msgstr "ጠዋት"
 
 #: 
 msgid "Invalid Editor ID!"
@@ -3507,7 +3296,7 @@ msgid "Member/Friend"
 msgstr "አባል/ጓደኛ"
 
 #: 
-msgid "This option requires at least version 3.22 of MySQL!  Hit browser back button to return to UnityConnect CRM."
+msgid "This option requires at least version 3.22 of MySQL!  Hit browser back button to return to ChurchCRM."
 msgstr "ይህ አማራጭ ቢያንስ የ MySQL ስሪት 3.22 ያስፈልገዋል! ወደ ቤተክርስትያን CRM ለመመለስ የአሳሽ ተመለስ ቁልፍን ተጫን።"
 
 #: 
@@ -3635,20 +3424,12 @@ msgid "Sunday School Class Functions"
 msgstr "የሰንበት ትምህርት ክፍል ተግባራት"
 
 #: 
-msgid "Toggle Dropdown"
-msgstr "መውረድን ቀያይር"
-
-#: 
 msgid "Teachers"
 msgstr "አስተማሪዎች"
 
 #: 
 msgid "Send Message"
 msgstr "መልዕክት ላክ"
-
-#: 
-msgid "View Profile"
-msgstr "መገለጫ ይመልከቱ"
 
 #: 
 msgid "Quick Status"
@@ -3883,10 +3664,6 @@ msgid "Details:"
 msgstr "ዝርዝሮች:"
 
 #: 
-msgid "File Missing"
-msgstr "ፋይል ጠፍቷል"
-
-#: 
 msgid "This will overwrite the family envelope numbers in the database with those selected on this page.  Continue?"
 msgstr "ይህ በመረጃ ቋቱ ውስጥ ያሉትን የቤተሰብ ኤንቨሎፕ ቁጥሮች በዚህ ገጽ ላይ ከተመረጡት ጋር ይተካል. ይቀጥል?"
 
@@ -3915,8 +3692,8 @@ msgid "CAUTION: This will completely erase the existing database, and replace it
 msgstr "ይጠንቀቁ: ይህ አሁን ያለውን ዳታ ቤዝ ሙሉ በሙሉ ያጠፋል እና በመጠባበቂያው ይተካዋል"
 
 #: 
-msgid "If you upload a backup from ChurchInfo, or a previous version of UnityConnect CRM, it will be automatically upgraded to the current database schema"
-msgstr "ምትኬን ከChurchInfo ወይም የቀድሞ የUnityConnect CRM ስሪት ከሰቀሉ፣ በራስ ሰር ወደ የአሁኑ ዳታቤዝ ንድፍ ይሻሻላል"
+msgid "If you upload a backup from ChurchInfo, or a previous version of ChurchCRM, it will be automatically upgraded to the current database schema"
+msgstr "ምትኬን ከChurchInfo ወይም የቀድሞ የChurchCRM ስሪት ከሰቀሉ፣ በራስ ሰር ወደ የአሁኑ ዳታቤዝ ንድፍ ይሻሻላል"
 
 #: 
 msgid "Upload Files"
@@ -3939,7 +3716,7 @@ msgid "Restore Error."
 msgstr "ስህተቱን ወደነበረበት መልስ"
 
 #: 
-msgid "Temple"
+msgid "Temple Information"
 msgstr "የቤተክርስቲያን መረጃ"
 
 #: 
@@ -3987,68 +3764,12 @@ msgid "Edit Settings"
 msgstr "ቅንብሮችን ያርትዑ"
 
 #: 
-msgid "Upgrade UnityConnect CRM"
-msgstr "UnityConnect CRMን አሻሽል"
-
-#: 
-msgid "Step 1: Backup Database"
-msgstr "ደረጃ 1: የዳታቤዝ ምትኬ"
-
-#: 
-msgid "Please create a database backup before beginning the upgrade process."
-msgstr "የማሻሻያ ሂደቱን ከመጀመርዎ በፊት እባክዎ የዳታቤዝ መጠባበቂያ ይፍጠሩ"
-
-#: 
-msgid "Generate Database Backup"
-msgstr "የዳታቤዝ ምትኬን ይፍጠሩ"
-
-#: 
-msgid "Step 2: Fetch Update Package on Server"
-msgstr "ደረጃ 2: ማሻሻያ ጥቅል በአገልጋይ ላይ"
-
-#: 
-msgid "Fetch the latest files from the UnityConnect CRM GitHub release page"
-msgstr "የቅርብ ጊዜዎቹን ፋይሎች ከUnityConnect CRM GitHub መልቀቂያ ገጽ ያውጡ"
-
-#: 
-msgid "Fetch Update Files"
-msgstr "የዝማኔ ፋይሎችን አምጣ"
-
-#: 
-msgid "Step 3: Apply Update Package on Server"
-msgstr "ደረጃ 3: የዝማኔ ጥቅልን በአገልጋይ ላይ ተግብር"
-
-#: 
-msgid "Extract the upgrade archive, and apply the new files"
-msgstr "የማሻሻያ ማህደሩን ያውጡ እና አዲሶቹን ፋይሎች ይተግብሩ"
-
-#: 
 msgid "Full Path:"
 msgstr "ሙሉ መንገድ:"
 
 #: 
-msgid "SHA1:"
-msgstr "SHA1:"
-
-#: 
-msgid "Upgrade System"
-msgstr "የማሻሻያ ስርዓት"
-
-#: 
-msgid "Step 4: Login"
-msgstr "ደረጃ 4: ይግቡ"
-
-#: 
-msgid "Login to Upgraded System"
-msgstr "ወደ የተሻሻለ ስርዓት ይግቡ"
-
-#: 
 msgid "Backup Complete, Ready for Download."
 msgstr "ምትኬ ተጠናቅቋል፣ ለመውረድ ዝግጁ."
-
-#: 
-msgid "Backup Error."
-msgstr "የመጠባበቂያ ስህተት."
 
 #: 
 msgid "Backup Downloaded, Copy on server removed"
@@ -4095,11 +3816,11 @@ msgid "Enter Name"
 msgstr "ስም አስገባ"
 
 #: 
-msgid "Update Temple/TrustInfo"
+msgid "Update Temple Info"
 msgstr "የቤተ ክርስቲያን መረጃን አዘምን"
 
 #: 
-msgid "Set Temple/TrustAddress"
+msgid "Set Temple Address"
 msgstr "የቤተ ክርስቲያን አድራሻ አዘጋጅ"
 
 #: 
@@ -4152,18 +3873,6 @@ msgid "Registration Complete"
 msgstr "ምዝገባ ተጠናቋል"
 
 #: 
-msgid "Register"
-msgstr "ይመዝገቡ"
-
-#: 
-msgid "Register your family"
-msgstr "ቤተሰብዎን ያስመዝግቡ"
-
-#: 
-msgid "How many people are in your family"
-msgstr "በቤተሰብዎ ውስጥ ስንት ሰዎች አሉ"
-
-#: 
 msgid "Add All Classes"
 msgstr "ሁሉንም ክፍሎች ያክሉ"
 
@@ -4204,20 +3913,12 @@ msgid "Signature definition file signature failed validation"
 msgstr "የፊርማ ፍቺ ፋይል ፊርማ ማረጋገጥ አልተሳካም"
 
 #: 
-msgid "Signature definition File Missing"
-msgstr "የፊርማ ትርጉም ፋይል ጠፍቷል"
-
-#: 
 msgid "One or more files failed signature validation"
 msgstr "አንድ ወይም ከዚያ በላይ ፋይሎች የፊርማ ማረጋገጫ አልተሳካም"
 
 #: 
 msgid "Configure HTTPS"
 msgstr "HTTPS አዋቅር"
-
-#: 
-msgid "Files failing integrity check"
-msgstr "ያልተሳኩ ፋይሎች የንጹህነት ማረጋገጫ"
 
 #: 
 msgid "Family:"
@@ -4306,14 +4007,6 @@ msgstr "የገባበት ቀን:"
 #: 
 msgid "CSV Import"
 msgstr "CSV ማስመጣት"
-
-#: 
-msgid "Comment:"
-msgstr "አስተያየት:"
-
-#: 
-msgid "Closed:"
-msgstr "ዝግ:"
 
 #: 
 msgid "Start Date: "
@@ -4408,7 +4101,7 @@ msgid "with this Property..."
 msgstr "ከዚህ ንብረት ጋር…"
 
 #: 
-msgid "Temple/TrustEmail"
+msgid "Temple Email"
 msgstr "የቤተክርስቲያን ኢሜይል"
 
 #: 
@@ -4542,8 +4235,8 @@ msgid "Set true to enable family self registration."
 msgstr "የቤተሰብ ራስን መመዝገብ ለማንቃት እውነት ያዘጋጁ"
 
 #: 
-msgid "UnityConnect CRM has been registered.  The UnityConnect CRM team uses registration information to track usage.  This information is kept confidential and never released or sold.  If this field is true the registration option in the admin menu changes to update registration."
-msgstr "UnityConnect CRM ተመዝግቧል። የUnityConnect CRM ቡድን አጠቃቀምን ለመከታተል የምዝገባ መረጃ ይጠቀማል። ይህ መረጃ በሚስጥር የተጠበቀ ነው እና በጭራሽ አይለቀቅም ወይም አይሸጥም። ይህ መስክ እውነት ከሆነ በአስተዳዳሪው ምናሌ ውስጥ ያለው የመመዝገቢያ ምርጫ ምዝገባን ለማዘመን ይለወጣል"
+msgid "ChurchCRM has been registered.  The UnityConnectCRM team uses registration information to track usage.  This information is kept confidential and never released or sold.  If this field is true the registration option in the admin menu changes to update registration."
+msgstr "ChurchCRM ተመዝግቧል። የChurchCRM ቡድን አጠቃቀምን ለመከታተል የምዝገባ መረጃ ይጠቀማል። ይህ መረጃ በሚስጥር የተጠበቀ ነው እና በጭራሽ አይለቀቅም ወይም አይሸጥም። ይህ መስክ እውነት ከሆነ በአስተዳዳሪው ምናሌ ውስጥ ያለው የመመዝገቢያ ምርጫ ምዝገባን ለማዘመን ይለወጣል"
 
 #: 
 msgid "Left Margin (1 = 1/100th inch)"
@@ -4554,23 +4247,23 @@ msgid "Line Thickness (1 = 1/100th inch"
 msgstr "የመስመር ውፍረት (1 = 1/100ኛ ኢንች)"
 
 #: 
-msgid "Temple/TrustCity"
+msgid "Temple City"
 msgstr "የቤተክርስቲያኒቱ የምትገኝበት ከተማ"
 
 #: 
-msgid "Temple/TrustState"
+msgid "Temple State"
 msgstr "የቤተ ክርስቲያኒቱ የምትገኝበት ግዛት"
 
 #: 
-msgid "Temple/TrustZip"
+msgid "Temple Zip"
 msgstr "የቤተ ክርስቲያን Zip"
 
 #: 
-msgid "Temple/TrustPhone"
+msgid "Temple Phone"
 msgstr "የቤተ ክርስቲያን ስልክ"
 
 #: 
-msgid "Home area code of the church"
+msgid "Home area code of the temple"
 msgstr "የቤተክርስቲያኑ የቤት አካባቢ ኮድ"
 
 #: 
@@ -4618,7 +4311,7 @@ msgid "Verbage for the directory report"
 msgstr "ለማውጫ ሪፖርቱ ቃል"
 
 #: 
-msgid "Temple/TrustLetterhead path and file"
+msgid "Temple Letterhead path and file"
 msgstr "የቤተ ክርስቲያን ደብዳቤ ዱካ እና ፋይል"
 
 #: 
@@ -4674,7 +4367,7 @@ msgid "List Temple Events"
 msgstr "የቤተ ክርስቲያን ዝግጅቶችን ይዘርዝሩ"
 
 #: 
-msgid "Add  Temple Event"
+msgid "Add Temple Event"
 msgstr "የቤተክርስቲያን ክስተት ጨምር"
 
 #: 
@@ -4742,335 +4435,419 @@ msgstr "የቤተሰብ ንብረቶች"
 msgid "Property Types"
 msgstr "የንብረት ዓይነቶች"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Zip Code"
 msgstr "አካባቢያዊ መለያ ቁጥር"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "2012/2013"
 msgstr "2005"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "2013/2014"
 msgstr "2006"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "2014/2015"
 msgstr "2007"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "2015/2016"
 msgstr "2008"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "WorkEmail"
 msgstr "የስራ ኢሜይል"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Regular Attender"
 msgstr "መደበኛ ተሳታፊ"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Guest"
 msgstr "እንግዳ"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Non-Attender"
 msgstr "ተሳታፊ ያልሆነ"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Non-Attender (staff)"
 msgstr "ተሳታፊ ያልሆኑ(ሰራተኞች)"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Minimum Age"
 msgstr "ዝቅተኛው ዕድሜ"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Maximum Age"
 msgstr "ከፍተኛው ዕድሜ"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Beginning Date"
 msgstr "የመጀመሪያ ቀን"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Ending Date"
 msgstr "የሚያበቃበት ቀን"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Search"
 msgstr "ፈልግ"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Field"
 msgstr "መስክ"
 
+#. Context: query_qry
+#. Context: queryparameters_qrp
 #: 
 msgid "Registered students"
 msgstr "የተመዘገቡ ተማሪዎች"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Volunteer opportunities"
 msgstr "የበጎ ፈቃደኝነት እድሎች"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Months"
 msgstr "ወራት"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "First Fiscal Year"
 msgstr "የመጀመሪያው የበጀት ዓመት"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Second Fiscal Year"
 msgstr "ሁለተኛ የበጀት ዓመት"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Custom field"
 msgstr "ብጁ መስክ"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Field value"
 msgstr "የመስክ ዋጋ"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The minimum age for which you want records returned."
 msgstr "መዝገቦች እንዲመለሱ የሚፈልጉት ዝቅተኛው ዕድሜ።"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The maximum age for which you want records returned."
 msgstr "መዝገቦች እንዲመለሱ የሚፈልጉት ከፍተኛው ዕድሜ።"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The desired gender to search the database for."
 msgstr "የውሂብ ጎታውን ለመፈለግ የሚፈለገው ጾታ."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Select the desired family role."
 msgstr "የተፈለገውን የቤተሰብ ሚና ይምረጡ."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The gender for which you would like records returned."
 msgstr "መዝገቦች እንዲመለሱ የሚፈልጉት ጾታ"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The property for which you would like person records returned."
 msgstr "የሰው መዝገቦች እንዲመለሱ የሚፈልጉት ንብረት።"
 
+#. Context: queryparameters_qrp
 #: 
 #, fuzzy
 msgid "Please select the beginning date to calculate total contributions for each member (i.e. YYYY-MM-DD). NOTE: You can only choose dates that contain donations."
 msgstr "ለእያንዳንዱ አባል ጠቅላላ መዋጮ ለማስላት እባክህ የመጀመሪያ ቀን ምረጥ (ማለትም ዓ-ወ-ቀን)። ማሳሰቢያ፡ ልገሳዎችን የያዙ ቀኖችን ብቻ ነው መምረጥ የሚችሉት።"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Please enter the last date to calculate total contributions for each member (i.e. YYYY-MM-DD)."
 msgstr "እባክዎ ለእያንዳንዱ አባል ጠቅላላ መዋጮዎችን ለማስላት የመጨረሻውን ቀን ያስገቡ (ማለትም ዓዓዓ-ወወ-ቀን)።"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Enter any part of the following: Name, City, State, Zip, Home Phone, Email, or Work Email."
 msgstr "ከሚከተሉት ውስጥ የትኛውንም ክፍል ያስገቡ፡ ስም፣ ከተማ፣ ግዛት፣ ዚፕ፣ የቤት ስልክ፣ ኢሜይል ወይም የስራ ኢሜይል።"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Select field to search for."
 msgstr "ለመፈለግ መስክ ይምረጡ።"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The birthday month for which you would like records returned."
 msgstr "መዝገቦች እንዲመለሱ የሚፈልጉት የልደት ወር"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The sunday school class for which you would like records returned."
 msgstr "መዝገቦች እንዲመለሱ የሚፈልጉት የሰንበት ትምህርት ቤት ክፍል።"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Group of registered students"
 msgstr "የተመዘገቡ ተማሪዎች ቡድን"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "The membership anniversary month for which you would like records returned."
 msgstr "መዝገቦች እንዲመለሱ የሚፈልጉት የአባልነት አመታዊ ወር።"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Choose a volunteer opportunity"
 msgstr "የበጎ ፈቃደኞች እድል ይምረጡ"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Number of months since becoming a friend"
 msgstr "ጓደኛ ከሆኑ በኋላ የወራት ብዛት"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "First fiscal year for comparison"
 msgstr "ለማነጻጸር የመጀመሪያው የበጀት ዓመት"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Second fiscal year for comparison"
 msgstr "ለማነፃፀር ሁለተኛው የበጀት ዓመት"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Pledged this year"
 msgstr "በዚህ ዓመት ቃል የተገባ"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "but not this year"
 msgstr "ግን በዚህ አመት አይደለም"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Fiscal Year."
 msgstr "የበጀት ዓመት"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Member, Regular Attender, etc."
 msgstr "አባል፣ መደበኛ ተሳታፊ፣ ወዘተ."
 
+#. Context: queryparameters_qrp
 #: 
 msgid "First volunteer opportunity choice"
 msgstr "የመጀመሪያው የበጎ ፈቃደኝነት ዕድል ምርጫ"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Second volunteer opportunity choice"
 msgstr "ሁለተኛ የበጎ ፈቃድ ዕድል ምርጫ"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Choose customer person field"
 msgstr "የደንበኛ ሰው መስክ ይምረጡ"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Match custom field to this value"
 msgstr "ሚመች ቦታ ከዚህ ዋጋ ጋር አዛምድ"
 
+#. Context: query_qry
 #: 
 msgid "Family Member Count"
 msgstr "የቤተሰብ አባላት ብዛት"
 
+#. Context: query_qry
 #: 
 msgid "Person by Age"
 msgstr "ሰው በእድሜ"
 
+#. Context: query_qry
 #: 
 msgid "Total By Gender"
 msgstr "አጠቃላይ በጾታ"
 
+#. Context: query_qry
 #: 
 msgid "Person by Role and Gender"
 msgstr "ሰው በስራ እና በፆታ"
 
+#. Context: query_qry
 #: 
 msgid "Person by Property"
 msgstr "ሰው በንብረት"
 
+#. Context: query_qry
 #: 
 msgid "Advanced Search"
 msgstr "የላቀ ፍለጋ"
 
+#. Context: query_qry
 #: 
 msgid "Birthdays"
 msgstr "የልደት ቀናት"
 
+#. Context: query_qry
 #: 
 msgid "Membership anniversaries"
 msgstr "የአባልነት ክብረ በዓላት"
 
+#. Context: query_qry
 #: 
 msgid "Select database users"
 msgstr "የውሂብ ጎታ ተጠቃሚዎችን ይምረጡ"
 
+#. Context: query_qry
 #: 
 msgid "Select all members"
 msgstr "ሁሉንም አባላት ይምረጡ"
 
+#. Context: query_qry
 #: 
 msgid "Volunteers"
 msgstr "በጎ ፈቃደኞች"
 
+#. Context: query_qry
 #: 
 msgid "Recent friends"
 msgstr "የቅርብ ጓደኞች"
 
+#. Context: query_qry
 #: 
 msgid "Pledge comparison"
 msgstr "የቃል ንጽጽር"
 
+#. Context: query_qry
 #: 
 msgid "Missing pledges"
 msgstr "ቃል ኪዳኖች ይጎድላሉ"
 
+#. Context: query_qry
 #: 
 msgid "Family Pledge by Fiscal Year"
 msgstr "የቤተሰብ ቃል ኪዳን በበጀት ዓመት"
 
+#. Context: query_qry
 #: 
 msgid "CustomSearch"
 msgstr "ብጁ ፍለጋ"
 
+#. Context: query_qry
 #: 
 msgid "Returns each family and the total number of people assigned to them."
 msgstr "እያንዳንዱ ቤተሰብ እና የተመደበላቸው ሰዎች ጠቅላላ ቁጥር ይመልሳል።"
 
+#. Context: query_qry
 #: 
 msgid "Returns any person records with ages between two given ages."
 msgstr "ማንኛዉም ሰው በሁለት የተሰጡ እድሜዎች መካከል ይመዘግባል"
 
+#. Context: query_qry
 #: 
 msgid "Total of records matching a given gender."
 msgstr "ከተሰጠው ጾታ ጋር የሚዛመዱ አጠቃላይ መዝገቦች።"
 
+#. Context: query_qry
 #: 
 msgid "Selects person records with the family role and gender specified."
 msgstr "ተጠቀሰው የቤተሰብ ሚና እና ጾታ ጋር የሰው መዝገቦችን ይመርጣል።"
 
+#. Context: query_qry
 #: 
 msgid "Returns person records which are assigned the given property."
 msgstr "የተሰጠው ንብረት የተመደበውን የሰው መዝገቦችን ይመልሳል።"
 
+#. Context: query_qry
 #: 
 msgid "Search by any part of Name, City, State, Zip, Home Phone, Email, or Work Email."
 msgstr "በማንኛውም የስም ክፍል፣ ከተማ፣ ግዛት፣ ዚፕ፣ የቤት ስልክ፣ ኢሜይል ወይም የስራ ኢሜይል ይፈልጉ።"
 
+#. Context: query_qry
 #: 
 msgid "People with birthdays in a particular month"
 msgstr "በአንድ ወር ውስጥ የልደት ቀን ያላቸው ሰዎች"
 
+#. Context: query_qry
 #: 
 msgid "Find Registered students"
 msgstr "የተመዘገቡ ተማሪዎችን ያግኙ"
 
+#. Context: query_qry
 #: 
 msgid "Members who joined in a particular month"
 msgstr "በአንድ የተወሰነ ወር ውስጥ የተቀላቀሉ አባላት"
 
+#. Context: query_qry
 #: 
 msgid "People who are registered as database users"
 msgstr "እንደ የውሂብ ጎታ ተጠቃሚዎች የተመዘገቡ ሰዎች"
 
+#. Context: query_qry
 #: 
 msgid "People who are members"
 msgstr "አባላት የሆኑ ሰዎች"
 
+#. Context: query_qry
 #: 
 msgid "Find volunteers for a particular opportunity"
 msgstr "ለተወሰነ ዕድል ፈቃደኛ ሠራተኞችን ያግኙ"
 
+#. Context: query_qry
 #: 
 msgid "Friends who signed up in previous months"
 msgstr "ባለፉት ወራት የተመዘገቡ ጓደኞች"
 
+#. Context: query_qry
 #: 
 msgid "Compare pledges between two fiscal years"
 msgstr "ቃል ኪዳኖችን በሁለት የበጀት ዓመታት ያወዳድሩ"
 
+#. Context: query_qry
 #: 
 msgid "Find people who pledged one year but not another"
 msgstr "አንድ አመት ቃል የገቡ ሰዎችን ፈልግ ግን ሌላ አይደለም"
 
+#. Context: query_qry
 #: 
 msgid "Pledge summary by family name for each fund for the selected fiscal year"
 msgstr "ለተመረጠው በጀት ዓመት ለእያንዳንዱ ፈንድ በቤተሰብ ስም የቃል ማጠቃለያ"
 
+#. Context: query_qry
 #: 
 msgid "Find volunteers for who match two specific opportunity codes"
 msgstr "ከሁለት ልዩ የዕድል ኮዶች ጋር የሚዛመዱ በጎ ፈቃደኞችን ያግኙ"
 
+#. Context: query_qry
 #: 
 msgid "Find people with a custom field value"
 msgstr "ብጁ የመስክ ዋጋ ያላቸውን ሰዎች ያግኙ"
@@ -5079,22 +4856,27 @@ msgstr "ብጁ የመስክ ዋጋ ያላቸውን ሰዎች ያግኙ"
 msgid "Last Edited"
 msgstr "መጨረሻ የተስተካከለው"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "User permission to send email via mailto: links"
 msgstr "የተጠቃሚ ፍቃድ በ mailto: links በኩል ኢሜይል ለመላክ"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "Delimiter to separate emails in mailto: links"
 msgstr "ኢሜይሎችን በmailto: ማገናኛዎች የመለየት ገዳቢ"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "User permission to create directories"
 msgstr "ማውጫዎችን ለመፍጠር የተጠቃሚ ፍቃድ"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "User permission to export CSV files"
 msgstr "የCSV ፋይሎችን ወደ ውጭ ለመላክ የተጠቃሚ ፍቃድ"
 
+#. Context: userconfig_ucfg
 #: 
 msgid "Allow user to add new event"
 msgstr "ተጠቃሚ አዲስ ክስተት እንዲያክል ፍቀድለት"
@@ -5284,1022 +5066,1277 @@ msgstr "WebDAV"
 msgid "Local"
 msgstr "አካባቢያዊ"
 
+#. Context: countries
 #: 
 msgid "Afghanistan (‫افغانستان‬‎)"
 msgstr "አፍጋኒስታን"
 
+#. Context: countries
 #: 
 msgid "Åland Islands (Åland)"
 msgstr "አላንድ ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "Albania (Shqipëri)"
 msgstr "አልቤንያ"
 
+#. Context: countries
 #: 
 msgid "Algeria (‫الجزائر‬‎)"
 msgstr "አልጄርያ"
 
+#. Context: countries
 #: 
 msgid "American Samoa"
 msgstr "የአሜሪካ ሳሞዋ"
 
+#. Context: countries
 #: 
 msgid "Andorra"
 msgstr "አንዶራ"
 
+#. Context: countries
 #: 
 msgid "Angola"
 msgstr "አንጎላ"
 
+#. Context: countries
 #: 
 msgid "Anguilla"
 msgstr "አንጒላ"
 
+#. Context: countries
 #: 
 msgid "Antarctica"
 msgstr "አንታርክቲካ"
 
+#. Context: countries
 #: 
 msgid "Antigua and Barbuda"
 msgstr "አንቲጓ እና ባርቡዳ"
 
+#. Context: countries
 #: 
 msgid "Argentina"
 msgstr "አርጄንቲና"
 
+#. Context: countries
 #: 
 msgid "Armenia (Հայաստան)"
 msgstr "አርሜንያ"
 
+#. Context: countries
 #: 
 msgid "Aruba"
 msgstr "አሩባ"
 
+#. Context: countries
 #: 
 msgid "Ascension Island"
 msgstr "አሴንሺን ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "Australia"
 msgstr "አውስትራሊያ"
 
+#. Context: countries
 #: 
 msgid "Austria (Österreich)"
 msgstr "ኦስትሪያ"
 
+#. Context: countries
 #: 
 msgid "Azerbaijan (Azərbaycan)"
 msgstr "አዘርባጃን"
 
+#. Context: countries
 #: 
 msgid "Bahamas"
 msgstr "ባሃማስ"
 
+#. Context: countries
 #: 
 msgid "Bahrain (‫البحرين‬‎)"
 msgstr "ባህሬን"
 
+#. Context: countries
 #: 
 msgid "Bangladesh (বাংলাদেশ)"
 msgstr "ባንግላድሽ"
 
+#. Context: countries
 #: 
 msgid "Barbados"
 msgstr "ባርቤዶስ"
 
+#. Context: countries
 #: 
 msgid "Belarus (Беларусь)"
 msgstr "ቤላሩስ"
 
+#. Context: countries
 #: 
 msgid "Belgium (België)"
 msgstr "ቤልጂየም"
 
+#. Context: countries
 #: 
 msgid "Belize"
 msgstr "ቤዝል"
 
+#. Context: countries
 #: 
 msgid "Benin (Bénin)"
 msgstr "ቤኒን"
 
+#. Context: countries
 #: 
 msgid "Bermuda"
 msgstr "ቤርሙዳ"
 
+#. Context: countries
 #: 
 msgid "Bhutan (འབྲུག)"
 msgstr "ቡታን"
 
+#. Context: countries
 #: 
 msgid "Bolivia"
 msgstr "ቦሊቪያ"
 
+#. Context: countries
 #: 
 msgid "Bosnia and Herzegovina (Босна и Херцеговина)"
 msgstr "ቦስኒያ እና ሄርዞጎቪንያ"
 
+#. Context: countries
 #: 
 msgid "Botswana"
 msgstr "ቦትስዋና"
 
+#. Context: countries
 #: 
 msgid "Bouvet Island"
 msgstr "ቦውት ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "Brazil (Brasil)"
 msgstr "ብራዝል"
 
+#. Context: countries
 #: 
 msgid "British Indian Ocean Territory"
 msgstr "በሕንድ ውቂያኖስ የእንግሊዝ ግዛት"
 
+#. Context: countries
 #: 
 msgid "British Virgin Islands"
 msgstr "የእንግሊዝ ቨርጅን ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "Brunei"
 msgstr "በርኔ"
 
+#. Context: countries
 #: 
 msgid "Bulgaria (България)"
 msgstr "ቡልጋሪያ"
 
+#. Context: countries
 #: 
 msgid "Burkina Faso"
 msgstr "ቡርኪና ፋሶ"
 
+#. Context: countries
 #: 
 msgid "Burundi (Uburundi)"
 msgstr "ቡሩንዲ"
 
+#. Context: countries
 #: 
 msgid "Cambodia (កម្ពុជា)"
 msgstr "ካምቦዲያ"
 
+#. Context: countries
 #: 
 msgid "Cameroon (Cameroun)"
 msgstr "ካሜሮን"
 
+#. Context: countries
 #: 
 msgid "Canada"
 msgstr "ካናዳ"
 
+#. Context: countries
 #: 
 msgid "Canary Islands (islas Canarias)"
 msgstr "ካናሪይ ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "Cape Verde (Kabu Verdi)"
 msgstr "ኬፕ ቨርዴ"
 
+#. Context: countries
 #: 
 msgid "Caribbean Netherlands"
 msgstr "ካሬብያን ኔዘርላንድ"
 
+#. Context: countries
 #: 
 msgid "Cayman Islands"
 msgstr "ካይማን ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "Central African Republic (République centrafricaine)"
 msgstr "ማዕከላዊ አፍሪካ ሪፑብሊክ"
 
+#. Context: countries
 #: 
 msgid "Ceuta and Melilla (Ceuta y Melilla)"
 msgstr "ካውታ እና ማሊላ"
 
+#. Context: countries
 #: 
 msgid "Chad (Tchad)"
 msgstr "ቻድ"
 
+#. Context: countries
 #: 
 msgid "Chile"
 msgstr "ቺሊ"
 
+#. Context: countries
 #: 
 msgid "China (中国)"
 msgstr "ቻይና"
 
+#. Context: countries
 #: 
 msgid "Christmas Island"
 msgstr "የገና ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "Clipperton Island"
 msgstr "ክሊፐርተን ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "Cocos (Keeling) Islands (Kepulauan Cocos (Keeling))"
 msgstr "ኮኮስ"
 
+#. Context: countries
 #: 
 msgid "Colombia"
 msgstr "ኮሎምቢያ"
 
+#. Context: countries
 #: 
 msgid "Comoros (‫جزر القمر‬‎)"
 msgstr "ኮሞሮስ"
 
+#. Context: countries
 #: 
 msgid "Congo (DRC) (Jamhuri ya Kidemokrasia ya Kongo)"
 msgstr "ዲሞክራቲክ ኮንጎ"
 
+#. Context: countries
 #: 
 msgid "Congo (Republic) (Congo-Brazzaville)"
 msgstr "ኮንጎ ሪፑብሊክ"
 
+#. Context: countries
 #: 
 msgid "Cook Islands"
 msgstr "ኩክ ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "Costa Rica"
 msgstr "ኮስታ ሪካ"
 
+#. Context: countries
 #: 
 msgid "Côte d’Ivoire"
 msgstr "ኮት ዲቯር"
 
+#. Context: countries
 #: 
 msgid "Croatia (Hrvatska)"
 msgstr "ክሮሽያ"
 
+#. Context: countries
 #: 
 msgid "Cuba"
 msgstr "ኩባ"
 
+#. Context: countries
 #: 
 msgid "Curaçao"
 msgstr "ኩራካዎ"
 
+#. Context: countries
 #: 
 msgid "Cyprus (Κύπρος)"
 msgstr "ቆጵሮስ"
 
+#. Context: countries
 #: 
 msgid "Czech Republic (Česká republika)"
 msgstr "ቼክ ሪፐብሊክ"
 
+#. Context: countries
 #: 
 msgid "Denmark (Danmark)"
 msgstr "ዴን ማርክ"
 
+#. Context: countries
 #: 
 msgid "Diego Garcia"
 msgstr "ዲያጎ ጋርሲያ"
 
+#. Context: countries
 #: 
 msgid "Djibouti"
 msgstr "ጅዊቲ"
 
+#. Context: countries
 #: 
 msgid "Dominica"
 msgstr "ዶምኒካ"
 
+#. Context: countries
 #: 
 msgid "Dominican Republic (República Dominicana)"
 msgstr "ዶምኒካን ሪፐብሊክ"
 
+#. Context: countries
 #: 
 msgid "Ecuador"
 msgstr "እኳዶር"
 
+#. Context: countries
 #: 
 msgid "Egypt (‫مصر‬‎)"
 msgstr "ግብጽ"
 
+#. Context: countries
 #: 
 msgid "El Salvador"
 msgstr "ኤል ሳልፋዶር"
 
+#. Context: countries
 #: 
 msgid "Equatorial Guinea (Guinea Ecuatorial)"
 msgstr "እኳቶሪያል ጊኒ"
 
+#. Context: countries
 #: 
 msgid "Eritrea"
 msgstr "ኤርትራ"
 
+#. Context: countries
 #: 
 msgid "Estonia (Eesti)"
 msgstr "እስቶኒያ"
 
+#. Context: countries
 #: 
 msgid "Ethiopia"
 msgstr "እትዮጵያ"
 
+#. Context: countries
 #: 
 msgid "Falkland Islands (Islas Malvinas)"
 msgstr "ፎክላንድ ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "Faroe Islands (Føroyar)"
 msgstr "ፌሮ ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "Fiji"
 msgstr "ፊጂ"
 
+#. Context: countries
 #: 
 msgid "Finland (Suomi)"
 msgstr "ፍንላንድ"
 
+#. Context: countries
 #: 
 msgid "France"
 msgstr "ፈረንሳይ"
 
+#. Context: countries
 #: 
 msgid "French Guiana (Guyane française)"
 msgstr "የፈረንሳይ ጉየና"
 
+#. Context: countries
 #: 
 msgid "French Polynesia (Polynésie française)"
 msgstr "የፈረንሳይ ፖሊነዢያ"
 
+#. Context: countries
 #: 
 msgid "French Southern Territories (Terres australes françaises)"
 msgstr "የፈረንሳይ ደቡባዊ ግዛቶች"
 
+#. Context: countries
 #: 
 msgid "Gabon"
 msgstr "ጋቦን"
 
+#. Context: countries
 #: 
 msgid "Gambia"
 msgstr "ጋምቢያ"
 
+#. Context: countries
 #: 
 msgid "Georgia (საქართველო)"
 msgstr "ጂዮርጂያ"
 
+#. Context: countries
 #: 
 msgid "Germany (Deutschland)"
 msgstr "ጀርመን"
 
+#. Context: countries
 #: 
 msgid "Ghana (Gaana)"
 msgstr "ጋና"
 
+#. Context: countries
 #: 
 msgid "Gibraltar"
 msgstr "ጅብራልታር"
 
+#. Context: countries
 #: 
 msgid "Greece (Ελλάδα)"
 msgstr "ግሪክ"
 
+#. Context: countries
 #: 
 msgid "Greenland (Kalaallit Nunaat)"
 msgstr "ግሪንላንድ"
 
+#. Context: countries
 #: 
 msgid "Grenada"
 msgstr "ግረናዳ"
 
+#. Context: countries
 #: 
 msgid "Guadeloupe"
 msgstr "ጓዲሎፔ"
 
+#. Context: countries
 #: 
 msgid "Guam"
 msgstr "ጓም"
 
+#. Context: countries
 #: 
 msgid "Guatemala"
 msgstr "ጓቲማላ"
 
+#. Context: countries
 #: 
 msgid "Guernsey"
 msgstr "ጉየርንሰይ"
 
+#. Context: countries
 #: 
 msgid "Guinea (Guinée)"
 msgstr "ጊኒ"
 
+#. Context: countries
 #: 
 msgid "Guinea-Bissau (Guiné Bissau)"
 msgstr "ጊኒ ቢሳዋ"
 
+#. Context: countries
 #: 
 msgid "Guyana"
 msgstr "ጉየና"
 
+#. Context: countries
 #: 
 msgid "Haiti"
 msgstr "ሃይቲ"
 
+#. Context: countries
 #: 
 msgid "Heard & McDonald Islands"
 msgstr "ሄርድ እና ማክዶናልድ ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "Honduras"
 msgstr "ሁንዱራስ"
 
+#. Context: countries
 #: 
 msgid "Hong Kong (香港)"
 msgstr "ሆንክ ኮንግ"
 
+#. Context: countries
 #: 
 msgid "Hungary (Magyarország)"
 msgstr "ሃንጋሪ"
 
+#. Context: countries
 #: 
 msgid "Iceland (Ísland)"
 msgstr "አይስላንድ"
 
+#. Context: countries
 #: 
 msgid "India (भारत)"
 msgstr "ሕንድ"
 
+#. Context: countries
 #: 
 msgid "Indonesia"
 msgstr "እንዶኔዢያ"
 
+#. Context: countries
 #: 
 msgid "Iran (‫ایران‬‎)"
 msgstr "ኢራን"
 
+#. Context: countries
 #: 
 msgid "Iraq (‫العراق‬‎)"
 msgstr "ኢራቅ"
 
+#. Context: countries
 #: 
 msgid "Ireland"
 msgstr "አየርላንድ"
 
+#. Context: countries
 #: 
 msgid "Isle of Man"
 msgstr "የሰው ኮሪደር"
 
+#. Context: countries
 #: 
 msgid "Israel (‫ישראל‬‎)"
 msgstr "እስራኤል"
 
+#. Context: countries
 #: 
 msgid "Italy (Italia)"
 msgstr "ጣሊያን"
 
+#. Context: countries
 #: 
 msgid "Jamaica"
 msgstr "ጃማይካ"
 
+#. Context: countries
 #: 
 msgid "Japan (日本)"
 msgstr "ጃፓን"
 
+#. Context: countries
 #: 
 msgid "Jersey"
 msgstr "ጄርሲ"
 
+#. Context: countries
 #: 
 msgid "Jordan (‫الأردن‬‎)"
 msgstr "ዮርዳኖስ"
 
+#. Context: countries
 #: 
 msgid "Kazakhstan (Казахстан)"
 msgstr "ካዛኪስታን"
 
+#. Context: countries
 #: 
 msgid "Kenya"
 msgstr "ኬንያ"
 
+#. Context: countries
 #: 
 msgid "Kiribati"
 msgstr "ክሪባቲ"
 
+#. Context: countries
 #: 
 msgid "Kosovo (Kosovë)"
 msgstr "ኮሶቮ"
 
+#. Context: countries
 #: 
 msgid "Kuwait (‫الكويت‬‎)"
 msgstr "ኩዌት"
 
+#. Context: countries
 #: 
 msgid "Kyrgyzstan (Кыргызстан)"
 msgstr "ክሪግስታን"
 
+#. Context: countries
 #: 
 msgid "Laos (ລາວ)"
 msgstr "ሌኦስ"
 
+#. Context: countries
 #: 
 msgid "Lebanon (‫لبنان‬‎)"
 msgstr "ሊባኖስ"
 
+#. Context: countries
 #: 
 msgid "Lesotho"
 msgstr "ሌሴቶ"
 
+#. Context: countries
 #: 
 msgid "Liberia"
 msgstr "ላይቤርያ"
 
+#. Context: countries
 #: 
 msgid "Libya (‫ليبيا‬‎)"
 msgstr "ሊብያ"
 
+#. Context: countries
 #: 
 msgid "Liechtenstein"
 msgstr "ለሽንስታይን"
 
+#. Context: countries
 #: 
 msgid "Lithuania (Lietuva)"
 msgstr "ልትዌንያ"
 
+#. Context: countries
 #: 
 msgid "Luxembourg"
 msgstr "ሉግዘምበርግ"
 
+#. Context: countries
 #: 
 msgid "Macau (澳門)"
 msgstr "ማካው"
 
+#. Context: countries
 #: 
 msgid "Macedonia (FYROM) (Македонија)"
 msgstr "መቄዶንያ"
 
+#. Context: countries
 #: 
 msgid "Madagascar (Madagasikara)"
 msgstr "ማዳጋስካር"
 
+#. Context: countries
 #: 
 msgid "Malawi"
 msgstr "ማላዊ"
 
+#. Context: countries
 #: 
 msgid "Malaysia"
 msgstr "ማሌዢያ"
 
+#. Context: countries
 #: 
 msgid "Maldives"
 msgstr "ማልዲቭስ"
 
+#. Context: countries
 #: 
 msgid "Mali"
 msgstr "ማሊ"
 
+#. Context: countries
 #: 
 msgid "Malta"
 msgstr "መላጢያ"
 
+#. Context: countries
 #: 
 msgid "Marshall Islands"
 msgstr "ማርሻል ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "Martinique"
 msgstr "ማርቲኒክ"
 
+#. Context: countries
 #: 
 msgid "Mauritania (‫موريتانيا‬‎)"
 msgstr "ሞሪታኒያ"
 
+#. Context: countries
 #: 
 msgid "Mauritius (Moris)"
 msgstr "ሞሪሽየስ"
 
+#. Context: countries
 #: 
 msgid "Mayotte"
 msgstr "ማዮቴ"
 
+#. Context: countries
 #: 
 msgid "Mexico (México)"
 msgstr "ሜክሲኮ"
 
+#. Context: countries
 #: 
 msgid "Micronesia"
 msgstr "ማይክሮኔዢያ"
 
+#. Context: countries
 #: 
 msgid "Moldova (Republica Moldova)"
 msgstr "ሞልኮቫ"
 
+#. Context: countries
 #: 
 msgid "Monaco"
 msgstr "ሞናኮ"
 
+#. Context: countries
 #: 
 msgid "Mongolia (Монгол)"
 msgstr "ሞንጎሊያ"
 
+#. Context: countries
 #: 
 msgid "Montenegro (Crna Gora)"
 msgstr "ሞንቴኔግሮ"
 
+#. Context: countries
 #: 
 msgid "Montserrat"
 msgstr "ሞንትሴራት"
 
+#. Context: countries
 #: 
 msgid "Morocco (‫المغرب‬‎)"
 msgstr "ሞሮኮ"
 
+#. Context: countries
 #: 
 msgid "Mozambique (Moçambique)"
 msgstr "ሞዛምኒክ"
 
+#. Context: countries
 #: 
 msgid "Myanmar (Burma) (မြန်မာ)"
 msgstr "ማይናማር"
 
+#. Context: countries
 #: 
 msgid "Namibia (Namibië)"
 msgstr "ናምብያ"
 
+#. Context: countries
 #: 
 msgid "Nauru"
 msgstr "ናሩ"
 
+#. Context: countries
 #: 
 msgid "Nepal (नेपाल)"
 msgstr "ኔፓል"
 
+#. Context: countries
 #: 
 msgid "Netherlands (Nederland)"
 msgstr "ሆላንድ"
 
+#. Context: countries
 #: 
 msgid "New Caledonia (Nouvelle-Calédonie)"
 msgstr "ኒው ካሊዶኒያ"
 
+#. Context: countries
 #: 
 msgid "New Zealand"
 msgstr "ኒው ዚላንድ"
 
+#. Context: countries
 #: 
 msgid "Nicaragua"
 msgstr "ኒካራጉዋ"
 
+#. Context: countries
 #: 
 msgid "Niger (Nijar)"
 msgstr "ኒጄር"
 
+#. Context: countries
 #: 
 msgid "Nigeria"
 msgstr "ናይጄርያ"
 
+#. Context: countries
 #: 
 msgid "Niue"
 msgstr "ኒዩ"
 
+#. Context: countries
 #: 
 msgid "Norfolk Island"
 msgstr "ኖርፎልክ ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "Northern Mariana Islands"
 msgstr "የሰሜን ማሪና ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "North Korea (조선 민주주의 인민 공화국)"
 msgstr "ሰሜን ኮሪያ"
 
+#. Context: countries
 #: 
 msgid "Norway (Norge)"
 msgstr "ኖርዌይ"
 
+#. Context: countries
 #: 
 msgid "Oman (‫عُمان‬‎)"
 msgstr "ኦማን"
 
+#. Context: countries
 #: 
 msgid "Pakistan (‫پاکستان‬‎)"
 msgstr "ፓኪስታን"
 
+#. Context: countries
 #: 
 msgid "Palau"
 msgstr "ፓላው"
 
+#. Context: countries
 #: 
 msgid "Palestine (‫فلسطين‬‎)"
 msgstr "ፍልስጤም"
 
+#. Context: countries
 #: 
 msgid "Panama (Panamá)"
 msgstr "ፓናማ"
 
+#. Context: countries
 #: 
 msgid "Papua New Guinea"
 msgstr "ፓፑዋ ኒው ጊኒ"
 
+#. Context: countries
 #: 
 msgid "Paraguay"
 msgstr "ፓራጓይ"
 
+#. Context: countries
 #: 
 msgid "Peru (Perú)"
 msgstr "ፔሩ"
 
+#. Context: countries
 #: 
 msgid "Philippines"
 msgstr "ፊሊፕንስ"
 
+#. Context: countries
 #: 
 msgid "Pitcairn Islands"
 msgstr "ፕትካይም ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "Poland (Polska)"
 msgstr "ፓላንድ"
 
+#. Context: countries
 #: 
 msgid "Portugal"
 msgstr "ፖርቹጋል"
 
+#. Context: countries
 #: 
 msgid "Puerto Rico"
 msgstr "ፑዎርቶ ሪኮ"
 
+#. Context: countries
 #: 
 msgid "Qatar (‫قطر‬‎)"
 msgstr "ኳታር"
 
+#. Context: countries
 #: 
 msgid "Réunion (La Réunion)"
 msgstr "ርዩንየን"
 
+#. Context: countries
 #: 
 msgid "Romania (România)"
 msgstr "ሮማንያ"
 
+#. Context: countries
 #: 
 msgid "Russia (Россия)"
 msgstr "ሩስያ"
 
+#. Context: countries
 #: 
 msgid "Rwanda"
 msgstr "ሩዋንዳ"
 
+#. Context: countries
 #: 
 msgid "Saint Barthélemy (Saint-Barthélemy)"
 msgstr "ቅዱስ ባርተለሚ"
 
+#. Context: countries
 #: 
 msgid "Saint Helena"
 msgstr "ቅዱስ ሂሊና"
 
+#. Context: countries
 #: 
 msgid "Saint Kitts and Nevis"
 msgstr "ቅዱስ ኪትስ እና ኔቪስ"
 
+#. Context: countries
 #: 
 msgid "Saint Lucia"
 msgstr "ቅዱስ ሉቃስ"
 
+#. Context: countries
 #: 
 msgid "Saint Martin (Saint-Martin (partie française))"
 msgstr "ቅዱስ ማርቲን"
 
+#. Context: countries
 #: 
 msgid "Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)"
 msgstr "ቅዱስ ፒየር እና ምኮሎን"
 
+#. Context: countries
 #: 
 msgid "Samoa"
 msgstr "ሳሞዋ"
 
+#. Context: countries
 #: 
 msgid "San Marino"
 msgstr "ሳን ማሪኖ"
 
+#. Context: countries
 #: 
 msgid "São Tomé and Príncipe (São Tomé e Príncipe)"
 msgstr "ሳኦ ቶሜ እና ፕሪንሲፔ"
 
+#. Context: countries
 #: 
 msgid "Saudi Arabia (‫المملكة العربية السعودية‬‎)"
 msgstr "ሳውዲ አረቢያ"
 
+#. Context: countries
 #: 
 msgid "Senegal (Sénégal)"
 msgstr "ሴኔጋል"
 
+#. Context: countries
 #: 
 msgid "Serbia (Србија)"
 msgstr "ሴርብያ"
 
+#. Context: countries
 #: 
 msgid "Seychelles"
 msgstr "ሲይሸልስ"
 
+#. Context: countries
 #: 
 msgid "Sierra Leone"
 msgstr "ሰራሊዮን"
 
+#. Context: countries
 #: 
 msgid "Singapore"
 msgstr "ሲንጋፖር"
 
+#. Context: countries
 #: 
 msgid "Sint Maarten"
 msgstr "ሲንት ማርቴን"
 
+#. Context: countries
 #: 
 msgid "Slovakia (Slovensko)"
 msgstr "ስሎቫክያ"
 
+#. Context: countries
 #: 
 msgid "Slovenia (Slovenija)"
 msgstr "ስሎቬንያ"
 
+#. Context: countries
 #: 
 msgid "Solomon Islands"
 msgstr "የሰለሞን ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "Somalia (Soomaaliya)"
 msgstr "ሱማሊያ"
 
+#. Context: countries
 #: 
 msgid "South Africa"
 msgstr "ደቡብ አፍሪካ"
 
+#. Context: countries
 #: 
 msgid "South Georgia & South Sandwich Islands"
 msgstr "ደቡብ ጆርጂያ እና የደቡብ ሳንዲዊች ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "South Korea (대한민국)"
 msgstr "ደቡብ ኮሪያ"
 
+#. Context: countries
 #: 
 msgid "South Sudan (‫جنوب السودان‬‎)"
 msgstr "ደቡብ ሱዳን"
 
+#. Context: countries
 #: 
 msgid "Spain (España)"
 msgstr "እስጳንያ"
 
+#. Context: countries
 #: 
 msgid "Sri Lanka (ශ්‍රී ලංකාව)"
 msgstr "ስሪ ላንካ"
 
+#. Context: countries
 #: 
 msgid "St. Vincent & Grenadines"
 msgstr "ቅዱስ ቭንሰንት እና ግርናድንስ"
 
+#. Context: countries
 #: 
 msgid "Sudan (‫السودان‬‎)"
 msgstr "ሱዳን"
 
+#. Context: countries
 #: 
 msgid "Suriname"
 msgstr "ሱርናሚ"
 
+#. Context: countries
 #: 
 msgid "Svalbard and Jan Mayen (Svalbard og Jan Mayen)"
 msgstr "ስቫልባርድ እና ጃን ማየን"
 
+#. Context: countries
 #: 
 msgid "Swaziland"
 msgstr "ስዋዚላንድ"
 
+#. Context: countries
 #: 
 msgid "Sweden (Sverige)"
 msgstr "ሲውዲን"
 
+#. Context: countries
 #: 
 msgid "Switzerland (Schweiz)"
 msgstr "ስውዘርላንድ"
 
+#. Context: countries
 #: 
 msgid "Syria (‫سوريا‬‎)"
 msgstr "ሶርያ"
 
+#. Context: countries
 #: 
 msgid "Taiwan (台灣)"
 msgstr "ታይዋን"
 
+#. Context: countries
 #: 
 msgid "Tajikistan"
 msgstr "ታጂክስታን"
 
+#. Context: countries
 #: 
 msgid "Tanzania"
 msgstr "ታንዛንያ"
 
+#. Context: countries
 #: 
 msgid "Thailand (ไทย)"
 msgstr "ታይላንድ"
 
+#. Context: countries
 #: 
 msgid "Timor-Leste"
 msgstr "ቲሞር"
 
+#. Context: countries
 #: 
 msgid "Togo"
 msgstr "ቶጎ"
 
+#. Context: countries
 #: 
 msgid "Tokelau"
 msgstr "ቶኬላው"
 
+#. Context: countries
 #: 
 msgid "Tonga"
 msgstr "ቶንጋ"
 
+#. Context: countries
 #: 
 msgid "Trinidad and Tobago"
 msgstr "ትሪንዳድ እና ቶቤጎ"
 
+#. Context: countries
 #: 
 msgid "Tristan da Cunha"
 msgstr "ትሪስታን ዳ ቹንሃ"
 
+#. Context: countries
 #: 
 msgid "Tunisia (‫تونس‬‎)"
 msgstr "ቱንዚያ"
 
+#. Context: countries
 #: 
 msgid "Turkey (Türkiye)"
 msgstr "ቱርክ"
 
+#. Context: countries
 #: 
 msgid "Turkmenistan"
 msgstr "ቱርክሜንስታን"
 
+#. Context: countries
 #: 
 msgid "Turks and Caicos Islands"
 msgstr "ቱርኮች እና ካይኮስ ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "Tuvalu"
 msgstr "ቱቫሉ"
 
+#. Context: countries
 #: 
 msgid "U.S. Outlying Islands"
 msgstr "የአሚሪካ አውትላይንግ ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "U.S. Virgin Islands"
 msgstr "የአሜሪካ ቬርጅን ደሴቶች"
 
+#. Context: countries
 #: 
 msgid "Uganda"
 msgstr "ኡጋንዳ"
 
+#. Context: countries
 #: 
 msgid "Ukraine (Україна)"
 msgstr "ዩክሬን"
 
+#. Context: countries
 #: 
 msgid "United Arab Emirates (‫الإمارات العربية المتحدة‬‎)"
 msgstr "የተባበሩ አረቦች ህብረት"
 
+#. Context: countries
 #: 
 msgid "United Kingdom"
 msgstr "እንግሊዝ"
 
+#. Context: countries
 #: 
 msgid "United States"
 msgstr "አሜሪካ"
 
+#. Context: countries
 #: 
 msgid "Uruguay"
 msgstr "ኡራጓይ"
 
+#. Context: countries
 #: 
 msgid "Uzbekistan (Oʻzbekiston)"
 msgstr "ኡዝቤኪስታን"
 
+#. Context: countries
 #: 
 msgid "Vanuatu"
 msgstr "ቫኑዋቱ"
 
+#. Context: countries
 #: 
 msgid "Vatican City (Città del Vaticano)"
 msgstr "ቫቲካን ከተማ"
 
+#. Context: countries
 #: 
 msgid "Venezuela"
 msgstr "ቬንዙዌላ"
 
+#. Context: countries
 #: 
 msgid "Vietnam (Việt Nam)"
 msgstr "ቬትናም"
 
+#. Context: countries
 #: 
 msgid "Wallis and Futuna"
 msgstr "ዋሊስ እና ፉቱና"
 
+#. Context: countries
 #: 
 msgid "Western Sahara (‫الصحراء الغربية‬‎)"
 msgstr "ምዕራብ ሳሃራ"
 
+#. Context: countries
 #: 
 msgid "Yemen (‫اليمن‬‎)"
 msgstr "የመን"
 
+#. Context: countries
 #: 
 msgid "Zambia"
 msgstr "ዛምቢያ"
 
+#. Context: countries
 #: 
 msgid "Zimbabwe"
 msgstr "ዝምቧቤ"
@@ -6309,11 +6346,11 @@ msgid "Please verify your family's information"
 msgstr "እባክዎ የቤተሰብዎን መረጃ ያረጋግጡ"
 
 #: 
-msgid "Temple/TrustAddress is not Set."
+msgid "Temple Address is not Set."
 msgstr "የቤተ ክርስቲያን አድራሻ አልተሞላም"
 
 #: 
-msgid "Temple/TrustName is set to default value"
+msgid "Temple Name is set to default value"
 msgstr "የቤተ ክርስቲያን ስም ወደ ነባሪ እሴት ተቀናብሯል"
 
 #: 
@@ -6436,82 +6473,102 @@ msgstr "ከፈራሚ በፊት ደብዳቤ ለመጨረስ ይጠቅማል"
 msgid "Google Analytics Tracking Code"
 msgstr "የጉግል አናሌቲክስ መከታተያ ኮድ"
 
+#. Context: locales
 #: 
 msgid "English - United States"
 msgstr "የአሜሪካ እንግሊዘኛ"
 
+#. Context: locales
 #: 
 msgid "English - Canada"
 msgstr "የካናዳ እንግሊዘኛ"
 
+#. Context: locales
 #: 
 msgid "English - Australia"
 msgstr "የአውስትራሊያ እንግሊዘኛ"
 
+#. Context: locales
 #: 
 msgid "English - Great Britain"
 msgstr "የእንግሊዝ እንግሊዘኛ"
 
+#. Context: locales
 #: 
 msgid "German - Germany"
 msgstr "ጀርመንኛ"
 
+#. Context: locales
 #: 
 msgid "Spanish - Spain"
 msgstr "እስፔንኛ"
 
+#. Context: locales
 #: 
 msgid "French - France"
 msgstr "ፈረንሳይኛ"
 
+#. Context: locales
 #: 
 msgid "Hungarian"
 msgstr "ሃንጋሪኛ"
 
+#. Context: locales
 #: 
 msgid "Italian - Italy"
 msgstr "ጣልያንኛ"
 
+#. Context: locales
 #: 
 msgid "Norwegian"
 msgstr "ኖርዌንኛ"
 
+#. Context: locales
 #: 
 msgid "Dutch - Netherlands"
 msgstr "ዳች"
 
+#. Context: locales
 #: 
 msgid "Polish"
 msgstr "ፖላንዲኛ"
 
+#. Context: locales
 #: 
 msgid "Portuguese - Brazil"
 msgstr "የብራዚል ፖርቹጋልኛ"
 
+#. Context: locales
 #: 
 msgid "Romanian - Romania"
 msgstr "ሮማንያኛ"
 
+#. Context: locales
 #: 
 msgid "Russian"
 msgstr "ሩስያኛ"
 
+#. Context: locales
 #: 
 msgid "Sami (Northern) (Sweden)"
 msgstr "ሳሚ"
 
+#. Context: locales
 #: 
 msgid "Albanian"
 msgstr "አልባንያኛ"
 
+#. Context: locales
 #: 
 msgid "Vietnamese"
 msgstr "ቬትናምኛ"
 
+#. Context: locales
 #: 
 msgid "Chinese - China"
 msgstr "ቻይንኛ"
 
+#. Context: locales
 #: 
 msgid "Chinese - Taiwan"
 msgstr "ታይዋንኛ"
@@ -6533,7 +6590,7 @@ msgid "Failed"
 msgstr "አልተሳካም"
 
 #: 
-msgid "Temple/TrustChecking Account Number"
+msgid "Temple Checking Account Number"
 msgstr "የቤተ ክርስቲያን ማረጋገጫ መለያ ቁጥር"
 
 #: 
@@ -6581,16 +6638,13 @@ msgid "Profile Image uploaded"
 msgstr "የመገለጫ ምስል ተለጥፏል"
 
 #: 
-msgid "payments(s)?"
+#, fuzzy
+msgid "payment(s)?"
 msgstr "ክፍያ(ዎች)?"
 
 #: 
 msgid "Please ensure this what you want to do.</p>"
 msgstr "እባክዎ ይህን ማድረግ እንደሚፈልጉ ያረጋግጡ።"
-
-#: 
-msgid " this Family"
-msgstr "ይህ ቤተሰብ"
 
 #: 
 msgid "Confirm Deactivation"
@@ -6623,10 +6677,6 @@ msgstr "የዳታ መሠረት ፋይል ስም አስተባባሪ"
 #: 
 msgid "Intersect With Cart"
 msgstr "ወደጋሪ ያስገቡ"
-
-#: 
-msgid "Family Member"
-msgstr "የቤተሰብ አባል"
 
 #: 
 msgid "select an option"
@@ -6710,8 +6760,8 @@ msgid "Your Account was Deleted"
 msgstr "መለያህ ተሰርዟል።"
 
 #: 
-msgid "Your UnityConnect CRM Account was Deleted."
-msgstr "የUnityConnect CRM መለያህ ተሰርዟል።"
+msgid "Your UnityConnectCRM Account was Deleted."
+msgstr "የChurchCRM መለያህ ተሰርዟል።"
 
 #: 
 msgid "Account Locked"
@@ -6740,10 +6790,6 @@ msgstr "ፎቶ ይመልከቱ"
 #: 
 msgid "Family Photo"
 msgstr "የቤተሰብ ፎቶ"
-
-#: 
-msgid "Quick Settings"
-msgstr "ፈጣን ቅንብሮች"
 
 #: 
 msgid "Status"
@@ -6854,20 +6900,20 @@ msgid "Select GeoCoder Provider"
 msgstr "የጂኦኮደር አቅራቢን ይምረጡ"
 
 #: 
-msgid "Your UnityConnect CRM account was locked."
-msgstr "የUnityConnect CRM መለያህ ተቆልፏል"
+msgid "Your UnityConnectCRM account was locked."
+msgstr "የChurchCRM መለያህ ተቆልፏል"
 
 #: 
-msgid "A UnityConnect CRM account was created for you"
-msgstr "የUnityConnect CRM መለያ ለእርስዎ ተፈጥሯል"
+msgid "A UnityConnectCRM account was created for you"
+msgstr "የChurchCRM መለያ ለእርስዎ ተፈጥሯል"
 
 #: 
-msgid "You can reset your UnityConnect CRM password by clicking this link"
-msgstr "ይህንን ሊንክ ጠቅ በማድረግ የUnityConnect CRM ይለፍ ቃልዎን ዳግም ማስጀመር ይችላሉ"
+msgid "You can reset your UnityConnectCRM password by clicking this link"
+msgstr "ይህንን ሊንክ ጠቅ በማድረግ የChurchCRM ይለፍ ቃልዎን ዳግም ማስጀመር ይችላሉ"
 
 #: 
-msgid "Your UnityConnect CRM account was unlocked."
-msgstr "የUnityConnect CRM መለያህ ተከፍቷል"
+msgid "Your UnityConnectCRM account was unlocked."
+msgstr "የChurchCRM መለያህ ተከፍቷል"
 
 #: 
 msgid "system user created"
@@ -7035,8 +7081,8 @@ msgstr "እባክዎ ወደ ሚከተለው ቦታ ይሂዱ"
 
 #: 
 #, fuzzy
-msgid "Your UnityConnect CRM password has been changed"
-msgstr "የአንተ UnityConnect CRM የዘመነ የይለፍ ቃል ተለውጧል"
+msgid "Your UnityConnectCRM password has been changed"
+msgstr "የአንተ UnityConnectCRM የዘመነ የይለፍ ቃል ተለውጧል"
 
 #: 
 msgid "Password Reset Link"
@@ -7047,24 +7093,12 @@ msgid "Reset Password"
 msgstr "የይለፍ ቃል ይቀይሩ"
 
 #: 
-msgid "Unable to reset password"
-msgstr "የይለፍ ቃል መቀየር አልተቻለም"
-
-#: 
 msgid "Reset your password"
 msgstr "የራስዎን የይለፍ ቃል ይቀይሩ"
 
 #: 
 msgid "Sorry, we are unable to process your request at this point in time."
 msgstr "ይቅርታ፣ በዚህ ጊዜ ጥያቄህን ማስተናገድ አልቻልንም"
-
-#: 
-msgid "Login Name is Required"
-msgstr "የመግቢያ ስም ያስፈልጋል"
-
-#: 
-msgid "A new password was sent to you. Please check your email"
-msgstr "አዲስ የይለፍ ቃል ተልኳል። እባክዎ ኢሜልዎን ይመልከቱ"
 
 #: 
 msgid "Kiosk Manager"
@@ -7167,10 +7201,6 @@ msgid "Not all members of this group are in the cart"
 msgstr "ሁሉም የዚህ ቡድን አባላት በመዝገቡ ውስጥ አይደሉም"
 
 #: 
-msgid "Add all"
-msgstr "ሁሉንም ጨምር"
-
-#: 
 msgid "Are you sure you want to remove the selected group members?"
 msgstr "እርግጠኛ ነዎት የተመረጡትን የቡድን አባላት ማስወገድ ይፈልጋሉ?"
 
@@ -7194,10 +7224,12 @@ msgstr "የመልቀቂያ ማስታወሻዎች"
 msgid "Move"
 msgstr "አንቀሳቅስ"
 
+#. Context: locales
 #: 
 msgid "Arabic - Egypt"
 msgstr "አረብኛ - ግብፅ"
 
+#. Context: locales
 #: 
 msgid "Thai"
 msgstr "ታይ"
@@ -7210,10 +7242,6 @@ msgstr "የቤተክርስቲያንህ የፌስቡክ ገጽ"
 #, fuzzy
 msgid "Your Church's X Page"
 msgstr "የቤተክርስቲያንህ ትዊተር ገጽ"
-
-#: 
-msgid "lookup user images on Google when no local image is present"
-msgstr "ምንም የአካባቢ ምስል በማይኖርበት ጊዜ የተጠቃሚ ምስሎችን በ Google ላይ ይፈልጉ"
 
 #: 
 msgid "Self Register"
@@ -7231,6 +7259,7 @@ msgstr "በመጠባበቅ ላይ ራስን ማረጋገጥ"
 msgid "Self Verify"
 msgstr "ራስን ማረጋገጥ"
 
+#. Context: locales
 #: 
 msgid "Indonesian - Indonesia"
 msgstr "ኢንዶኔዥያ - ኢንዶኔዥያ"
@@ -7276,7 +7305,7 @@ msgid "New Family Added"
 msgstr "አዲስ ቤተሰብ ታክሏል"
 
 #: 
-msgid "Temple/TrustGreeter"
+msgid "Temple Greeter"
 msgstr "የቤተክርስቲያን ሰላምታ ሰጪ"
 
 #: 
@@ -7416,10 +7445,6 @@ msgid "Maximum number of Addresses"
 msgstr "ከፍተኛው የአድራሻዎች ብዛት "
 
 #: 
-msgid "Show type of group:"
-msgstr "የቡድን አይነት አሳይ"
-
-#: 
 msgid "Add Students"
 msgstr "ተማሪዎችን ያክሉ "
 
@@ -7466,26 +7491,6 @@ msgstr "የፎቶ መጽሐፍ ፍጠር"
 #: 
 msgid "SSE"
 msgstr "SSE"
-
-#: 
-msgid "Height to use for images"
-msgstr "ለምስሎች ጥቅም ላይ የሚውል ቁመት "
-
-#: 
-msgid "Width to use for images"
-msgstr "ለምስሎች ለመጠቀም ስፋት "
-
-#: 
-msgid "Width to use for thumbnails"
-msgstr "ለጥፍር አከሎች የሚጠቀሙበት ስፋት "
-
-#: 
-msgid "Point size to use for initials thumbnails"
-msgstr "ለመጀመሪያዎቹ ድንክዬዎች የሚጠቀሙበት የነጥብ መጠን "
-
-#: 
-msgid "Client cache seconds for images"
-msgstr "ለምስሎች የደንበኛ መሸጎጫ ሰከንዶች "
 
 #: 
 msgid "Server cache time for remote images"
@@ -7540,10 +7545,6 @@ msgid "Resize Event"
 msgstr "የክስተቱን መጠን ቀይር"
 
 #: 
-msgid "Text from"
-msgstr "ጽሑፍ ከ"
-
-#: 
 msgid "Profile"
 msgstr "መገለጫ"
 
@@ -7592,8 +7593,8 @@ msgid "Field where last Confession is stored, must be a date type"
 msgstr "የመጨረሻው ኑዛዜ የተከማቸበት መስክ፣ የቀን አይነት መሆን አለበት"
 
 #: 
-msgid "Require that this UnityConnect CRM Database is accessed over HTTPS"
-msgstr "ይህ የUnityConnect CRM መረጃ ቋት በHTTPS ላይ እንዲደርስ ጠይቅ"
+msgid "Require that this UnityConnectCRM Database is accessed over HTTPS"
+msgstr "ይህ የChurchCRM መረጃ ቋት በHTTPS ላይ እንዲደርስ ጠይቅ"
 
 #: 
 msgid "People Setup"
@@ -7796,16 +7797,13 @@ msgid "Not Found: Unknown calendar id"
 msgstr "አልተገኘም፡ ያልታወቀ የቀን መቁጠሪያ መታወቂያ"
 
 #: 
-msgid "no found or user without an email"
+#, fuzzy
+msgid "not found or user without an email"
 msgstr "አልተገኘም ወይም ኢሜል የሌለው ተጠቃሚ አለ"
 
 #: 
 msgid "UserName not set"
 msgstr "የተጠቃሚ ስም አልተዘጋጀም"
-
-#: 
-msgid "The people and families has been cleared from the database."
-msgstr "ሰዎቹ እና ቤተሰቦቹ ከመረጃ ቋቱ ጸድተዋል"
 
 #: 
 msgid "Self Registrations"
@@ -7974,8 +7972,8 @@ msgid "User must have Delete Records permission"
 msgstr "ተጠቃሚው መዝገቦችን የማጥፋት ፈቃድ ሊኖረው ይገባል"
 
 #: 
-msgid "UnityConnect CRM Central Notifications URL"
-msgstr "UnityConnect CRM ማዕከላዊ ማሳወቂያዎች URL"
+msgid "ChurchCRM Central Notifications URL"
+msgstr "ChurchCRM ማዕከላዊ ማሳወቂያዎች URL"
 
 #: 
 #, fuzzy
@@ -8063,10 +8061,6 @@ msgid "Menu Name"
 msgstr "የምርጫ ዝርዝር ስም "
 
 #: 
-msgid "Max 20 char"
-msgstr "ከ 20 በላይ ፊደል  አይቻልም "
-
-#: 
 msgid "Link Address"
 msgstr "አገናኝ አድራሻ "
 
@@ -8083,20 +8077,8 @@ msgid "is disabled"
 msgstr "አይሰራም "
 
 #: 
-msgid "System Information"
-msgstr "የስርዓት መረጃ "
-
-#: 
 msgid "Software Version"
 msgstr "የሶፍትዌር ስሪት "
-
-#: 
-msgid "Valid Mail Server Settings"
-msgstr "ትክክለኛ የደብዳቤ አገልጋይ ቅንብሮች"
-
-#: 
-msgid "Database"
-msgstr "የዉሂብ ጎታ"
 
 #: 
 msgid "Database Version"
@@ -8138,6 +8120,7 @@ msgstr "በአዲሱ የአባል ኢሜል ማሳወቂያ አካል ውስጥ 
 msgid "Include family custom properties in global search."
 msgstr "በዓለም አቀፍ ፍለጋ ውስጥ የቤተሰብ ብጁ ንብረቶችን ያካትቱ"
 
+#. Context: countries
 #: 
 msgid "Latvia (Latvija)"
 msgstr "ላቲቪያ"
@@ -8162,10 +8145,6 @@ msgstr "መዝገቦች "
 #, fuzzy
 msgid "Emptied into Event"
 msgstr "በክስተቱ መታወቂያ ባዶ "
-
-#: 
-msgid "integrityCheck.json file missing"
-msgstr "ታማኝነት ማረጋገጫ ፋይል ጠፍቷል "
 
 #: 
 msgid "Passed"
@@ -8196,7 +8175,7 @@ msgid "Warning: Signature mismatch"
 msgstr "ማስጠንቀቂያ፡ የፊርማ አለመዛመድ"
 
 #: 
-msgid "Some UnityConnect CRM system files may have been modified since the last installation."
+msgid "Some UnityConnectCRM system files may have been modified since the last installation."
 msgstr "አንዳንድ የቤት ክርስቲያን CRM ስርዓት ፋይሎች ከመጨረሻው ጭነት በኋላ ተስተካክለው ሊሆን ይችላል "
 
 #: 
@@ -8213,10 +8192,6 @@ msgid "Integrity Check Details:"
 msgstr "የታማኝነት ማረጋገጫ ዝርዝሮች "
 
 #: 
-msgid "I Understand"
-msgstr "ተረድቻለሁ "
-
-#: 
 msgid "Unsupported Deposit Types Detected"
 msgstr "የማይደግፉ የተቀማጭ ገንዘብ ዓይነቶች ተገኝተዋል "
 
@@ -8224,13 +8199,10 @@ msgstr "የማይደግፉ የተቀማጭ ገንዘብ ዓይነቶች ተገ�
 msgid "Support for eGive, Credit Card, and Bank Draft payments has been deprecated.  Existing non-bank reports may no longer be accessible in future versions."
 msgstr "የኢጊቭ፣ የክሬዲት ካርድ እና የባንክ ረቂቅ ክፍያዎች ድጋፍ ተቋርጧል። አሁን ያሉት የባንክ ያልሆኑ ሪፖርቶች ለወደፊት ስሪቶች ተደራሽ ላይሆኑ ይችላሉ።"
 
+#. Context: locales
 #: 
 msgid "Estonian"
 msgstr "ኢስቶኒያን"
-
-#: 
-msgid "Error decoding integrity check result file"
-msgstr "የትክክለኛነት ማረጋገጫ ዉጤት ፋይልን የመግለጽ ስህተት "
 
 #: 
 msgid "Error decoding signature definition file"
@@ -8243,10 +8215,6 @@ msgstr "ምትክ ማመንጨት "
 #: 
 msgid "Remote Backup Endpoint.  If WebDAV, this must be url encoded. "
 msgstr "የርቀት የምትኩ  መጨረሻ ነጥብ። WebDAV ከሆነ፣ ይህ ዩአርኤል መደበቅ አለበት።"
-
-#: 
-msgid "Include initials image files, remote image files (gravatar), and thumbnails in backup.  These files are generally able to be reproduced after a restore and add very little value to the backup archive at a large expense of execution time and storage"
-msgstr "የመጀመሪያ ፊደሎችን የምስል ፋይሎችን፣ የርቀት ምስል ፋይሎችን (ግራቫታር) እና በመጠባበቂያ ውስጥ ያሉ ጥፍር አከሎችን ያካትቱ። እነዚህ ፋይሎች በአጠቃላይ ከተመለሱ በኋላ እንደገና ሊባዙ ይችላሉ እና በመጠባበቂያ መዝገብ ውስጥ በጣም ትንሽ እሴት የሚጨምሩት ለትግበራ ጊዜ እና ማከማቻ ትልቅ ወጪ ነው"
 
 #: 
 msgid "Password (if any)"
@@ -8314,7 +8282,8 @@ msgstr "\n"
 "ተጓዳኝ መረጃው ለዚያ ሰው ካልገባ።"
 
 #: 
-msgid "Press CTRL + C to copy all group members\\' phone numbers"
+#, fuzzy
+msgid "Press CTRL + C to copy all group members' phone numbers"
 msgstr "ሁሉንም የቡድን አባላት ስልክ ቁጥር ለመቅዳት Ctrl +C ን ይጫኑ "
 
 #: 
@@ -8360,10 +8329,6 @@ msgstr "ለበለጠ መረጃ እባክዎን የምዝግብ ማስታወሻ�
 #: 
 msgid "Verification URL"
 msgstr "የማረጋገጫ ዩአርኤል"
-
-#: 
-msgid "Reset System"
-msgstr "ስርዓት ዳግም አስጀምር"
 
 #: 
 msgid "Unexpected Person Id"
@@ -8426,10 +8391,6 @@ msgid "Remove Results from Cart"
 msgstr "ውጤቶችን ከጋሪ አስወግድ "
 
 #: 
-msgid "Warning: Pre-Upgrade Tasks Detected"
-msgstr "ማስጠንቀቂያ፡ የቅድመ-ማሻሻል ተግባራት ተገኝተዋል "
-
-#: 
 #, fuzzy
 msgid "Some conditions have been identified which may prevent a successful upgrade"
 msgstr "ስኬታማ የሆነ ማሻሻልን የሚከለክሉ አንዳንድ ሁኔታዎች ተለይተዋል። "
@@ -8444,19 +8405,6 @@ msgstr "\n"
 "የውሂብ ጎታ ዳግም ማስጀመር ተግባራት"
 
 #: 
-msgid "Reset Members"
-msgstr "አባላትን ዳግም አስጀምር"
-
-#: 
-msgid "This will remove all the member data, people, and families and can't be undone."
-msgstr "\n"
-"ይህ ሁሉንም የአባል ውሂብ፣ ሰዎች እና ቤተሰቦች ያስወግዳል እና ሊቀለበስ አይችልም።"
-
-#: 
-msgid "Reset Families/People"
-msgstr "ቤተሰቦችን/ሰዎችን ዳግም ማስጀመር"
-
-#: 
 msgid "Reset Database"
 msgstr "የውሂብ ጎታ ዳግም አስጀምር"
 
@@ -8465,14 +8413,7 @@ msgid "This will reset the system data and will restart the system as a new inst
 msgstr "\n"
 "ይህ ስርዓት ውሂብን እንደገና ያስጀምረዋል እና ስርዓቱን እንደ አዲስ ጭነት እንደገና ያስጀምረዋል።"
 
-#: 
-msgid "Clear Filter"
-msgstr "ግልጽ ማጣሪያ"
-
-#: 
-msgid "Add Person"
-msgstr "ሰው ጨምር"
-
+#. Context: locales
 #: 
 msgid "Portuguese - Portugal"
 msgstr "ፖርቱጋልኛ - ፖርቱጋል"
@@ -8490,7 +8431,7 @@ msgid "Requires users to self-enroll in 2 factor authentication"
 msgstr "ተጠቃሚዎች በ2  የማረጋገጫ  መንገድ ራሳቸው እንዲመዘገቡ ይፈልጋል"
 
 #: 
-msgid "UnityConnect CRM"
+msgid "ChurchCRM"
 msgstr "የቤተክርስቲያን CRM"
 
 #: 
@@ -8567,8 +8508,8 @@ msgid "Unable To Begin Two Factor Authentication Enrollment"
 msgstr "የሁለት ደረጃ ማረጋገጫ ምዝገባን መጀመር አልተቻለም"
 
 #: 
-msgid "Two factor authentication requires UnityConnect CRM administrators to configure a few parameters"
-msgstr "የሁለት ደረጃ ማረጋገጫ የUnityConnect CRM አስተዳዳሪዎች ጥቂት መለኪያዎችን እንዲያዋቅሩ ይጠይቃል"
+msgid "Two factor authentication requires UnityConnectCRM administrators to configure a few parameters"
+msgstr "የሁለት ደረጃ ማረጋገጫ የChurchCRM አስተዳዳሪዎች ጥቂት መለኪያዎችን እንዲያዋቅሩ ይጠይቃል"
 
 #: 
 msgid "System configuration "
@@ -8617,10 +8558,6 @@ msgstr "\n"
 "የይለፍ ቃል ዳግም ማስጀመር አይገኝም። እባክዎ የስርዓት አስተዳዳሪዎን ያግኙ"
 
 #: 
-msgid "Authentication Issue"
-msgstr "የማረጋገጫ ጉዳይ"
-
-#: 
 msgid "Enter new user password. Administratively set passwords are not subject to length or complexity requirements"
 msgstr "አዲስ የተጠቃሚ ይለፍ ቃል ያስገቡ። በአስተዳደር የተቀመጡ የይለፍ ቃሎች ለረዘም ወይም ውስብስብነት መስፈርቶች ተገዢ አይደሉም"
 
@@ -8648,6 +8585,7 @@ msgstr "በመጫን ላይ"
 msgid "List not found"
 msgstr "ዝርዝር አልተገኘም።"
 
+#. typo
 #: 
 #, fuzzy
 msgid "List not in the list"
@@ -8663,24 +8601,12 @@ msgid "Invalid List id"
 msgstr "ልክ ያልሆነ የዝርዝር መታወቂያ"
 
 #: 
-msgid "Audience not in the UnityConnect CRM"
+msgid "Audience not in the UnityConnectCRM"
 msgstr "ታዳሚዎች በቤተክርስቲያን CRM ውስጥ አይደሉም"
-
-#: 
-msgid "UnityConnect CRM Installation Information"
-msgstr "UnityConnect CRM ጭነት መረጃ"
-
-#: 
-msgid "Database Server Version"
-msgstr "የውሂብ ጎታ አገልጋይ ሥሪት"
 
 #: 
 msgid "Web Server"
 msgstr "የድር አገልጋይ"
-
-#: 
-msgid "Email Information"
-msgstr "የኢሜል መረጃ"
 
 #: 
 msgid "List maintenance"
@@ -8694,6 +8620,7 @@ msgstr "በዝርዝሩ ውስጥ የሌሉ ሰዎች"
 msgid "Audience not in the CRM"
 msgstr "በCRM ውስጥ የሌሉ ታዳሚዎች "
 
+#. Context: locales
 #: 
 msgid "Hebrew"
 msgstr "ዕብራይስጥ"
@@ -8829,16 +8756,16 @@ msgid "Event Description"
 msgstr "የክስተት መግለጫ"
 
 #: 
-msgid "Enrolling your UnityConnect CRM user account in Two Factor Authention provides an additional layer of defense against bad actors trying to access your account."
-msgstr "የUnityConnect CRM ተጠቃሚ መለያዎን በሁለት ፋክተር ማረጋገጫ መመዝገብ መለያዎን ለመክፈት ከሚሞክሩ ያልተገቡ ሰዎች ተጨማሪ የመከላከል አቅም ይሰጣል።"
+msgid "Enrolling your UnityConnectCRM user account in Two Factor Authention provides an additional layer of defense against bad actors trying to access your account."
+msgstr "የChurchCRM ተጠቃሚ መለያዎን በሁለት ፋክተር ማረጋገጫ መመዝገብ መለያዎን ለመክፈት ከሚሞክሩ ያልተገቡ ሰዎች ተጨማሪ የመከላከል አቅም ይሰጣል።"
 
 #: 
-msgid "UnityConnect CRM Two factor supports any TOTP authenticator app, so you're free to choose between Microsoft Authenticator, Google Authenticator, Authy, LastPass, and others"
-msgstr "UnityConnect CRM Two factor ማንኛውንም የTOTP አረጋጋጭ መተግበሪያን ይደግፋል፣ ስለዚህ በማይክሮሶፍት አረጋጋጭ፣ Google አረጋጋጭ፣ Authy፣ LastPass እና ሌሎች መካከል መምረጥ ይችላሉ፡፡"
+msgid "ChurchCRM Two factor supports any TOTP authenticator app, so you're free to choose between Microsoft Authenticator, Google Authenticator, Authy, LastPass, and others"
+msgstr "ChurchCRM Two factor ማንኛውንም የTOTP አረጋጋጭ መተግበሪያን ይደግፋል፣ ስለዚህ በማይክሮሶፍት አረጋጋጭ፣ Google አረጋጋጭ፣ Authy፣ LastPass እና ሌሎች መካከል መምረጥ ይችላሉ፡፡"
 
 #: 
-msgid "When you sign in to UnityConnect CRM, you'll still enter your username and password like normal"
-msgstr "ወደ UnityConnect CRM ሲገቡ ሁልጊዜ የእርስዎን የተጠቃሚ ስም እና የይለፍ ቃል እንደተለመደው ያስገባሉ።"
+msgid "When you sign in to ChurchCRM, you'll still enter your username and password like normal"
+msgstr "ወደ UnityConnectCRM ሲገቡ ሁልጊዜ የእርስዎን የተጠቃሚ ስም እና የይለፍ ቃል እንደተለመደው ያስገባሉ።"
 
 #: 
 msgid "However, you'll also need to supply a one-time code from your authenticator device to complete your login"
@@ -8849,8 +8776,8 @@ msgid "After successfully entering both your credentials, and the one-time code,
 msgstr "ሁለቱንም ምስክርነቶችዎን እና የአንድ ጊዜ ኮድ በተሳካ ሁኔታ ካስገቡ በኋላ፣ መደበኛው ሆነው መግባት ይችላሉ፡፡"
 
 #: 
-msgid "To prevent being locked out of your UnityConnect CRM account, please ensure you're ready to complete two factor enrollment before clicking begin"
-msgstr "ከUnityConnect CRM መለያዎ መቆለፍንና መዉጣትን ለመከላከል፣ እባክዎን ጀምርን ከመጫኖ በፊት የሁለት ደረጃ ምዝገባን ለማጠናቀቅ ዝግጁ መሆንዎን ያረጋግጡ።"
+msgid "To prevent being locked out of your UnityConnectCRM account, please ensure you're ready to complete two factor enrollment before clicking begin"
+msgstr "ከChurchCRM መለያዎ መቆለፍንና መዉጣትን ለመከላከል፣ እባክዎን ጀምርን ከመጫኖ በፊት የሁለት ደረጃ ምዝገባን ለማጠናቀቅ ዝግጁ መሆንዎን ያረጋግጡ።"
 
 #: 
 msgid "Beginning enrollment will invalidate any previously enrolled 2 factor devices and recovery codes."
@@ -8923,6 +8850,7 @@ msgstr "በቦታው የተገኙ እና ያልተገኙትን ሰዎችን ሪ�
 msgid "Help translate this project"
 msgstr "ይህንን ፕሮጀክት ለመተርጎም ያግዙ"
 
+#. Context: locales
 #: 
 msgid "Afrikaans"
 msgstr "\n"

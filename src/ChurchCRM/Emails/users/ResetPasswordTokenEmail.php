@@ -22,7 +22,7 @@ class ResetPasswordTokenEmail extends BaseUserEmail
 
     protected function buildMessageBody(): string
     {
-        return gettext('You can reset your ChurchCRM password by clicking this link') . ':';
+        return gettext('You can reset your UnityConnectCRM password by clicking this link') . ':';
     }
 
     protected function getFullURL(): string

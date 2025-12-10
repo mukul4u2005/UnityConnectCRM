@@ -5,19 +5,34 @@ use ChurchCRM\model\ChurchCRM\Deposit;
 use ChurchCRM\model\ChurchCRM\DepositQuery;
 use ChurchCRM\model\ChurchCRM\PledgeQuery;
 use ChurchCRM\Slim\Middleware\Request\Auth\FinanceRoleAuthMiddleware;
-use ChurchCRM\Slim\Request\SlimUtils;
+use ChurchCRM\Slim\SlimUtils;
+use ChurchCRM\Utils\InputUtils;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Routing\RouteCollectorProxy;
 
 $app->group('/deposits', function (RouteCollectorProxy $group): void {
     $group->post('', function (Request $request, Response $response, array $args): Response {
+        /** @var ChurchCRM\Service\DepositService $depositService */
+        $depositService = $this->get('DepositService');
         $input = $request->getParsedBody();
-        $deposit = new Deposit();
-        $deposit->setType($input['depositType']);
-        $deposit->setComment($input['depositComment']);
-        $deposit->setDate($input['depositDate']);
-        $deposit->save();
+        $depositType = $input['depositType'] ?? '';
+        $depositComment = InputUtils::sanitizeText($input['depositComment']) ?? '';
+        $depositDate = $input['depositDate'] ?? date('Y-m-d');
+
+        // Validate depositType against allowed values
+        $allowedTypes = ['Bank', 'CreditCard', 'BankDraft', 'eGive'];
+        if (!in_array($depositType, $allowedTypes, true)) {
+            $errorMsg = $depositType === ''
+                ? 'Deposit type is required. Please provide one of: ' . implode(', ', $allowedTypes)
+                : "Deposit type '$depositType' is invalid. Allowed types: " . implode(', ', $allowedTypes);
+            return SlimUtils::renderJSON($response->withStatus(400), [
+                'error' => $errorMsg,
+                'allowedTypes' => $allowedTypes
+            ]);
+        }
+
+        $deposit = $depositService->createDeposit($depositType, $depositComment, $depositDate);
         return SlimUtils::renderJSON($response, $deposit->toArray());
     });
 
@@ -48,7 +63,7 @@ $app->group('/deposits', function (RouteCollectorProxy $group): void {
         $input = $request->getParsedBody();
         $appDeposit = DepositQuery::create()->findOneById($id);
         $appDeposit->setType($input['depositType']);
-        $appDeposit->setComment($input['depositComment']);
+        $appDeposit->setComment(InputUtils::escapeHTML($input['depositComment'] ?? ''));
         $appDeposit->setDate($input['depositDate']);
         $appDeposit->setClosed($input['depositClosed']);
         $appDeposit->save();
@@ -56,16 +71,34 @@ $app->group('/deposits', function (RouteCollectorProxy $group): void {
     });
 
     $group->get('/{id:[0-9]+}/ofx', function (Request $request, Response $response, array $args): Response {
-        $id = (int) $args['id'];
-        $deposit = DepositQuery::create()->findOneById($id);
-        $OFX = $deposit->getOFX();
-        header($OFX->header);
-        return SlimUtils::renderJSON($response, $OFX->content);
+    $id = (int) $args['id'];
+    $deposit = DepositQuery::create()->findOneById($id);
+    if ($deposit === null) {
+        return SlimUtils::renderJson($response->withStatus(404), ['message' => 'Deposit not found']);
+    }
+    $OFX = $deposit->getOFX();
+    header($OFX->header);
+    return SlimUtils::renderJSON($response, ['content' => $OFX->content]);
     });
 
     $group->get('/{id:[0-9]+}/pdf', function (Request $request, Response $response, array $args): Response {
         $id = (int) $args['id'];
+
+        // If there are no payments for this deposit, return a controlled response
+        $paymentsCount = PledgeQuery::create()->filterByDepId($id)->count();
+        if ($paymentsCount === 0) {
+            // Some clients and probes use HEAD; respond with appropriate status without throwing
+            if (strtoupper($request->getMethod()) === 'HEAD') {
+                return $response->withStatus(404);
+            }
+
+            return SlimUtils::renderJson($response->withStatus(404), ['message' => 'No Payments on this Deposit']);
+        }
+
         $deposit = DepositQuery::create()->findOneById($id);
+        if ($deposit === null) {
+            return SlimUtils::renderJson($response->withStatus(404), ['message' => 'Deposit not found']);
+        }
         $deposit->getPDF();
         return SlimUtils::renderSuccessJSON($response);
     });
@@ -78,7 +111,7 @@ $app->group('/deposits', function (RouteCollectorProxy $group): void {
             ->joinDonationFund()->useDonationFundQuery()
             ->withColumn('DonationFund.Name', 'DonationFundName')
             ->endUse()
-            ->joinFamily()->useFamilyQuery()
+            ->leftJoinFamily()->useFamilyQuery()
             ->withColumn('Family.Name', 'FamilyName')
             ->endUse()
             ->find()
@@ -103,15 +136,17 @@ $app->group('/deposits', function (RouteCollectorProxy $group): void {
 
     $group->get('/{id:[0-9]+}/pledges', function (Request $request, Response $response, array $args): Response {
         $id = (int) $args['id'];
-        $Pledges = PledgeQuery::create()
-            ->filterByDepId($id)
-            ->groupByGroupKey()
-            ->withColumn('SUM(Pledge.Amount)', 'sumAmount')
-            ->joinDonationFund()
-            ->withColumn('DonationFund.Name')
-            ->find()
-            ->toArray();
+        /** @var ChurchCRM\Service\DepositService $depositService */
+        $depositService = $this->get('DepositService');
+        $result = $depositService->getDepositItemsByType($id, 'Pledge');
+        return SlimUtils::renderJSON($response, $result);
+    });
 
-        return SlimUtils::renderJSON($response, $Pledges);
+    $group->get('/{id:[0-9]+}/payments', function (Request $request, Response $response, array $args): Response {
+        $id = (int) $args['id'];
+        /** @var ChurchCRM\Service\DepositService $depositService */
+        $depositService = $this->get('DepositService');
+        $result = $depositService->getDepositItemsByType($id, 'Payment');
+        return SlimUtils::renderJSON($response, $result);
     });
 })->add(FinanceRoleAuthMiddleware::class);

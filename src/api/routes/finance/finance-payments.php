@@ -3,7 +3,8 @@
 use ChurchCRM\Authentication\AuthenticationManager;
 use ChurchCRM\model\ChurchCRM\PledgeQuery;
 use ChurchCRM\Slim\Middleware\Request\Auth\FinanceRoleAuthMiddleware;
-use ChurchCRM\Slim\Request\SlimUtils;
+use ChurchCRM\Slim\SlimUtils;
+use ChurchCRM\Utils\InputUtils;
 use Propel\Runtime\ActiveQuery\Criteria;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
@@ -22,7 +23,7 @@ $app->group('/payments', function (RouteCollectorProxy $group): void {
     });
 
     $group->post('/', function (Request $request, Response $response, array $args): Response {
-        $payment = $request->getParsedBody();
+        $payment = (object) $request->getParsedBody();
         /** @var FinancialService  $financialService */
         $financialService = $this->get('FinancialService');
 
@@ -44,7 +45,7 @@ $app->group('/payments', function (RouteCollectorProxy $group): void {
         if (!AuthenticationManager::getCurrentUser()->isShowPledges()) {
             $query->filterByPledgeOrPayment('Pledge', Criteria::NOT_EQUAL);
         }
-        $query->innerJoinDonationFund()->withColumn('donationfund_fun.fun_Name', 'PledgeName');
+        $query->joinWithDonationFund();
         $data = $query->find();
 
         $rows = [];
@@ -55,12 +56,12 @@ $app->group('/payments', function (RouteCollectorProxy $group): void {
             $newRow['Nondeductible'] = $row->getNondeductible();
             $newRow['Schedule'] = $row->getSchedule();
             $newRow['Method'] = $row->getMethod();
-            $newRow['Comment'] = $row->getComment();
+            $newRow['Comment'] = InputUtils::escapeHTML($row->getComment() ?? '');
             $newRow['PledgeOrPayment'] = $row->getPledgeOrPayment();
             $newRow['Date'] = $row->getDate('Y-m-d');
             $newRow['DateLastEdited'] = $row->getDateLastEdited('Y-m-d');
             $newRow['EditedBy'] = $row->getPerson()->getFullName();
-            $newRow['Fund'] = $row->getPledgeName();
+            $newRow['Fund'] = $row->getDonationFund()->getName();
             $rows[] = $newRow;
         }
 

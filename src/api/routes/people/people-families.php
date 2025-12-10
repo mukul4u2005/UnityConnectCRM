@@ -9,10 +9,11 @@ use ChurchCRM\model\ChurchCRM\Map\TokenTableMap;
 use ChurchCRM\model\ChurchCRM\Note;
 use ChurchCRM\model\ChurchCRM\NoteQuery;
 use ChurchCRM\model\ChurchCRM\Person;
+use ChurchCRM\model\ChurchCRM\PersonQuery;
 use ChurchCRM\model\ChurchCRM\Token;
 use ChurchCRM\model\ChurchCRM\TokenQuery;
 use ChurchCRM\Service\FinancialService;
-use ChurchCRM\Slim\Request\SlimUtils;
+use ChurchCRM\Slim\SlimUtils;
 use Propel\Runtime\ActiveQuery\Criteria;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
@@ -22,6 +23,36 @@ $app->group('/families', function (RouteCollectorProxy $group): void {
     $group->get('/latest', 'getLatestFamilies');
     $group->get('/updated', 'getUpdatedFamilies');
     $group->get('/anniversaries', 'getFamiliesWithAnniversaries');
+    $group->get('/familiesInCart', function (Request $request, Response $response, array $args): Response {
+        $familiesInCart = [];
+        
+        // Check if cart has items
+        if (!empty($_SESSION['aPeopleCart'])) {
+            $cartPersonIDs = $_SESSION['aPeopleCart'];
+            
+            // Optimized query: Query people by IDs in cart, get their families
+            // This only loads people in cart (efficient) instead of all families
+            $people = PersonQuery::create()
+                ->filterById($cartPersonIDs)
+                ->find();
+            
+            // Collect unique family IDs from the people in cart
+            $uniqueFamilyIds = [];
+            foreach ($people as $person) {
+                $familyId = $person->getFamId();
+                if (!in_array($familyId, $uniqueFamilyIds, false)) {
+                    $uniqueFamilyIds[] = $familyId;
+                    // Verify ALL members of this family are in cart
+                    $family = FamilyQuery::create()->findPk($familyId);
+                    if ($family && $family->checkAgainstCart()) {
+                        $familiesInCart[] = $familyId;
+                    }
+                }
+            }
+        }
+        
+        return SlimUtils::renderJSON($response, ['familiesInCart' => $familiesInCart]);
+    });
 
     $group->get('/email/without', function (Request $request, Response $response, array $args): Response {
         $families = FamilyQuery::create()->joinWithPerson()->find();
@@ -142,11 +173,22 @@ $app->group('/families', function (RouteCollectorProxy $group): void {
 
 function getFamiliesWithAnniversaries(Request $request, Response $response, array $args): Response
 {
+    // Get anniversaries for 14-day range: 7 days before to 7 days after today
+    $today = new \DateTime();
+    $conditions = [];
+
+    for ($i = -7; $i <= 7; $i++) {
+        $date = (clone $today)->modify("{$i} days");
+        $month = (int)$date->format('m');
+        $day = (int)$date->format('d');
+        // Values are safe: cast to int from DateTime::format()
+        $conditions[] = "(MONTH(" . FamilyTableMap::COL_FAM_WEDDINGDATE . ") = {$month} AND DAY(" . FamilyTableMap::COL_FAM_WEDDINGDATE . ") = {$day})";
+    }
+
     $families = FamilyQuery::create()
         ->filterByDateDeactivated(null)
         ->filterByWeddingdate(null, Criteria::NOT_EQUAL)
-        ->addUsingAlias(FamilyTableMap::COL_FAM_WEDDINGDATE, 'MONTH(' . FamilyTableMap::COL_FAM_WEDDINGDATE . ') =' . date('m'), Criteria::CUSTOM)
-        ->addUsingAlias(FamilyTableMap::COL_FAM_WEDDINGDATE, 'DAY(' . FamilyTableMap::COL_FAM_WEDDINGDATE . ') =' . date('d'), Criteria::CUSTOM)
+        ->where(implode(' OR ', $conditions))
         ->orderByWeddingdate('DESC')
         ->find();
 

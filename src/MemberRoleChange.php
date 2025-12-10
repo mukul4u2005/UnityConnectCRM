@@ -8,7 +8,7 @@ use ChurchCRM\Utils\InputUtils;
 use ChurchCRM\Utils\RedirectUtils;
 
 // Security: User must have Manage Groups & Roles permission
-AuthenticationManager::redirectHomeIfFalse(AuthenticationManager::getCurrentUser()->isManageGroupsEnabled());
+AuthenticationManager::redirectHomeIfFalse(AuthenticationManager::getCurrentUser()->isManageGroupsEnabled(), 'ManageGroups');
 
 $sPageTitle = gettext('Member Role Change');
 
@@ -97,13 +97,13 @@ require_once 'Include/Header.php'
         </td>
     </tr>
     <tr>
-        <td colspan="2" align="center">
-            <input type="submit" class="btn btn-default" name="Submit" value="<?= gettext('Update') ?>">
+        <td colspan="2" class="text-center">
+            <input type="submit" class="btn btn-secondary" name="Submit" value="<?= gettext('Update') ?>">
             <?php
             if ($iReturn) {
-                echo '&nbsp;&nbsp;<input type="button" class="btn btn-default" name="Cancel" value="' . gettext('Cancel') . "\" onclick=\"document.location='GroupView.php?GroupID=" . $iGroupID . "';\">";
+                echo '&nbsp;&nbsp;<input type="button" class="btn btn-secondary" name="Cancel" value="' . gettext('Cancel') . "\" onclick=\"document.location='GroupView.php?GroupID=" . $iGroupID . "';\">";
             } else {
-                echo '&nbsp;&nbsp;<input type="button" class="btn btn-default" name="Cancel" value="' . gettext('Cancel') . "\" onclick=\"document.location='PersonView.php?PersonID=" . $iPersonID . "';\">";
+                echo '&nbsp;&nbsp;<input type="button" class="btn btn-secondary" name="Cancel" value="' . gettext('Cancel') . "\" onclick=\"document.location='PersonView.php?PersonID=" . $iPersonID . "';\">";
             }
             ?>
         </td>

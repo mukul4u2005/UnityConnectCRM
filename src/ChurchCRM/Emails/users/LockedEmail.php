@@ -11,6 +11,6 @@ class LockedEmail extends BaseUserEmail
 
     protected function buildMessageBody(): string
     {
-        return gettext('Your ChurchCRM account was locked.');
+        return gettext('Your UnityConnectCRM account was locked.');
     }
 }

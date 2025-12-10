@@ -60,7 +60,7 @@ class NewPersonOrFamilyEmail extends BaseEmail
     public function getTokens(): array
     {
         $myTokens = [
-            'toName' => gettext('Temple/TrustGreeter'),
+            'toName' => gettext('Temple Greeter'),
         ];
         if ($this->relatedObject instanceof Family) {
             /** @var Family $family */

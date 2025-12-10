@@ -4,7 +4,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
-"Project-Id-Version: UnityConnect CRM\n"
+"Project-Id-Version: ChurchCRM\n"
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
@@ -32,10 +32,12 @@ msgstr "未割り当て"
 msgid "None"
 msgstr "なし"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "City"
 msgstr "市町村"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "State"
 msgstr "都道府県"
@@ -48,6 +50,7 @@ msgstr "国"
 msgid "Phone"
 msgstr "電話番号"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Email"
 msgstr "メールアドレス"
@@ -59,38 +62,6 @@ msgstr "クレジットカード"
 #: 
 msgid "Backup Database"
 msgstr "バックアップデータベース"
-
-#: 
-msgid "This tool will assist you in manually backing up the UnityConnect CRM database."
-msgstr "このツールは、手動でUnityConnect CRMデータベースをバックアップする際に役立ちます"
-
-#: 
-msgid "You should make a manual backup at least once a week unless you already have a regular backup procedure for your systems."
-msgstr "すでにシステムの定期的なバックアップ手順がある場合を除き、少なくとも週に1回は手動でバックアップを取る必要があります"
-
-#: 
-msgid "After you download the backup file, you should make two copies. Put one of them in a fire-proof safe on-site and the other in a safe location off-site."
-msgstr "バックアップ ファイルをダウンロードしたら、コピーを 2 つ作成する必要があります　そのうちの 1 つをサイト内の耐火金庫に置き、もう 1 つをサイト外の安全な場所に置きます"
-
-#: 
-msgid "If you are concerned about confidentiality of data stored in the UnityConnect CRM database, you should encrypt the backup data if it will be stored somewhere potentially accessible to others"
-msgstr "UnityConnect CRM データベースに保存されているデータの機密性が心配な場合は、他の人がアクセスできる可能性のある場所にバックアップ データを保存する場合は、バックアップ データを暗号化する必要があります"
-
-#: 
-msgid "Select archive type"
-msgstr "アーカイブの種類を選択してください"
-
-#: 
-msgid "Encrypt backup file with a password?"
-msgstr "バックアップファイルをパスワードで暗号化しますか?"
-
-#: 
-msgid "Re-type Password"
-msgstr "パスワードを再入力してください"
-
-#: 
-msgid "Generate and Ship Backup to External Storage"
-msgstr "バックアップを生成して外部ストレージに送信する"
 
 #: 
 msgid "Price"
@@ -140,6 +111,7 @@ msgstr "生年月日 / 記念日"
 msgid "Age / Years Married"
 msgstr "年齢 / 結婚年数"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Family Role"
 msgstr "家族のロール"
@@ -176,10 +148,12 @@ msgstr "以下のフィルターに基づいて"
 msgid "Don't Filter"
 msgstr "フィルタリングしない"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Male"
 msgstr "男性"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Female"
 msgstr "女性"
@@ -212,10 +186,12 @@ msgstr "このフィールドを無視します"
 msgid "Title"
 msgstr "タイトル"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Gender"
 msgstr "性別"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Home Phone"
 msgstr "固定電話"
@@ -261,10 +237,6 @@ msgid "Data import successful."
 msgstr "データのインポートが成功しました"
 
 #: 
-msgid "Select the event to which you would like to add your cart"
-msgstr "カートに追加したいイベントを選択してください"
-
-#: 
 msgid "Add New Event"
 msgstr "新しいイベントを追加"
 
@@ -276,6 +248,7 @@ msgstr "あなたのカートは空です！"
 msgid "No family name entered!"
 msgstr "家族名が入力されていません!"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Name"
 msgstr "名前"
@@ -357,7 +330,7 @@ msgid "Use Title Page"
 msgstr "タイトルページを使う"
 
 #: 
-msgid "Temple/TrustName"
+msgid "Temple Name"
 msgstr "教会名"
 
 #: 
@@ -408,6 +381,7 @@ msgstr "量"
 msgid "Bank"
 msgstr "銀行"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Month"
 msgstr "月"
@@ -419,18 +393,6 @@ msgstr "年"
 #: 
 msgid "Edit"
 msgstr "編集"
-
-#: 
-msgid "Event Attendees"
-msgstr "イベント参加者"
-
-#: 
-msgid "Event Nonattendees"
-msgstr "イベント不参加者"
-
-#: 
-msgid "Event Guests"
-msgstr "イベントゲスト"
 
 #: 
 msgid "Sundays"
@@ -459,10 +421,6 @@ msgstr "金曜日"
 #: 
 msgid "Saturdays"
 msgstr "土曜日"
-
-#: 
-msgid "Optional"
-msgstr "オプション"
 
 #: 
 msgid "Default Option"
@@ -545,10 +503,6 @@ msgid "December"
 msgstr "12月"
 
 #: 
-msgid "Add Family"
-msgstr "家族を追加"
-
-#: 
 msgid "Add New Member"
 msgstr "新しいメンバーを追加"
 
@@ -559,10 +513,6 @@ msgstr "前の家族"
 #: 
 msgid "Next Family"
 msgstr "次の家族"
-
-#: 
-msgid "Delete this Family"
-msgstr "この家族を削除"
 
 #: 
 msgid "Upload Photo"
@@ -617,7 +567,7 @@ msgid "Next"
 msgstr "次"
 
 #: 
-msgid "Temple/TrustAddress"
+msgid "Temple Address"
 msgstr "教会住所"
 
 #: 
@@ -659,18 +609,6 @@ msgstr "選択した行をエクスポート　CSV"
 #: 
 msgid "Apply Filters"
 msgstr "フィルターを適用する"
-
-#: 
-msgid "Previous Page"
-msgstr "前のページ"
-
-#: 
-msgid "Next Page"
-msgstr "次のページ"
-
-#: 
-msgid "Display:"
-msgstr "表示"
 
 #: 
 msgid "Number"
@@ -809,16 +747,8 @@ msgid "Enter new user password. Administratively set passwords are not subject t
 msgstr "新しいユーザーパスワードを入力します　管理者が設定したパスワードには、長さや複雑さの要件は適用されません"
 
 #: 
-msgid "UnityConnect CRM Installation Information"
-msgstr "UnityConnect CRMのインストール情報"
-
-#: 
 msgid "Web Server"
 msgstr "Webサーバ"
-
-#: 
-msgid "Email Information"
-msgstr "メールアドレス情報"
 
 #: 
 msgid "Passwords"
@@ -884,22 +814,27 @@ msgstr "ユーザーインターフェース"
 msgid "System"
 msgstr "システム"
 
+#. Context: locales
 #: 
 msgid "Czech"
 msgstr "チェコ語"
 
+#. Context: locales
 #: 
 msgid "Finnish"
 msgstr "フィンランド語"
 
+#. Context: locales
 #: 
 msgid "Greek"
 msgstr "ギリシャ語"
 
+#. Context: locales
 #: 
 msgid "Turkish"
 msgstr "トルコ語"
 
+#. Context: locales
 #: 
 msgid "Ukrainian"
 msgstr "ウクライナ語"

@@ -4,10 +4,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
-"Project-Id-Version: UnityConnect CRM\n"
+"Project-Id-Version: ChurchCRM\n"
 "Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "State"
 msgstr "County"
@@ -25,19 +26,12 @@ msgid "Based on filters below.."
 msgstr "Based on filters below ..."
 
 #: 
-msgid "Select the event to which you would like to add your cart"
-msgstr "Select the event which you would like to add your cart"
-
-#: 
 msgid "(Use the textbox for countries other than US and Canada)"
 msgstr "(Use the textbox for countries other than the UK)"
 
 #: 
-msgid "Select the event to which you would like to check people in for"
-msgstr "Select the event which you would like to check people in for"
-
-#: 
-msgid "Load Authorized Transactions"
+#, fuzzy
+msgid "Load Authorized"
 msgstr "Load Authorised Transactions"
 
 #: 
@@ -73,17 +67,20 @@ msgid "Cell"
 msgstr "Mobile"
 
 #: 
-msgid "Temple/TrustZip"
-msgstr "Temple/TrustPost Code"
+msgid "Temple Zip"
+msgstr "Temple Post Code"
 
+#. Context: queryparameteroptions_qpo
 #: 
 msgid "Zip Code"
 msgstr "Post Code"
 
+#. Context: queryparameters_qrp
 #: 
 msgid "Enter any part of the following: Name, City, State, Zip, Home Phone, Email, or Work Email."
 msgstr "Enter any part of the following: Name, City, Post Code, Home Phone, Email, or Work Email."
 
+#. Context: query_qry
 #: 
 msgid "Search by any part of Name, City, State, Zip, Home Phone, Email, or Work Email."
 msgstr "Search by any part of Name, City, Post Code, Home Phone, Email, or Work Email."

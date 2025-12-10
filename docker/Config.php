@@ -2,7 +2,7 @@
 /*******************************************************************************
  *
  *  filename    : Include/Config.php
- *  website     : https://unityconnectcrm.io
+ *  website     : https://churchcrm.io
  *  description : global configuration
  *
  ******************************************************************************/
@@ -10,15 +10,15 @@
 // Database connection constants
 $sSERVERNAME = 'database';
 $dbPort = '3306';
-$sUSER = 'unityconnectcrm';
+$sUSER = 'churchcrm';
 $sPASSWORD = 'changeme';
-$sDATABASE = 'unityconnectcrm';
+$sDATABASE = 'churchcrm';
 $TwoFASecretKey = 'ChangeThisToASecureRandomStringBeforeUse';
 
 // Root path of your UnityConnectCRM installation ( THIS MUST BE SET CORRECTLY! )
 //
 // Examples:
-// - if you will be accessing from http://www.yourdomain.com/unityconnectcrm then you would enter '/unityconnectcrm' here.
+// - if you will be accessing from http://www.yourdomain.com/churchcrm then you would enter '/churchcrm' here.
 // - if you will be accessing from http://www.yourdomain.com then you would enter '' ... an empty string for a top level installation.
 //
 // NOTE:
@@ -28,17 +28,17 @@ $TwoFASecretKey = 'ChangeThisToASecureRandomStringBeforeUse';
 $sRootPath = '';
 
 // Set $bLockURL=TRUE to enforce https access by specifying exactly
-// which URL's your users may use to log into UnityConnectCRM.
+// which URL's your users may use to log into ChurchCRM.
 $bLockURL = false;
 
 // URL[0] is the URL that you prefer most users use when they
 // log in.  These are case sensitive.
 $URL[0] = 'http://localhost/';
 // List as many other URL's as may be needed. Number them sequentially.
-//$URL[1] = 'https://www.mychurch.org/unityconnectcrm/';
-//$URL[2] = 'https://www.mychurch.org:8080/unityconnectcrm/';
-//$URL[3] = 'https://www.mychurch.org/unityconnectcrm/';
-//$URL[4] = 'https://ssl.sharedsslserver.com/mychurch.org/unityconnectcrm/';
+//$URL[1] = 'https://www.mychurch.org/churchcrm/';
+//$URL[2] = 'https://www.mychurch.org:8080/churchcrm/';
+//$URL[3] = 'https://www.mychurch.org/churchcrm/';
+//$URL[4] = 'https://ssl.sharedsslserver.com/mychurch.org/churchcrm/';
 //$URL[5] = 'https://crm.mychurch.org/';
 
 // If you are using a non-standard port number be sure to include the
